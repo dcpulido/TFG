@@ -1,0 +1,173 @@
+
+<filter>
+	<name>DPDF Model</name>
+	<author>Juan Carlos González</author>
+	<date>18/04/2013</date>
+	<diagrams>
+		
+		<diagram name="PhaseDiagram">
+			
+			<entity>Phase</entity>
+			
+			<entity>iPhase</entity>
+			
+			<entity>Activity</entity>
+			
+			<entity>InitialNode</entity>
+			
+			<entity>DecisionNode</entity>
+			
+			<entity>ForkNode</entity>
+			
+			<entity>JoinNode</entity>
+			
+			<entity>EndNode</entity>
+			
+			<entity>TextNote</entity>
+			
+			<entity>UMLComment</entity>
+			
+			<relationship>DPDFPrecedes</relationship>
+						
+            <relationship>ActivityPrecedes</relationship>
+                        
+            <relationship>WFFollows</relationship>
+                        
+            <relationship>WFFollowsGuarded</relationship>
+                        
+		</diagram>
+		
+		<diagram name="RoleDiagram">
+						
+			<entity>AgentWS</entity>
+
+			<entity>RoleWS</entity>
+			
+			<entity>Activity</entity>
+						
+			<entity>TaskWS</entity>
+						
+			<entity>WorkProduct</entity>
+						
+			<entity>BehaviourWP</entity>
+						
+			<entity>StructuredWP</entity>
+						
+			<entity>StructuralWP</entity>
+						
+			<entity>FreeWP</entity>
+						
+			<entity>UMLComment</entity>
+			
+			<entity>TextNote</entity>
+						
+			<relationship>ActivityPrecedes</relationship>
+						
+			<!-- RoleWS is WFResponsable of a Task that Produces a WorkProduct-->
+			<relationship>WFResponsable</relationship>
+			
+			<!-- TaskWS Produces a WorkProduct-->
+			<relationship>WFProduces</relationship>
+			
+			<!-- TaskWS Produces a WorkProduct-->
+			<relationship>WFConsumes</relationship>
+			
+			<!-- Activities Contains Tasks, Roles -->
+			<relationship>WFContains</relationship>
+            
+            <relationship>WFFollows</relationship>
+            
+            <relationship>Extends</relationship>
+            
+            <relationship>WFFollowsGuarded</relationship>
+            
+            <relationship>UMLAssociation</relationship>
+			
+		</diagram>
+		
+		<diagram name="ActivityDiagram">
+			
+			<entity>InitialNode</entity>
+			
+			<entity>DecisionNode</entity>
+			
+			<entity>ForkNode</entity>
+			
+			<entity>JoinNode</entity>
+			
+			<entity>EndNode</entity>
+			
+			<entity>TaskWS</entity>
+			
+			<entity>RoleWS</entity>
+			
+			<entity>WorkProduct</entity>
+						
+			<entity>BehaviourWP</entity>
+						
+			<entity>StructuredWP</entity>
+						
+			<entity>StructuralWP</entity>
+						
+			<entity>FreeWP</entity>
+						
+			<entity>TextNote</entity>
+			
+			<entity>UMLComment</entity>
+			
+			<relationship>DPDFPrecedes</relationship>
+									
+			<!-- RoleWS is WFResponsable of a Task that Produces a WorkProduct-->
+			<relationship>WFResponsable</relationship>
+			
+			<!-- TaskWS Produces a WorkProduct-->
+			<relationship>WFProduces</relationship>
+			
+			<!-- TaskWS Produces a WorkProduct-->
+			<relationship>WFConsumes</relationship>
+            
+            <relationship>WFFollows</relationship>
+                        
+            <relationship>Extends</relationship>
+                        
+            <relationship>WFFollowsGuarded</relationship>
+                        
+            <relationship>UMLAssociation</relationship>
+			
+		</diagram>
+				
+		<diagram name="WorkProductDiagram">
+			
+			<entity>WorkProduct</entity>
+						
+			<entity>BehaviourWP</entity>
+						
+			<entity>StructuredWP</entity>
+						
+			<entity>StructuralWP</entity>
+						
+			<entity>FreeWP</entity>
+						
+			<entity>DPDFSMMop</entity>
+						
+			<entity>DPDFSMMat</entity>
+						
+			<entity>DPDFSMMel</entity>
+						
+			<entity>UMLComment</entity>
+			
+			<entity>TextNote</entity>
+												
+			<relationship>WPContains</relationship>
+			
+			<relationship>WPDepends</relationship>
+			
+			<relationship>Extends</relationship>
+			
+			<relationship>UMLAssociation</relationship>
+			
+		</diagram>
+		
+	</diagrams>
+</filter>
+
