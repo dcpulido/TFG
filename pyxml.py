@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import xml.sax
+import xml.etree.cElementTree as ET
 
 class MovieHandler( xml.sax.ContentHandler ):
    def __init__(self):
@@ -45,7 +46,27 @@ class MovieHandler( xml.sax.ContentHandler ):
             if flog==False:self.CurrentRelations.append(self.label)
 
 
-      
+class Parser:
+   def __init__(self,diagram,entities,relations):
+      self.diagram=diagram
+      self.entities=entities
+      self.relations=relations
+
+   def setAuthorDate(self,autor):
+      self.autor=autor
+      self.date=""
+
+   def toXML(self):
+      root = ET.Element("filter")
+      name = ET.SubElement(root, "name").text="DPDF Model"
+      author = ET.SubElement(root, "author").text=self.autor
+      date = ET.SubElement(root, "date").text=self.date
+
+
+
+      tree = ET.ElementTree(root)
+      tree.write("filename.xml")
+
   
 if ( __name__ == "__main__"):
    parser = xml.sax.make_parser()
@@ -65,3 +86,10 @@ if ( __name__ == "__main__"):
   
    for rel in Handler.CurrentRelations:
       print rel
+
+   par=parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations)
+   par.setAuthorDate("david")
+   
+
+
+   
