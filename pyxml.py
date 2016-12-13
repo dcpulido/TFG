@@ -17,25 +17,29 @@ import dbus.glib
 import threading
 import sys
 
+from flask import render_template
+from flask import Flask
+
+#_____________________________________DBUS____________________________________________->
 
 class DBUSService(threading.Thread,dbus.service.Object):
    def run(self):
       bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
       dbus.service.Object.__init__(self, bus_name, "/com/example/service")
-      print ("Servicio ejecutandose...")
+      logging.info("DBUS:Starting service")
       
-   @dbus.service.method("com.example.service.Mensaje")
-   def get_mensaje(self):
-      print("Enviando mensaje")
-      return "hola"
+   @dbus.service.method("com.example.service.parse_an_element")
+   def parse_an_element(self,input,output,autor):
+      logging.info("DBUS:Method parse_an_element called starting the parse")
+      init_the_parse(input,output,autor)
+      return "Doing the parse"
 
    @dbus.service.method("com.example.service.Salir")
    def salir(self):
-      print("Apagando")
+      logging.info("DBUS:shutting down")
       self._loop.quit()
 
-
-
+#_____________________________________PARSER____________________________________________->
 
 class XMLHandler( xml.sax.ContentHandler ):
    def __init__(self):
@@ -112,11 +116,50 @@ class Parser:
       logging.info("writing on: "+self.filename)
       tree.write(self.filename)
 
+#_____________________________________FLASK____________________________________________->
+
+class flaskApp(threading.Thread):
+   def run(self):
+      app.run()
+
+
+app = Flask(__name__) 
+
+@app.route("/")
+def hello():
+    return render_template('index.html', name=None)
+
+
+def encoding_image():
+   img=open("img.png", "rb") 
+   return base64.b64encode(img.read())
+
+
+
+#_____________________________________MAIN____________________________________________->
+
 def publish_dbus():
     loop = glib.MainLoop()
     d=DBUSService()
     d.start()
     loop.run()
+
+def init_the_parse(input,output,autor):
+   parser = xml.sax.make_parser()
+   parser.setFeature(xml.sax.handler.feature_namespaces, 0)
+   logging.info("sax parser")
+   
+   Handler = XMLHandler()
+   logging.info("new Handler")
+   
+   parser.setContentHandler( Handler )
+   
+   logging.info("Parsing file: "+file)
+   parser.parse(file)
+   
+   par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations,salida)
+   par.setAuthorDate("david")
+   par.toXML()
 
 def usage():
     print "Usage:", sys.argv[0]
@@ -128,8 +171,11 @@ def usage():
     print " -b habilitar dominio dbus"
     print
     print " -x habilitar interfaz web en localhost:4000"
+    print
+    print "-xb y -bx estan disponibles"
     sys.exit(255)
-  
+
+
 if ( __name__ == "__main__"):
    logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
    logging.info("app init")
@@ -138,7 +184,7 @@ if ( __name__ == "__main__"):
 
    if len(sys.argv)<2:
       usage()
-
+#_____________________________________SHELL MODE____________________________________________->
    if sys.argv[1]=='-s' and len(sys.argv)==5:
       logging.info("SHELL MODE")
 
@@ -146,34 +192,37 @@ if ( __name__ == "__main__"):
       autor=sys.argv[3]
       salida=sys.argv[4]
 
-      parser = xml.sax.make_parser()
-      parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-      logging.info("sax parser")
+      init_the_parse(file,salida,autor)
       
-      Handler = XMLHandler()
-      logging.info("new Handler")
-      
-      parser.setContentHandler( Handler )
-      
-      logging.info("Parsing file: "+file)
-      parser.parse(file)
-      
-      par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations,salida)
-      par.setAuthorDate("david")
-      par.toXML()
       logging.info("close app")
       sys.exit(255)
-
+#________________________________________DBUS MODE___________________________________________->
    if sys.argv[1]== '-b':
       logging.info("DBUS MODE")
       gobject.threads_init()
       dbus.glib.init_threads()
       publish_dbus()
       sys.exit(255)
-
+#_____________________________________FLASK MODE_____________________________________________->
    if sys.argv[1]== '-x':
       logging.info("FLASK MODE")
-         
+      myapp=flaskApp()
+      myapp.start()
+      flag=True
+      while flag:
+         pass
+      sys.exit(255)
+
+   if sys.argv[1]== '-xb' or sys.argv[1]== '-bx':
+      logging.info("FLASK MODE")
+      myapp=flaskApp()
+      myapp.start()
+      logging.info("DBUS MODE")
+      gobject.threads_init()
+      dbus.glib.init_threads()
+      publish_dbus()
+      sys.exit(255)
+
    usage()
 
 

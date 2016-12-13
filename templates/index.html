@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SOTA MANAGER</title>
+  <meta name="description" content="Sota manager">
+  <meta name="author" content="SitePoint">
+  <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../static/css/ownstyle.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../static/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../static/css/unslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../static/css/unslider-dots.css" rel="stylesheet" type="text/css" media="all" />
+
+
+  <!-- Archivos para hacer las cosas con estilo -->
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/bootstrap.js"> </script>
+  <!-- Popurris propios -->
+  <script src="../static/js/memenu.js"></script>
+  <script src="../static/js/controller.js"></script>
+  <script src="../static/js/header.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!-- MODAL CREATE TABLE -->
+  <div class="modal fade" id="portsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">NUEVA TABLA</h4>
+        </div>
+        <div class="modal-body modal-evento">
+          <form id="createExercise" class="form" metod="POST">
+            <div class="form-group">
+              <label for="edCrTableName">Nombre</label>
+              <input type="text" class="form-control" id="edCrTableName" placeholder="Cardio intenso...">
+            </div>
+            <div class="form-group">
+              <label for="edCrTableDiff">Dificultad</label>
+              <input type="text" class="form-control" id="edCrTableDiff" placeholder="Alta, Baja, Media...">
+            </div>
+            <div class="form-group">
+              <label for="edCrTableDesc">Descripcion</label>
+              <input type="email" class="form-control" id="edCrTableDesc" placeholder="Esto hace aquello...">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal"onclick="NewTable();">Guardar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / MODAL CREATE TABLE -->
+
+  <div class="header-top">
+    <div class="header-bottom">
+      <div class="logo myLogo">
+        <h1><a href="/">SOTA MANAGER</a></h1>
+      </div>
+      <div class="top-nav myTop" id="mainHeader">
+        
+      </div>
+      <!---->
+      <div class="clearfix"> 
+       
+      </div>
+      <!---->
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <div id="all-events">
+    <div class="offers">
+      <div class="container">
+        <div class="items">
+          <div class="container">
+            <div id="events-list" class="items-sec">
+              <form action="/" method="post">
+                <div class="col-xs-3 offer-grid3">
+                <h4>Launch GSWM</h4>
+                <br>
+                <p>Launch a terminal with HMI/Software Loading Manager/Package manager</p>
+                <br>
+                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
+                <br>
+                <br>
+                </div>  
+              </form>
+
+              <form action="/server" method="post">
+                <div class="col-xs-3 offer-grid3">
+                <h4>Launch Sota Server</h4>
+                <br>
+                <p>Launch a terminal with Sota Server localhost:9000</p>
+                <br>
+                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
+                <br>
+                <br>
+                </div>  
+              </form>
+
+              <form action="/client" method="post">
+                <div class="col-xs-3 offer-grid3">
+                <h4>Launch Sota Client</h4>
+                <br>
+                <p>Launch a terminal with Sota Client on package mode off</p>
+                <br>
+                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
+                <br>
+                <br>
+                </div>  
+              </form>
+
+
+              <form action="/clientDEB" method="post">
+                <div class="col-xs-3 offer-grid3">
+                <h4>Launch Client DEB</h4>
+                <br>
+                <p>Launch a terminal with Sota Client on package mode ON</p>
+                <br>
+                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
+                <br>
+                <br>
+                </div>  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script> initApp(); </script>
+</body>
+</html>
