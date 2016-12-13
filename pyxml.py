@@ -2,10 +2,42 @@
 
 import xml.sax
 import xml.etree.cElementTree as ET
-import datetime
-import logging
 
-class MovieHandler( xml.sax.ContentHandler ):
+import datetime
+import time
+
+import logging
+import dbus
+import dbus.service
+import dbus.mainloop.glib
+import gobject
+import glib
+import dbus.glib
+
+import threading
+import sys
+
+
+class DBUSService(threading.Thread,dbus.service.Object):
+   def run(self):
+      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
+      dbus.service.Object.__init__(self, bus_name, "/com/example/service")
+      print ("Servicio ejecutandose...")
+      
+   @dbus.service.method("com.example.service.Mensaje")
+   def get_mensaje(self):
+      print("Enviando mensaje")
+      return "hola"
+
+   @dbus.service.method("com.example.service.Salir")
+   def salir(self):
+      print("Apagando")
+      self._loop.quit()
+
+
+
+
+class XMLHandler( xml.sax.ContentHandler ):
    def __init__(self):
       self.CurrentEntities = []
       self.CurrentDiagrams = []
@@ -49,11 +81,11 @@ class MovieHandler( xml.sax.ContentHandler ):
 
 
 class Parser:
-   def __init__(self,diagram,entities,relations):
+   def __init__(self,diagram,entities,relations,filename):
       self.diagram=diagram
       self.entities=entities
       self.relations=relations
-      self.filename="filename.xml"
+      self.filename=filename
 
    def setAuthorDate(self,autor):
       self.autor=autor
@@ -80,31 +112,69 @@ class Parser:
       logging.info("writing on: "+self.filename)
       tree.write(self.filename)
 
+def publish_dbus():
+    loop = glib.MainLoop()
+    d=DBUSService()
+    d.start()
+    loop.run()
+
+def usage():
+    print "Usage:", sys.argv[0]
+    print  
+    print "seleccione uno de los modos"
+    print 
+    print " -s [ruta a xml de entrada] [autor] [ruta salida]"
+    print
+    print " -b habilitar dominio dbus"
+    print
+    print " -x habilitar interfaz web en localhost:4000"
+    sys.exit(255)
   
 if ( __name__ == "__main__"):
    logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
    logging.info("app init")
 
-   file="ejemploMetaModelado.xml"
-   
-   parser = xml.sax.make_parser()
-   parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-   logging.info("sax parser")
-   
-   Handler = MovieHandler()
-   logging.info("new Handler")
-   
-   parser.setContentHandler( Handler )
-   
-   logging.info("Parsing file: "+file)
-   parser.parse(file)
-   
-   
+   logging.info("parsing args")
 
-   par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations)
-   par.setAuthorDate("david")
-   par.toXML()
-   
+   if len(sys.argv)<2:
+      usage()
+
+   if sys.argv[1]=='-s' and len(sys.argv)==5:
+      logging.info("SHELL MODE")
+
+      file=sys.argv[2]
+      autor=sys.argv[3]
+      salida=sys.argv[4]
+
+      parser = xml.sax.make_parser()
+      parser.setFeature(xml.sax.handler.feature_namespaces, 0)
+      logging.info("sax parser")
+      
+      Handler = XMLHandler()
+      logging.info("new Handler")
+      
+      parser.setContentHandler( Handler )
+      
+      logging.info("Parsing file: "+file)
+      parser.parse(file)
+      
+      par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations,salida)
+      par.setAuthorDate("david")
+      par.toXML()
+      logging.info("close app")
+      sys.exit(255)
+
+   if sys.argv[1]== '-b':
+      logging.info("DBUS MODE")
+      gobject.threads_init()
+      dbus.glib.init_threads()
+      publish_dbus()
+      sys.exit(255)
+
+   if sys.argv[1]== '-x':
+      logging.info("FLASK MODE")
+         
+   usage()
 
 
    
