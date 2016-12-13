@@ -3,6 +3,7 @@
 import xml.sax
 import xml.etree.cElementTree as ET
 import datetime
+import logging
 
 class MovieHandler( xml.sax.ContentHandler ):
    def __init__(self):
@@ -52,6 +53,7 @@ class Parser:
       self.diagram=diagram
       self.entities=entities
       self.relations=relations
+      self.filename="filename.xml"
 
    def setAuthorDate(self,autor):
       self.autor=autor
@@ -59,43 +61,45 @@ class Parser:
 
    def toXML(self):
       root = ET.Element("filter")
+      logging.info("Creating new root")
+
       name = ET.SubElement(root, "name").text="DPDF Model"
       author = ET.SubElement(root, "author").text=self.autor
       date = ET.SubElement(root, "date").text=self.date
-
+      logging.info("Meta:name: "+ name +" autor: "+author+" date: "+date)
       diagrams = ET.SubElement(root,"diagrams")
       for di in self.diagram:
+         logging.info("new diagram: "+di)
          diagram = ET.SubElement(diagrams,"diagram",name=di)
          for et in self.entities:
             ET.SubElement(diagram,"entity").text=et
          for rel in self.relations:
             ET.SubElement(diagram,"relationship").text=rel
 
-
-
-
       tree = ET.ElementTree(root)
-      tree.write("filename.xml")
+      logging.info("writing on: "+self.filename)
+      tree.write(self.filename)
 
   
 if ( __name__ == "__main__"):
+   logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
+   logging.info("app init")
+
+   file="ejemploMetaModelado.xml"
+   
    parser = xml.sax.make_parser()
    parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-
+   logging.info("sax parser")
+   
    Handler = MovieHandler()
+   logging.info("new Handler")
+   
    parser.setContentHandler( Handler )
    
-   parser.parse("ejemploMetaModelado.xml")
+   logging.info("Parsing file: "+file)
+   parser.parse(file)
    
-   for rel in Handler.CurrentDiagrams:
-      print rel
-   print
-   for rel in Handler.CurrentEntities:
-      print rel
-   print
-  
-   for rel in Handler.CurrentRelations:
-      print rel
+   
 
    par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations)
    par.setAuthorDate("david")
