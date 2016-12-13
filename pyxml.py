@@ -19,6 +19,7 @@ import sys
 
 from flask import render_template
 from flask import Flask
+from flask import request
 
 #_____________________________________DBUS____________________________________________->
 
@@ -129,10 +130,19 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html', name=None)
 
+@app.route("/parse", methods=['GET', 'POST'])
+def parse_xml():
+   logging.info("FLASK:parse_xml")
+   if request.method == 'POST':
 
-def encoding_image():
-   img=open("img.png", "rb") 
-   return base64.b64encode(img.read())
+      ou= str(request.form.get('output'))
+      inp=str(request.form.get('input'))
+      au=str(request.form.get('autor'))
+
+      logging.info("FLASK: "+ou+" "+inp+" "+au)
+      init_the_parse(inp,ou,au)   
+   return render_template('index.html')
+
 
 
 
@@ -154,11 +164,11 @@ def init_the_parse(input,output,autor):
    
    parser.setContentHandler( Handler )
    
-   logging.info("Parsing file: "+file)
-   parser.parse(file)
+   logging.info("Parsing file: "+input)
+   parser.parse(input)
    
-   par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations,salida)
-   par.setAuthorDate("david")
+   par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations,output)
+   par.setAuthorDate(autor)
    par.toXML()
 
 def usage():

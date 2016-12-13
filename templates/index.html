@@ -35,24 +35,24 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">NUEVA TABLA</h4>
+          <h4 class="modal-title" id="myModalLabel">NUEVO XML</h4>
         </div>
         <div class="modal-body modal-evento">
-          <form id="createExercise" class="form" metod="POST">
+          <form action="/parse" method="post">
             <div class="form-group">
-              <label for="edCrTableName">Nombre</label>
-              <input type="text" class="form-control" id="edCrTableName" placeholder="Cardio intenso...">
+              <label for="edCrTableName">Ruta entrada</label>
+              <input type="text" class="form-control" id="edCrTableName" placeholder="./filename.xml">
             </div>
             <div class="form-group">
-              <label for="edCrTableDiff">Dificultad</label>
-              <input type="text" class="form-control" id="edCrTableDiff" placeholder="Alta, Baja, Media...">
+              <label for="edCrTableDiff">Ruta salida</label>
+              <input type="text" class="form-control" id="edCrTableDiff" placeholder="./output.xml">
             </div>
             <div class="form-group">
-              <label for="edCrTableDesc">Descripcion</label>
-              <input type="email" class="form-control" id="edCrTableDesc" placeholder="Esto hace aquello...">
+              <label for="edCrTableDesc">Autor</label>
+              <input type="email" class="form-control" id="edCrTableDesc" placeholder="autor">
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal"onclick="NewTable();">Guardar</button>
+              <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
             </div>
           </form>
         </div>
@@ -64,7 +64,7 @@
   <div class="header-top">
     <div class="header-bottom">
       <div class="logo myLogo">
-        <h1><a href="/">SOTA MANAGER</a></h1>
+        <h1><a href="/">XML GENERATOR</a></h1>
       </div>
       <div class="top-nav myTop" id="mainHeader">
         
@@ -83,54 +83,24 @@
         <div class="items">
           <div class="container">
             <div id="events-list" class="items-sec">
-              <form action="/" method="post">
-                <div class="col-xs-3 offer-grid3">
-                <h4>Launch GSWM</h4>
-                <br>
-                <p>Launch a terminal with HMI/Software Loading Manager/Package manager</p>
-                <br>
-                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
-                <br>
-                <br>
-                </div>  
-              </form>
-
-              <form action="/server" method="post">
-                <div class="col-xs-3 offer-grid3">
-                <h4>Launch Sota Server</h4>
-                <br>
-                <p>Launch a terminal with Sota Server localhost:9000</p>
-                <br>
-                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
-                <br>
-                <br>
-                </div>  
-              </form>
-
-              <form action="/client" method="post">
-                <div class="col-xs-3 offer-grid3">
-                <h4>Launch Sota Client</h4>
-                <br>
-                <p>Launch a terminal with Sota Client on package mode off</p>
-                <br>
-                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
-                <br>
-                <br>
-                </div>  
-              </form>
-
-
-              <form action="/clientDEB" method="post">
-                <div class="col-xs-3 offer-grid3">
-                <h4>Launch Client DEB</h4>
-                <br>
-                <p>Launch a terminal with Sota Client on package mode ON</p>
-                <br>
-                <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Launch!</button>
-                <br>
-                <br>
-                </div>  
-              </form>
+              <form action="/parse" method="post">
+            <div class="form-group">
+              <label for="edCrTableName">Ruta entrada</label>
+              <input type="text" class="form-control" id="input" name="input" placeholder="./filename.xml">
+            </div>
+            <div class="form-group">
+              <label for="edCrTableDiff">Ruta salida</label>
+              <input type="text" class="form-control" id="output" name="output"placeholder="./output.xml">
+            </div>
+            <div class="form-group">
+              <label for="edCrTableDesc">Autor</label>
+              <input type="text" class="form-control" id="autor" name="autor" placeholder="autor">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
+            </div>
+          </form>
+              
             </div>
           </div>
         </div>
@@ -138,6 +108,6 @@
     </div>
   </div>
   
-  <script> initApp(); </script>
+  
 </body>
 </html>

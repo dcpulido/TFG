@@ -9,25 +9,12 @@ function renderNotLog(){
 	$("#mainHeader").empty();
 	$("#mainHeader").append('<div><ul class="memenu skyblue text-center">\
 		<li class="active">\
-		<button class="btn-evento" data-toggle="modal" data-target="#portsModal">VIEW PORTS</button>\
+		<button class="btn-evento" data-toggle="modal" data-target="#portsModal">PARSE</button>\
 		</li></ul></div>');
 	console.log('Header establecido como NADIE.');
 
 }
-function renderLog(){
-	$("#mainHeader").empty();
-	$("#mainHeader").append(
-		'<ul class="memenu skyblue text-center">\
-			<li class="active">\
-			<button class="btn-evento" onclick="ListUsers();" data-toggle="modal" data-target="#myModalListUsers">USUARIOS</button>\
-			<button class="btn-evento" onclick="ListExercises();" data-toggle="modal" data-target="#myModalListExercises">EJERCICIOS</button>\
-			<button class="btn-evento" onclick="ListTables();" data-toggle="modal" data-target="#myModalListTables">TABLAS</button>\
-			<button class="btn-evento" onclick="LogoutUser();" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></button>\
-			</li>\
-		</ul>'
-		);
-	console.log('Header establecido como ALGUIEN.');
-}
+
 
 
 // function renderHeader(){
