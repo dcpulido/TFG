@@ -21,6 +21,9 @@ from flask import render_template
 from flask import Flask
 from flask import request
 
+import unittest
+import urllib2
+
 #_____________________________________DBUS____________________________________________->
 
 class DBUSService(threading.Thread,dbus.service.Object):
@@ -178,6 +181,11 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html', name=None)
 
+@app.route('/shutdown', methods=['GET','POST'])
+def shutdown():
+    shutdown_server()
+    return 'Server shutting down...'
+
 @app.route("/parse", methods=['GET', 'POST'])
 def parse_xml():
    logging.info("FLASK:parse_xml")
@@ -191,8 +199,75 @@ def parse_xml():
       init_the_parse(inp,ou,au)   
    return render_template('index.html')
 
+def shutdown_server():
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError('Not running with the Werkzeug Server')
+    func()
+#_____________________________________TESTS____________________________________________->
 
+class readTestCase(unittest.TestCase):
+# Instanciamos nuestro objeto foo antes de correr cada prueba
+    def setUp(self):
+        logging.info("TEST:set up parser")
+        self.parser = xml.sax.make_parser()
+        self.parser.setFeature(xml.sax.handler.feature_namespaces, 0)   
+        self.Handler = XMLHandler()  
+        self.parser.setContentHandler( self.Handler )
+ 
+    def test_diagrams(self):
+        logging.info("TEST:diagrams")
+        self.parser.parse("ejemploMetaModelado2.xml")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].name,"WorkProductDiagram")
+        self.assertEqual(self.Handler.CurrentDiagrams[1].name,"PhaseDiagram")
+        self.assertEqual(self.Handler.CurrentDiagrams[2].name,"ActivityWPDiagram")
 
+    def test_entityes(self):
+        logging.info("TEST:enbtity")
+        self.parser.parse("ejemploMetaModelado2.xml")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].entities[0],"WorkProduct")
+
+    def test_rellation(self):
+        logging.info("TEST:relation")
+        self.parser.parse("ejemploMetaModelado2.xml")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].name,"Extends")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].id,"13")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].source,"WorkProduct")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].target,"BehaviourWP")   
+
+    def test_autor_and_date(self):
+        logging.info("TEST:autor and date")
+        self.par=Parser(self.Handler.CurrentDiagrams,"test.xml")
+        self.par.setAuthorDate("david")
+        self.assertEqual(self.par.autor,"david")
+    def testOutputnotNone(self):
+        logging.info("TEST:output not none")
+        self.par=Parser(self.Handler.CurrentDiagrams,"test.xml")
+        self.par.setAuthorDate("david")
+        self.par.toXML()
+        self.assertNotEqual(open("filename.xml").read(),"")
+
+ 
+
+class flaskTestCase(unittest.TestCase):
+    def setUp(self):
+        logging.info("TEST:set up flask")
+        myapp=flaskApp()
+        myapp.start()
+
+    def testGet(self):
+        logging.info("TEST:doing get flask")
+        self.assertNotEqual(urllib2.urlopen("http://localhost:5000/").read(),"")
+
+        
+    def setDown(self):
+        print "asoijdasoij"
+        self.assertEquals("","")
+        logging.info("TEST:Shuting down")
+        func = request.environ.get('werkzeug.server.shutdown')
+        if func is None:
+            raise RuntimeError('Not running with the Werkzeug Server')
+        func()    
 
 #_____________________________________MAIN____________________________________________->
 
@@ -231,17 +306,23 @@ def usage():
     print " -x habilitar interfaz web en localhost:4000"
     print
     print "-xb y -bx estan disponibles"
-    sys.exit(255)
+
+ 
 
 
 if ( __name__ == "__main__"):
    logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
    logging.info("app init")
-
+   
    logging.info("parsing args")
-
+   
    if len(sys.argv)<2:
-      usage()
+        usage()
+        print
+        logging.info("TEST MODE")
+        unittest.main()
+        shutdown()
+        sys.exit(255)
 #_____________________________________SHELL MODE____________________________________________->
    if sys.argv[1]=='-s' and len(sys.argv)==5:
       logging.info("SHELL MODE")
