@@ -41,55 +41,97 @@ class DBUSService(threading.Thread,dbus.service.Object):
       self._loop.quit()
 
 #_____________________________________PARSER____________________________________________->
+class diagram:
+  def __init__(self,name):
+    self.name=name
+    self.entities=[]
+    self.relations=[]
 
+class relationship:
+    def __init__(self):
+        self.name="none"
+        self.id=0
+        self.target="none"
+        self.source="none"
+    def set_id(self,id):
+        self.id=id
+    def set_name(self,name):
+        self.name=name
+    def set_target(self,target):
+        self.target=target
+    def set_source(self,source):
+        self.source=source
+
+class entity:
+    def __init__(self,name):
+        self.name
+        self.nid=0
+    def ser_nid(self,nid):
+        self.nid=nid
+
+    
 class XMLHandler( xml.sax.ContentHandler ):
    def __init__(self):
-      self.CurrentEntities = []
       self.CurrentDiagrams = []
       self.inRelation=False
       self.CurrentTag=""
       self.label=""
       self.CurrentRelations=[]
+      self.relation=relationship()
+      self.currentModel=""
+      self.graph=False
 
 
    # Call when an element starts
    def startElement(self, tag, attributes):   
-      self.CurrentTag=tag
-      if tag =='object':
-         if attributes["type"]=="ingenias.editor.entities.DPDFSMMel":
-            self.CurrentEntities.append(attributes["id"])
-         if attributes["type"]=="ingenias.editor.entities.StructuralWP":
-            self.CurrentDiagrams.append(attributes["id"])
-      if tag == 'relationship':
-         self.inRelation=True
-      if tag=='key' and attributes['id']=='Label' and self.inRelation==True:
-         pass
+        self.CurrentTag=tag
+        #Extraemos el nombre de los diagramas
+        if tag =='package':
+            if attributes['id']!="Project":self.CurrentDiagrams.append(diagram(attributes['id']))
+
+        if tag == 'relationship':
+            self.relation=relationship()
+            self.relation.set_id(attributes['id'])
+            self.inRelation=True
+        if tag == 'role' and self.inRelation==True:
+            if attributes['roleName'][len(attributes['roleName'])-6:len(attributes['roleName'])]=="target":self.relation.set_target(attributes['idEntity'])
+            if attributes['roleName'][len(attributes['roleName'])-6:len(attributes['roleName'])]=="source":self.relation.set_source(attributes['idEntity'])
+        if tag == 'model':self.currentModel=attributes['id']
+
+        if tag=='graph':self.graph=True
+        #linkado de diagramas con entidades y relaciones
+        if tag == 'node' and self.graph==True:
+            for d in self.CurrentDiagrams:
+                if d.name == self.currentModel:
+                    if attributes['type'] == "UMLAssociation":
+                        for r in self.CurrentRelations:
+                            if attributes['id']==r.id:d.relations.append(r)
+                    if attributes['type']!="UMLAssociation" and len(attributes['id'])>2:
+                        d.entities.append(attributes['id'])
 
    # Call when an elements ends
    def endElement(self, localName):
-      if self.inRelation :
-         if localName=='relationship':
-            self.inRelation=False   
-          
+        if self.inRelation :
+            if localName=='relationship':
+                self.CurrentRelations.append(self.relation)
+                self.relation=relationship()
+                self.inRelation=False   
+        if self.graph:
+            if localName=='graph':
+                self.graph=False  
 
    # Call when a character is read
    def characters(self, content):
-      if self.CurrentTag == "key" and self.inRelation==True:
-         if content  != "" and content != "INGENIAS" and content != "0" and content !="\n"and content != "LABEL" and content != "Diagrams":
-            aux= content.replace("(","")
-            self.label=aux.replace(")","")
-            flog=False
-            for r in self.CurrentRelations:
-               if r== self.label:
-                  flog=True
-            if flog==False:self.CurrentRelations.append(self.label)
+        if self.CurrentTag == "key" and self.inRelation==True:
+            if content  != "" and content != "INGENIAS" and content != "0" and content !="\n"and content != "LABEL" and content != "Diagrams":
+                aux= content.replace("(","")
+                self.label=aux.replace(")","")
+                self.relation.set_name(self.label)
 
 
 class Parser:
-   def __init__(self,diagram,entities,relations,filename):
+   def __init__(self,diagram,filename):
       self.diagram=diagram
-      self.entities=entities
-      self.relations=relations
       self.filename=filename
 
    def setAuthorDate(self,autor):
@@ -105,13 +147,19 @@ class Parser:
       date = ET.SubElement(root, "date").text=self.date
       logging.info("Meta:name: "+ name +" autor: "+author+" date: "+date)
       diagrams = ET.SubElement(root,"diagrams")
+
+
       for di in self.diagram:
-         logging.info("new diagram: "+di)
-         diagram = ET.SubElement(diagrams,"diagram",name=di)
-         for et in self.entities:
+         logging.info("new diagram: "+di.name)
+         diagram = ET.SubElement(diagrams,"diagram",name=di.name)
+         for et in di.entities:
             ET.SubElement(diagram,"entity").text=et
-         for rel in self.relations:
-            ET.SubElement(diagram,"relationship").text=rel
+         ET.SubElement(diagram,"entity").text="TextNote"
+         ET.SubElement(diagram,"entity").text="UMLComment"
+         for rel in di.relations:
+            re=ET.SubElement(diagram,"relationship",name=rel.name)
+            ET.SubElement(re,"source").text=rel.source
+            ET.SubElement(re,"target").text=rel.target
 
       tree = ET.ElementTree(root)
       logging.info("writing on: "+self.filename)
@@ -166,8 +214,8 @@ def init_the_parse(input,output,autor):
    
    logging.info("Parsing file: "+input)
    parser.parse(input)
-   
-   par=Parser(Handler.CurrentDiagrams,Handler.CurrentEntities,Handler.CurrentRelations,output)
+
+   par=Parser(Handler.CurrentDiagrams,output)
    par.setAuthorDate(autor)
    par.toXML()
 
