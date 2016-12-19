@@ -42,6 +42,7 @@ class DBUSService(threading.Thread,dbus.service.Object):
    def salir(self):
       logging.info("DBUS:shutting down")
       self._loop.quit()
+      stop_flask()
 
 #_____________________________________PARSER____________________________________________->
 class diagram:
@@ -49,6 +50,7 @@ class diagram:
     self.name=name
     self.entities=[]
     self.relations=[]
+    self.abstracts=[]
 
 class relationship:
     def __init__(self):
@@ -67,10 +69,13 @@ class relationship:
 
 class entity:
     def __init__(self,name):
-        self.name
+        self.name=name
         self.nid=0
-    def ser_nid(self,nid):
+        self.abstract=False
+    def set_nid(self,nid):
         self.nid=nid
+    def set_abs(self,abs):
+        self.abs=abs
 
     
 class XMLHandler( xml.sax.ContentHandler ):
@@ -83,6 +88,9 @@ class XMLHandler( xml.sax.ContentHandler ):
       self.relation=relationship()
       self.currentModel=""
       self.graph=False
+      self.CurrentAbstractObjectes=[]
+      self.abstract=False
+      self.abstractContent=False
 
 
    # Call when an element starts
@@ -91,6 +99,11 @@ class XMLHandler( xml.sax.ContentHandler ):
         #Extraemos el nombre de los diagramas
         if tag =='package':
             if attributes['id']!="Project":self.CurrentDiagrams.append(diagram(attributes['id']))
+        #lista con elementos abstractos
+        if tag == 'object':
+            self.abstract=True
+            self.abs=entity(attributes['id'])
+        if tag == 'key' and self.abstract==True and attributes['id']=='CurrentValue':self.abstractContent=True
 
         if tag == 'relationship':
             self.relation=relationship()
@@ -110,7 +123,8 @@ class XMLHandler( xml.sax.ContentHandler ):
                         for r in self.CurrentRelations:
                             if attributes['id']==r.id:d.relations.append(r)
                     if attributes['type']!="UMLAssociation" and len(attributes['id'])>2:
-                        d.entities.append(attributes['id'])
+                        d.entities.append(entity(attributes['id']))
+
 
    # Call when an elements ends
    def endElement(self, localName):
@@ -130,18 +144,58 @@ class XMLHandler( xml.sax.ContentHandler ):
                 aux= content.replace("(","")
                 self.label=aux.replace(")","")
                 self.relation.set_name(self.label)
+        if self.CurrentTag == "key" and self.abstractContent==True:
+            if content  == "Abstract":
+                self.abs.abstract=True
+                self.CurrentAbstractObjectes.append(self.abs)
+                for d in self.CurrentDiagrams:
+                    d.abstracts=self.CurrentAbstractObjectes
 
 
+
+##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+class complexRelation:
+    def __init__(self,name):
+        self.name=name
+        self.sources=[]
+        self.targets=[]
+##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class Parser:
-   def __init__(self,diagram,filename):
+    def __init__(self,diagram,filename):
       self.diagram=diagram
       self.filename=filename
 
-   def setAuthorDate(self,autor):
+    def setAuthorDate(self,autor):
       self.autor=autor
       self.date=str(datetime.datetime.today()).split()[0]
 
-   def toXML(self):
+    def parse_relation(self,relations,diagram):
+        self.usedRelations=[]
+
+        for rel in relations:
+            fl=False
+            for k in self.usedRelations:
+                if rel.name == k.name:
+                    fl=True
+                    k.targets.append(rel.target)
+                    k.sources.append(rel.source)
+            if fl==False:
+                self.currentcmplxRel=complexRelation(rel.name)
+                self.currentcmplxRel.targets.append(rel.target)
+                self.currentcmplxRel.sources.append(rel.source)
+                self.usedRelations.append(self.currentcmplxRel)
+        for rel in self.usedRelations:
+            re=ET.SubElement(diagram,"relationship",name=rel.name)
+            st1=""
+            st2=""
+            for so in rel.sources:
+                st1+=so+", "
+            ET.SubElement(re,"source").text=st1[0:len(st1)-2]
+            for so in rel.targets:
+                st2+=so+", "
+            ET.SubElement(re,"target").text=st2[0:len(st2)-2]
+
+    def toXML(self):
       root = ET.Element("filter")
       logging.info("Creating new root")
 
@@ -156,17 +210,17 @@ class Parser:
          logging.info("new diagram: "+di.name)
          diagram = ET.SubElement(diagrams,"diagram",name=di.name)
          for et in di.entities:
-            ET.SubElement(diagram,"entity").text=et
+            ET.SubElement(diagram,"entity").text=et.name
          ET.SubElement(diagram,"entity").text="TextNote"
          ET.SubElement(diagram,"entity").text="UMLComment"
-         for rel in di.relations:
-            re=ET.SubElement(diagram,"relationship",name=rel.name)
-            ET.SubElement(re,"source").text=rel.source
-            ET.SubElement(re,"target").text=rel.target
+         self.parse_relation(di.relations,diagram)
 
       tree = ET.ElementTree(root)
       logging.info("writing on: "+self.filename)
       tree.write(self.filename)
+
+    
+
 
 #_____________________________________FLASK____________________________________________->
 
@@ -227,7 +281,7 @@ class readTestCase(unittest.TestCase):
     def test_entityes(self):
         logging.info("TEST:enbtity")
         self.parser.parse("ejemploMetaModelado2.xml")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].entities[0],"WorkProduct")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].entities[0].name,"WorkProduct")
 
     def test_rellation(self):
         logging.info("TEST:relation")
@@ -285,6 +339,11 @@ def init_the_parse(input,output,autor):
    
    logging.info("Parsing file: "+input)
    parser.parse(input)
+
+   for d in Handler.CurrentDiagrams:
+    for k in d.abstracts:
+        print k.name
+
 
    par=Parser(Handler.CurrentDiagrams,output)
    par.setAuthorDate(autor)
