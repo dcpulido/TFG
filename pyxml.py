@@ -198,6 +198,8 @@ def parse_xml():
       logging.info("FLASK: "+ou+" "+inp+" "+au)
       init_the_parse(inp,ou,au)   
    return render_template('index.html')
+def stop_flask():
+    urllib2.urlopen("http://localhost:5000/shutdown").read()
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
@@ -255,19 +257,13 @@ class flaskTestCase(unittest.TestCase):
         myapp=flaskApp()
         myapp.start()
 
+
     def testGet(self):
         logging.info("TEST:doing get flask")
         self.assertNotEqual(urllib2.urlopen("http://localhost:5000/").read(),"")
+        stop_flask()
 
-        
-    def setDown(self):
-        print "asoijdasoij"
-        self.assertEquals("","")
-        logging.info("TEST:Shuting down")
-        func = request.environ.get('werkzeug.server.shutdown')
-        if func is None:
-            raise RuntimeError('Not running with the Werkzeug Server')
-        func()    
+  
 
 #_____________________________________MAIN____________________________________________->
 
@@ -321,7 +317,6 @@ if ( __name__ == "__main__"):
         print
         logging.info("TEST MODE")
         unittest.main()
-        shutdown()
         sys.exit(255)
 #_____________________________________SHELL MODE____________________________________________->
    if sys.argv[1]=='-s' and len(sys.argv)==5:
@@ -344,13 +339,17 @@ if ( __name__ == "__main__"):
       sys.exit(255)
 #_____________________________________FLASK MODE_____________________________________________->
    if sys.argv[1]== '-x':
-      logging.info("FLASK MODE")
-      myapp=flaskApp()
-      myapp.start()
-      flag=True
-      while flag:
-         pass
-      sys.exit(255)
+        logging.info("FLASK MODE")
+        myapp=flaskApp()
+        myapp.start()
+        flag=True
+        while flag:
+            op=raw_input("q->salir")
+            if op=="q":
+                flag = False
+        stop_flask()
+
+        sys.exit(255)
 
    if sys.argv[1]== '-xb' or sys.argv[1]== '-bx':
       logging.info("FLASK MODE")
