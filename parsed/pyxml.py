@@ -3,26 +3,28 @@ import unittest
 import sys
 import threading
 
-import xmlHandler
-
+import xmlHandler as XML
+import xml.sax
+import xml.etree.cElementTree as ET
 
 def init_the_parse(input,output,autor):
-   parser = xml.sax.make_parser()
-   parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-   logging.info("sax parser")
-   
-   Handler = xmlHandler.XMLHandler()
-   logging.info("new Handler")
-   
-   parser.setContentHandler( Handler )
-   
-   logging.info("Parsing file: "+input)
-   parser.parse(input)
+    print "hi"
+    parser = xml.sax.make_parser()
+    parser.setFeature(xml.sax.handler.feature_namespaces, 0)
+    logging.info("sax parser")
+
+    Handler = XML.XMLHandler()
+    logging.info("new Handler")
+
+    parser.setContentHandler( Handler )
+
+    logging.info("Parsing file: "+input)
+    parser.parse(input)
 
 
-   par=Parser(Handler.CurrentDiagrams,output)
-   par.setAuthorDate(autor)
-   par.toXML()
+    par=Parser(Handler.CurrentDiagrams,output)
+    par.setAuthorDate(autor)
+    par.toXML()
 
 
 
