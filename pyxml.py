@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+#python pyxml.py ejemploMetaModelado2.xml david filename.xml
 import xml.sax
 import xml.etree.cElementTree as ET
 
