@@ -24,34 +24,20 @@ from flask import request
 import unittest
 import urllib2
 
-#_____________________________________DBUS____________________________________________->
-
-class DBUSService(threading.Thread,dbus.service.Object):
-   def run(self):
-      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
-      dbus.service.Object.__init__(self, bus_name, "/com/example/service")
-      logging.info("DBUS:Starting service")
-      
-   @dbus.service.method("com.example.service.parse_an_element")
-   def parse_an_element(self,input,output,autor):
-      logging.info("DBUS:Method parse_an_element called starting the parse")
-      init_the_parse(input,output,autor)
-      return "Doing the parse"
-
-   @dbus.service.method("com.example.service.Salir")
-   def salir(self):
-      logging.info("DBUS:shutting down")
-      self._loop.quit()
-      stop_flask()
-
-#_____________________________________PARSER____________________________________________->
+##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+class complexRelation:
+    def __init__(self,name):
+        self.name=name
+        self.sources=[]
+        self.targets=[]
+##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class diagram:
   def __init__(self,name):
     self.name=name
     self.entities=[]
     self.relations=[]
     self.abstracts=[]
-
+##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class relationship:
     def __init__(self):
         self.name="none"
@@ -66,7 +52,7 @@ class relationship:
         self.target=target
     def set_source(self,source):
         self.source=source
-
+##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class entity:
     def __init__(self,name):
         self.name=name
@@ -77,6 +63,7 @@ class entity:
     def set_abs(self,abs):
         self.abs=abs
 
+#_____________________________________PARSER____________________________________________->
     
 class XMLHandler( xml.sax.ContentHandler ):
    def __init__(self):
@@ -153,12 +140,7 @@ class XMLHandler( xml.sax.ContentHandler ):
 
 
 
-##/////////////////////////////////////////////////////////////////////////////////////////////////////////
-class complexRelation:
-    def __init__(self,name):
-        self.name=name
-        self.sources=[]
-        self.targets=[]
+
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class Parser:
     def __init__(self,diagram,filename):
@@ -270,7 +252,25 @@ class Parser:
       tree.write(self.filename)
 
     
+#_____________________________________DBUS____________________________________________->
 
+class DBUSService(threading.Thread,dbus.service.Object):
+   def run(self):
+      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
+      dbus.service.Object.__init__(self, bus_name, "/com/example/service")
+      logging.info("DBUS:Starting service")
+      
+   @dbus.service.method("com.example.service.parse_an_element")
+   def parse_an_element(self,input,output,autor):
+      logging.info("DBUS:Method parse_an_element called starting the parse")
+      init_the_parse(input,output,autor)
+      return "Doing the parse"
+
+   @dbus.service.method("com.example.service.Salir")
+   def salir(self):
+      logging.info("DBUS:shutting down")
+      self._loop.quit()
+      stop_flask()
 
 #_____________________________________FLASK____________________________________________->
 
@@ -400,31 +400,73 @@ def usage():
     print  
     print "seleccione uno de los modos"
     print 
-    print " -s [ruta a xml de entrada] [autor] [ruta salida]"
+    print " -i [ruta a xml de entrada] -s [ruta salida] -a [autor] "
     print
     print " -b habilitar dominio dbus"
     print
     print " -x habilitar interfaz web en localhost:4000"
     print
-    print "-xb y -bx estan disponibles"
+    print " -c Modo test"
 
  
 
 
 if ( __name__ == "__main__"):
-   logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
-   logging.info("app init")
-   
-   logging.info("parsing args")
-   
-   if len(sys.argv)<2:
-        usage()
-        print
-        logging.info("TEST MODE")
-        unittest.main()
-        sys.exit(255)
+    logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
+    logging.info("app init")
+
+    logging.info("parsing args")
+    dbusMode=False
+    flaskMode=False
+    shellMode=False
+    testMode=False
+    na=False
+    ns=False
+    ni=False
+
+    xmls=""
+    xmli=""
+    autor=""
+
+    if len(sys.argv)<2:usage()
+
+    for a in sys.argv:
+      if na:
+        na=False
+        autor=a
+      if ni:
+        ni=False
+        xmli=a
+      if ns:
+        ns=False
+        xmls=a
+      if a[0]=="-":
+        for k in a:
+          if k=="s":
+            ns=True
+          if k=="b":
+            dbusMode=True
+          if k=="x":
+            flaskMode=True
+          if k=="c":
+            testMode=True
+          if k=="a":
+            na=True
+          if k=="i":
+            shellMode=True
+            ni=True
+
+    if xmls=="":xmls="output.xml"
+    if autor=="":autor="autor"
+    #_____________________________________TEST MODE____________________________________________->
+    if testMode:
+      usage()
+      print
+      logging.info("TEST MODE")
+      unittest.main()
+      sys.exit(255)
 #_____________________________________SHELL MODE____________________________________________->
-   if sys.argv[1]=='-s' and len(sys.argv)==5:
+    if shellMode:
       logging.info("SHELL MODE")
 
       file=sys.argv[2]
@@ -436,14 +478,14 @@ if ( __name__ == "__main__"):
       logging.info("close app")
       sys.exit(255)
 #________________________________________DBUS MODE___________________________________________->
-   if sys.argv[1]== '-b':
+    if dbusMode and not flaskMode:
       logging.info("DBUS MODE")
       gobject.threads_init()
       dbus.glib.init_threads()
       publish_dbus()
       sys.exit(255)
 #_____________________________________FLASK MODE_____________________________________________->
-   if sys.argv[1]== '-x':
+    if flaskMode and not dbusMode:
         logging.info("FLASK MODE")
         myapp=flaskApp()
         myapp.start()
@@ -456,7 +498,7 @@ if ( __name__ == "__main__"):
 
         sys.exit(255)
 
-   if sys.argv[1]== '-xb' or sys.argv[1]== '-bx':
+    if flaskMode and dbusMode:
       logging.info("FLASK MODE")
       myapp=flaskApp()
       myapp.start()
@@ -466,7 +508,6 @@ if ( __name__ == "__main__"):
       publish_dbus()
       sys.exit(255)
 
-   usage()
 
 
    
