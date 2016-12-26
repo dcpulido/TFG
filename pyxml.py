@@ -1,5 +1,6 @@
 #!/usr/bin/python
-#python pyxml.py ejemploMetaModelado2.xml david filename.xml
+#Ejemplo de uso
+#python pyxml.py -i ejemploMetaModelado2.xml -a david -o filename.xml
 import xml.sax
 import xml.etree.cElementTree as ET
 
@@ -23,6 +24,8 @@ from flask import request
 
 import unittest
 import urllib2
+
+import ConfigParser
 
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class complexRelation:
@@ -139,8 +142,6 @@ class XMLHandler( xml.sax.ContentHandler ):
                     d.abstracts=self.CurrentAbstractObjectes
 
 
-
-
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 class Parser:
     def __init__(self,diagram,filename):
@@ -201,11 +202,7 @@ class Parser:
         self.usedRelations=[]
         self.defining_the_extends(relations)
         
-
         ##modificamos los targets y sources eliminando los extends
-        
-
-
         for rel in self.usedRelations:
 
             re=ET.SubElement(diagram,"relationship",name=rel.name)
@@ -257,7 +254,7 @@ class Parser:
 class DBUSService(threading.Thread,dbus.service.Object):
    def run(self):
       bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
-      dbus.service.Object.__init__(self, bus_name, "/com/example/service")
+      dbus.service.Object.__init__(self, bus_name, dbusconf['name'])
       logging.info("DBUS:Starting service")
       
    @dbus.service.method("com.example.service.parse_an_element")
@@ -303,7 +300,7 @@ def parse_xml():
       init_the_parse(inp,ou,au)   
    return render_template('index.html')
 def stop_flask():
-    urllib2.urlopen("http://localhost:5000/shutdown").read()
+    urllib2.urlopen(flaskconf['name']+"shutdown").read()
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
@@ -346,6 +343,7 @@ class readTestCase(unittest.TestCase):
         self.par=Parser(self.Handler.CurrentDiagrams,"test.xml")
         self.par.setAuthorDate("david")
         self.assertEqual(self.par.autor,"david")
+
     def testOutputnotNone(self):
         logging.info("TEST:output not none")
         self.par=Parser(self.Handler.CurrentDiagrams,"test.xml")
@@ -353,7 +351,17 @@ class readTestCase(unittest.TestCase):
         self.par.toXML()
         self.assertNotEqual(open("filename.xml").read(),"")
 
- 
+    def testGetCOnfigData(self):
+        logging.info("TEST:config not none")
+        Config = ConfigParser.ConfigParser()
+        Config.read("./conf/config.conf")
+        myprior= {}
+        for sec in Config.sections():
+                if sec == "General":
+                    myprior=ConfigSectionMap(sec,Config)
+
+        self.assertNotEqual(myprior['autor'],"")
+
 
 class flaskTestCase(unittest.TestCase):
     def setUp(self):
@@ -370,6 +378,49 @@ class flaskTestCase(unittest.TestCase):
   
 
 #_____________________________________MAIN____________________________________________->
+
+def ConfigSectionMap(section,Config):
+    dict1 = {}
+    options = Config.options(section)
+    for option in options:
+        try:
+            dict1[option] = Config.get(section, option)
+            if dict1[option] == -1:
+                DebugPrint("skip: %s" % option)
+        except:
+            print("exception on %s!" % option)
+            dict1[option] = None
+    return dict1
+
+def get_general_conf():
+    Config = ConfigParser.ConfigParser()
+    Config.read("./conf/config.conf")
+    myprior= {}
+    for sec in Config.sections():
+            if sec == "General":
+                myprior=ConfigSectionMap(sec,Config)
+
+    return myprior
+
+def get_flask_conf():
+    Config = ConfigParser.ConfigParser()
+    Config.read("./conf/config.conf")
+    myprior= {}
+    for sec in Config.sections():
+            if sec == "Flask":
+                myprior=ConfigSectionMap(sec,Config)
+
+    return myprior
+
+def get_dbus_conf():
+    Config = ConfigParser.ConfigParser()
+    Config.read("./conf/config.conf")
+    myprior= {}
+    for sec in Config.sections():
+            if sec == "Dbus":
+                myprior=ConfigSectionMap(sec,Config)
+
+    return myprior
 
 def publish_dbus():
     loop = glib.MainLoop()
@@ -404,7 +455,7 @@ def usage():
     print
     print " -b habilitar dominio dbus"
     print
-    print " -x habilitar interfaz web en localhost:4000"
+    print " -x habilitar interfaz web en "+flaskconf['name']
     print
     print " -c Modo test"
 
@@ -414,6 +465,11 @@ def usage():
 if ( __name__ == "__main__"):
     logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
     logging.info("app init")
+
+    logging.info("get conf form conf/config.conf")
+    generalconf=get_general_conf()
+    dbusconf=get_dbus_conf()
+    flaskconf=get_flask_conf()
 
     logging.info("parsing args")
     dbusMode=False
@@ -455,9 +511,9 @@ if ( __name__ == "__main__"):
           if k=="i":
             shellMode=True
             ni=True
-
-    if xmls=="":xmls="output.xml"
-    if autor=="":autor="autor"
+    if xmli=="":xmli=generalconf['xmli']
+    if xmls=="":xmls=generalconf['xmlo']
+    if autor=="":autor=generalconf['autor']
     #_____________________________________TEST MODE____________________________________________->
     if testMode:
       usage()
@@ -468,13 +524,10 @@ if ( __name__ == "__main__"):
 #_____________________________________SHELL MODE____________________________________________->
     if shellMode:
       logging.info("SHELL MODE")
-
       file=sys.argv[2]
       autor=sys.argv[3]
       salida=sys.argv[4]
-
-      init_the_parse(file,salida,autor)
-      
+      init_the_parse(file,salida,autor)   
       logging.info("close app")
       sys.exit(255)
 #________________________________________DBUS MODE___________________________________________->
