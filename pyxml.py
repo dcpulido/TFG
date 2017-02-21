@@ -24,16 +24,27 @@ from flask import request
 
 import unittest
 import urllib2
+from ghost import Ghost
 
 import ConfigParser
 
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+#
+#
+#
+#
+#
 class complexRelation:
     def __init__(self,name):
         self.name=name
         self.sources=[]
         self.targets=[]
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+#
+#
+#
+#
+#
 class diagram:
   def __init__(self,name):
     self.name=name
@@ -41,6 +52,11 @@ class diagram:
     self.relations=[]
     self.abstracts=[]
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+#
+#
+#
+#
+#
 class relationship:
     def __init__(self):
         self.name="none"
@@ -56,6 +72,11 @@ class relationship:
     def set_source(self,source):
         self.source=source
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+#
+#
+#
+#
+#
 class entity:
     def __init__(self,name):
         self.name=name
@@ -67,6 +88,11 @@ class entity:
         self.abs=abs
 
 #_____________________________________PARSER____________________________________________->
+#
+#
+#
+#
+#
     
 class XMLHandler( xml.sax.ContentHandler ):
    def __init__(self):
@@ -143,6 +169,11 @@ class XMLHandler( xml.sax.ContentHandler ):
 
 
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
+#
+#
+#
+#
+#
 class Parser:
     def __init__(self,diagram,filename):
       self.diagram=diagram
@@ -160,7 +191,7 @@ class Parser:
                 if l == t:fl=True
             if fl==False:toret.append(l)
         return toret
-
+    #HERE
     def defining_the_extends(self,relations):
         for rel in relations:
             fl=False
@@ -174,7 +205,8 @@ class Parser:
                 self.currentcmplxRel.targets.append(rel.target)
                 self.currentcmplxRel.sources.append(rel.source)
                 self.usedRelations.append(self.currentcmplxRel)
-
+        #se recorren las relaciones metiendo en used relations las q no son de extend definiendo
+        #sus multiples targets y sources
         #definimos extends y quitamos repetidos
         for rel in relations:
             if rel.name == 'Extends':
@@ -204,23 +236,35 @@ class Parser:
         
         ##modificamos los targets y sources eliminando los extends
         for rel in self.usedRelations:
-
             re=ET.SubElement(diagram,"relationship",name=rel.name)
             st1=""
             st2=""
+            #HERE
             #ewliminamos las clases abstractas de los sources y targets
+            #falta comprobar si estan sus extendidos
             for so in rel.sources:
                 fl=False
+                lo=0
                 for si in di.abstracts:
                     if si.name == so :fl=True
-                if fl==False:st1+=so+", "
-                
+                if fl==False:
+                    st1+=so+", "
+                    lo=lo+1
+            if lo==0:
+                for so in rel.sources:
+                    st1+=so+", "
             ET.SubElement(re,"source").text=st1[0:len(st1)-2]
             for so in rel.targets:
+                lo=0
                 fl=False
                 for si in di.abstracts:
                     if si.name == so :fl=True
-                if fl==False:st2+=so+", "
+                if fl==False:
+                    st2+=so+", "
+                    lo=lo+1
+                if lo==0:
+                    for so in rel.sources:
+                        st2+=so+", "
             ET.SubElement(re,"target").text=st2[0:len(st2)-2]
 
     def toXML(self):
@@ -250,6 +294,11 @@ class Parser:
 
     
 #_____________________________________DBUS____________________________________________->
+#
+#
+#
+#
+#
 
 class DBUSService(threading.Thread,dbus.service.Object):
    def run(self):
@@ -270,6 +319,11 @@ class DBUSService(threading.Thread,dbus.service.Object):
       stop_flask()
 
 #_____________________________________FLASK____________________________________________->
+#
+#
+#
+#
+#
 
 class flaskApp(threading.Thread):
    def run(self):
@@ -308,6 +362,11 @@ def shutdown_server():
         raise RuntimeError('Not running with the Werkzeug Server')
     func()
 #_____________________________________TESTS____________________________________________->
+#
+#
+#
+#
+#
 
 class readTestCase(unittest.TestCase):
 # Instanciamos nuestro objeto foo antes de correr cada prueba
@@ -369,6 +428,13 @@ class flaskTestCase(unittest.TestCase):
         myapp=flaskApp()
         myapp.start()
 
+    def testForm(self):
+        ghost = Ghost()
+        with ghost.start() as session:
+          page, extra_resources = session.open("localName:5000")
+          print page.http_status
+          self.assertEqual(page.http_status,200) 
+
 
     def testGet(self):
         logging.info("TEST:doing get flask")
@@ -378,6 +444,11 @@ class flaskTestCase(unittest.TestCase):
   
 
 #_____________________________________MAIN____________________________________________->
+#
+#
+#
+#
+#
 
 def ConfigSectionMap(section,Config):
     dict1 = {}
