@@ -50,6 +50,8 @@ class diagram:
     self.entities=[]
     self.relations=[]
     self.abstracts=[]
+    self.complexRelations=[]
+    self.extends=[]
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 #
 #
@@ -504,10 +506,63 @@ def init_the_parse(input,output,autor):
    logging.info("Parsing file: "+input)
    parser.parse(input)
 
-
+   toString(Handler.CurrentDiagrams)
+   dig=reParseDiagrams(Handler.CurrentDiagrams)
+   toString(dig)
    par=Parser(Handler.CurrentDiagrams,output)
    par.setAuthorDate(autor)
    par.toXML()
+
+def reParseDiagrams(diagrams):
+    toret=[]
+    for d in diagrams:
+        di=diagram(d.name)
+        for e in d.entities:
+            if e.name!=di.name:di.entities.append(e)
+        #se convierten las relaciones normales en relaciones complejas y se mantiene en extends las relaciones de herencia
+        for r in d.relations:
+            if r.name!="Extends":
+                fl=True
+                for c in di.complexRelations:
+                    if r.name == c.name: 
+                        c.sources.append(r.source)
+                        c.targets.append(r.target)
+                        fl=False
+                if fl==True:
+                    xl=complexRelation(r.name)
+                    xl.sources.append(r.source)
+                    xl.targets.append(r.target)
+                    di.complexRelations.append(xl)
+            if r.name=="Extends":
+                fl=True
+                for c in di.extends:
+                    if r.name == c.name:
+                        c.targets.append(r.target)
+                        fl=False
+                if fl==True:
+                    xl=complexRelation(r.name)
+                    xl.sources.append(r.source)
+                    xl.targets.append(r.target)
+                    di.extends.append(xl)
+        toret.append(di)
+    return toret
+
+def toString(diagrams):
+    for d in diagrams:
+        print d.name
+        for e in d.entities:
+            print "      "+e.name
+        print "/////////////"
+        for r in d.relations:
+            print "      "+r.name+"  "+r.source+"   "+r.target
+        print "////UUUUUUU"
+        for x in d.complexRelations:
+            print  "             "+x.name
+        print "////EXTENDS"
+        for x in d.extends:
+            print  "             "+x.name+"   "+x.sources[0]
+            for k in x.targets:
+                print k
 
 def usage():
     print "Usage:", sys.argv[0]
