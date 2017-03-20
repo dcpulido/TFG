@@ -24,7 +24,6 @@ from flask import request
 
 import unittest
 import urllib2
-from ghost import Ghost
 
 import ConfigParser
 
@@ -428,13 +427,6 @@ class flaskTestCase(unittest.TestCase):
         myapp=flaskApp()
         myapp.start()
 
-    def testForm(self):
-        ghost = Ghost()
-        with ghost.start() as session:
-          page, extra_resources = session.open("localName:5000")
-          print page.http_status
-          self.assertEqual(page.http_status,200) 
-
 
     def testGet(self):
         logging.info("TEST:doing get flask")
@@ -596,8 +588,8 @@ if ( __name__ == "__main__"):
     if shellMode:
       logging.info("SHELL MODE")
       file=sys.argv[2]
-      autor=sys.argv[3]
-      salida=sys.argv[4]
+      autor=sys.argv[4]
+      salida=sys.argv[6]
       init_the_parse(file,salida,autor)   
       logging.info("close app")
       sys.exit(255)
