@@ -192,43 +192,6 @@ class Parser:
                 if l == t:fl=True
             if fl==False:toret.append(l)
         return toret
-    #HERE
-    def defining_the_extends(self,relations):
-        for rel in relations:
-            fl=False
-            for k in self.usedRelations:
-                if rel.name == k.name and rel.name!='Extends':
-                    fl=True
-                    k.targets.append(rel.target)
-                    k.sources.append(rel.source)
-            if fl==False and rel.name!='Extends':
-                self.currentcmplxRel=complexRelation(rel.name)
-                self.currentcmplxRel.targets.append(rel.target)
-                self.currentcmplxRel.sources.append(rel.source)
-                self.usedRelations.append(self.currentcmplxRel)
-        #se recorren las relaciones metiendo en used relations las q no son de extend definiendo
-        #sus multiples targets y sources
-        #definimos extends y quitamos repetidos
-        for rel in relations:
-            if rel.name == 'Extends':
-                #extension
-                source = rel.source
-                #clase base
-                target = rel.target
-
-                for k in self.usedRelations:
-                    sources = self.remove_repeats(k.sources)
-                    targets = self.remove_repeats(k.targets)
-                    for s in sources:
-                        if s == target:
-                            k.sources.append(source)
-                    for t in targets:
-                        if t == target:
-                            k.targets.append(source)
-
-        for k in self.usedRelations:
-            k.sources = self.remove_repeats(k.sources)
-            k.targets = self.remove_repeats(k.targets)
 
 
     def parse_relation(self,relations,diagram,di):
