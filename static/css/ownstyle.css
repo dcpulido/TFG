@@ -2,7 +2,22 @@
 h2{
 	font-family: "Dosis-Medium";
 }
-
+.logo h1 a{
+    color: #F1F1F1;
+    font-family: 'Dosis-Medium';
+    font-size: 1.3em;
+    font-weight: 100;
+    padding: 0.5em 1.3em;
+    text-decoration:none;
+background:#ed645c;
+display:inline-block;
+}
+.logo h1 a:hover{
+    text-decoration:none;
+}
+.logo{
+    float:left;
+}
 .form-group > label{
     font-weight: bold;
 }
