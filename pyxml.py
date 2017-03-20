@@ -506,10 +506,8 @@ def init_the_parse(input,output,autor):
    logging.info("Parsing file: "+input)
    parser.parse(input)
 
-   toString(Handler.CurrentDiagrams)
    dig=reParseDiagrams(Handler.CurrentDiagrams)
-   toString(dig)
-   par=Parser(Handler.CurrentDiagrams,output)
+   par=Parser(dig,output)
    par.setAuthorDate(autor)
    par.toXML()
 
@@ -524,9 +522,16 @@ def reParseDiagrams(diagrams):
             if r.name!="Extends":
                 fl=True
                 for c in di.complexRelations:
-                    if r.name == c.name: 
-                        c.sources.append(r.source)
-                        c.targets.append(r.target)
+                    if r.name == c.name:
+                        so=False
+                        ta=False
+                        #quitamos repes
+                        for k in c.sources: 
+                            if k==r.source:so=True
+                        for k in c.targets: 
+                            if k==r.target:ta=True
+                        if so==False:c.sources.append(r.source)
+                        if ta==False:c.targets.append(r.target)
                         fl=False
                 if fl==True:
                     xl=complexRelation(r.name)
@@ -544,9 +549,36 @@ def reParseDiagrams(diagrams):
                     xl.sources.append(r.source)
                     xl.targets.append(r.target)
                     di.extends.append(xl)
+        #utilizamos la info de extends para mejorar complexRelations y resolver los extends
+        #para ello creamos una relacion compleja nueva y la vamos rellenando con las sources o en caso de q la source 
+        #sea abstracta con sus targets y lo mismo con los targets
+        totalComplex=[]
+        for do in di.complexRelations:
+            complexParsed=complexRelation(do.name)
+            for so in do.sources:
+                fl=False
+                for e in di.extends:
+                    if e.sources[0]==so:
+                        fl=True
+                        for p in e.targets:
+                            complexParsed.sources.append(p)
+                if fl==False:complexParsed.sources.append(so)
+            for so in do.targets:
+                fl=False
+                for e in di.extends:
+                    if e.sources[0]==so:
+                        fl=True
+                        for p in e.targets:
+                            complexParsed.targets.append(p)
+                if fl==False:complexParsed.targets.append(so)
+
+            totalComplex.append(complexParsed)
+        di.complexRelations=totalComplex
         toret.append(di)
     return toret
 
+
+#No usar// clase para debug
 def toString(diagrams):
     for d in diagrams:
         print d.name
@@ -555,9 +587,16 @@ def toString(diagrams):
         print "/////////////"
         for r in d.relations:
             print "      "+r.name+"  "+r.source+"   "+r.target
+
         print "////UUUUUUU"
         for x in d.complexRelations:
             print  "             "+x.name
+            print "targets"
+            for k in x.targets:
+                print "                       "+k
+            print "sources"
+            for k in x.sources:
+                print "                       "+k
         print "////EXTENDS"
         for x in d.extends:
             print  "             "+x.name+"   "+x.sources[0]
