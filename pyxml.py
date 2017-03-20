@@ -232,40 +232,19 @@ class Parser:
 
 
     def parse_relation(self,relations,diagram,di):
-        self.usedRelations=[]
-        self.defining_the_extends(relations)
+    
         
         ##modificamos los targets y sources eliminando los extends
-        for rel in self.usedRelations:
+        for rel in relations:
             re=ET.SubElement(diagram,"relationship",name=rel.name)
             st1=""
             st2=""
-            #HERE
-            #ewliminamos las clases abstractas de los sources y targets
-            #falta comprobar si estan sus extendidos
+            
             for so in rel.sources:
-                fl=False
-                lo=0
-                for si in di.abstracts:
-                    if si.name == so :fl=True
-                if fl==False:
-                    st1+=so+", "
-                    lo=lo+1
-            if lo==0:
-                for so in rel.sources:
-                    st1+=so+", "
+                st1+=so+", "     
             ET.SubElement(re,"source").text=st1[0:len(st1)-2]
             for so in rel.targets:
-                lo=0
-                fl=False
-                for si in di.abstracts:
-                    if si.name == so :fl=True
-                if fl==False:
-                    st2+=so+", "
-                    lo=lo+1
-                if lo==0:
-                    for so in rel.sources:
-                        st2+=so+", "
+                st2+=so+", "      
             ET.SubElement(re,"target").text=st2[0:len(st2)-2]
 
     def toXML(self):
@@ -287,7 +266,7 @@ class Parser:
             ET.SubElement(diagram,"entity").text=et.name
          ET.SubElement(diagram,"entity").text="TextNote"
          ET.SubElement(diagram,"entity").text="UMLComment"
-         self.parse_relation(di.relations,diagram,di)
+         self.parse_relation(di.complexRelations,diagram,di)
 
       tree = ET.ElementTree(root)
       logging.info("writing on: "+self.filename)
