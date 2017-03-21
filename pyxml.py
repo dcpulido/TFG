@@ -597,16 +597,11 @@ if ( __name__ == "__main__"):
         xmls=a
       if a[0]=="-":
         for k in a:
-          if k=="s":
-            ns=True
-          if k=="b":
-            dbusMode=True
-          if k=="x":
-            flaskMode=True
-          if k=="c":
-            testMode=True
-          if k=="a":
-            na=True
+          if k=="o":ns=True
+          if k=="b":dbusMode=True
+          if k=="x":flaskMode=True
+          if k=="c":testMode=True
+          if k=="a":na=True
           if k=="i":
             shellMode=True
             ni=True
@@ -623,10 +618,7 @@ if ( __name__ == "__main__"):
 #_____________________________________SHELL MODE____________________________________________->
     if shellMode:
       logging.info("SHELL MODE")
-      file=sys.argv[2]
-      autor=sys.argv[4]
-      salida=sys.argv[6]
-      init_the_parse(file,salida,autor)   
+      init_the_parse(xmli,xmls,autor)   
       logging.info("close app")
       sys.exit(255)
 #________________________________________DBUS MODE___________________________________________->
