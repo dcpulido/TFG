@@ -456,12 +456,16 @@ def init_the_parse(input,output,autor):
    parser.parse(input)
 
    dig=reParseDiagrams(Handler.CurrentDiagrams)
-   toMongoDb(dig)
+   insertMongoDB(dig)
+   finalize_parse(dig,output,autor)
+
+def finalize_parse(dig,output,autor):
    par=Parser(dig,output)
    par.setAuthorDate(autor)
    par.toXML()
 
 def reParseDiagrams(diagrams):
+    logging.info("REPARSING diagrams")
     toret=[]
     for d in diagrams:
         di=diagram(d.name)
@@ -528,26 +532,28 @@ def reParseDiagrams(diagrams):
     return toret
 
 #No usar// clase para debug
-def toMongoDb(ob):
+def insertMongoDB(ob):
+    logging.info("MONGO inserting parsed document on DB")
     client = MongoClient()
     db = client.tfg
     bytes=pickle.dumps(ob)
-    print ob[0].name
-    pp=pickle.loads(bytes)
-    print pp[0].name
     result=db.ob.insert_one({'bin-data': bytes})
-    print result.inserted_id
-
+    logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
+    
+def initMongoDB():
+    logging.info("MONGO initializing DB")
+    client = MongoClient()
     cursor=db.ob.find({})
-    binaris=[]
+    db = client.tfg
+    toret=[]
+    aux=0
     for c in cursor:
-        print c['_id']
-        binaris.append(c['bin-data'])
+        aux=aux+1
+        toret.append(pickle.loads(c['bin-data']))
+    logging.info("MONGO get "+ aux +" elements from DB")
+    return toret
 
-    bb=pickle.loads(binaris[0])
-
-  #bytes2=pickle.load(result['bin-data'])
-def deleteMondoDB():
+def deleteMongoDB():
     logging.info("MONGO deleting instances on DB")
     client = MongoClient()
     db = client.tfg
