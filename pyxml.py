@@ -6,8 +6,8 @@ import xml.etree.cElementTree as ET
 
 import datetime
 import time
-
 import logging
+
 import dbus
 import dbus.service
 import dbus.mainloop.glib
@@ -456,7 +456,7 @@ def init_the_parse(input,output,autor):
    parser.parse(input)
 
    dig=reParseDiagrams(Handler.CurrentDiagrams)
-   insertMongoDB(dig)
+   insertMongoDB(dig,input,output,autor)
    finalize_parse(dig,output,autor)
 
 def finalize_parse(dig,output,autor):
@@ -532,12 +532,12 @@ def reParseDiagrams(diagrams):
     return toret
 
 #No usar// clase para debug
-def insertMongoDB(ob):
+def insertMongoDB(ob,input,output,autor):
     logging.info("MONGO inserting parsed document on DB")
     client = MongoClient()
     db = client.tfg
     bytes=pickle.dumps(ob)
-    result=db.ob.insert_one({'bin-data': bytes})
+    result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output})
     logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
     
 def initMongoDB():
@@ -546,10 +546,8 @@ def initMongoDB():
     cursor=db.ob.find({})
     db = client.tfg
     toret=[]
-    aux=0
     for c in cursor:
-        aux=aux+1
-        toret.append(pickle.loads(c['bin-data']))
+        toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']})
     logging.info("MONGO get "+ aux +" elements from DB")
     return toret
 
