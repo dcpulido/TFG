@@ -27,6 +27,13 @@ import urllib2
 
 import ConfigParser
 
+
+###BD
+
+from pymongo import MongoClient
+from bson.binary import Binary
+import pickle
+
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 #
 #
@@ -449,6 +456,7 @@ def init_the_parse(input,output,autor):
    parser.parse(input)
 
    dig=reParseDiagrams(Handler.CurrentDiagrams)
+   toMongoDb(dig)
    par=Parser(dig,output)
    par.setAuthorDate(autor)
    par.toXML()
@@ -519,6 +527,31 @@ def reParseDiagrams(diagrams):
         toret.append(di)
     return toret
 
+#No usar// clase para debug
+def toMongoDb(ob):
+    client = MongoClient()
+    db = client.tfg
+    bytes=pickle.dumps(ob)
+    print ob[0].name
+    pp=pickle.loads(bytes)
+    print pp[0].name
+    result=db.ob.insert_one({'bin-data': bytes})
+    print result.inserted_id
+
+    cursor=db.ob.find({})
+    binaris=[]
+    for c in cursor:
+        print c['_id']
+        binaris.append(c['bin-data'])
+
+    bb=pickle.loads(binaris[0])
+
+  #bytes2=pickle.load(result['bin-data'])
+def deleteMondoDB():
+    logging.info("MONGO deleting instances on DB")
+    client = MongoClient()
+    db = client.tfg
+    db.ob.delete_many({})
 
 #No usar// clase para debug
 def toString(diagrams):
