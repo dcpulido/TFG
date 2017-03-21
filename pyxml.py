@@ -602,7 +602,7 @@ def showShellOps(ops):
             logging.info("Dont choose comming back")
         except ValueError:
             logging.info("Dont choose comming back")
-
+    else:return "nope"
 
 def usage():
     print "Usage:", sys.argv[0]
@@ -727,6 +727,7 @@ if ( __name__ == "__main__"):
             print "         2_Indicar Autor"
             print "         3_Indicar Entrada"
             print "         4_Indicar Salida"
+            print "         d_Iniciar Parseado"
             print "         x_Borrar DB"
             print "         q_Salir"
             print
@@ -736,7 +737,16 @@ if ( __name__ == "__main__"):
             if op=="1":
                 oper=initMongoDB()
                 dig=showShellOps(oper)
-                finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
+                if dig!="nope":
+                    finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
+            if op=="2":
+                autor=raw_input('Autor??: ')
+            if op=="3":
+                xmli=raw_input('Entrada??: ')
+            if op=="4":
+                xmls=raw_input('Salida??: ')
+            if op=="d":
+                init_the_parse(xmli,xmls,autor)
             if op=="x":
                 deleteMongoDB()
 
