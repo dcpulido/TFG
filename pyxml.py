@@ -543,12 +543,14 @@ def insertMongoDB(ob,input,output,autor):
 def initMongoDB():
     logging.info("MONGO initializing DB")
     client = MongoClient()
-    cursor=db.ob.find({})
     db = client.tfg
+    cursor=db.ob.find({})
     toret=[]
+    aux=0
     for c in cursor:
+        aux=aux+1
         toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']})
-    logging.info("MONGO get "+ aux +" elements from DB")
+    logging.info("MONGO get "+ str(aux) +" elements from DB")
     return toret
 
 def deleteMongoDB():
@@ -584,8 +586,23 @@ def toString(diagrams):
 
 
 def showShellOps(ops):
+    logging.info("show operations on DB")
+    print
+    aux=0
     for o in ops:
-        pass
+        print str(aux)+"    "+str(o['id'])+" "+str(o['autor'])+" "+str(o['input'])+" "+str(o['output'])
+        aux=aux+1
+    print
+    op=raw_input("selecciona una op o bien q para salir ")
+    print
+    if op!='q':
+        try:
+            return ops[int(op)]
+        except TypeError:
+            logging.info("Dont choose comming back")
+        except ValueError:
+            logging.info("Dont choose comming back")
+
 
 def usage():
     print "Usage:", sys.argv[0]
@@ -710,6 +727,7 @@ if ( __name__ == "__main__"):
             print "         2_Indicar Autor"
             print "         3_Indicar Entrada"
             print "         4_Indicar Salida"
+            print "         x_Borrar DB"
             print "         q_Salir"
             print
             
@@ -717,7 +735,10 @@ if ( __name__ == "__main__"):
 
             if op=="1":
                 oper=initMongoDB()
-                showShellOps(oper)
+                dig=showShellOps(oper)
+                finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
+            if op=="x":
+                deleteMongoDB()
 
 
         
