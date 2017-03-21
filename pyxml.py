@@ -3,6 +3,7 @@
 #python pyxml.py -i ejemploMetaModelado2.xml -a david -o filename.xml
 import xml.sax
 import xml.etree.cElementTree as ET
+import json
 
 import datetime
 import time
@@ -303,6 +304,12 @@ def parse_xml():
       logging.info("FLASK: "+ou+" "+inp+" "+au)
       init_the_parse(inp,ou,au)   
    return render_template('index.html')
+
+@app.route("/operations", methods=['GET'])
+def exposeOperations():
+    return getEncodeOps()
+
+
 def stop_flask():
     urllib2.urlopen(flaskconf['name']+"shutdown").read()
 
@@ -552,6 +559,17 @@ def initMongoDB():
         toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']})
     logging.info("MONGO get "+ str(aux) +" elements from DB")
     return toret
+
+def getEncodeOps():
+    logging.info("encoding ops")
+    ops=initMongoDB()
+    toret1=[]
+    for c in ops:
+        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output'])})
+    str1="["
+    for t in toret1:
+        str1+=json.dumps(t)+","
+    return str1[:len(str1)-1]+"]"
 
 def deleteMongoDB():
     logging.info("MONGO deleting instances on DB")
