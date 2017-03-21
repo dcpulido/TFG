@@ -309,6 +309,16 @@ def parse_xml():
 def exposeOperations():
     return getEncodeOps()
 
+def getEncodeOps():
+    logging.info("FLASK encoding ops")
+    ops=initMongoDB()
+    toret1=[]
+    for c in ops:
+        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output'])})
+    str1="["
+    for t in toret1:
+        str1+=json.dumps(t)+","
+    return str1[:len(str1)-1]+"]"
 
 def stop_flask():
     urllib2.urlopen(flaskconf['name']+"shutdown").read()
@@ -560,16 +570,6 @@ def initMongoDB():
     logging.info("MONGO get "+ str(aux) +" elements from DB")
     return toret
 
-def getEncodeOps():
-    logging.info("encoding ops")
-    ops=initMongoDB()
-    toret1=[]
-    for c in ops:
-        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output'])})
-    str1="["
-    for t in toret1:
-        str1+=json.dumps(t)+","
-    return str1[:len(str1)-1]+"]"
 
 def deleteMongoDB():
     logging.info("MONGO deleting instances on DB")
