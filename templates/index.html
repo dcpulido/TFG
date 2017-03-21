@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>SOTA MANAGER</title>
+  <title>PYXML</title>
   <meta name="description" content="Sota manager">
   <meta name="author" content="SitePoint">
   <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -14,17 +14,14 @@
 
 
   <!-- Archivos para hacer las cosas con estilo -->
+  <script src="../static/js/app.js"></script>
   <script src="../static/js/jquery.min.js"></script>
   <script src="../static/js/bootstrap.js"> </script>
   
   
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
-
+<body>
 
   <div class="header-top">
     <div class="header-bottom">
@@ -42,13 +39,13 @@
     </div>
     <div class="clearfix"> </div>
   </div>
-  <div id="all-events">
-    <div class="offers">
-      <div class="container">
-        <div class="items">
-          <div class="container">
-            <div id="events-list" class="items-sec">
-              <form action="/parse" method="post">
+  
+  
+
+  <div id="operations"class="container">
+
+      <div id="operation" >
+          <form action="/parse" method="post" class="form-horizontal">
             <div class="form-group">
               <label for="edCrTableName">Ruta entrada</label>
               <input type="text" class="form-control" id="input" name="input" placeholder="./filename.xml">
@@ -65,14 +62,77 @@
               <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
             </div>
           </form>
-              
-            </div>
-          </div>
+
+      </div class="contenedor form-group">
+      <br>
+      <h1>OPERACIONES </h1>
+    
+      <br>
+      <div>
+      <div class="row form-group">
+        <div class="col-xs-3">
+          <label for="edCrTableDesc">Autor</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableName">Ruta entrada</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableDiff">Ruta salida</label>
+        </div>
+        <div class="col-xs-3">
+          <button type="submit" class="btn btn-warning btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
         </div>
       </div>
-    </div>
+      <br>
+      <div class="row form-group">
+        <div class="col-xs-3">
+          <label for="edCrTableDesc">Autor</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableName">Ruta entrada</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableDiff">Ruta salida</label>
+        </div>
+        <div class="col-xs-3">
+          <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
+        </div>
+      </div>
+      <br>
+      <div class="row form-group">
+        <div class="col-xs-3">
+          <label for="edCrTableDesc">Autor</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableName">Ruta entrada</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableDiff">Ruta salida</label>
+        </div>
+        <div class="col-xs-3">
+          <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
+        </div>
+      </div>
+      <br>
+      <div class="row form-group">
+        <div class="col-xs-3">
+          <label for="edCrTableDesc">Autor</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableName">Ruta entrada</label>
+        </div>
+        <div class="col-xs-3">
+          <label for="edCrTableDiff">Ruta salida</label>
+        </div>
+        <div class="col-xs-3">
+          <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
+        </div>
+      </div>
+      <br>
+</div>
+
+
   </div>
-  
-  
+
 </body>
 </html>
