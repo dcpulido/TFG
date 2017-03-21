@@ -582,12 +582,19 @@ def toString(diagrams):
             for k in x.targets:
                 print k
 
+
+def showShellOps(ops):
+    for o in ops:
+        pass
+
 def usage():
     print "Usage:", sys.argv[0]
     print  
     print "seleccione uno de los modos"
     print 
     print " -i [ruta a xml de entrada] -s [ruta salida] -a [autor] "
+    print
+    print " -s modo shell interactivo (lanzar solo python pyxml.py -s)"
     print
     print " -b habilitar dominio dbus"
     print
@@ -602,7 +609,7 @@ if ( __name__ == "__main__"):
     logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
     logging.info("app init")
 
-    logging.info("get conf form conf/config.conf")
+    logging.info("get conf from conf/config.conf")
     generalconf=get_general_conf()
     dbusconf=get_dbus_conf()
     flaskconf=get_flask_conf()
@@ -612,6 +619,7 @@ if ( __name__ == "__main__"):
     flaskMode=False
     shellMode=False
     testMode=False
+    interactiveShell=False
     na=False
     ns=False
     ni=False
@@ -639,6 +647,7 @@ if ( __name__ == "__main__"):
           if k=="x":flaskMode=True
           if k=="c":testMode=True
           if k=="a":na=True
+          if k=="s":interactiveShell=True
           if k=="i":
             shellMode=True
             ni=True
@@ -688,6 +697,31 @@ if ( __name__ == "__main__"):
       dbus.glib.init_threads()
       publish_dbus()
       sys.exit(255)
+
+
+#_____________________________________INTERACTIVE SHELL MODE____________________________________________->
+    if interactiveShell:
+        op=""
+        while op!='q':
+            print
+            print "Si no se indica algun campo se utilizaran valores por defecto indicados en conf/config.conf"
+            print
+            print "         1_Seleccionar operacion guardada"
+            print "         2_Indicar Autor"
+            print "         3_Indicar Entrada"
+            print "         4_Indicar Salida"
+            print "         q_Salir"
+            print
+            
+            op=raw_input("op?:")
+
+            if op=="1":
+                oper=initMongoDB()
+                showShellOps(oper)
+
+
+        
+        
 
 
 
