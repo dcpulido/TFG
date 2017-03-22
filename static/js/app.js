@@ -14,9 +14,16 @@ app.controller('ctrl',
                 console.log(data);
                 $scope.operations = data;
             });
-        $scope.parseHist=function(id){
-            console.log(id);
-            
+        $scope.detailedInfoId=function(id){
+            var i=0;
+            for(i=0;i<$scope.operations.length;i++){
+                if($scope.operations[i][id]==id){
+                    $scope.detailedOperation=$scope.operations[i];
+                }
+            }
+            console.log($scope.detailedOperation);
+        };
+        $scope.parseHist=function(id){            
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
@@ -33,8 +40,6 @@ app.controller('ctrl',
             });
         };
         $scope.deleteHist=function(id){
-            console.log(id);
-            
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
