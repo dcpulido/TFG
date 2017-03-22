@@ -4,7 +4,7 @@
 import xml.sax
 import xml.etree.cElementTree as ET
 import json
-import yaml
+from bson.objectid import ObjectId
 
 import datetime
 import time
@@ -319,11 +319,8 @@ def getID():
     logging.info("FLASK:postOperation url from FLASk")
     if request.method == 'POST':
         data=request.json
-        print data
-        data=json.dumps(request.json)
-        print data
-        
-         
+        cc=getByIdMongoDB(data["id"])
+        finalize_parse(cc['bin-data'],cc['output'],cc['autor'])
     return render_template('index.html')
 
 def getEncodeOps():
@@ -506,6 +503,17 @@ def insertMongoDB(ob,input,output,autor):
     bytes=pickle.dumps(ob)
     result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output})
     logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
+
+def getByIdMongoDB(id):
+    logging.info("MONGO get element by id")
+    client = MongoClient()
+    db = client.tfg
+    print id
+    cursor=db.ob.find({'_id':ObjectId(id)})
+    toret=""
+    for c in cursor:
+        toret={'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']}
+    return toret
     
 def initMongoDB():
     logging.info("MONGO initializing DB")

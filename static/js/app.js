@@ -31,9 +31,6 @@ app.controller('ctrl',
                     "<hr />headers: " + header +
                     "<hr />config: " + config;
             });
-            /*
-            $http.post('http://localhost:5000/getID', cosas, config)
-            */
         };
     }); 
     
