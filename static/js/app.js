@@ -1,18 +1,18 @@
 
+//
+var app = angular.module('app',[]);
+app.config(['$interpolateProvider', function($interpolateProvider) {
+  $interpolateProvider.startSymbol('{a');
+  $interpolateProvider.endSymbol('a}');
+}]);
 
-var tfg=angular.module('tfg',['ngRoute']);
-
-tfg.controller('tfgCtrl',function  PhoneListController($scope) {
-  $scope.phones = [
+app.controller('ctrl',
+    function($scope, $http)
     {
-      name: 'Nexus S',
-      snippet: 'Fast just got faster with Nexus S.'
-    }, {
-      name: 'Motorola XOOM™ with Wi-Fi',
-      snippet: 'The Next, Next Generation tablet.'
-    }, {
-      name: 'MOTOROLA XOOM™',
-      snippet: 'The Next, Next Generation tablet.'
-    }
-  ];
-});
+        $http.get('http://localhost:5000/operations').
+            success(function(data) {
+                console.log(data);
+                $scope.operations = data;
+            });
+    }); 
+    

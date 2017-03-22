@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
   <meta charset="utf-8">
 
@@ -40,9 +40,9 @@
     <div class="clearfix"> </div>
   </div>
   
-  
+ 
 
-  <div id="operations"class="container">
+  <div id="operations"class="container" >
 
       <div id="operation" >
           <form action="/parse" method="post" class="form-horizontal">
@@ -66,12 +66,27 @@
       </div class="contenedor form-group">
       <br>
       <h1>OPERACIONES </h1>
-    
+
+
+
+                
+                <div ng-controller="ctrl">
+                  <div ng-repeat="oper in operations">
+                      <p>The ID is {a oper.autor a}</p>
+                  </div>
+                  
+                </div>
+                
+
+
+
+
+      
       <br>
       <div>
-      <div class="row form-group">
+      <div class="row form-group" >
         <div class="col-xs-3">
-          <label for="edCrTableDesc">Autor</label>
+          <label for="edCrTableDesc"></label>
         </div>
         <div class="col-xs-3">
           <label for="edCrTableName">Ruta entrada</label>
@@ -133,6 +148,9 @@
 
 
   </div>
-
+  <script src="static/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
 </body>
 </html>

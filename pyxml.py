@@ -28,7 +28,6 @@ import urllib2
 
 import ConfigParser
 
-
 ###BD
 
 from pymongo import MongoClient
