@@ -4,6 +4,7 @@
 import xml.sax
 import xml.etree.cElementTree as ET
 import json
+import yaml
 
 import datetime
 import time
@@ -317,9 +318,11 @@ def exposeOperations():
 def getID():
     logging.info("FLASK:postOperation url from FLASk")
     if request.method == 'POST':
-        print request.form['id']
-        id= str(request.form.get('id'))
-        logging.info("FLASK: "+id)
+        data=request.json
+        print data
+        data=json.dumps(request.json)
+        print data
+        
          
     return render_template('index.html')
 
