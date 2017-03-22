@@ -35,8 +35,8 @@ from bson.binary import Binary
 import pickle
 
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
-#
-#
+#CLASS COMPLEXRELATION
+#Necesaria para traducir las relaciones simples en el reparseado
 #
 #
 #
@@ -46,8 +46,8 @@ class complexRelation:
         self.sources=[]
         self.targets=[]
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
-#
-#
+#CLASS DIAGRAM
+#Necesaria tanto en el primer parseado como en el reparseado, se almacena en la BD
 #
 #
 #
@@ -60,8 +60,8 @@ class diagram:
     self.complexRelations=[]
     self.extends=[]
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
-#
-#
+#CLASS RELATIONSHIP
+#Relacion simple
 #
 #
 #
@@ -80,8 +80,8 @@ class relationship:
     def set_source(self,source):
         self.source=source
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
-#
-#
+#CLASS entity
+#Entidad simple
 #
 #
 #
@@ -97,7 +97,7 @@ class entity:
 
 #_____________________________________PARSER____________________________________________->
 #
-#
+#Clase encargada de la obtencion de datos del xml de entrada y del primer parseado de estos
 #
 #
 #
@@ -178,7 +178,7 @@ class XMLHandler( xml.sax.ContentHandler ):
 
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 #
-#
+#Parseador encargado de traducir los diagramas en xml
 #
 #
 #
@@ -245,33 +245,34 @@ class Parser:
     
 #_____________________________________DBUS____________________________________________->
 #
-#
-#
+#Clase orientada a crear metodos accesibles mediante DBUS con el fin de proporcionar
+#un metodo de comunicacion interproceso al IDE si en un futuro se quisiese implementar
 #
 #
 
 class DBUSService(threading.Thread,dbus.service.Object):
-   def run(self):
+    def run(self):
       bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
       dbus.service.Object.__init__(self, bus_name, dbusconf['name'])
       logging.info("DBUS:Starting service")
       
-   @dbus.service.method("com.example.service.parse_an_element")
-   def parse_an_element(self,input,output,autor):
+    @dbus.service.method("com.example.service.parse_an_element")
+    def parse_an_element(self,input,output,autor):
       logging.info("DBUS:Method parse_an_element called starting the parse")
       init_the_parse(input,output,autor)
       return "Doing the parse"
 
-   @dbus.service.method("com.example.service.Salir")
-   def salir(self):
+    @dbus.service.method("com.example.service.Salir")
+    def salir(self):
       logging.info("DBUS:shutting down")
       self._loop.quit()
       stop_flask()
 
+
 #_____________________________________FLASK____________________________________________->
 #
-#
-#
+#Clase orientada a proporcionar una interfaz web simple si no se quisiese utilizar el
+#modo normal por terminal
 #
 #
 
@@ -343,7 +344,7 @@ def shutdown_server():
     func()
 #_____________________________________TESTS____________________________________________->
 #
-#
+# Tests
 #
 #
 #
@@ -414,11 +415,119 @@ class flaskTestCase(unittest.TestCase):
         self.assertNotEqual(urllib2.urlopen("http://localhost:5000/").read(),"")
         stop_flask()
 
+#_____________________________________REPARSEADO____________________________________________->
+#
+#Clase orientada al reparseado, una vez adquirida la informacion del xml de entrada es necesario
+#volver a tratarla y reorganizarla a una forma mas simple
+#
+#
+
+def reParseDiagrams(diagrams):
+    logging.info("REPARSING diagrams")
+    toret=[]
+    for d in diagrams:
+        di=diagram(d.name)
+        for e in d.entities:
+            if e.name!=di.name:di.entities.append(e)
+        #se convierten las relaciones normales en relaciones complejas y se mantiene en extends las relaciones de herencia
+        for r in d.relations:
+            if r.name!="Extends":
+                fl=True
+                for c in di.complexRelations:
+                    if r.name == c.name:
+                        so=False
+                        ta=False
+                        #quitamos repes
+                        for k in c.sources: 
+                            if k==r.source:so=True
+                        for k in c.targets: 
+                            if k==r.target:ta=True
+                        if so==False:c.sources.append(r.source)
+                        if ta==False:c.targets.append(r.target)
+                        fl=False
+                if fl==True:
+                    xl=complexRelation(r.name)
+                    xl.sources.append(r.source)
+                    xl.targets.append(r.target)
+                    di.complexRelations.append(xl)
+            if r.name=="Extends":
+                fl=True
+                for c in di.extends:
+                    if r.name == c.name:
+                        c.targets.append(r.target)
+                        fl=False
+                if fl==True:
+                    xl=complexRelation(r.name)
+                    xl.sources.append(r.source)
+                    xl.targets.append(r.target)
+                    di.extends.append(xl)
+        #utilizamos la info de extends para mejorar complexRelations y resolver los extends
+        #para ello creamos una relacion compleja nueva y la vamos rellenando con las sources o en caso de q la source 
+        #sea abstracta con sus targets y lo mismo con los targets
+        totalComplex=[]
+        for do in di.complexRelations:
+            complexParsed=complexRelation(do.name)
+            for so in do.sources:
+                fl=False
+                for e in di.extends:
+                    if e.sources[0]==so:
+                        fl=True
+                        for p in e.targets:
+                            complexParsed.sources.append(p)
+                if fl==False:complexParsed.sources.append(so)
+            for so in do.targets:
+                fl=False
+                for e in di.extends:
+                    if e.sources[0]==so:
+                        fl=True
+                        for p in e.targets:
+                            complexParsed.targets.append(p)
+                if fl==False:complexParsed.targets.append(so)
+
+            totalComplex.append(complexParsed)
+        di.complexRelations=totalComplex
+        toret.append(di)
+    return toret
+
+#_____________________________________DB____________________________________________->
+#
+#Metodos para gestionar la interaccion con la base de datos
+#
+#
+#
+
+def insertMongoDB(ob,input,output,autor):
+    logging.info("MONGO inserting parsed document on DB")
+    client = MongoClient()
+    db = client.tfg
+    bytes=pickle.dumps(ob)
+    result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output})
+    logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
+    
+def initMongoDB():
+    logging.info("MONGO initializing DB")
+    client = MongoClient()
+    db = client.tfg
+    cursor=db.ob.find({})
+    toret=[]
+    aux=0
+    for c in cursor:
+        aux=aux+1
+        toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']})
+    logging.info("MONGO get "+ str(aux) +" elements from DB")
+    return toret
+
+
+def deleteMongoDB():
+    logging.info("MONGO deleting instances on DB")
+    client = MongoClient()
+    db = client.tfg
+    db.ob.delete_many({})
   
 
 #_____________________________________MAIN____________________________________________->
 #
-#
+#Hilo principal y metodos de proposito general y control de la aplicacion
 #
 #
 #
@@ -494,101 +603,8 @@ def finalize_parse(dig,output,autor):
    par.setAuthorDate(autor)
    par.toXML()
 
-def reParseDiagrams(diagrams):
-    logging.info("REPARSING diagrams")
-    toret=[]
-    for d in diagrams:
-        di=diagram(d.name)
-        for e in d.entities:
-            if e.name!=di.name:di.entities.append(e)
-        #se convierten las relaciones normales en relaciones complejas y se mantiene en extends las relaciones de herencia
-        for r in d.relations:
-            if r.name!="Extends":
-                fl=True
-                for c in di.complexRelations:
-                    if r.name == c.name:
-                        so=False
-                        ta=False
-                        #quitamos repes
-                        for k in c.sources: 
-                            if k==r.source:so=True
-                        for k in c.targets: 
-                            if k==r.target:ta=True
-                        if so==False:c.sources.append(r.source)
-                        if ta==False:c.targets.append(r.target)
-                        fl=False
-                if fl==True:
-                    xl=complexRelation(r.name)
-                    xl.sources.append(r.source)
-                    xl.targets.append(r.target)
-                    di.complexRelations.append(xl)
-            if r.name=="Extends":
-                fl=True
-                for c in di.extends:
-                    if r.name == c.name:
-                        c.targets.append(r.target)
-                        fl=False
-                if fl==True:
-                    xl=complexRelation(r.name)
-                    xl.sources.append(r.source)
-                    xl.targets.append(r.target)
-                    di.extends.append(xl)
-        #utilizamos la info de extends para mejorar complexRelations y resolver los extends
-        #para ello creamos una relacion compleja nueva y la vamos rellenando con las sources o en caso de q la source 
-        #sea abstracta con sus targets y lo mismo con los targets
-        totalComplex=[]
-        for do in di.complexRelations:
-            complexParsed=complexRelation(do.name)
-            for so in do.sources:
-                fl=False
-                for e in di.extends:
-                    if e.sources[0]==so:
-                        fl=True
-                        for p in e.targets:
-                            complexParsed.sources.append(p)
-                if fl==False:complexParsed.sources.append(so)
-            for so in do.targets:
-                fl=False
-                for e in di.extends:
-                    if e.sources[0]==so:
-                        fl=True
-                        for p in e.targets:
-                            complexParsed.targets.append(p)
-                if fl==False:complexParsed.targets.append(so)
-
-            totalComplex.append(complexParsed)
-        di.complexRelations=totalComplex
-        toret.append(di)
-    return toret
-
-#No usar// clase para debug
-def insertMongoDB(ob,input,output,autor):
-    logging.info("MONGO inserting parsed document on DB")
-    client = MongoClient()
-    db = client.tfg
-    bytes=pickle.dumps(ob)
-    result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output})
-    logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
-    
-def initMongoDB():
-    logging.info("MONGO initializing DB")
-    client = MongoClient()
-    db = client.tfg
-    cursor=db.ob.find({})
-    toret=[]
-    aux=0
-    for c in cursor:
-        aux=aux+1
-        toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']})
-    logging.info("MONGO get "+ str(aux) +" elements from DB")
-    return toret
 
 
-def deleteMongoDB():
-    logging.info("MONGO deleting instances on DB")
-    client = MongoClient()
-    db = client.tfg
-    db.ob.delete_many({})
 
 #No usar// clase para debug
 def toString(diagrams):
