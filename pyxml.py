@@ -19,6 +19,7 @@ import dbus.glib
 
 import threading
 import sys
+import os
 
 from flask import render_template
 from flask import Flask
@@ -331,7 +332,7 @@ def delID():
     logging.info("FLASK:delID url from FLASk")
     if request.method == 'POST':
         data=request.json
-        deleteById(data["id"])
+        deleteByIdMongoDB(data["id"])
     return render_template('index.html')
 
 def getEncodeOps():
@@ -526,7 +527,7 @@ def getByIdMongoDB(id):
         toret={'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']}
     return toret
 
-def deleteById(id):
+def deleteByIdMongoDB(id):
     logging.info("MONGO delete element by id")
     client = MongoClient()
     db = client.tfg
@@ -699,6 +700,7 @@ def usage():
 
 
 if ( __name__ == "__main__"):
+    os.system("clear")
     logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
     logging.info("app init")
 
@@ -796,7 +798,7 @@ if ( __name__ == "__main__"):
     if interactiveShell:
         op=""
         while op!='q':
-            print
+            print 
             print "Si no se indica algun campo se utilizaran valores por defecto indicados en conf/config.conf"
             print
             print "         1_Seleccionar operacion guardada"
@@ -806,24 +808,34 @@ if ( __name__ == "__main__"):
             print "         d_Iniciar Parseado"
             print "         x_Borrar DB"
             print "         q_Salir"
-            print
+            print " "
             
             op=raw_input("op?:")
+            os.system("clear")
+
 
             if op=="1":
                 oper=initMongoDB()
                 dig=showShellOps(oper)
                 if dig!="nope":
-                    finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
+                    op2=raw_input("x(eliminar)/d(parsear)/q(retroceder)??:")
+                    os.system("clear")
+                    if op2=="d":finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
+                    if op2=="x":deleteByIdMongoDB(dig['id'])
             if op=="2":
                 autor=raw_input('Autor??: ')
+                os.system("clear")
             if op=="3":
                 xmli=raw_input('Entrada??: ')
+                os.system("clear")
             if op=="4":
                 xmls=raw_input('Salida??: ')
+                os.system("clear")
             if op=="d":
+                os.system("clear")
                 init_the_parse(xmli,xmls,autor)
             if op=="x":
+                os.system("clear")
                 deleteMongoDB()
 
 
