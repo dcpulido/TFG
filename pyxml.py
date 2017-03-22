@@ -300,6 +300,10 @@ def parse_xml():
       inp=str(request.form.get('input'))
       au=str(request.form.get('autor'))
 
+      if ou=="":ou=xmls
+      if inp=="":inp=xmli
+      if au=="":au=autor
+
       logging.info("FLASK: "+ou+" "+inp+" "+au)
       init_the_parse(inp,ou,au)   
    return render_template('index.html')
@@ -307,6 +311,16 @@ def parse_xml():
 @app.route("/operations", methods=['GET'])
 def exposeOperations():
     return getEncodeOps()
+
+@app.route("/getID", methods=['POST'])
+def getID():
+    logging.info("FLASK:postOperation url from FLASk")
+    if request.method == 'POST':
+        print request.form['id']
+        id= str(request.form.get('id'))
+        logging.info("FLASK: "+id)
+         
+    return render_template('index.html')
 
 def getEncodeOps():
     logging.info("FLASK encoding ops")

@@ -16,6 +16,9 @@ app.controller('ctrl',
             });
         $scope.parseHist=function(id){
             console.log(id);
+            var data= { id: 'id' };
+            var jsonData = JSON.stringify(data);
+            $http.post('http://localhost:5000/getID',data);
         };
     }); 
     
