@@ -419,16 +419,41 @@ def delID():
         deleteByIdMongoDB(data["id"])
     return render_template('index.html')
 
+
+##ENCODE json en cascada
 def getEncodeOps():
     logging.info("FLASK encoding ops")
     ops=initMongoDB()
     toret1=[]
     for c in ops:
-        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output']),'date':str(c['date'])})
+        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output']),'date':str(c['date']),'diagrams':getEncodeDig(c['bin-data'])})
     str1="["
     for t in toret1:
         str1+=json.dumps(t)+","
     return str1[:len(str1)-1]+"]"
+
+def getEncodeDig(dig):
+    toret=[]
+    for t in dig:
+        toret.append({'name':t.name,'entities':getEncodeArr(t.entities),'relations':getEncodeRel(t.complexRelations)})
+    return toret
+
+def getEncodeArr(ent):
+    toret=[]
+    for t in ent:
+        toret.append({'name':t.name})
+    return toret
+def getEncodeArr2(ent):
+    toret=[]
+    for t in ent:
+        toret.append({'name':t})
+    return toret
+
+def getEncodeRel(rel):
+    toret=[]
+    for t in rel:
+        toret.append({'name':t.name,'sources':getEncodeArr2(t.sources),'targets':getEncodeArr2(t.targets)})
+    return toret
 
 def stop_flask():
     urllib2.urlopen(flaskconf['name']+"shutdown").read()
@@ -687,6 +712,7 @@ def showDetailsDig(binData):
             logging.info("Dont choose comming back")
         except ValueError:
             logging.info("Dont choose comming back")
+
 
 def showDetailsOp(op):
     k=""

@@ -65,8 +65,8 @@
         <div ng-controller="ctrl">
           <div ng-repeat="oper in operations|limitTo:10">
               <div class="row form-group " >
-                <div class="col-xs-2"><label >{a oper.date a}</label></div>
-                <div class="col-xs-2">
+                <div class="col-xs-3"><label >{a oper.date a}</label></div>
+                <div class="col-xs-1">
                   <label >{a oper.autor a}</label>
                 </div>
                 <div class="col-xs-2">
@@ -75,11 +75,15 @@
                 <div class="col-xs-2">
                   <label >{a oper.output a}</label>
                 </div>
-                <div class="col-xs-2">
-                  <button type="submit" class="btn btn-success btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1">
+                  <button type="submit" class="btn btn-see btn-registrar" ng-click="parseHist(oper.id )">See!</button>
                 </div>
-                <div class="col-xs-2">
-                  <button type="submit" class="btn btn-evento btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
+                <div class="col-xs-1">
+                  <button type="submit" class="btn btn-parse btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
+                </div>
+                <div class="col-xs-1">
+                  <button type="submit" class="btn btn-delete btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
                 </div>
               </div>
           </div>          

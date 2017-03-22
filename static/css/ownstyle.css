@@ -120,18 +120,39 @@ display:inline-block;
 }
 .btn-busqueda{
 	position: relative;
-    top: 28px;
-    left: 20px;
     border: solid 1px #ed645c;
     color: #ed645c;
-    width: 15%;
+    width: 30%;
 }
-.btn-evento{
+.btn-see{
+    position: relative;
+    background-color: #5cb85c;
+    border: solid 1px #5cb85c;
+    color: #fff;
+    width: 100%;
+    height: 100%
+    text-align:center;
+}
+.btn-parse{
+    position: relative;
+    background-color: #5858FA;
+    border: solid 1px #5858FA;
+    color: #fff;
+    width: 100%;
+    height: 100%
+    text-align:center;
+}
+
+.btn-delete{
     position: relative;
     background-color: #ed645c;
     border: solid 1px #FA7871;
     color: #fff;
+    width: 100%;
+    height: 100%
+    text-align:center;
 }
+
 
 .btn-evento:hover{
     background-color: #FA7871;
