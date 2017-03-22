@@ -72,7 +72,20 @@
                 
                 <div ng-controller="ctrl">
                   <div ng-repeat="oper in operations">
-                      <p>The ID is {a oper.autor a}</p>
+                      <div class="row form-group" >
+                        <div class="col-xs-3">
+                          <label for="edCrTableDesc">{a oper.autor a}</label>
+                        </div>
+                        <div class="col-xs-3">
+                          <label for="edCrTableName">{a oper.input a}</label>
+                        </div>
+                        <div class="col-xs-3">
+                          <label for="edCrTableDiff">{a oper.output a}</label>
+                        </div>
+                        <div class="col-xs-3">
+                          <button type="submit" class="btn btn-warning btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
+                        </div>
+                      </div>
                   </div>
                   
                 </div>
@@ -82,68 +95,7 @@
 
 
       
-      <br>
-      <div>
-      <div class="row form-group" >
-        <div class="col-xs-3">
-          <label for="edCrTableDesc"></label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableName">Ruta entrada</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableDiff">Ruta salida</label>
-        </div>
-        <div class="col-xs-3">
-          <button type="submit" class="btn btn-warning btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
-        </div>
-      </div>
-      <br>
-      <div class="row form-group">
-        <div class="col-xs-3">
-          <label for="edCrTableDesc">Autor</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableName">Ruta entrada</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableDiff">Ruta salida</label>
-        </div>
-        <div class="col-xs-3">
-          <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
-        </div>
-      </div>
-      <br>
-      <div class="row form-group">
-        <div class="col-xs-3">
-          <label for="edCrTableDesc">Autor</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableName">Ruta entrada</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableDiff">Ruta salida</label>
-        </div>
-        <div class="col-xs-3">
-          <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
-        </div>
-      </div>
-      <br>
-      <div class="row form-group">
-        <div class="col-xs-3">
-          <label for="edCrTableDesc">Autor</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableName">Ruta entrada</label>
-        </div>
-        <div class="col-xs-3">
-          <label for="edCrTableDiff">Ruta salida</label>
-        </div>
-        <div class="col-xs-3">
-          <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
-        </div>
-      </div>
-      <br>
+    
 </div>
 
 
