@@ -647,8 +647,6 @@ def finalize_parse(dig,output,autor):
    par.toXML()
 
 
-
-
 #No usar// clase para debug
 def toString(diagrams):
     for d in diagrams:
@@ -674,6 +672,64 @@ def toString(diagrams):
             for k in x.targets:
                 print k
 
+def showDetailsDig(binData):
+    aux=0
+    for d in binData:
+        print str(aux)+" "+d.name
+        aux=aux+1
+    print
+    op=raw_input("selecciona una op o bien q para salir??: ")
+    os.system("clear")
+    if op!='q':
+        try:
+            showDetailsOp(binData[int(op)])
+        except TypeError:
+            logging.info("Dont choose comming back")
+        except ValueError:
+            logging.info("Dont choose comming back")
+
+def showDetailsOp(op):
+    k=""
+    while k!="q":
+        print "ENTITIES"
+        print
+        for e in op.entities:
+            print "     "+e.name
+        print
+        print
+        print "RELATIONS"
+        print
+        aux=0
+        for r in op.complexRelations:
+            print "     "+str(aux)+" "+r.name
+            aux=aux+1
+        k=raw_input("selecciona una op o bien q para salir??: ")
+        os.system("clear")
+        if k!='q':
+            try:
+                showDetailsRel(op.complexRelations[int(k)])
+            except TypeError:
+                logging.info("Dont choose comming back")
+            except ValueError:
+                logging.info("Dont choose comming back")
+            except IndexError:
+                logging.info("Dont choose comming back")
+
+def showDetailsRel(rel):
+    print "SOURCES"
+    print
+    for e in rel.sources:
+        print "     "+e
+    print
+    print
+    print "TARGETS"
+    print
+    for r in rel.targets:
+        print "     "+r
+    print
+    raw_input("q??:")    
+    os.system("clear")
+    
 
 def showShellOps(ops):
     logging.info("show operations on DB")
@@ -683,7 +739,7 @@ def showShellOps(ops):
         print str(aux)+"    "+str(o['id'])+" "+str(o['date'])+" "+str(o['autor'])+" "+str(o['input'])+" "+str(o['output'])
         aux=aux+1
     print
-    op=raw_input("selecciona una op o bien q para salir ")
+    op=raw_input("selecciona una op o bien q para salir??: ")
     print
     if op!='q':
         try:
@@ -829,10 +885,11 @@ if ( __name__ == "__main__"):
                 oper=initMongoDB()
                 dig=showShellOps(oper)
                 if dig!="nope":
-                    op2=raw_input("x(eliminar)/d(parsear)/q(retroceder)??:")
+                    op2=raw_input("x(eliminar)/d(parsear)/dd(detalles)/q(retroceder)??:")
                     os.system("clear")
                     if op2=="d":finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
                     if op2=="x":deleteByIdMongoDB(dig['id'])
+                    if op2=="dd":showDetailsDig(dig['bin-data'])
             if op=="2":
                 autor=raw_input('Autor??: ')
                 os.system("clear")
