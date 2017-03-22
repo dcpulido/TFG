@@ -37,6 +37,90 @@ from pymongo import MongoClient
 from bson.binary import Binary
 import pickle
 
+
+#_____________________________________TESTS____________________________________________->
+#
+# Tests
+#
+#
+#
+
+class readTestCase(unittest.TestCase):
+# Instanciamos nuestro objeto foo antes de correr cada prueba
+    def setUp(self):
+        logging.info("TEST:set up parser")
+        self.parser = xml.sax.make_parser()
+        self.parser.setFeature(xml.sax.handler.feature_namespaces, 0)   
+        self.Handler = XMLHandler()  
+        self.parser.setContentHandler( self.Handler )
+ 
+    def test_diagrams(self):
+        logging.info("TEST:diagrams")
+        self.parser.parse("examplesXML/ejemploMetaModelado2.xml")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].name,"WorkProductDiagram")
+        self.assertEqual(self.Handler.CurrentDiagrams[1].name,"PhaseDiagram")
+        self.assertEqual(self.Handler.CurrentDiagrams[2].name,"ActivityWPDiagram")
+
+    def test_entityes(self):
+        logging.info("TEST:enbtity")
+        self.parser.parse("examplesXML/ejemploMetaModelado2.xml")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].entities[0].name,"WorkProduct")
+
+    def test_rellation(self):
+        logging.info("TEST:relation")
+        self.parser.parse("examplesXML/ejemploMetaModelado2.xml")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].name,"Extends")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].id,"13")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].source,"WorkProduct")
+        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].target,"BehaviourWP")   
+
+    def test_autor_and_date(self):
+        logging.info("TEST:autor and date")
+        self.par=Parser(self.Handler.CurrentDiagrams,"examplesXML/test.xml")
+        self.par.setAuthorDate("david")
+        self.assertEqual(self.par.autor,"david")
+
+    def testOutputnotNone(self):
+        logging.info("TEST:output not none")
+        self.par=Parser(self.Handler.CurrentDiagrams,"examplesXML/test.xml")
+        self.par.setAuthorDate("david")
+        self.par.toXML()
+        self.assertNotEqual(open("examplesXML/filename.xml").read(),"")
+
+    def testGetCOnfigData(self):
+        logging.info("TEST:config not none")
+        Config = ConfigParser.ConfigParser()
+        Config.read("./conf/config.conf")
+        myprior= {}
+        for sec in Config.sections():
+                if sec == "General":
+                    myprior=ConfigSectionMap(sec,Config)
+
+        self.assertNotEqual(myprior['autor'],"")
+
+
+class flaskTestCase(unittest.TestCase):
+    def setUp(self):
+        logging.info("TEST:set up flask")
+        myapp=flaskApp()
+        myapp.start()
+
+
+    def testGet(self):
+        logging.info("TEST:doing get flask")
+        self.assertNotEqual(urllib2.urlopen("http://localhost:5000/").read(),"")
+        stop_flask()
+
+   
+
+
+
+
+
+##////////////////////////////////////////////////////////////////////////////////////////////////
+##APP
+##////////////////////////////////////////////////////////////////////////////////////////////////
+
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 #CLASS COMPLEXRELATION
 #Necesaria para traducir las relaciones simples en el reparseado
@@ -340,7 +424,7 @@ def getEncodeOps():
     ops=initMongoDB()
     toret1=[]
     for c in ops:
-        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output'])})
+        toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output']),'date':str(c['date'])})
     str1="["
     for t in toret1:
         str1+=json.dumps(t)+","
@@ -354,78 +438,7 @@ def shutdown_server():
     if func is None:
         raise RuntimeError('Not running with the Werkzeug Server')
     func()
-#_____________________________________TESTS____________________________________________->
-#
-# Tests
-#
-#
-#
 
-class readTestCase(unittest.TestCase):
-# Instanciamos nuestro objeto foo antes de correr cada prueba
-    def setUp(self):
-        logging.info("TEST:set up parser")
-        self.parser = xml.sax.make_parser()
-        self.parser.setFeature(xml.sax.handler.feature_namespaces, 0)   
-        self.Handler = XMLHandler()  
-        self.parser.setContentHandler( self.Handler )
- 
-    def test_diagrams(self):
-        logging.info("TEST:diagrams")
-        self.parser.parse("ejemploMetaModelado2.xml")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].name,"WorkProductDiagram")
-        self.assertEqual(self.Handler.CurrentDiagrams[1].name,"PhaseDiagram")
-        self.assertEqual(self.Handler.CurrentDiagrams[2].name,"ActivityWPDiagram")
-
-    def test_entityes(self):
-        logging.info("TEST:enbtity")
-        self.parser.parse("ejemploMetaModelado2.xml")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].entities[0].name,"WorkProduct")
-
-    def test_rellation(self):
-        logging.info("TEST:relation")
-        self.parser.parse("ejemploMetaModelado2.xml")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].name,"Extends")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].id,"13")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].source,"WorkProduct")
-        self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].target,"BehaviourWP")   
-
-    def test_autor_and_date(self):
-        logging.info("TEST:autor and date")
-        self.par=Parser(self.Handler.CurrentDiagrams,"test.xml")
-        self.par.setAuthorDate("david")
-        self.assertEqual(self.par.autor,"david")
-
-    def testOutputnotNone(self):
-        logging.info("TEST:output not none")
-        self.par=Parser(self.Handler.CurrentDiagrams,"test.xml")
-        self.par.setAuthorDate("david")
-        self.par.toXML()
-        self.assertNotEqual(open("filename.xml").read(),"")
-
-    def testGetCOnfigData(self):
-        logging.info("TEST:config not none")
-        Config = ConfigParser.ConfigParser()
-        Config.read("./conf/config.conf")
-        myprior= {}
-        for sec in Config.sections():
-                if sec == "General":
-                    myprior=ConfigSectionMap(sec,Config)
-
-        self.assertNotEqual(myprior['autor'],"")
-
-
-class flaskTestCase(unittest.TestCase):
-    def setUp(self):
-        logging.info("TEST:set up flask")
-        myapp=flaskApp()
-        myapp.start()
-
-
-    def testGet(self):
-        logging.info("TEST:doing get flask")
-        self.assertNotEqual(urllib2.urlopen("http://localhost:5000/").read(),"")
-        stop_flask()
 
 #_____________________________________REPARSEADO____________________________________________->
 #
@@ -513,7 +526,7 @@ def insertMongoDB(ob,input,output,autor):
     client = MongoClient()
     db = client.tfg
     bytes=pickle.dumps(ob)
-    result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output})
+    result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output, 'date':unicode(datetime.datetime.now())})
     logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
 
 def getByIdMongoDB(id):
@@ -524,7 +537,7 @@ def getByIdMongoDB(id):
     cursor=db.ob.find({'_id':ObjectId(id)})
     toret=""
     for c in cursor:
-        toret={'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']}
+        toret={'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output'],'date':c['date']}
     return toret
 
 def deleteByIdMongoDB(id):
@@ -543,7 +556,7 @@ def initMongoDB():
     aux=0
     for c in cursor:
         aux=aux+1
-        toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']})
+        toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output'],'date':c['date']})
     logging.info("MONGO get "+ str(aux) +" elements from DB")
     return toret
 
@@ -667,7 +680,7 @@ def showShellOps(ops):
     print
     aux=0
     for o in ops:
-        print str(aux)+"    "+str(o['id'])+" "+str(o['autor'])+" "+str(o['input'])+" "+str(o['output'])
+        print str(aux)+"    "+str(o['id'])+" "+str(o['date'])+" "+str(o['autor'])+" "+str(o['input'])+" "+str(o['output'])
         aux=aux+1
     print
     op=raw_input("selecciona una op o bien q para salir ")
@@ -695,8 +708,6 @@ def usage():
     print " -x habilitar interfaz web en "+flaskconf['name']
     print
     print " -c Modo test"
-
- 
 
 
 if ( __name__ == "__main__"):
@@ -842,6 +853,3 @@ if ( __name__ == "__main__"):
         
         
 
-
-
-   
