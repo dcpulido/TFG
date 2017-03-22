@@ -148,7 +148,9 @@ button {
     color: white;
     width: 10vw;
 }
-
+.row{
+    border: 1px;
+}
 #searchResults{
 	display: none;
 }

@@ -23,6 +23,7 @@ import sys
 from flask import render_template
 from flask import Flask
 from flask import request
+from flask import redirect
 
 import unittest
 import urllib2
@@ -295,8 +296,8 @@ def shutdown():
 
 @app.route("/parse", methods=['GET', 'POST'])
 def parse_xml():
-   logging.info("FLASK:parse_xml")
-   if request.method == 'POST':
+    logging.info("FLASK:parse_xml")
+    if request.method == 'POST':
 
       ou= str(request.form.get('output'))
       inp=str(request.form.get('input'))
@@ -307,8 +308,10 @@ def parse_xml():
       if au=="":au=autor
 
       logging.info("FLASK: "+ou+" "+inp+" "+au)
-      init_the_parse(inp,ou,au)   
-   return render_template('index.html')
+      init_the_parse(inp,ou,au)
+     
+    return redirect("http://localhost:5000/")  
+    
 
 @app.route("/operations", methods=['GET'])
 def exposeOperations():
@@ -316,11 +319,19 @@ def exposeOperations():
 
 @app.route("/getID", methods=['POST'])
 def getID():
-    logging.info("FLASK:postOperation url from FLASk")
+    logging.info("FLASK:getID url from FLASk")
     if request.method == 'POST':
         data=request.json
         cc=getByIdMongoDB(data["id"])
         finalize_parse(cc['bin-data'],cc['output'],cc['autor'])
+    return render_template('index.html')
+
+@app.route("/delID", methods=['POST'])
+def delID():
+    logging.info("FLASK:delID url from FLASk")
+    if request.method == 'POST':
+        data=request.json
+        deleteById(data["id"])
     return render_template('index.html')
 
 def getEncodeOps():
@@ -514,7 +525,14 @@ def getByIdMongoDB(id):
     for c in cursor:
         toret={'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output']}
     return toret
-    
+
+def deleteById(id):
+    logging.info("MONGO delete element by id")
+    client = MongoClient()
+    db = client.tfg
+    db.ob.delete_many({'_id':ObjectId(id)})
+
+
 def initMongoDB():
     logging.info("MONGO initializing DB")
     client = MongoClient()

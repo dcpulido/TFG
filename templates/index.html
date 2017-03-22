@@ -64,18 +64,22 @@
       <br>
         <div ng-controller="ctrl">
           <div ng-repeat="oper in operations">
-              <div class="row form-group" >
-                <div class="col-xs-3">
+              <div class="row form-group " >
+                <div class="col-xs-2">
                   <label >{a oper.autor a}</label>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                   <label >{a oper.input a}</label>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                   <label >{a oper.output a}</label>
                 </div>
-                <div class="col-xs-3">
-                  <button type="submit" class="btn btn-warning btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-2">
+                  <button type="submit" class="btn btn-success btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
+                </div>
+                <div class="col-xs-2">
+                  <button type="submit" class="btn btn-danger btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
                 </div>
               </div>
           </div>          
