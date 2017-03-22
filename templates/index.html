@@ -9,7 +9,7 @@
   <meta name="author" content="SitePoint">
   <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
   <link href="../static/css/ownstyle.css" rel="stylesheet" type="text/css" media="all" />
-  
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
   <!-- Archivos para hacer las cosas con estilo -->
   <script src="../static/js/app.js"></script>
   <script src="../static/js/jquery.min.js"></script>
@@ -63,7 +63,7 @@
       <h1>OPERACIONES </h1>
       <br>
         <div ng-controller="ctrl">
-          <div ng-repeat="oper in operations">
+          <div ng-repeat="oper in operations|limitTo:10">
               <div class="row form-group " >
                 <div class="col-xs-2">
                   <label >{a oper.autor a}</label>
@@ -79,7 +79,7 @@
                   <button type="submit" class="btn btn-success btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
                 </div>
                 <div class="col-xs-2">
-                  <button type="submit" class="btn btn-danger btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
+                  <button type="submit" class="btn btn-evento btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
                 </div>
               </div>
           </div>          

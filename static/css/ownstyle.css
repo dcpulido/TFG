@@ -128,13 +128,11 @@ display:inline-block;
 }
 .btn-evento{
     position: relative;
-    top: 28px;
-    left: 20px;
     background-color: #ed645c;
     border: solid 1px #FA7871;
     color: #fff;
-    width: 20%;
 }
+
 .btn-evento:hover{
     background-color: #FA7871;
     border: solid 1px #ed645c;
@@ -149,7 +147,11 @@ button {
     width: 10vw;
 }
 .row{
-    border: 1px;
+    border: solid 1px #E6E6E6;
+
+}
+.label{
+    text-align: center;
 }
 #searchResults{
 	display: none;
