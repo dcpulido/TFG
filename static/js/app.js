@@ -14,5 +14,8 @@ app.controller('ctrl',
                 console.log(data);
                 $scope.operations = data;
             });
+        $scope.parseHist=function(id){
+            console.log(id);
+        };
     }); 
     

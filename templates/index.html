@@ -9,18 +9,13 @@
   <meta name="author" content="SitePoint">
   <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
   <link href="../static/css/ownstyle.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
-
-
-
+  
   <!-- Archivos para hacer las cosas con estilo -->
   <script src="../static/js/app.js"></script>
   <script src="../static/js/jquery.min.js"></script>
   <script src="../static/js/bootstrap.js"> </script>
   
-  
 </head>
-
 <body>
 
   <div class="header-top">
@@ -47,15 +42,15 @@
       <div id="operation" >
           <form action="/parse" method="post" class="form-horizontal">
             <div class="form-group">
-              <label for="edCrTableName">Ruta entrada</label>
+              <label >Ruta entrada</label>
               <input type="text" class="form-control" id="input" name="input" placeholder="./filename.xml">
             </div>
             <div class="form-group">
-              <label for="edCrTableDiff">Ruta salida</label>
+              <label >Ruta salida</label>
               <input type="text" class="form-control" id="output" name="output"placeholder="./output.xml">
             </div>
             <div class="form-group">
-              <label for="edCrTableDesc">Autor</label>
+              <label >Autor</label>
               <input type="text" class="form-control" id="autor" name="autor" placeholder="autor">
             </div>
             <div class="modal-footer">
@@ -63,46 +58,33 @@
             </div>
           </form>
 
-      </div class="contenedor form-group">
+      </div>
       <br>
       <h1>OPERACIONES </h1>
-
-
-
-                
-                <div ng-controller="ctrl">
-                  <div ng-repeat="oper in operations">
-                      <div class="row form-group" >
-                        <div class="col-xs-3">
-                          <label for="edCrTableDesc">{a oper.autor a}</label>
-                        </div>
-                        <div class="col-xs-3">
-                          <label for="edCrTableName">{a oper.input a}</label>
-                        </div>
-                        <div class="col-xs-3">
-                          <label for="edCrTableDiff">{a oper.output a}</label>
-                        </div>
-                        <div class="col-xs-3">
-                          <button type="submit" class="btn btn-warning btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
-                        </div>
-                      </div>
-                  </div>
-                  
+      <br>
+        <div ng-controller="ctrl">
+          <div ng-repeat="oper in operations">
+              <div class="row form-group" >
+                <div class="col-xs-3">
+                  <label >{a oper.autor a}</label>
                 </div>
+                <div class="col-xs-3">
+                  <label >{a oper.input a}</label>
+                </div>
+                <div class="col-xs-3">
+                  <label >{a oper.output a}</label>
+                </div>
+                <div class="col-xs-3">
+                  <button type="submit" class="btn btn-warning btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
+                </div>
+              </div>
+          </div>          
+        </div>
                 
-
-
-
-
-      
-    
-</div>
-
-
   </div>
-  <script src="static/js/app.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+          <script src="static/js/app.js"></script>
+          <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
 </body>
 </html>
