@@ -320,7 +320,8 @@ class Parser:
          logging.info("new diagram: "+di.name)
          diagram = ET.SubElement(diagrams,"diagram",name=di.name)
          for et in di.entities:
-            ET.SubElement(diagram,"entity").text=et.name
+            if et.abstract!=True:
+                ET.SubElement(diagram,"entity").text=et.name
          ET.SubElement(diagram,"entity").text="TextNote"
          ET.SubElement(diagram,"entity").text="UMLComment"
          self.parse_relation(di.complexRelations,diagram,di)
@@ -539,6 +540,31 @@ def reParseDiagrams(diagrams):
         toret.append(di)
     return toret
 
+def definingAbstractEntities(diagrams):
+    toret=diagrams
+    print "def"
+    for d in toret:
+        for e in d.extends:
+            print e.name
+            aux=[]
+            for k in d.entities:
+                if k.name==e.sources[0]:
+                    print e.sources[0]
+                    k.abstract=True
+                    aux.append(k)
+            d.abstracts=aux
+    return toret
+
+def deletingTextNotes(diagrams):
+    for k in diagrams:
+        aux=[]
+        for d in k.entities:
+            fl=True
+            if len(d.name)>8:
+                if d.name[0:8]=="TextNote":fl=False
+            if fl==True:aux.append(d)
+        k.entities=aux  
+    return diagrams
 #_____________________________________DB____________________________________________->
 #
 #Metodos para gestionar la interaccion con la base de datos
@@ -663,6 +689,10 @@ def init_the_parse(input,output,autor):
    parser.parse(input)
 
    dig=reParseDiagrams(Handler.CurrentDiagrams)
+   #toString(dig)
+   dig=definingAbstractEntities(dig)
+   dig=deletingTextNotes(dig)
+
    insertMongoDB(dig,input,output,autor)
    finalize_parse(dig,output,autor)
 
@@ -677,7 +707,7 @@ def toString(diagrams):
     for d in diagrams:
         print d.name
         for e in d.entities:
-            print "      "+e.name
+            print "      "+e.name+"     "+str(e.abstract)
         print "/////////////"
         for r in d.relations:
             print "      "+r.name+"  "+r.source+"   "+r.target
@@ -722,6 +752,13 @@ def showDetailsOp(op):
         for e in op.entities:
             print "     "+e.name
         print
+        print
+        print "EXTENDS"
+        print
+        for r in op.complexRelations:
+            if r.name=="Extends":
+                print "     "+r.name
+        print 
         print
         print "RELATIONS"
         print
