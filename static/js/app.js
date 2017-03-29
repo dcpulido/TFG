@@ -9,6 +9,7 @@ app.config(['$interpolateProvider', function($interpolateProvider) {
 app.controller('ctrl',
     function($scope, $http)
     {
+        $scope.detailedOperation=null;
         $http.get('http://localhost:5000/operations').
             success(function(data) {
                 console.log(data);
@@ -17,7 +18,7 @@ app.controller('ctrl',
         $scope.detailedInfoId=function(id){
             var i=0;
             for(i=0;i<$scope.operations.length;i++){
-                if($scope.operations[i][id]==id){
+                if($scope.operations[i]['id']==id){
                     $scope.detailedOperation=$scope.operations[i];
                 }
             }

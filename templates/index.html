@@ -59,12 +59,31 @@
           </form>
 
       </div>
-      
+      <div ng-controller="ctrl">
+          <div class="row form-group " >
+                <div ><label >{a detailedOperation.date a}</label></div>
+                <div >
+                  <label >{a detailedOperation.autor a}</label>
+                </div>
+                <div >
+                  <label >{a detailedOperation.input a}</label>
+                </div>
+                <div >
+                  <label >{a detailedOperation.output a}</label>
+                </div>
+                <div ng-repeat="dig in detailedOperation.diagrams">
+                  <div class="col-xs-1">
+                  <label >{a dig.name a}</label>
+                </div>
+
+                </div>
+            
+            </div>
       <br>
       <h1>OPERACIONES </h1>
       <br>
-        <div ng-controller="ctrl">
-       
+        
+
           <div ng-repeat="oper in operations|limitTo:10">
               <div class="row form-group " >
                 <div class="col-xs-3"><label >{a oper.date a}</label></div>
@@ -79,7 +98,7 @@
                 </div>
                 <div class="col-xs-1"></div>
                 <div class="col-xs-1">
-                  <button type="submit" class="btn btn-see btn-registrar" ng-click="parseHist(oper.id )">See!</button>
+                  <button type="submit" class="btn btn-see btn-registrar" ng-click="detailedInfoId(oper.id )">See!</button>
                 </div>
                 <div class="col-xs-1">
                   <button type="submit" class="btn btn-parse btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>

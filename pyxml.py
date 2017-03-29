@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #Ejemplo de uso
-#python pyxml.py -i ejemploMetaModelado2.xml -a david -o filename.xml
+#python pyxml.py -i default2.xml -a david -o filename.xml
 import xml.sax
 import xml.etree.cElementTree as ET
 import json
@@ -445,6 +445,7 @@ def getEncodeArr(ent):
     for t in ent:
         toret.append({'name':t.name})
     return toret
+    
 def getEncodeArr2(ent):
     toret=[]
     for t in ent:
@@ -662,7 +663,6 @@ def get_general_conf():
     for sec in Config.sections():
             if sec == "General":
                 myprior=ConfigSectionMap(sec,Config)
-
     return myprior
 
 def get_flask_conf():
@@ -672,7 +672,6 @@ def get_flask_conf():
     for sec in Config.sections():
             if sec == "Flask":
                 myprior=ConfigSectionMap(sec,Config)
-
     return myprior
 
 def get_dbus_conf():
@@ -682,7 +681,6 @@ def get_dbus_conf():
     for sec in Config.sections():
             if sec == "Dbus":
                 myprior=ConfigSectionMap(sec,Config)
-
     return myprior
 
 def publish_dbus():
