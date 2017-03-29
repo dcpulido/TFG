@@ -158,6 +158,7 @@ class relationship:
         self.id=0
         self.target="none"
         self.source="none"
+        self.type=""
     def set_id(self,id):
         self.id=id
     def set_name(self,name):
@@ -166,6 +167,9 @@ class relationship:
         self.target=target
     def set_source(self,source):
         self.source=source
+    def set_type(self,type):
+        self.type=type
+
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
 #CLASS entity
 #Entidad simple
@@ -206,6 +210,7 @@ class XMLHandler( xml.sax.ContentHandler ):
 
    # Call when an element starts
    def startElement(self, tag, attributes):   
+        #HERE ATENTO A MAIL COMPROBAR SI AnADIMOS EL TYPE PARA TENER EN CUENTA LA DEFINICION DE EXTENDS
         self.CurrentTag=tag
         #Extraemos el nombre de los diagramas
         if tag =='package':
@@ -220,6 +225,7 @@ class XMLHandler( xml.sax.ContentHandler ):
             self.relation=relationship()
             self.relation.set_id(attributes['id'])
             self.inRelation=True
+            self.relation.set_type(attributes['type'])
         if tag == 'role' and self.inRelation==True:
             if attributes['roleName'][len(attributes['roleName'])-6:len(attributes['roleName'])]=="target":self.relation.set_target(attributes['idEntity'])
             if attributes['roleName'][len(attributes['roleName'])-6:len(attributes['roleName'])]=="source":self.relation.set_source(attributes['idEntity'])
@@ -230,9 +236,10 @@ class XMLHandler( xml.sax.ContentHandler ):
         if tag == 'node' and self.graph==True:
             for d in self.CurrentDiagrams:
                 if d.name == self.currentModel:
-                    if attributes['type'] == "UMLAssociation":
+                    if attributes['type'] == "UMLAssociation" or attributes['type'] == "Extends":
                         for r in self.CurrentRelations:
-                            if attributes['id']==r.id:d.relations.append(r)
+                            if attributes['id']==r.id:
+                                if r.name!="NOICON":d.relations.append(r)
                     if attributes['type']!="UMLAssociation" and len(attributes['id'])>2:
                         d.entities.append(entity(attributes['id']))
 
@@ -243,7 +250,8 @@ class XMLHandler( xml.sax.ContentHandler ):
             if localName=='relationship':
                 self.CurrentRelations.append(self.relation)
                 self.relation=relationship()
-                self.inRelation=False   
+                self.inRelation=False  
+                
         if self.graph:
             if localName=='graph':
                 self.graph=False  
@@ -254,7 +262,9 @@ class XMLHandler( xml.sax.ContentHandler ):
             if content  != "" and content != "INGENIAS" and content != "0" and content !="\n"and content != "LABEL" and content != "Diagrams":
                 aux= content.replace("(","")
                 self.label=aux.replace(")","")
-                self.relation.set_name(self.label)
+                if self.relation.type[len(self.relation.type)-7:len(self.relation.type)]=="Extends":self.relation.set_name("Extends")
+                else:self.relation.set_name(self.label)
+                
         if self.CurrentTag == "key" and self.abstractContent==True:
             if content  == "Abstract":
                 self.abs.abstract=True
@@ -277,15 +287,6 @@ class Parser:
     def setAuthorDate(self,autor):
       self.autor=autor
       self.date=str(datetime.datetime.today()).split()[0]
-
-    def remove_repeats(self,ls):
-        toret=[]
-        for l in ls:
-            fl=False
-            for t in toret:
-                if l == t:fl=True
-            if fl==False:toret.append(l)
-        return toret
 
 
     def parse_relation(self,relations,diagram,di):
@@ -478,6 +479,7 @@ def reParseDiagrams(diagrams):
     toret=[]
     for d in diagrams:
         di=diagram(d.name)
+        di.relations=d.relations
         for e in d.entities:
             if e.name!=di.name:di.entities.append(e)
         #se convierten las relaciones normales en relaciones complejas y se mantiene en extends las relaciones de herencia
@@ -486,6 +488,7 @@ def reParseDiagrams(diagrams):
                 fl=True
                 for c in di.complexRelations:
                     if r.name == c.name:
+
                         so=False
                         ta=False
                         #quitamos repes
@@ -509,8 +512,9 @@ def reParseDiagrams(diagrams):
                         fl=False
                 if fl==True:
                     xl=complexRelation(r.name)
-                    xl.sources.append(r.source)
-                    xl.targets.append(r.target)
+                    ##HERE al reves segun la segunda especificacion!!!!!!
+                    xl.sources.append(r.target)
+                    xl.targets.append(r.source)
                     di.extends.append(xl)
         #utilizamos la info de extends para mejorar complexRelations y resolver los extends
         #para ello creamos una relacion compleja nueva y la vamos rellenando con las sources o en caso de q la source 
@@ -542,18 +546,31 @@ def reParseDiagrams(diagrams):
 
 def definingAbstractEntities(diagrams):
     toret=diagrams
-    print "def"
     for d in toret:
         for e in d.extends:
-            print e.name
             aux=[]
             for k in d.entities:
                 if k.name==e.sources[0]:
-                    print e.sources[0]
                     k.abstract=True
                     aux.append(k)
             d.abstracts=aux
     return toret
+
+def redefiningTargetsAndSourcesOnComplex(diagrams):
+    for d in diagrams:
+        for r in d.complexRelations:
+            r.targets=remove_repeats(r.targets)
+            for t in r.targets:
+                for e in d.extends:
+                    if e.sources[0]==t:r.targets.remove(t)
+            r.sources=remove_repeats(r.sources)
+            for t in r.sources:
+                for e in d.extends:
+                    if e.sources[0]==t:r.sources.remove(t)
+    return diagrams
+
+
+
 
 def deletingTextNotes(diagrams):
     for k in diagrams:
@@ -584,7 +601,6 @@ def getByIdMongoDB(id):
     logging.info("MONGO get element by id")
     client = MongoClient()
     db = client.tfg
-    print id
     cursor=db.ob.find({'_id':ObjectId(id)})
     toret=""
     for c in cursor:
@@ -675,6 +691,13 @@ def publish_dbus():
     d.start()
     loop.run()
 
+def remove_repeats(t):
+    s=[]
+    for i in t:
+       if i not in s:
+          s.append(i)
+    return s
+
 def init_the_parse(input,output,autor):
    parser = xml.sax.make_parser()
    parser.setFeature(xml.sax.handler.feature_namespaces, 0)
@@ -687,12 +710,14 @@ def init_the_parse(input,output,autor):
    
    logging.info("Parsing file: "+input)
    parser.parse(input)
-
+   #HERE printar relaciones y relaciones complejas
    dig=reParseDiagrams(Handler.CurrentDiagrams)
+
+   
    #toString(dig)
    dig=definingAbstractEntities(dig)
    dig=deletingTextNotes(dig)
-
+   dig=redefiningTargetsAndSourcesOnComplex(dig)
    insertMongoDB(dig,input,output,autor)
    finalize_parse(dig,output,autor)
 
@@ -705,27 +730,29 @@ def finalize_parse(dig,output,autor):
 #No usar// clase para debug
 def toString(diagrams):
     for d in diagrams:
-        print d.name
-        for e in d.entities:
-            print "      "+e.name+"     "+str(e.abstract)
-        print "/////////////"
+        print "//////////////////////////////NEW DIAGRAM////////////////////////////////"
+        print "name "+d.name
+        print
+        print "relations///////////////////////////////////"
         for r in d.relations:
-            print "      "+r.name+"  "+r.source+"   "+r.target
+            print "     "+r.name
+        print
+        print
+        print "complex////////////////////////////////////"
+        for k in d.complexRelations:
+            print "     "+k.name
 
-        print "////UUUUUUU"
-        for x in d.complexRelations:
-            print  "             "+x.name
-            print "targets"
-            for k in x.targets:
-                print "                       "+k
-            print "sources"
-            for k in x.sources:
-                print "                       "+k
-        print "////EXTENDS"
-        for x in d.extends:
-            print  "             "+x.name+"   "+x.sources[0]
-            for k in x.targets:
-                print k
+        print
+        print
+        print "extends///////////////////////////////////"
+        for j in d.extends:
+            print "     "+j.name
+            print "sources//////"
+            for s in j.sources:
+                print "         "+s
+            print "targets//////"
+            for s in j.targets:
+                print "         "+s
 
 def showDetailsDig(binData):
     aux=0
@@ -755,22 +782,25 @@ def showDetailsOp(op):
         print
         print "EXTENDS"
         print
-        for r in op.complexRelations:
-            if r.name=="Extends":
-                print "     "+r.name
+        aux=0
+        for r in op.extends:
+            print "     "+str(aux)+" "+r.name
+            aux=aux+1
         print 
         print
         print "RELATIONS"
         print
-        aux=0
+        aux=10
         for r in op.complexRelations:
             print "     "+str(aux)+" "+r.name
             aux=aux+1
+        print
         k=raw_input("selecciona una op o bien q para salir??: ")
         os.system("clear")
         if k!='q':
             try:
-                showDetailsRel(op.complexRelations[int(k)])
+                if len(k)==2:showDetailsRel(op.complexRelations[int(k)-10])
+                if len(k)==1:showDetailsRel(op.extends[int(k)])
             except TypeError:
                 logging.info("Dont choose comming back")
             except ValueError:
