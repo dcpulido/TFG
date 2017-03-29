@@ -540,6 +540,8 @@ def reParseDiagrams(diagrams):
                 if fl==False:complexParsed.targets.append(so)
 
             totalComplex.append(complexParsed)
+        print "length "+str(len(di.entities))+"   "+str(len(remove_entities_rep(di.entities)))
+        di.entities=remove_entities_rep(di.entities)
         di.complexRelations=totalComplex
         toret.append(di)
     return toret
@@ -568,8 +570,6 @@ def redefiningTargetsAndSourcesOnComplex(diagrams):
                 for e in d.extends:
                     if e.sources[0]==t:r.sources.remove(t)
     return diagrams
-
-
 
 
 def deletingTextNotes(diagrams):
@@ -697,6 +697,18 @@ def remove_repeats(t):
        if i not in s:
           s.append(i)
     return s
+
+def remove_entities_rep(l):
+    aux=[]
+    for k in l:
+        fl=False
+        for a in aux:
+            if k.name==a:fl=True
+        if fl==False:
+            aux.append(k.name)
+        else:
+            l.remove(k)
+    return l
 
 def init_the_parse(input,output,autor):
    parser = xml.sax.make_parser()

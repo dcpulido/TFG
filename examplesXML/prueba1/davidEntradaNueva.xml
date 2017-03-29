@@ -1,0 +1,2946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project cid="0" version="1.2">
+<projectproperties>
+<projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
+<projectproperty id="jadeout" module="Ingenias Agent Framework generator"  name="JADE generated output folder" value="gensrc"  tooltip="The folder that will hold generated JADE agents" />
+<projectproperty id="proysrc" module="Ingenias Agent Framework generator"  name="Main source folder for the project" value="src"  tooltip="The folder containing the sources of the project" />
+<projectproperty id="jadeproject" module="Ingenias Agent Framework generator"  name="JADE main project folder" value="myproject"  tooltip="The folder that will contain the project for this development" />
+<projectproperty id="jadeperm" module="Ingenias Agent Framework generator"  name="JADE generate only once folder" value="permsrc"  tooltip="The folder that will hold generated elements that should not be regenerated" />
+<projectproperty id="htmldoc" module="HTML Document generator"  name="HTML document folder" value="html"  tooltip="The document folder that will contain HTML version of this specification" />
+ <openeddiagram>PhaseDiagram</openeddiagram> <openeddiagram>ActivityWPDiagram</openeddiagram> <openeddiagram>WorkProductDiagram</openeddiagram></projectproperties>
+<leafpackages>
+   <path>
+    <package id="Project"/>
+    <package id="WorkProductDiagram"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="PhaseDiagram"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="ActivityWPDiagram"/>
+   </path>
+</leafpackages>
+<objects>
+<object id="WorkProduct" type="ingenias.editor.entities.UMLObject">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="Node" type="ingenias.editor.entities.UMLObject">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="Process" type="ingenias.editor.entities.UMLObject">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="DPDFS" type="ingenias.editor.entities.UMLObject">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="StructuralWP" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description">Producto de trabajo estructural.
+                    
+                    Es un diagrama que representa un aspecto estático del sistema.
+                    
+                    Un ejemplo sería el diagrama de clases de UML</key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="BehaviourWP" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description">Es un producto de trabajo representado por un diagrama
+                    
+                    Presenta un aspecto dinámico del sistema (un comportamiento, una actividad, ...)
+                    
+                    Un ejemplo sería el diagrama de secuencias de UML</key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="StructuredWP" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description">Es un producto de trabajo que representa un documento de texto
+                    
+                    El documento estará reglado; es decir existe un template o una gramática que determina el contenido, la estructura y la forma del contenido
+                    
+                    Un ejemplo podría ser una tabla o un fichero de código</key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="FreeWP" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description">Este producto de trabajo representa un documento de texto escrito de forma libre en lenguaje natural
+                    
+                    Un ejemplo podria ser un escenario descrito por el cliente o una historia de usuario</key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="DPDFSMMat" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="DPDFSMMop" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="Phase" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="iPhase" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="Activity" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="InitialNode" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="EndNode" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="DecisionNode" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="JoinNode" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="ForkNode" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="TaskWS" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="AgentWS" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="RoleWS" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="CompositeWP" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="DPDFSMMel" type="ingenias.editor.entities.DPDFSMMel">
+<mapproperties>
+<key id="CurrentValue"></key>
+<key id="MinValue"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="MaxValue"></key>
+</mapproperties>
+</object>
+<object id="iPhase0" type="ingenias.editor.entities.iPhase">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objects>
+<relationships>
+<relationship id="62" type="ingenias.editor.entities.UMLAssociation">
+<object id="62" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">WPContains</key>
+</mapproperties>
+</object>
+<role idEntity="CompositeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="49969149">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="StructuralWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="19348578">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="4" type="ingenias.editor.entities.Extends">
+<object id="4" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="StructuredWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1041809678">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="6" type="ingenias.editor.entities.Extends">
+<object id="6" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="CompositeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="49969149">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="3" type="ingenias.editor.entities.Extends">
+<object id="3" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BehaviourWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="618727262">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="59" type="ingenias.editor.entities.UMLAssociation">
+<object id="59" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">WPContains</key>
+</mapproperties>
+</object>
+<role idEntity="CompositeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="49969149">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BehaviourWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="618727262">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="5" type="ingenias.editor.entities.Extends">
+<object id="5" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="FreeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1109742587">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="0" type="ingenias.editor.entities.Extends">
+<object id="0" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="StructuralWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="19348578">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="12" type="ingenias.editor.entities.UMLAssociation">
+<object id="12" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+<key id="Label">WPContains</key>
+</mapproperties>
+</object>
+<role idEntity="CompositeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="49969149">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FreeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="1109742587">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="8" type="ingenias.editor.entities.UMLAssociation">
+<object id="8" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+<key id="Label">WPContains</key>
+</mapproperties>
+</object>
+<role idEntity="CompositeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="49969149">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="StructuredWP" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="1041809678">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="1" type="ingenias.editor.entities.UMLAssociation">
+<object id="1" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">quotes</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="2" type="ingenias.editor.entities.Extends">
+<object id="2" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFSMMop" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="18511279">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="9" type="ingenias.editor.entities.Extends">
+<object id="9" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFSMMel" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="746224711">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="27" type="ingenias.editor.entities.Extends">
+<object id="27" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFSMMat" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="462467705">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="28" type="ingenias.editor.entities.UMLAssociation">
+<object id="28" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">QD</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFSMMel" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="746224711">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFSMMop" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="18511279">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="29" type="ingenias.editor.entities.UMLAssociation">
+<object id="29" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">QD</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFSMMat" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="462467705">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFSMMel" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="746224711">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="30" type="ingenias.editor.entities.UMLAssociation">
+<object id="30" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">QR</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="975852695">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="31" type="ingenias.editor.entities.UMLAssociation">
+<object id="31" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">QQ</key>
+</mapproperties>
+</object>
+<role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="975852695">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="32" type="ingenias.editor.entities.UMLAssociation">
+<object id="32" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">relates</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="35" type="ingenias.editor.entities.UMLAssociation">
+<object id="35" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">defines</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="615564965">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="DPDFS" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="981658027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="19" type="ingenias.editor.entities.Extends">
+<object id="19" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="DecisionNode" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1834352932">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="18" type="ingenias.editor.entities.Extends">
+<object id="18" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="InitialNode" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1406770461">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="7" type="ingenias.editor.entities.UMLAssociation">
+<object id="7" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">Follows</key>
+</mapproperties>
+</object>
+<role idEntity="Process" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="315914148">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Process" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1186540838">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="26" type="ingenias.editor.entities.Extends">
+<object id="26" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="Process" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="315914148">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1819020716">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="21" type="ingenias.editor.entities.Extends">
+<object id="21" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="JoinNode" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="220495189">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="33" type="ingenias.editor.entities.UMLAssociation">
+<object id="33" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">Follows</key>
+</mapproperties>
+</object>
+<role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="4564589">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="25" type="ingenias.editor.entities.Extends">
+<object id="25" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="Process" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="315914148">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="iPhase" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1345518742">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="22" type="ingenias.editor.entities.Extends">
+<object id="22" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="ForkNode" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1654023166">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="20" type="ingenias.editor.entities.Extends">
+<object id="20" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="EndNode" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1278901971">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="23" type="ingenias.editor.entities.UMLAssociation">
+<object id="23" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">Follows</key>
+</mapproperties>
+</object>
+<role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="2031685443">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Process" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="315914148">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="24" type="ingenias.editor.entities.Extends">
+<object id="24" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+</mapproperties>
+</object>
+<role idEntity="Phase" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1170255855">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Process" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="315914148">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="34" type="ingenias.editor.entities.UMLAssociation">
+<object id="34" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">LABEL</key>
+<key id="Label">FollowsGuarded</key>
+</mapproperties>
+</object>
+<role idEntity="DecisionNode" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1834352932">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Node" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="4564589">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="49" type="ingenias.editor.entities.UMLAssociation">
+<object id="49" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+<key id="Label">WFResponsable</key>
+</mapproperties>
+</object>
+<role idEntity="TaskWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="487907819">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="RoleWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1757430583">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="11" type="ingenias.editor.entities.UMLAssociation">
+<object id="11" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">WFConsumes</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TaskWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="487907819">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="60" type="ingenias.editor.entities.UMLAssociation">
+<object id="60" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">WFContains</key>
+</mapproperties>
+</object>
+<role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1052751216">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="1398775330">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="16" type="ingenias.editor.entities.Extends">
+<object id="16" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BehaviourWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1249269027">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="51" type="ingenias.editor.entities.UMLAssociation">
+<object id="51" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+<key id="Label">WFContains</key>
+</mapproperties>
+</object>
+<role idEntity="TaskWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="487907819">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1398775330">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="14" type="ingenias.editor.entities.Extends">
+<object id="14" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="StructuredWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="755093648">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="10" type="ingenias.editor.entities.UMLAssociation">
+<object id="10" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">WFProduces</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TaskWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="487907819">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="15" type="ingenias.editor.entities.Extends">
+<object id="15" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="StructuralWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1534416247">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="61" type="ingenias.editor.entities.UMLAssociation">
+<object id="61" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+<key id="Label">ActivityPrecedes</key>
+</mapproperties>
+</object>
+<role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1052751216">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="1398775330">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="53" type="ingenias.editor.entities.UMLAssociation">
+<object id="53" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+<key id="Label">WFContains</key>
+</mapproperties>
+</object>
+<role idEntity="RoleWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="1757430583">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Activity" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1398775330">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="17" type="ingenias.editor.entities.Extends">
+<object id="17" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="CompositeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="401127266">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="13" type="ingenias.editor.entities.Extends">
+<object id="13" type="ingenias.editor.entities.Extends">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FreeWP" class="ingenias.editor.entities.DPDFSMMel" roleName="Extendssource" type="ingenias.editor.entities.ExtendssourceRole" dgcid="1988509960">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="WorkProduct" class="ingenias.editor.entities.UMLObject" roleName="Extendstarget" type="ingenias.editor.entities.ExtendstargetRole" dgcid="1778521975">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="48" type="ingenias.editor.entities.UMLAssociation">
+<object id="48" type="ingenias.editor.entities.UMLAssociation">
+<mapproperties>
+<key id="_view_type">NOICON</key>
+<key id="Label">WFResponsable</key>
+</mapproperties>
+</object>
+<role idEntity="TaskWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationtarget" type="ingenias.editor.entities.UMLAssociationtargetRole" dgcid="487907819">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="AgentWS" class="ingenias.editor.entities.DPDFSMMel" roleName="UMLAssociationsource" type="ingenias.editor.entities.UMLAssociationsourceRole" dgcid="1523522154">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+</relationships>
+<models> 
+ <model id="WorkProductDiagram" type="ingenias.editor.models.WorkProductDiagramModelJGraph">
+<object id="WorkProductDiagram" type="ingenias.editor.entities.WorkProductDiagramDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="WorkProduct" nid="615564965" type="UMLObject">
+
+	</node>
+			
+	<node id="12" nid="1359945935" type="UMLAssociation">
+
+	<connected id="49969149"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="875.0" y="-20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="1109742587">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="-181.3062868722895" y="-37.2299095471249"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="StructuralWP" nid="19348578" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="0" nid="169877075" type="Extends">
+
+	<connected id="19348578"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+	</connected>
+	<connected id="615564965">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BehaviourWP" nid="618727262" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="31" nid="1969156217" type="UMLAssociation">
+
+	<connected id="981658027"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="0.0" y="20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="975852695"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string></string>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="62" nid="696683950" type="UMLAssociation">
+
+	<connected id="49969149">
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="202.0" y="417.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="286.0" y="461.8767123287671"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>WPContains</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="249.80361487660818" y="-46.72280269815588"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="19348578">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="32" nid="1974539877" type="UMLAssociation">
+
+	<connected id="615564965"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+	</connected>
+	<connected id="981658027">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="30" nid="242392897" type="UMLAssociation">
+
+	<connected id="981658027">
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="608.0" y="165.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="595.9444444444445" y="137.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="-1367.5229571080345" y="38.66562127408514"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="975852695"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string></string>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="8" nid="876822679" type="UMLAssociation">
+
+	<connected id="49969149"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="875.0" y="-20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+	</connected>
+	<connected id="1041809678">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="29" nid="1539457344" type="UMLAssociation">
+
+	<connected id="746224711">
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="848.0" y="245.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="824.3291139240506" y="201.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>QD</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="96.38526995384476" y="18.488076482129454"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="462467705"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string></string>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="5" nid="311174335" type="Extends">
+
+	<connected id="1109742587"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="615564965">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="9" nid="1001821756" type="Extends">
+
+	<connected id="746224711"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="909.5" y="162.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="1017.5" y="207.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+
+	</connected>
+	<connected id="981658027">
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="909.5" y="162.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="608.0" y="100.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	</node>
+			
+	<node id="DPDFSMMel" nid="746224711" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="35" nid="1477821068" type="UMLAssociation">
+
+	<connected id="615564965"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+	</connected>
+	<connected id="981658027">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="DPDFSMMat" nid="462467705" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="FreeWP" nid="1109742587" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="28" nid="2095495535" type="UMLAssociation">
+
+	<connected id="746224711">
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="873.0" y="117.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="853.7142857142858" y="131.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>QD</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="364.72744259582674" y="18.666797139902947"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="18511279"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string></string>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="CompositeWP" nid="49969149" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="59" nid="290306986" type="UMLAssociation">
+
+	<connected id="49969149">
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="305.0" y="410.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="330.2941176470588" y="460.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>WPContains</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="646.5395635882746" y="-95.98189769907556"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="618727262">
+
+
+		<attr name="offset">
+			<point x="54.69159120310479" y="113.43441138421736"></point>
+		</attr>
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="305.0" y="410.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="281.375" y="361.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>WPContains</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="0.0" y="169.08714961696117"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="StructuredWP" nid="1041809678" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="DPDFS" nid="975852695" type="UMLObject">
+
+	</node>
+			
+	<node id="1" nid="62795065" type="UMLAssociation">
+
+	<connected id="615564965"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="0.0" y="20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="981658027">
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="474.0" y="93.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="577.0" y="93.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string></string>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="4" nid="1944465490" type="Extends">
+
+	<connected id="1041809678"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="615564965">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="27" nid="827099520" type="Extends">
+
+	<connected id="462467705"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="981658027">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="6" nid="537642122" type="Extends">
+
+	<connected id="49969149">
+
+
+
+	</connected>
+	<connected id="615564965">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="2" nid="2086144070" type="Extends">
+
+	<connected id="18511279"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="981658027">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="3" nid="1616053124" type="Extends">
+
+	<connected id="618727262">
+
+
+
+	</connected>
+	<connected id="615564965">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="DPDFS" nid="981658027" type="UMLObject">
+
+	</node>
+			
+	<node id="DPDFSMMop" nid="18511279" type="DPDFSMMel">
+
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="317" y="49" width="105" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="519" y="419" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="14" y="311" width="104" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="171" y="213" width="83" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="212" y="291" width="105" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node27">
+		<attr name="bounds">
+			<rectangle x="560" y="198" width="37" height="23"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="202" y="417" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node28">
+		<attr name="bounds">
+			<rectangle x="451" y="118" width="64" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node26">
+		<attr name="bounds">
+			<rectangle x="600" y="172" width="35" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="424" y="427" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node24">
+		<attr name="bounds">
+			<rectangle x="848" y="245" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node14">
+		<attr name="bounds">
+			<rectangle x="522" y="234" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node21">
+		<attr name="bounds">
+			<rectangle x="689" y="128" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="751" y="131" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node29">
+		<attr name="bounds">
+			<rectangle x="447" y="29" width="72" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="843" y="290" width="99" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="629" y="324" width="58" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node23">
+		<attr name="bounds">
+			<rectangle x="873" y="117" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="286" y="460" width="124" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="305" y="410" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="448" y="325" width="110" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node25">
+		<attr name="bounds">
+			<rectangle x="620" y="225" width="80" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node19">
+		<attr name="bounds">
+			<rectangle x="445" y="80" width="67" height="23"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="438" y="231" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node22">
+		<attr name="bounds">
+			<rectangle x="735" y="209" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="357" y="298" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node20">
+		<attr name="bounds">
+			<rectangle x="759" y="80" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="314" y="214" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node18">
+		<attr name="bounds">
+			<rectangle x="527" y="49" width="100" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="891" y="34" width="105" height="70"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="PhaseDiagram" type="ingenias.editor.models.WorkProductDiagramModelJGraph">
+<object id="PhaseDiagram" type="ingenias.editor.entities.WorkProductDiagramDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="34" nid="1738290673" type="UMLAssociation">
+
+	<connected id="1834352932"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>FollowsGuarded</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="875.0" y="-20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="4564589">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>FollowsGuarded</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="0.0" y="20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="26" nid="949371232" type="Extends">
+
+	<connected id="1819020716">
+
+
+
+	</connected>
+	<connected id="315914148">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Node" nid="4564589" type="UMLObject">
+
+	</node>
+			
+	<node id="18" nid="1886029155" type="Extends">
+
+	<connected id="1406770461">
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="25" nid="985862782" type="Extends">
+
+	<connected id="1345518742">
+
+
+
+	</connected>
+	<connected id="315914148">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Node" nid="2031685443" type="UMLObject">
+
+	</node>
+			
+	<node id="19" nid="623651875" type="Extends">
+
+	<connected id="1834352932">
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="DecisionNode" nid="1834352932" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="Process" nid="1186540838" type="UMLObject">
+
+	</node>
+			
+	<node id="Phase" nid="1170255855" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="21" nid="869299484" type="Extends">
+
+	<connected id="220495189">
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="24" nid="1702596837" type="Extends">
+
+	<connected id="1170255855">
+
+
+
+	</connected>
+	<connected id="315914148">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Process" nid="315914148" type="UMLObject">
+
+	</node>
+			
+	<node id="33" nid="419472765" type="UMLAssociation">
+
+	<connected id="4564589"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>Follows</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="875.0" y="-20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>Follows</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="0.0" y="20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="Activity" nid="1819020716" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="InitialNode" nid="1406770461" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="iPhase" nid="1345518742" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="ForkNode" nid="1654023166" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="EndNode" nid="1278901971" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="22" nid="632955449" type="Extends">
+
+	<connected id="1654023166">
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="7" nid="673739980" type="UMLAssociation">
+
+	<connected id="1186540838">
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="462.0" y="191.0"></point>
+		</attr>
+		<attr name="points1">
+			<point x="390.0" y="111.92857142857143"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>Follows</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="-5.902263337308327" y="31.88419039625641"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="315914148">
+
+
+
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string></string>
+		</attr>
+
+</array>
+</attr>
+
+
+	</connected>
+	</node>
+			
+	<node id="20" nid="1307523651" type="Extends">
+
+	<connected id="1278901971">
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="23" nid="775765603" type="UMLAssociation">
+
+	<connected id="315914148"><attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>Follows</string>
+		</attr>
+
+</array>
+</attr>
+
+
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="875.0" y="-20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+	</connected>
+	<connected id="2031685443">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="JoinNode" nid="220495189" type="DPDFSMMel">
+
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node23">
+		<attr name="bounds">
+			<rectangle x="1136" y="181" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="441" y="395" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="1096" y="271" width="80" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="723" y="182" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node18">
+		<attr name="bounds">
+			<rectangle x="626" y="407" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="814" y="266" width="97" height="99"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="1001" y="180" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="1069" y="22" width="134" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="310" y="24" width="80" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="442" y="454" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="867" y="179" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node22">
+		<attr name="bounds">
+			<rectangle x="532" y="406" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="524" y="271" width="100" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="1003" y="315" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="208" y="447" width="168" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="542" y="26" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="614" y="454" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="944" y="23" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="688" y="25" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node19">
+		<attr name="bounds">
+			<rectangle x="933" y="179" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node14">
+		<attr name="bounds">
+			<rectangle x="462" y="191" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node20">
+		<attr name="bounds">
+			<rectangle x="798" y="180" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node21">
+		<attr name="bounds">
+			<rectangle x="719" y="315" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="818" y="23" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="ActivityWPDiagram" type="ingenias.editor.models.WorkProductDiagramModelJGraph">
+<object id="ActivityWPDiagram" type="ingenias.editor.entities.WorkProductDiagramDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="AgentWS" nid="1523522154" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="13" nid="1170867003" type="Extends">
+
+	<connected id="1988509960">
+
+
+
+	</connected>
+	<connected id="1778521975">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="61" nid="1372909569" type="UMLAssociation">
+
+	<connected id="1052751216">
+
+
+
+	</connected>
+	<connected id="1398775330">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="11" nid="1903523868" type="UMLAssociation">
+
+	<connected id="1778521975">
+
+
+
+	</connected>
+	<connected id="487907819">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="10" nid="595003112" type="UMLAssociation">
+
+	<connected id="1778521975">
+
+
+
+	</connected>
+	<connected id="487907819">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="CompositeWP" nid="401127266" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="17" nid="601292368" type="Extends">
+
+	<connected id="401127266">
+
+
+
+	</connected>
+	<connected id="1778521975">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="FreeWP" nid="1988509960" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="TaskWS" nid="487907819" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="48" nid="1920593305" type="UMLAssociation">
+
+	<connected id="1523522154">
+
+
+
+	</connected>
+	<connected id="487907819">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>WFResponsable</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="72.90046769839648" y="11.97446877320607"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="StructuredWP" nid="755093648" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="Activity" nid="1398775330" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="60" nid="1548721073" type="UMLAssociation">
+
+	<connected id="1052751216">
+
+
+
+	</connected>
+	<connected id="1398775330">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="StructuralWP" nid="1534416247" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="49" nid="314524618" type="UMLAssociation">
+
+	<connected id="1757430583">
+
+
+
+	</connected>
+	<connected id="487907819">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>WFResponsable</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="0.0" y="0.40374802842157015"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="51" nid="1895706655" type="UMLAssociation">
+
+	<connected id="1398775330">
+
+
+
+	</connected>
+	<connected id="487907819">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+		<attr name="extraLabels0">
+			<string>WFContains</string>
+		</attr>
+
+</array>
+</attr>
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="67.22689075630252" y="-14.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+	</connected>
+	</node>
+			
+	<node id="15" nid="324367262" type="Extends">
+
+	<connected id="1534416247">
+
+
+
+	</connected>
+	<connected id="1778521975">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="16" nid="756551861" type="Extends">
+
+	<connected id="1249269027">
+
+
+
+	</connected>
+	<connected id="1778521975">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="53" nid="1811857618" type="UMLAssociation">
+
+	<connected id="1398775330"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+<attr name="extraLabelPositions">
+			<array>
+		<attr name="extraLabelPositions0">
+			<point x="875.0" y="-20.0"></point>
+		</attr>
+
+</array>
+</attr>
+
+
+
+	</connected>
+	<connected id="1757430583">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="WorkProduct" nid="1778521975" type="UMLObject">
+
+	</node>
+			
+	<node id="14" nid="1304332771" type="Extends">
+
+	<connected id="755093648">
+
+
+
+	</connected>
+	<connected id="1778521975">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="RoleWS" nid="1757430583" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="BehaviourWP" nid="1249269027" type="DPDFSMMel">
+
+	</node>
+			
+	<node id="Activity" nid="1052751216" type="DPDFSMMel">
+
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="52" y="487" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node22">
+		<attr name="bounds">
+			<rectangle x="751" y="44" width="83" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node19">
+		<attr name="bounds">
+			<rectangle x="476" y="274" width="143" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="32" y="60" width="148" height="24"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="247" y="174" width="143" height="18"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="956" y="427" width="111" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node21">
+		<attr name="bounds">
+			<rectangle x="748" y="261" width="83" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="976" y="4" width="58" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="52" y="249" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node23">
+		<attr name="bounds">
+			<rectangle x="106" y="403" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="952" y="107" width="110" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="340" y="249" width="61" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="410" y="437" width="101" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="956" y="205" width="104" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="241" y="402" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="250" y="284" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node18">
+		<attr name="bounds">
+			<rectangle x="741" y="145" width="83" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node14">
+		<attr name="bounds">
+			<rectangle x="742" y="194" width="83" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node20">
+		<attr name="bounds">
+			<rectangle x="371" y="401" width="0" height="0"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="468" y="28" width="140" height="88"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="739" y="96" width="83" height="20"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="316" y="482" width="109" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="958" y="304" width="105" height="70"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="617" y="412" width="61" height="70"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+</models>
+</project>
