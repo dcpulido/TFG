@@ -72,13 +72,16 @@
                   <label >{a detailedOperation.output a}</label>
                 </div>
                 <div ng-repeat="dig in detailedOperation.diagrams">
-                  <div class="col-xs-1">
                   <label >{a dig.name a}</label>
+                  <tr ng-repeat="x in dig.entities">
+                    <td>{a x.name a}</td>
+                  </tr>
+
                 </div>
 
                 </div>
             
-            </div>
+           
       <br>
       <h1>OPERACIONES </h1>
       <br>
