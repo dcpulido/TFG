@@ -33,8 +33,6 @@ class Parser:
 
 
     def parse_relation(self,relations,diagram,di):
-    
-        
         ##modificamos los targets y sources eliminando los extends
         for rel in relations:
             re=ET.SubElement(diagram,"relationship",name=rel.name)

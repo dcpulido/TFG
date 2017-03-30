@@ -84,6 +84,7 @@ class reParser:
         return toret
 
     def definingAbstractEntities(self,diagrams):
+        logging.info("defining abstract Entities")
         toret=diagrams
         for d in toret:
             for e in d.extends:
@@ -96,6 +97,7 @@ class reParser:
         return toret
 
     def redefiningTargetsAndSourcesOnComplex(self,diagrams):
+        logging.info("redefining the targets and sources")
         for d in diagrams:
             for r in d.complexRelations:
                 r.targets=remove_repeats(r.targets)
@@ -110,6 +112,7 @@ class reParser:
 
 
     def deletingTextNotes(self,diagrams):
+        logging.info("deleting text notes entities")
         for k in diagrams:
             aux=[]
             for d in k.entities:

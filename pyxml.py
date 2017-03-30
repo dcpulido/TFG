@@ -122,10 +122,6 @@ class flaskTestCase(unittest.TestCase):
 
    
 
-
-
-
-
 ##////////////////////////////////////////////////////////////////////////////////////////////////
 ##APP
 ##////////////////////////////////////////////////////////////////////////////////////////////////
@@ -269,10 +265,6 @@ def shutdown_server():
     func()
 
 
-
-
-    
-
 #_____________________________________MAIN____________________________________________->
 #
 #Hilo principal y metodos de proposito general y control de la aplicacion
@@ -325,25 +317,6 @@ def publish_dbus():
     d=DBUSService()
     d.start()
     loop.run()
-
-def remove_repeats(t):
-    s=[]
-    for i in t:
-       if i not in s:
-          s.append(i)
-    return s
-
-def remove_entities_rep(l):
-    aux=[]
-    for k in l:
-        fl=False
-        for a in aux:
-            if k.name==a:fl=True
-        if fl==False:
-            aux.append(k.name)
-        else:
-            l.remove(k)
-    return l
 
 def init_the_parse(input,output,autor):
    parser = xml.sax.make_parser()
@@ -467,73 +440,87 @@ if ( __name__ == "__main__"):
       sys.exit(255)
 #_____________________________________FLASK MODE_____________________________________________->
     if flaskMode and not dbusMode:
-        logging.info("FLASK MODE")
-        myapp=flaskApp()
-        myapp.start()
-        flag=True
-        while flag:
-            op=raw_input("q->salir")
-            if op=="q":
-                flag = False
-        stop_flask()
+        try:
+            logging.info("FLASK MODE")
+            myapp=flaskApp()
+            myapp.start()
+            flag=True
+            while flag:
+                op=raw_input("q->salir")
+                if op=="q":
+                    flag = False
+            stop_flask()
 
-        sys.exit(255)
+            sys.exit(255)
+        except KeyboardInterrupt:
+            logging.info("KeyboardInterrupt")
+            stop_flask()
+            sys.exit(255)
 
     if flaskMode and dbusMode:
-      logging.info("FLASK MODE")
-      myapp=flaskApp()
-      myapp.start()
-      logging.info("DBUS MODE")
-      gobject.threads_init()
-      dbus.glib.init_threads()
-      publish_dbus()
-      sys.exit(255)
+        try:
+          logging.info("FLASK MODE")
+          myapp=flaskApp()
+          myapp.start()
+          logging.info("DBUS MODE")
+          gobject.threads_init()
+          dbus.glib.init_threads()
+          publish_dbus()
+          sys.exit(255)
+        except KeyboardInterrupt:
+            logging.info("KeyboardInterrupt")
+            stop_flask()
+            sys.exit(255)
 
 
 #_____________________________________INTERACTIVE SHELL MODE____________________________________________->
     if interactiveShell:
-        op=""
-        while op!='q':
-            print 
-            print "Si no se indica algun campo se utilizaran valores por defecto indicados en conf/config.conf"
-            print
-            print "         1_Seleccionar operacion guardada"
-            print "         2_Indicar Autor"
-            print "         3_Indicar Entrada"
-            print "         4_Indicar Salida"
-            print "         d_Iniciar Parseado"
-            print "         x_Borrar DB"
-            print "         q_Salir"
-            print " "
-            
-            op=raw_input("op?:")
-            os.system("clear")
+        try:
+            op=""
+            while op!='q':
+                print 
+                print "Si no se indica algun campo se utilizaran valores por defecto indicados en conf/config.conf"
+                print
+                print "         1_Seleccionar operacion guardada"
+                print "         2_Indicar Autor"
+                print "         3_Indicar Entrada"
+                print "         4_Indicar Salida"
+                print "         d_Iniciar Parseado"
+                print "         x_Borrar DB"
+                print "         q_Salir"
+                print " "
+                
+                op=raw_input("op?:")
+                os.system("clear")
 
 
-            if op=="1":
-                oper=mongohand.initMongoDB()
-                dig=hmiDetails.showShellOps(oper)
-                if dig!="nope":
-                    op2=raw_input("x(eliminar)/d(parsear)/dd(detalles)/q(retroceder)??:")
+                if op=="1":
+                    oper=mongohand.initMongoDB()
+                    dig=hmiDetails.showShellOps(oper)
+                    if dig!="nope":
+                        op2=raw_input("x(eliminar)/d(parsear)/dd(detalles)/q(retroceder)??:")
+                        os.system("clear")
+                        if op2=="d":finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
+                        if op2=="x":mongohand.deleteByIdMongoDB(dig['id'])
+                        if op2=="dd":hmiDetails.showDetailsDig(dig['bin-data'])
+                if op=="2":
+                    autor=raw_input('Autor??: ')
                     os.system("clear")
-                    if op2=="d":finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
-                    if op2=="x":mongohand.deleteByIdMongoDB(dig['id'])
-                    if op2=="dd":hmiDetails.showDetailsDig(dig['bin-data'])
-            if op=="2":
-                autor=raw_input('Autor??: ')
-                os.system("clear")
-            if op=="3":
-                xmli=raw_input('Entrada??: ')
-                os.system("clear")
-            if op=="4":
-                xmls=raw_input('Salida??: ')
-                os.system("clear")
-            if op=="d":
-                os.system("clear")
-                init_the_parse(xmli,xmls,autor)
-            if op=="x":
-                os.system("clear")
-                mongohand.deleteMongoDB()
+                if op=="3":
+                    xmli=raw_input('Entrada??: ')
+                    os.system("clear")
+                if op=="4":
+                    xmls=raw_input('Salida??: ')
+                    os.system("clear")
+                if op=="d":
+                    os.system("clear")
+                    init_the_parse(xmli,xmls,autor)
+                if op=="x":
+                    os.system("clear")
+                    mongohand.deleteMongoDB()
+        except KeyboardInterrupt:
+            logging.info("KeyboardInterrupt")
+            sys.exit(255)
 
 
         
