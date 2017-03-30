@@ -20,6 +20,7 @@ from app.objs import entity
 #
 #
 class mongoHandler:
+  
     def insertMongoDB(self,ob,input,output,autor):
       logging.info("MONGO inserting parsed document on DB")
       client = MongoClient()

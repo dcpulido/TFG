@@ -44,6 +44,7 @@ from app.xmlhandler import XMLHandler
 from app.parser import Parser
 from app.mongohandler import mongoHandler
 from app.reparser import reParser
+from app.showDetails import showDetails
 
 
 #_____________________________________TESTS____________________________________________->
@@ -356,15 +357,16 @@ def init_the_parse(input,output,autor):
    
    logging.info("Parsing file: "+input)
    parser.parse(input)
+
    #HERE printar relaciones y relaciones complejas
    dig=reparser.reParseDiagrams(Handler.CurrentDiagrams)
-
-   
-   #toString(dig)
+   #hmiDetails.toString(dig)
    dig=reparser.definingAbstractEntities(dig)
    dig=reparser.deletingTextNotes(dig)
    dig=reparser.redefiningTargetsAndSourcesOnComplex(dig)
+
    mongohand.insertMongoDB(dig,input,output,autor)
+
    finalize_parse(dig,output,autor)
 
 def finalize_parse(dig,output,autor):
@@ -373,121 +375,7 @@ def finalize_parse(dig,output,autor):
    par.toXML()
 
 
-#No usar// clase para debug
-def toString(diagrams):
-    for d in diagrams:
-        print "//////////////////////////////NEW DIAGRAM////////////////////////////////"
-        print "name "+d.name
-        print
-        print "relations///////////////////////////////////"
-        for r in d.relations:
-            print "     "+r.name
-        print
-        print
-        print "complex////////////////////////////////////"
-        for k in d.complexRelations:
-            print "     "+k.name
 
-        print
-        print
-        print "extends///////////////////////////////////"
-        for j in d.extends:
-            print "     "+j.name
-            print "sources//////"
-            for s in j.sources:
-                print "         "+s
-            print "targets//////"
-            for s in j.targets:
-                print "         "+s
-
-def showDetailsDig(binData):
-    aux=0
-    for d in binData:
-        print str(aux)+" "+d.name
-        aux=aux+1
-    print
-    op=raw_input("selecciona una op o bien q para salir??: ")
-    os.system("clear")
-    if op!='q':
-        try:
-            showDetailsOp(binData[int(op)])
-        except TypeError:
-            logging.info("Dont choose comming back")
-        except ValueError:
-            logging.info("Dont choose comming back")
-
-
-def showDetailsOp(op):
-    k=""
-    while k!="q":
-        print "ENTITIES"
-        print
-        for e in op.entities:
-            print "     "+e.name
-        print
-        print
-        print "EXTENDS"
-        print
-        aux=0
-        for r in op.extends:
-            print "     "+str(aux)+" "+r.name
-            aux=aux+1
-        print 
-        print
-        print "RELATIONS"
-        print
-        aux=10
-        for r in op.complexRelations:
-            print "     "+str(aux)+" "+r.name
-            aux=aux+1
-        print
-        k=raw_input("selecciona una op o bien q para salir??: ")
-        os.system("clear")
-        if k!='q':
-            try:
-                if len(k)==2:showDetailsRel(op.complexRelations[int(k)-10])
-                if len(k)==1:showDetailsRel(op.extends[int(k)])
-            except TypeError:
-                logging.info("Dont choose comming back")
-            except ValueError:
-                logging.info("Dont choose comming back")
-            except IndexError:
-                logging.info("Dont choose comming back")
-
-def showDetailsRel(rel):
-    print "SOURCES"
-    print
-    for e in rel.sources:
-        print "     "+e
-    print
-    print
-    print "TARGETS"
-    print
-    for r in rel.targets:
-        print "     "+r
-    print
-    raw_input("q??:")    
-    os.system("clear")
-    
-
-def showShellOps(ops):
-    logging.info("show operations on DB")
-    print
-    aux=0
-    for o in ops:
-        print str(aux)+"    "+str(o['id'])+" "+str(o['date'])+" "+str(o['autor'])+" "+str(o['input'])+" "+str(o['output'])
-        aux=aux+1
-    print
-    op=raw_input("selecciona una op o bien q para salir??: ")
-    print
-    if op!='q':
-        try:
-            return ops[int(op)]
-        except TypeError:
-            logging.info("Dont choose comming back")
-        except ValueError:
-            logging.info("Dont choose comming back")
-    else:return "nope"
 
 def usage():
     print "Usage:", sys.argv[0]
@@ -511,6 +399,7 @@ if ( __name__ == "__main__"):
     logging.info("app init")
     mongohand=mongoHandler()
     reparser=reParser()
+    hmiDetails=showDetails()
     logging.info("get conf from conf/config.conf")
     generalconf=get_general_conf()
     dbusconf=get_dbus_conf()
@@ -623,13 +512,13 @@ if ( __name__ == "__main__"):
 
             if op=="1":
                 oper=mongohand.initMongoDB()
-                dig=showShellOps(oper)
+                dig=hmiDetails.showShellOps(oper)
                 if dig!="nope":
                     op2=raw_input("x(eliminar)/d(parsear)/dd(detalles)/q(retroceder)??:")
                     os.system("clear")
                     if op2=="d":finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
                     if op2=="x":mongohand.deleteByIdMongoDB(dig['id'])
-                    if op2=="dd":showDetailsDig(dig['bin-data'])
+                    if op2=="dd":hmiDetails.showDetailsDig(dig['bin-data'])
             if op=="2":
                 autor=raw_input('Autor??: ')
                 os.system("clear")
