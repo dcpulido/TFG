@@ -8,7 +8,7 @@ from bson.objectid import ObjectId
 
 import datetime
 import time
-import logging
+import coloredlogs, logging
 
 import dbus
 import dbus.service
@@ -57,26 +57,26 @@ from app.showDetails import showDetails
 class readTestCase(unittest.TestCase):
 # Instanciamos nuestro objeto foo antes de correr cada prueba
     def setUp(self):
-        logging.info("TEST:set up parser")
+        logging.warning("TEST:set up parser")
         self.parser = xml.sax.make_parser()
         self.parser.setFeature(xml.sax.handler.feature_namespaces, 0)   
         self.Handler = XMLHandler()  
         self.parser.setContentHandler( self.Handler )
  
     def test_diagrams(self):
-        logging.info("TEST:diagrams")
+        logging.warning("TEST:diagrams")
         self.parser.parse("examplesXML/prueba0/ejemploMetaModelado2.xml")
         self.assertEqual(self.Handler.CurrentDiagrams[0].name,"WorkProductDiagram")
         self.assertEqual(self.Handler.CurrentDiagrams[1].name,"PhaseDiagram")
         self.assertEqual(self.Handler.CurrentDiagrams[2].name,"ActivityWPDiagram")
 
     def test_entityes(self):
-        logging.info("TEST:enbtity")
+        logging.warning("TEST:enbtity")
         self.parser.parse("examplesXML/prueba0/ejemploMetaModelado2.xml")
         self.assertEqual(self.Handler.CurrentDiagrams[0].entities[0].name,"WorkProduct")
 
     def test_rellation(self):
-        logging.info("TEST:relation")
+        logging.warning("TEST:relation")
         self.parser.parse("examplesXML/prueba0/ejemploMetaModelado2.xml")
         self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].name,"Extends")
         self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].id,"13")
@@ -84,20 +84,20 @@ class readTestCase(unittest.TestCase):
         self.assertEqual(self.Handler.CurrentDiagrams[0].relations[0].target,"BehaviourWP")   
 
     def test_autor_and_date(self):
-        logging.info("TEST:autor and date")
+        logging.warning("TEST:autor and date")
         self.par=Parser(self.Handler.CurrentDiagrams,"examplesXML/test.xml")
         self.par.setAuthorDate("david")
         self.assertEqual(self.par.autor,"david")
 
     def testOutputnotNone(self):
-        logging.info("TEST:output not none")
+        logging.warning("TEST:output not none")
         self.par=Parser(self.Handler.CurrentDiagrams,"examplesXML/test.xml")
         self.par.setAuthorDate("david")
         self.par.toXML()
         self.assertNotEqual(open("examplesXML/filename.xml").read(),"")
 
     def testGetCOnfigData(self):
-        logging.info("TEST:config not none")
+        logging.warning("TEST:config not none")
         Config = ConfigParser.ConfigParser()
         Config.read("./conf/config.conf")
         myprior= {}
@@ -110,13 +110,13 @@ class readTestCase(unittest.TestCase):
 
 class flaskTestCase(unittest.TestCase):
     def setUp(self):
-        logging.info("TEST:set up flask")
+        logging.warning("TEST:set up flask")
         myapp=flaskApp()
         myapp.start()
 
 
     def testGet(self):
-        logging.info("TEST:doing get flask")
+        logging.warning("TEST:doing get flask")
         self.assertNotEqual(urllib2.urlopen("http://localhost:5000/").read(),"")
         stop_flask()
 
@@ -367,6 +367,7 @@ def usage():
 
 
 if ( __name__ == "__main__"):
+    coloredlogs.install()
     os.system("clear")
     logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
     logging.info("app init")
@@ -453,7 +454,7 @@ if ( __name__ == "__main__"):
 
             sys.exit(255)
         except KeyboardInterrupt:
-            logging.info("KeyboardInterrupt")
+            logging.critical("KeyboardInterrupt")
             stop_flask()
             sys.exit(255)
 
@@ -468,7 +469,7 @@ if ( __name__ == "__main__"):
           publish_dbus()
           sys.exit(255)
         except KeyboardInterrupt:
-            logging.info("KeyboardInterrupt")
+            logging.critical("KeyboardInterrupt")
             stop_flask()
             sys.exit(255)
 
@@ -519,7 +520,7 @@ if ( __name__ == "__main__"):
                     os.system("clear")
                     mongohand.deleteMongoDB()
         except KeyboardInterrupt:
-            logging.info("KeyboardInterrupt")
+            logging.critical("KeyboardInterrupt")
             sys.exit(255)
 
 

@@ -46,9 +46,9 @@ class showDetails:
             try:
                 self.showDetailsOp(binData[int(op)])
             except TypeError:
-                logging.info("Dont choose comming back")
+                logging.critical("Dont choose comming back")
             except ValueError:
-                logging.info("Dont choose comming back")
+                logging.critical("Dont choose comming back")
 
 
     def showDetailsOp(self,op):
@@ -118,7 +118,7 @@ class showDetails:
             try:
                 return ops[int(op)]
             except TypeError:
-                logging.info("Dont choose comming back")
+                logging.critical("Dont choose comming back")
             except ValueError:
-                logging.info("Dont choose comming back")
+                logging.critical("Dont choose comming back")
         else:return "nope"
