@@ -35,13 +35,14 @@ from pymongo import MongoClient
 from bson.binary import Binary
 import pickle
 
-from app.objs import complexRelation
-from app.objs import diagram
-from app.objs import relationship
-from app.objs import entity
+from app.obbj import complexRelation
+from app.obbj import diagram
+from app.obbj import relationship
+from app.obbj import entity
 
 from app.xmlhandler import XMLHandler
 from app.parser import Parser
+from app.mongohandler import mongoHandler
 
 
 #_____________________________________TESTS____________________________________________->
@@ -207,7 +208,7 @@ def getID():
     logging.info("FLASK:getID url from FLASk")
     if request.method == 'POST':
         data=request.json
-        cc=getByIdMongoDB(data["id"])
+        cc=mongohand.getByIdMongoDB(data["id"])
         finalize_parse(cc['bin-data'],cc['output'],cc['autor'])
     return render_template('index.html')
 
@@ -216,14 +217,14 @@ def delID():
     logging.info("FLASK:delID url from FLASk")
     if request.method == 'POST':
         data=request.json
-        deleteByIdMongoDB(data["id"])
+        mongohand.deleteByIdMongoDB(data["id"])
     return render_template('index.html')
 
 
 ##ENCODE json en cascada
 def getEncodeOps():
     logging.info("FLASK encoding ops")
-    ops=initMongoDB()
+    ops=mongohand.initMongoDB()
     toret1=[]
     for c in ops:
         toret1.append({'id':str(c['id']),'input':str(c['input']),'autor':str(c['autor']),'output':str(c['output']),'date':str(c['date']),'diagrams':getEncodeDig(c['bin-data'])})
@@ -339,7 +340,6 @@ def reParseDiagrams(diagrams):
                 if fl==False:complexParsed.targets.append(so)
 
             totalComplex.append(complexParsed)
-        print "length "+str(len(di.entities))+"   "+str(len(remove_entities_rep(di.entities)))
         di.entities=remove_entities_rep(di.entities)
         di.complexRelations=totalComplex
         toret.append(di)
@@ -381,58 +381,8 @@ def deletingTextNotes(diagrams):
             if fl==True:aux.append(d)
         k.entities=aux  
     return diagrams
-#_____________________________________DB____________________________________________->
-#
-#Metodos para gestionar la interaccion con la base de datos
-#
-#
-#
 
-def insertMongoDB(ob,input,output,autor):
-    logging.info("MONGO inserting parsed document on DB")
-    client = MongoClient()
-    db = client.tfg
-    bytes=pickle.dumps(ob)
-    result=db.ob.insert_one({'bin-data': bytes,'input':input,'autor':autor,'output':output, 'date':unicode(datetime.datetime.now())})
-    logging.info("MONGO elemnt inserted id:"+str(result.inserted_id))
-
-def getByIdMongoDB(id):
-    logging.info("MONGO get element by id")
-    client = MongoClient()
-    db = client.tfg
-    cursor=db.ob.find({'_id':ObjectId(id)})
-    toret=""
-    for c in cursor:
-        toret={'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output'],'date':c['date']}
-    return toret
-
-def deleteByIdMongoDB(id):
-    logging.info("MONGO delete element by id")
-    client = MongoClient()
-    db = client.tfg
-    db.ob.delete_many({'_id':ObjectId(id)})
-
-
-def initMongoDB():
-    logging.info("MONGO initializing DB")
-    client = MongoClient()
-    db = client.tfg
-    cursor=db.ob.find({})
-    toret=[]
-    aux=0
-    for c in cursor:
-        aux=aux+1
-        toret.append({'id':c['_id'],'bin-data':pickle.loads(c['bin-data']),'input':c['input'],'autor':c['autor'],'output':c['output'],'date':c['date']})
-    logging.info("MONGO get "+ str(aux) +" elements from DB")
-    return toret
-
-
-def deleteMongoDB():
-    logging.info("MONGO deleting instances on DB")
-    client = MongoClient()
-    db = client.tfg
-    db.ob.delete_many({})
-  
+    
 
 #_____________________________________MAIN____________________________________________->
 #
@@ -526,7 +476,7 @@ def init_the_parse(input,output,autor):
    dig=definingAbstractEntities(dig)
    dig=deletingTextNotes(dig)
    dig=redefiningTargetsAndSourcesOnComplex(dig)
-   insertMongoDB(dig,input,output,autor)
+   mongohand.insertMongoDB(dig,input,output,autor)
    finalize_parse(dig,output,autor)
 
 def finalize_parse(dig,output,autor):
@@ -671,7 +621,7 @@ if ( __name__ == "__main__"):
     os.system("clear")
     logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
     logging.info("app init")
-
+    mongohand=mongoHandler()
     logging.info("get conf from conf/config.conf")
     generalconf=get_general_conf()
     dbusconf=get_dbus_conf()
@@ -783,13 +733,13 @@ if ( __name__ == "__main__"):
 
 
             if op=="1":
-                oper=initMongoDB()
+                oper=mongohand.initMongoDB()
                 dig=showShellOps(oper)
                 if dig!="nope":
                     op2=raw_input("x(eliminar)/d(parsear)/dd(detalles)/q(retroceder)??:")
                     os.system("clear")
                     if op2=="d":finalize_parse(dig['bin-data'],dig['output'],dig['autor'])
-                    if op2=="x":deleteByIdMongoDB(dig['id'])
+                    if op2=="x":mongohand.deleteByIdMongoDB(dig['id'])
                     if op2=="dd":showDetailsDig(dig['bin-data'])
             if op=="2":
                 autor=raw_input('Autor??: ')
@@ -805,7 +755,7 @@ if ( __name__ == "__main__"):
                 init_the_parse(xmli,xmls,autor)
             if op=="x":
                 os.system("clear")
-                deleteMongoDB()
+                mongohand.deleteMongoDB()
 
 
         
