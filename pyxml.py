@@ -10,12 +10,12 @@ import datetime
 import time
 import coloredlogs, logging
 
-import dbus
-import dbus.service
-import dbus.mainloop.glib
-import gobject
-import glib
-import dbus.glib
+#import dbus
+#import dbus.service
+#import dbus.mainloop.glib
+#import gobject
+#import glib
+#import dbus.glib
 
 import threading
 import sys
@@ -136,24 +136,22 @@ class flaskTestCase(unittest.TestCase):
 #
 #
 
-class DBUSService(threading.Thread,dbus.service.Object):
-    def run(self):
-      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
-      dbus.service.Object.__init__(self, bus_name, dbusconf['name'])
-      logging.info("DBUS:Starting service")
-      
-    @dbus.service.method("com.example.service.parse_an_element")
-    def parse_an_element(self,input,output,autor):
-      logging.info("DBUS:Method parse_an_element called starting the parse")
-      init_the_parse(input,output,autor)
-      return "Doing the parse"
-
-    @dbus.service.method("com.example.service.Salir")
-    def salir(self):
-      logging.info("DBUS:shutting down")
-      self._loop.quit()
-      stop_flask()
-
+#class DBUSService(threading.Thread,dbus.service.Object):
+ #   def run(self):
+#      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
+#      dbus.service.Object.__init__(self, bus_name, dbusconf['name'])
+#      logging.info("DBUS:Starting service")
+#      
+#    @dbus.service.method("com.example.service.parse_an_element")
+#    def parse_an_element(self,input,output,autor):
+#      init_the_parse(input,output,autor)
+#      return "Doing the parse"
+#    @dbus.service.method("com.example.service.Salir")
+#    def salir(self):
+#      logging.info("DBUS:shutting down")
+#      self._loop.quit()
+#      stop_flask()
+#
 
 #_____________________________________FLASK____________________________________________->
 #
@@ -312,11 +310,11 @@ def get_dbus_conf():
                 myprior=ConfigSectionMap(sec,Config)
     return myprior
 
-def publish_dbus():
-    loop = glib.MainLoop()
-    d=DBUSService()
-    d.start()
-    loop.run()
+#def publish_dbus():
+#    loop = glib.MainLoop()
+#    d=DBUSService()
+#    d.start()
+#    loop.run()
 
 def init_the_parse(input,output,autor):
    parser = xml.sax.make_parser()
@@ -435,9 +433,9 @@ if ( __name__ == "__main__"):
 #________________________________________DBUS MODE___________________________________________->
     if dbusMode and not flaskMode:
       logging.info("DBUS MODE")
-      gobject.threads_init()
-      dbus.glib.init_threads()
-      publish_dbus()
+#      gobject.threads_init()
+#      dbus.glib.init_threads()
+#      publish_dbus()
       sys.exit(255)
 #_____________________________________FLASK MODE_____________________________________________->
     if flaskMode and not dbusMode:
@@ -464,9 +462,9 @@ if ( __name__ == "__main__"):
           myapp=flaskApp()
           myapp.start()
           logging.info("DBUS MODE")
-          gobject.threads_init()
-          dbus.glib.init_threads()
-          publish_dbus()
+#          gobject.threads_init()
+#          dbus.glib.init_threads()
+#          publish_dbus()
           sys.exit(255)
         except KeyboardInterrupt:
             logging.critical("KeyboardInterrupt")
