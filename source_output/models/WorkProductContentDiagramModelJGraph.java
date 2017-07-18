@@ -424,6 +424,56 @@ if (relacion.equalsIgnoreCase("Quote Relationship")) {
         return null;
     }
 
+  public DefaultGraphCell createCell(String entity) throws InvalidEntity{
+if (entity.equalsIgnoreCase("DPDFSMMel")) {
+            DPDFSMMel nentity=getOM().$createname(getMJGraph().getNewId("DPDFSMMel"));
+            DefaultGraphCell vertex = new
+            DPDFSMMelCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Relation")) {
+            Relation nentity=getOM().$createname(getMJGraph().getNewId("Relation"));
+            DefaultGraphCell vertex = new
+            RelationCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("MetaElemento")) {
+            MetaElemento nentity=getOM().$createname(getMJGraph().getNewId("MetaElemento"));
+            DefaultGraphCell vertex = new
+            MetaElementoCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Atributo")) {
+            Atributo nentity=getOM().$createname(getMJGraph().getNewId("Atributo"));
+            DefaultGraphCell vertex = new
+            AtributoCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Operacion")) {
+            Operacion nentity=getOM().$createname(getMJGraph().getNewId("Operacion"));
+            DefaultGraphCell vertex = new
+            OperacionCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 

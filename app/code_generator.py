@@ -51,6 +51,7 @@ class Code_generator:
             getAllowedEntities = self.getAllowedEntities(name, o)
             getPossibleRelationships = self.getPossibleRelationships(name, o)
             getInstanciaNRelacion = self.getInstanciaNRelacion(name, o)
+            createCell = self.createCell(name, o)
 
             d = {"who"+mod_name: name+mod_name,
                  "whoDataEntity": name+"DataEntity",
@@ -60,6 +61,7 @@ class Code_generator:
                  "getAllowedRelationships": getAllowedRelationships,
                  "getPossibleRelationships": getPossibleRelationships,
                  "getInstanciaNRelacion": getInstanciaNRelacion,
+                 "createCell": createCell,
                  "getAllowedEntities": getAllowedEntities}
             toret = template.safe_substitute(d)
 
@@ -82,6 +84,7 @@ class Code_generator:
                 "name": k.name,
             }
             toret += ent.safe_substitute(dd)
+
 
         d = {"entities": toret,
              "name": name
@@ -163,3 +166,26 @@ class Code_generator:
              }
 
         return template.safe_substitute(d)
+
+    def createCell(self, name, ob):
+        with open("source_templates/createCell.txt") as f:
+            template = Template(f.read())
+        with open("source_templates/createCellEntity.txt") as f:
+            ent = Template(f.read())
+
+        toret = ""
+
+        for e in ob.entities:
+            dd={
+                "name":e.name,
+                "cratename":"create"+e.name,
+                "namecell":e.name+"Cell"
+            }
+            toret += ent.safe_substitute(dd)
+        toret +='\n       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); '
+        d = {"entity": toret
+             }
+
+        return template.safe_substitute(d)
+
+  

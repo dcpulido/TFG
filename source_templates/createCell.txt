@@ -1,0 +1,3 @@
+public DefaultGraphCell createCell(String entity) throws InvalidEntity{
+$entity
+}

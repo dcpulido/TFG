@@ -111,6 +111,8 @@ public class $whoModelJGraph extends ModelJGraph {
 
   $getInstanciaNRelacion
 
+  $createCell
+
     
 
 

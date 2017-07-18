@@ -75,10 +75,10 @@
       <file leaf-file-name="code_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+            <state relative-caret-position="745">
+              <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
               <folding>
-                <marker date="1500380666185" expanded="true" signature="97:5250" ph="..." />
+                <marker date="1500382353097" expanded="true" signature="97:1545" ph="..." />
               </folding>
             </state>
           </provider>
@@ -206,7 +206,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="5329" />
-    <option name="y" value="-4" />
+    <option name="y" value="-1084" />
     <option name="width" value="1871" />
     <option name="height" value="1084" />
   </component>
@@ -464,7 +464,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="5329" y="-4" width="1871" height="1084" extended-state="6" />
+    <frame x="5329" y="-1084" width="1871" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -757,10 +757,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        <state relative-caret-position="745">
+          <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
           <folding>
-            <marker date="1500380666185" expanded="true" signature="97:5250" ph="..." />
+            <marker date="1500382353097" expanded="true" signature="97:1545" ph="..." />
           </folding>
         </state>
       </provider>

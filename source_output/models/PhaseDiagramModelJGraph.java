@@ -509,6 +509,119 @@ if (relacion.equalsIgnoreCase("Follows")) {
         return null;
     }
 
+  public DefaultGraphCell createCell(String entity) throws InvalidEntity{
+if (entity.equalsIgnoreCase("InitialNode")) {
+            InitialNode nentity=getOM().$createname(getMJGraph().getNewId("InitialNode"));
+            DefaultGraphCell vertex = new
+            InitialNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Process")) {
+            Process nentity=getOM().$createname(getMJGraph().getNewId("Process"));
+            DefaultGraphCell vertex = new
+            ProcessCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Activity")) {
+            Activity nentity=getOM().$createname(getMJGraph().getNewId("Activity"));
+            DefaultGraphCell vertex = new
+            ActivityCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("EndNode")) {
+            EndNode nentity=getOM().$createname(getMJGraph().getNewId("EndNode"));
+            DefaultGraphCell vertex = new
+            EndNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("ActivityKind")) {
+            ActivityKind nentity=getOM().$createname(getMJGraph().getNewId("ActivityKind"));
+            DefaultGraphCell vertex = new
+            ActivityKindCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("ForkNode")) {
+            ForkNode nentity=getOM().$createname(getMJGraph().getNewId("ForkNode"));
+            DefaultGraphCell vertex = new
+            ForkNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("InitialMetaNode")) {
+            InitialMetaNode nentity=getOM().$createname(getMJGraph().getNewId("InitialMetaNode"));
+            DefaultGraphCell vertex = new
+            InitialMetaNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("JoinNode")) {
+            JoinNode nentity=getOM().$createname(getMJGraph().getNewId("JoinNode"));
+            DefaultGraphCell vertex = new
+            JoinNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("iPhase")) {
+            iPhase nentity=getOM().$createname(getMJGraph().getNewId("iPhase"));
+            DefaultGraphCell vertex = new
+            iPhaseCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("TerminalMetaNode")) {
+            TerminalMetaNode nentity=getOM().$createname(getMJGraph().getNewId("TerminalMetaNode"));
+            DefaultGraphCell vertex = new
+            TerminalMetaNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("DecissionNode")) {
+            DecissionNode nentity=getOM().$createname(getMJGraph().getNewId("DecissionNode"));
+            DefaultGraphCell vertex = new
+            DecissionNodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Phase")) {
+            Phase nentity=getOM().$createname(getMJGraph().getNewId("Phase"));
+            DefaultGraphCell vertex = new
+            PhaseCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 

@@ -557,6 +557,101 @@ if (relacion.equalsIgnoreCase("Extends")) {
         return null;
     }
 
+  public DefaultGraphCell createCell(String entity) throws InvalidEntity{
+if (entity.equalsIgnoreCase("Role")) {
+            Role nentity=getOM().$createname(getMJGraph().getNewId("Role"));
+            DefaultGraphCell vertex = new
+            RoleCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("BehavioralWP")) {
+            BehavioralWP nentity=getOM().$createname(getMJGraph().getNewId("BehavioralWP"));
+            DefaultGraphCell vertex = new
+            BehavioralWPCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Task")) {
+            Task nentity=getOM().$createname(getMJGraph().getNewId("Task"));
+            DefaultGraphCell vertex = new
+            TaskCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("StructuralWP")) {
+            StructuralWP nentity=getOM().$createname(getMJGraph().getNewId("StructuralWP"));
+            DefaultGraphCell vertex = new
+            StructuralWPCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("WFConsumed")) {
+            WFConsumed nentity=getOM().$createname(getMJGraph().getNewId("WFConsumed"));
+            DefaultGraphCell vertex = new
+            WFConsumedCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("CompositeWP")) {
+            CompositeWP nentity=getOM().$createname(getMJGraph().getNewId("CompositeWP"));
+            DefaultGraphCell vertex = new
+            CompositeWPCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("Activity")) {
+            Activity nentity=getOM().$createname(getMJGraph().getNewId("Activity"));
+            DefaultGraphCell vertex = new
+            ActivityCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("FreeWP")) {
+            FreeWP nentity=getOM().$createname(getMJGraph().getNewId("FreeWP"));
+            DefaultGraphCell vertex = new
+            FreeWPCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("WPProduced")) {
+            WPProduced nentity=getOM().$createname(getMJGraph().getNewId("WPProduced"));
+            DefaultGraphCell vertex = new
+            WPProducedCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("StructuredWP")) {
+            StructuredWP nentity=getOM().$createname(getMJGraph().getNewId("StructuredWP"));
+            DefaultGraphCell vertex = new
+            StructuredWPCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 
