@@ -1,0 +1,25 @@
+Image $img_name =
+            ImageLoader.getImage(\"$name_image\");
+            undoIcon = new ImageIcon($img_name);
+            Action $name=
+            new AbstractAction("$name", undoIcon) {
+                public void actionPerformed(ActionEvent e) {
+                    try{
+                        insert(new Point(0, 0), "$name");
+                    } catch (InvalidEntity e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            };
+            $name.setEnabled(true);
+            jb = new JButton($name);
+            jb.setText("");
+            jb.setName("$name");
+            jb.setToolTipText("$name");
+            toolbar.add(jb);
+
+
+
+
+
+

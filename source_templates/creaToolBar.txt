@@ -1,0 +1,10 @@
+ protected void creaToolBar() {
+        if (toolbar==null){
+            toolbar = new FilteredJToolBar("$name");
+            toolbar.setFloatable(false);
+            ImageIcon undoIcon = null;
+            JButton jb = null;
+$entities
+
+        }
+    }

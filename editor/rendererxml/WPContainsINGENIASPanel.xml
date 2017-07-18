@@ -1,0 +1,10 @@
+
+
+
+##panel layout="BorderLayout"  Background="transparent"#
+##vbox Background="transparent" constraints="BorderLayout.CENTER"#
+##label id="Label"  /#
+##stereotype text="WPContains" HorizontalAlignment="CENTER" /#
+##/vbox#
+##/panel#
+

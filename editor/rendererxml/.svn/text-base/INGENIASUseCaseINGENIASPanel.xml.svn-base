@@ -1,0 +1,15 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##label id="Id" constraints="BorderLayout.NORTH" /#
+##label Foreground="blue" icon="images/iusecase.gif" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##collectionpanel Background="white" id="Scenarios" constraints="BorderLayout.SOUTH"#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+##iconlabel icon="images/attribute.gif" /#
+##label text="Name:"/# 
+##label name="Scenarios_ID"/# 
+##/panel#
+##/collectionpanel#
+##/panel#
+					
+		

@@ -1,0 +1,11 @@
+
+
+##panel layout="BorderLayout"  Background="white"#					
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##label id="Label" text="Fails"/#
+##stereotype text="Failure" HorizontalAlignment="CENTER" /#
+##label id="FailureCondition" text="(GTSatisfies)"/#
+##/vbox#
+##/panel#
+					
+		

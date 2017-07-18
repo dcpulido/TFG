@@ -2,8 +2,6 @@ import logging
 
 from app.obbj import complexRelation
 from app.obbj import diagram
-from app.obbj import relationship
-from app.obbj import entity
 
 #_____________________________________REPARSEADO____________________________________________->
 #

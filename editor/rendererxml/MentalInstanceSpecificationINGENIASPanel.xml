@@ -1,0 +1,46 @@
+
+
+##panel layout="BorderLayout" Background="white" border="MatteBorder(1,1,1,1,black)"#
+
+##panel layout="FlowLayout(FlowLayout.CENTER)"  Background="white" constraints="BorderLayout.NORTH" #
+##label id="Id"/#
+##label Foreground="blue" icon="images/mispec.png"  /#
+##/panel#
+
+##vbox Background="white"  constraints="BorderLayout.CENTER"#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+##iconlabel icon="images/attribute.gif" /#
+##label text="Entity:"/# 
+##label text=":"/#
+##label name="InstanceType"/# 
+##/panel#
+
+##collectionpanel Background="white" id="SlotsValues" #
+##panel layout="GridBagLayout" Background="white"  #
+##iconlabel icon="images/attribute.gif"#
+##gridbagconstraints gridx="0" gridy="0" ipadx="5" ipady="1" /#	
+##/iconlabel#
+
+##label text="Name:"# 
+##gridbagconstraints gridx="1" gridy="0" ipadx="5" ipady="1" /#	
+##/label#
+
+##label  name="SlotsValues_Slot" editable="false" text="uno este es un texto a mostrar"   #
+##gridbagconstraints gridx="2" gridy="0" ipadx="5" ipady="1"  /#
+##/label#
+##label text="="#
+##gridbagconstraints gridx="3" gridy="0" ipadx="5" ipady="1" /#	
+##/label#
+
+##scrollpane autoscroll="true"#
+##gridbagconstraints gridx="4" gridy="0" ipadx="5" ipady="1" weightx="2" weighty="1" fill="1"/#
+##myeditor name="SlotsValues_Value" editable="false" AlignmentY="1" text="dos este es otro texto del que me gustaria disponer" LineWrap="true" border="MatteBorder(1,1,1,1,gray)"#
+
+##/myeditor#
+##/scrollpane#
+##/panel#
+##/collectionpanel#
+##/vbox#
+
+##/panel#
+

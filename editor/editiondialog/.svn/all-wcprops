@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ingenias/!svn/ver/147/trunk/IDK/editor/src/ingenias/editor/editiondialog
+END
+SelectingOnePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/SelectingOnePanel.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/Utils.java
+END
+GeneralEditionFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/editiondialog/GeneralEditionFrame.java
+END
+FieldCompletingPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/FieldCompletingPanel.java
+END
+EditionDialogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/EditionDialogManager.java
+END
+GeneralEditionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/147/trunk/IDK/editor/src/ingenias/editor/editiondialog/GeneralEditionPanel.java
+END
+SelectingMultiplePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/SelectingMultiplePanel.java
+END
+EditingFieldsUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/EditingFieldsUtils.java
+END
+ReferencePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/ReferencePanel.java
+END
+SelectingModelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/editiondialog/SelectingModelPanel.java
+END

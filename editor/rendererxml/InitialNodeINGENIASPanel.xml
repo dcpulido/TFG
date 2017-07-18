@@ -1,0 +1,6 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##label Foreground="blue" icon="images/dpdfiNode40.png" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+

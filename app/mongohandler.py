@@ -1,17 +1,8 @@
 import datetime
-import time
 import logging
 
 from pymongo import MongoClient
-from bson.binary import Binary
 import pickle
-
-from app.objs import complexRelation
-from app.objs import diagram
-from app.objs import relationship
-from app.objs import entity
-
-
 
 #_____________________________________DB____________________________________________->
 #

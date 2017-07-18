@@ -1,11 +1,6 @@
 import os
 import logging
 
-from app.obbj import complexRelation
-from app.obbj import diagram
-from app.obbj import relationship
-from app.obbj import entity
-
 #No usar// clase para debug
 class showDetails:
     def toString(self,diagrams):

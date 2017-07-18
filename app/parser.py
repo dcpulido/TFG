@@ -1,19 +1,8 @@
-from objs import complexRelation
-from objs import diagram
-from objs import relationship
-from objs import entity
-
-from bson.binary import Binary
-import pickle
 
 import datetime
-import time
 import logging
-
-import xml.sax
 import xml.etree.cElementTree as ET
-import json
-from bson.objectid import ObjectId
+
 
 
 ##/////////////////////////////////////////////////////////////////////////////////////////////////////////
