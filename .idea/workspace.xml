@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06e3eba4-dcdb-47b7-9dc3-67637554e702" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code_generator.py" afterPath="$PROJECT_DIR$/app/code_generator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_templates/ModelJGraph_Template.txt" afterPath="$PROJECT_DIR$/source_templates/ModelJGraph_Template.txt" />
-    </list>
+    <list default="true" id="06e3eba4-dcdb-47b7-9dc3-67637554e702" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +68,7 @@
             <state relative-caret-position="829">
               <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
               <folding>
-                <marker date="1500387366459" expanded="true" signature="97:1545" ph="..." />
+                <marker date="1500387524495" expanded="true" signature="97:1545" ph="..." />
               </folding>
             </state>
           </provider>
@@ -760,7 +750,7 @@
         <state relative-caret-position="829">
           <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding>
-            <marker date="1500387366459" expanded="true" signature="97:1545" ph="..." />
+            <marker date="1500387524495" expanded="true" signature="97:1545" ph="..." />
           </folding>
         </state>
       </provider>
