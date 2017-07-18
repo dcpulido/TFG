@@ -1,0 +1,25 @@
+public DefaultGraphCell getInstanciaNRelacion(String relacion,
+                                                  GraphCell[] selected) {
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+            }
+        }
+        if (nAryEdgesNum <= 1 && edgesNum == 0) {
+            
+$relations
+            
+        }
+        
+        return null;
+    }

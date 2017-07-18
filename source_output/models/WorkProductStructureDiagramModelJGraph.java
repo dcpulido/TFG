@@ -259,21 +259,7 @@ public class WorkProductStructureDiagramModelJGraph extends ModelJGraph {
         
                 relationships.add("none");
         
-                relationships.add("none");
-        
                 relationships.add("WpContains");
-        
-                relationships.add("WPContains");
-        
-                relationships.add("none");
-        
-                relationships.add("WpContains");
-        
-                relationships.add("none");
-        
-                relationships.add("WPContains");
-        
-                relationships.add("none");
         
         
         
@@ -350,43 +336,8 @@ public class WorkProductStructureDiagramModelJGraph extends ModelJGraph {
                 }
 
                 // N-ary relationships. Sometimes they can be also binary.
-                if (noneEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("none");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
                 if (WpContainsEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("WpContains");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WPContainsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WPContains");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (noneEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("none");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WpContainsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WpContains");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (noneEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("none");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WPContainsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WPContains");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (noneEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("none");
                 }       
             }
             else if (nAryEdgesNum == 1) {
@@ -400,44 +351,9 @@ if (selectedEdge instanceof WPContainsEdge &&
                     v.add("none");
                 }
                 
-                if (selectedEdge instanceof noneEdge &&
-                    (noneEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("none");
-                }
-                
                 if (selectedEdge instanceof WpContainsEdge &&
                     (WpContainsEdge.acceptConnection(this.getModel(), selected))) {
                     v.add("WpContains");
-                }
-                
-                if (selectedEdge instanceof WPContainsEdge &&
-                    (WPContainsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WPContains");
-                }
-                
-                if (selectedEdge instanceof noneEdge &&
-                    (noneEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("none");
-                }
-                
-                if (selectedEdge instanceof WpContainsEdge &&
-                    (WpContainsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WpContains");
-                }
-                
-                if (selectedEdge instanceof noneEdge &&
-                    (noneEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("none");
-                }
-                
-                if (selectedEdge instanceof WPContainsEdge &&
-                    (WPContainsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WPContains");
-                }
-                
-                if (selectedEdge instanceof noneEdge &&
-                    (noneEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("none");
                 }
                 
                    
@@ -445,6 +361,65 @@ if (selectedEdge instanceof WPContainsEdge &&
         }
         
         return v.toArray();
+    }
+
+  public DefaultGraphCell getInstanciaNRelacion(String relacion,
+                                                  GraphCell[] selected) {
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+            }
+        }
+        if (nAryEdgesNum <= 1 && edgesNum == 0) {
+            
+if (relacion.equalsIgnoreCase("WPContains")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WPContainsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WPContainsEdge(new WPContains(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("none")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof noneEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new noneEdge(new none(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WpContains")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WpContainsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WpContainsEdge(new WpContains(getMJGraph().getNewId()));
+                }
+            }
+            
+            
+            
+        }
+        
+        return null;
     }
 
     

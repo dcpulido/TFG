@@ -359,56 +359,6 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
         
                 relationships.add("Extends");
         
-                relationships.add("Follows");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Follows");
-        
-                relationships.add("Follows");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Follows");
-        
-                relationships.add("Follows");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Follows");
-        
-                relationships.add("Follows");
-        
         
         
         
@@ -491,131 +441,6 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
                 // N-ary relationships. Sometimes they can be also binary.
                 if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
                 }       
             }
             else if (nAryEdgesNum == 1) {
@@ -629,136 +454,59 @@ if (selectedEdge instanceof FollowsEdge &&
                     v.add("Extends");
                 }
                 
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
-                if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
-                }
-                
                    
             }
         }
         
         return v.toArray();
+    }
+
+  public DefaultGraphCell getInstanciaNRelacion(String relacion,
+                                                  GraphCell[] selected) {
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+            }
+        }
+        if (nAryEdgesNum <= 1 && edgesNum == 0) {
+            
+if (relacion.equalsIgnoreCase("Follows")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof FollowsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new FollowsEdge(new Follows(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("Extends")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof ExtendsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new ExtendsEdge(new Extends(getMJGraph().getNewId()));
+                }
+            }
+            
+            
+            
+        }
+        
+        return null;
     }
 
     

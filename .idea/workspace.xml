@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="06e3eba4-dcdb-47b7-9dc3-67637554e702" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code_generator.py" afterPath="$PROJECT_DIR$/app/code_generator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_templates/ModelJGraph_Template.txt" afterPath="$PROJECT_DIR$/source_templates/ModelJGraph_Template.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +75,10 @@
       <file leaf-file-name="code_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="703">
+              <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
               <folding>
-                <marker date="1500378928645" expanded="true" signature="306:537" ph="..." />
-                <marker date="1500378928645" expanded="true" signature="440:537" ph="..." />
+                <marker date="1500380666185" expanded="true" signature="97:5250" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,7 +107,7 @@
       <file leaf-file-name="AgentModelPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/editor/panels/AgentModelPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2646">
+            <state relative-caret-position="-2394">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -512,7 +519,7 @@
         <state relative-caret-position="168">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -653,7 +660,7 @@
         <state relative-caret-position="143">
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,11 +757,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="703">
+          <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
           <folding>
-            <marker date="1500378928645" expanded="true" signature="306:537" ph="..." />
-            <marker date="1500378928645" expanded="true" signature="440:537" ph="..." />
+            <marker date="1500380666185" expanded="true" signature="97:5250" ph="..." />
           </folding>
         </state>
       </provider>
@@ -793,7 +799,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/editor/panels/AgentModelPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2646">
+        <state relative-caret-position="-2394">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>

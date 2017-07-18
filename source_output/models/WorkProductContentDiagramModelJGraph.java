@@ -207,26 +207,6 @@ public class WorkProductContentDiagramModelJGraph extends ModelJGraph {
             jb.setToolTipText("Operacion");
             toolbar.add(jb);
 
-                        Image img_DPDFSMMel =
-            ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_DPDFSMMel);
-            Action DPDFSMMel=
-            new AbstractAction("DPDFSMMel", undoIcon) {
-                public void actionPerformed(ActionEvent e) {
-                    try{
-                        insert(new Point(0, 0), "DPDFSMMel");
-                    } catch (InvalidEntity e1) {
-                        e1.printStackTrace();
-                    }
-                }
-            };
-            DPDFSMMel.setEnabled(true);
-            jb = new JButton(DPDFSMMel);
-            jb.setText("");
-            jb.setName("DPDFSMMel");
-            jb.setToolTipText("DPDFSMMel");
-            toolbar.add(jb);
-
             
 
         }
@@ -263,8 +243,6 @@ public class WorkProductContentDiagramModelJGraph extends ModelJGraph {
                 entities.add("Atributo");
         
                 entities.add("Operacion");
-        
-                entities.add("DPDFSMMel");
         
                 
         
@@ -363,6 +341,87 @@ if (selectedEdge instanceof Quote RelationshipEdge &&
         }
         
         return v.toArray();
+    }
+
+  public DefaultGraphCell getInstanciaNRelacion(String relacion,
+                                                  GraphCell[] selected) {
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+            }
+        }
+        if (nAryEdgesNum <= 1 && edgesNum == 0) {
+            
+if (relacion.equalsIgnoreCase("Quote Relationship")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof Quote RelationshipEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new Quote RelationshipEdge(new Quote Relationship(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("Extends")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof ExtendsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new ExtendsEdge(new Extends(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("Quote")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof QuoteEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new QuoteEdge(new Quote(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("Relate")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof RelateEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new RelateEdge(new Relate(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("Define")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof DefineEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new DefineEdge(new Define(getMJGraph().getNewId()));
+                }
+            }
+            
+            
+            
+        }
+        
+        return null;
     }
 
     

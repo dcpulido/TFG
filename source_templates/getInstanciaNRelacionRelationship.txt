@@ -1,0 +1,12 @@
+if (relacion.equalsIgnoreCase("$name")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof $edge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new $edge(new $name(getMJGraph().getNewId()));
+                }
+            }
+            
+            

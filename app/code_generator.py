@@ -10,7 +10,33 @@ class Code_generator:
     def __init__(self):
         pass
 
+    def remove_repeats(self, ob):
+
+        for d in ob:
+            entities = []
+            relations = []
+            for e in d.entities:
+                fl = False
+                for e2 in entities:
+                    if e2.name == e.name:
+                        fl = True
+                if not fl:
+                    entities.append(e)
+
+            for r in d.relations:
+                fl = False
+                for r2 in relations:
+                    if r2.name == r.name:
+                        fl = True
+                if not fl:
+                    relations.append(r)
+
+            d.entities = entities
+            d.relations = relations
+        return ob
+
     def generate(self, ob):
+        ob = self.remove_repeats(ob)
         self.generate_ModelJGraph(ob, "ModelJGraph", "models")
 
     def generate_ModelJGraph(self, ob, mod_name="ModelJGraph", dir="models"):
@@ -24,7 +50,7 @@ class Code_generator:
             getAllowedRelationships = self.getAllowedRelationships(name, o)
             getAllowedEntities = self.getAllowedEntities(name, o)
             getPossibleRelationships = self.getPossibleRelationships(name, o)
-
+            getInstanciaNRelacion = self.getInstanciaNRelacion(name, o)
 
             d = {"who"+mod_name: name+mod_name,
                  "whoDataEntity": name+"DataEntity",
@@ -33,6 +59,7 @@ class Code_generator:
                  "creaToolBar": creaToolBar,
                  "getAllowedRelationships": getAllowedRelationships,
                  "getPossibleRelationships": getPossibleRelationships,
+                 "getInstanciaNRelacion": getInstanciaNRelacion,
                  "getAllowedEntities": getAllowedEntities}
             toret = template.safe_substitute(d)
 
@@ -115,6 +142,24 @@ class Code_generator:
             tt2 += ent2.safe_substitute(dd)
         d = {"binary": toret,
              "noBinary": tt2
+             }
+
+        return template.safe_substitute(d)
+
+    def getInstanciaNRelacion(self, name, ob):
+        with open("source_templates/getInstanciaNRelacion.txt") as f:
+            template = Template(f.read())
+        with open("source_templates/getInstanciaNRelacionRelationship.txt") as f:
+            ent = Template(f.read())
+
+        toret = ""
+        for k in ob.relations:
+            dd = {
+                "edge": k.name+"Edge",
+                "name": k.name
+            }
+            toret += ent.safe_substitute(dd)
+        d = {"relations": toret
              }
 
         return template.safe_substitute(d)

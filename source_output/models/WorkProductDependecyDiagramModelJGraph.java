@@ -237,22 +237,6 @@ public class WorkProductDependecyDiagramModelJGraph extends ModelJGraph {
         
         relationships.add("Extends");
         
-                relationships.add("Extends");
-        
-                relationships.add("WP Depends");
-        
-                relationships.add("WP Depends");
-        
-                relationships.add("WP Depends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("WP Depends");
-        
-                relationships.add("Extends");
-        
                 relationships.add("WP Depends");
         
         
@@ -323,92 +307,12 @@ public class WorkProductDependecyDiagramModelJGraph extends ModelJGraph {
                 }
 
                 // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WP DependsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WP Depends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WP DependsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WP Depends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WP DependsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WP Depends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WP DependsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WP Depends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
                 if (WP DependsEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("WP Depends");
                 }       
             }
             else if (nAryEdgesNum == 1) {
 if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof WP DependsEdge &&
-                    (WP DependsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WP Depends");
-                }
-                
-                if (selectedEdge instanceof WP DependsEdge &&
-                    (WP DependsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WP Depends");
-                }
-                
-                if (selectedEdge instanceof WP DependsEdge &&
-                    (WP DependsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WP Depends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof WP DependsEdge &&
-                    (WP DependsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WP Depends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
                     (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
                     v.add("Extends");
                 }
@@ -423,6 +327,54 @@ if (selectedEdge instanceof ExtendsEdge &&
         }
         
         return v.toArray();
+    }
+
+  public DefaultGraphCell getInstanciaNRelacion(String relacion,
+                                                  GraphCell[] selected) {
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+            }
+        }
+        if (nAryEdgesNum <= 1 && edgesNum == 0) {
+            
+if (relacion.equalsIgnoreCase("Extends")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof ExtendsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new ExtendsEdge(new Extends(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WP Depends")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WP DependsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WP DependsEdge(new WP Depends(getMJGraph().getNewId()));
+                }
+            }
+            
+            
+            
+        }
+        
+        return null;
     }
 
     

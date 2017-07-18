@@ -317,43 +317,13 @@ public class ActivityDetailedDiagramModelJGraph extends ModelJGraph {
         
         relationships.add("Extends");
         
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
                 relationships.add("WPContains");
         
                 relationships.add("WFProduces");
         
-                relationships.add("WFProduces");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
-        
-                relationships.add("WFConsumes");
-        
                 relationships.add("WFConsumes");
         
                 relationships.add("WFResponsible");
-        
-                relationships.add("WFResponsible");
-        
-                relationships.add("WPContains");
-        
-                relationships.add("Extends");
-        
-                relationships.add("Extends");
         
                 relationships.add("WpContains");
         
@@ -433,41 +403,6 @@ public class ActivityDetailedDiagramModelJGraph extends ModelJGraph {
                 }
 
                 // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
                 if (WPContainsEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("WPContains");
                 }
@@ -478,26 +413,6 @@ public class ActivityDetailedDiagramModelJGraph extends ModelJGraph {
                 }
 
                 // N-ary relationships. Sometimes they can be also binary.
-                if (WFProducesEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WFProduces");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WFConsumesEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WFConsumes");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
                 if (WFConsumesEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("WFConsumes");
                 }
@@ -505,26 +420,6 @@ public class ActivityDetailedDiagramModelJGraph extends ModelJGraph {
                 // N-ary relationships. Sometimes they can be also binary.
                 if (WFResponsibleEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("WFResponsible");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WFResponsibleEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WFResponsible");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (WPContainsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("WPContains");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
-                }
-
-                // N-ary relationships. Sometimes they can be also binary.
-                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Extends");
                 }
 
                 // N-ary relationships. Sometimes they can be also binary.
@@ -538,41 +433,6 @@ if (selectedEdge instanceof ExtendsEdge &&
                     v.add("Extends");
                 }
                 
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
                 if (selectedEdge instanceof WPContainsEdge &&
                     (WPContainsEdge.acceptConnection(this.getModel(), selected))) {
                     v.add("WPContains");
@@ -583,26 +443,6 @@ if (selectedEdge instanceof ExtendsEdge &&
                     v.add("WFProduces");
                 }
                 
-                if (selectedEdge instanceof WFProducesEdge &&
-                    (WFProducesEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WFProduces");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof WFConsumesEdge &&
-                    (WFConsumesEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WFConsumes");
-                }
-                
                 if (selectedEdge instanceof WFConsumesEdge &&
                     (WFConsumesEdge.acceptConnection(this.getModel(), selected))) {
                     v.add("WFConsumes");
@@ -611,26 +451,6 @@ if (selectedEdge instanceof ExtendsEdge &&
                 if (selectedEdge instanceof WFResponsibleEdge &&
                     (WFResponsibleEdge.acceptConnection(this.getModel(), selected))) {
                     v.add("WFResponsible");
-                }
-                
-                if (selectedEdge instanceof WFResponsibleEdge &&
-                    (WFResponsibleEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WFResponsible");
-                }
-                
-                if (selectedEdge instanceof WPContainsEdge &&
-                    (WPContainsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("WPContains");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
-                }
-                
-                if (selectedEdge instanceof ExtendsEdge &&
-                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Extends");
                 }
                 
                 if (selectedEdge instanceof WpContainsEdge &&
@@ -643,6 +463,98 @@ if (selectedEdge instanceof ExtendsEdge &&
         }
         
         return v.toArray();
+    }
+
+  public DefaultGraphCell getInstanciaNRelacion(String relacion,
+                                                  GraphCell[] selected) {
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+            }
+        }
+        if (nAryEdgesNum <= 1 && edgesNum == 0) {
+            
+if (relacion.equalsIgnoreCase("Extends")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof ExtendsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new ExtendsEdge(new Extends(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WPContains")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WPContainsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WPContainsEdge(new WPContains(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WFProduces")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WFProducesEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WFProducesEdge(new WFProduces(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WFConsumes")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WFConsumesEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WFConsumesEdge(new WFConsumes(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WFResponsible")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WFResponsibleEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WFResponsibleEdge(new WFResponsible(getMJGraph().getNewId()));
+                }
+            }
+            
+            if (relacion.equalsIgnoreCase("WpContains")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof WpContainsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new WpContainsEdge(new WpContains(getMJGraph().getNewId()));
+                }
+            }
+            
+            
+            
+        }
+        
+        return null;
     }
 
     
