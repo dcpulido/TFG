@@ -1,0 +1,8 @@
+if (entity.getClass().equals($name.class)) {
+            vertex = new $namecell( ($name) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize(($name) entity);
+        }
+        else
+
+        

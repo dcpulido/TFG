@@ -1,0 +1,40 @@
+public DefaultGraphCell insertDuplicated(Point point, ingenias.editor.entities.Entity
+                                             entity) {
+        // CellView information is not available after creating the cell.
+        
+        // Create a Map that holds the attributes for the Vertex
+        Map map =new Hashtable();
+        // Snap the Point to the Grid
+        point = convert(this.snap(new Point(point)));
+        
+        
+        // Construct Vertex with no Label
+        DefaultGraphCell vertex = null;
+        Dimension size = null;
+        
+        
+$entities
+                                                                                                                                        
+         {}; // Just in case there is no allowed entity in the diagram
+        
+        if (vertex == null) {
+            JOptionPane.showMessageDialog(this,
+                                          "Object not allowed in this diagram "+this.getID()+":"+ 
+                                          entity.getId()+":"+entity.getClass().getName()+
+                                          this.getClass().getName(),"Warning", JOptionPane.WARNING_MESSAGE);    }
+        else {
+            
+            // Add a Bounds Attribute to the Map
+            GraphConstants.setBounds(map, new Rectangle(point, size));
+            
+            // Construct a Map from cells to Maps (for insert)
+            Hashtable attributes = new Hashtable();
+            // Associate the Vertex with its Attributes
+            attributes.put(vertex, map);
+            // Insert the Vertex and its Attributes
+            this.getModel().insert(new Object[] {vertex},attributes
+                                   , null, null, null);
+        }
+        return vertex;
+        
+    }

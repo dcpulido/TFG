@@ -687,7 +687,167 @@ if (entity.getType().equalsIgnoreCase("InitialNode")) {
        throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
 }
 
-    
+  public DefaultGraphCell insert(Point point, String entity) throws InvalidEntity {
+        // CellView information is not available after creating the cell.
+        
+        // Create a Map that holds the attributes for the Vertex
+        Map map = new Hashtable();
+        // Snap the Point to the Grid
+        point = convert(this.snap(new Point(point)));
+        
+        // Construct Vertex with no Label
+        DefaultGraphCell vertex;
+        Dimension size;
+        
+        vertex=this.createCell(entity);
+        size=this.getDefaultSize((Entity)vertex.getUserObject());
+        
+        
+        
+        // Add a Bounds Attribute to the Map
+        GraphConstants.setBounds(map, new Rectangle(point, size));
+        
+        // Construct a Map from cells to Maps (for insert)
+        Hashtable attributes = new Hashtable();
+        // Associate the Vertex with its Attributes
+        attributes.put(vertex, map);
+        // Insert the Vertex and its Attributes
+        this.getModel().insert(new Object[] {vertex},attributes
+                               , null, null, null);
+        
+        Entity newEntity=(Entity) vertex.getUserObject();
+        if (prefs.getModelingLanguage()==Preferences.ModelingLanguage.UML)
+            newEntity.getPrefs().setView(ViewPreferences.ViewType.UML);
+        if (prefs.getModelingLanguage()==Preferences.ModelingLanguage.INGENIAS)
+            newEntity.getPrefs().setView(ViewPreferences.ViewType.INGENIAS);
+        
+        return vertex;
+    }
+
+  public DefaultGraphCell insertDuplicated(Point point, ingenias.editor.entities.Entity
+                                             entity) {
+        // CellView information is not available after creating the cell.
+        
+        // Create a Map that holds the attributes for the Vertex
+        Map map =new Hashtable();
+        // Snap the Point to the Grid
+        point = convert(this.snap(new Point(point)));
+        
+        
+        // Construct Vertex with no Label
+        DefaultGraphCell vertex = null;
+        Dimension size = null;
+        
+        
+if (entity.getClass().equals(InitialNode.class)) {
+            vertex = new InitialNodeCell( (InitialNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((InitialNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(Process.class)) {
+            vertex = new ProcessCell( (Process) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((Process) entity);
+        }
+        else
+
+        if (entity.getClass().equals(Activity.class)) {
+            vertex = new ActivityCell( (Activity) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((Activity) entity);
+        }
+        else
+
+        if (entity.getClass().equals(EndNode.class)) {
+            vertex = new EndNodeCell( (EndNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((EndNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(ActivityKind.class)) {
+            vertex = new ActivityKindCell( (ActivityKind) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((ActivityKind) entity);
+        }
+        else
+
+        if (entity.getClass().equals(ForkNode.class)) {
+            vertex = new ForkNodeCell( (ForkNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((ForkNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(InitialMetaNode.class)) {
+            vertex = new InitialMetaNodeCell( (InitialMetaNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((InitialMetaNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(JoinNode.class)) {
+            vertex = new JoinNodeCell( (JoinNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((JoinNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(iPhase.class)) {
+            vertex = new iPhaseCell( (iPhase) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((iPhase) entity);
+        }
+        else
+
+        if (entity.getClass().equals(TerminalMetaNode.class)) {
+            vertex = new TerminalMetaNodeCell( (TerminalMetaNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((TerminalMetaNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(DecissionNode.class)) {
+            vertex = new DecissionNodeCell( (DecissionNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((DecissionNode) entity);
+        }
+        else
+
+        if (entity.getClass().equals(Phase.class)) {
+            vertex = new PhaseCell( (Phase) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((Phase) entity);
+        }
+        else
+
+        
+                                                                                                                                        
+         {}; // Just in case there is no allowed entity in the diagram
+        
+        if (vertex == null) {
+            JOptionPane.showMessageDialog(this,
+                                          "Object not allowed in this diagram "+this.getID()+":"+ 
+                                          entity.getId()+":"+entity.getClass().getName()+
+                                          this.getClass().getName(),"Warning", JOptionPane.WARNING_MESSAGE);    }
+        else {
+            
+            // Add a Bounds Attribute to the Map
+            GraphConstants.setBounds(map, new Rectangle(point, size));
+            
+            // Construct a Map from cells to Maps (for insert)
+            Hashtable attributes = new Hashtable();
+            // Associate the Vertex with its Attributes
+            attributes.put(vertex, map);
+            // Insert the Vertex and its Attributes
+            this.getModel().insert(new Object[] {vertex},attributes
+                                   , null, null, null);
+        }
+        return vertex;
+        
+    }
 
 
   public String toString() {

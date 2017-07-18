@@ -455,7 +455,104 @@ if (entity.getType().equalsIgnoreCase("DPDFSMMel")) {
        throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
 }
 
-    
+  public DefaultGraphCell insert(Point point, String entity) throws InvalidEntity {
+        // CellView information is not available after creating the cell.
+        
+        // Create a Map that holds the attributes for the Vertex
+        Map map = new Hashtable();
+        // Snap the Point to the Grid
+        point = convert(this.snap(new Point(point)));
+        
+        // Construct Vertex with no Label
+        DefaultGraphCell vertex;
+        Dimension size;
+        
+        vertex=this.createCell(entity);
+        size=this.getDefaultSize((Entity)vertex.getUserObject());
+        
+        
+        
+        // Add a Bounds Attribute to the Map
+        GraphConstants.setBounds(map, new Rectangle(point, size));
+        
+        // Construct a Map from cells to Maps (for insert)
+        Hashtable attributes = new Hashtable();
+        // Associate the Vertex with its Attributes
+        attributes.put(vertex, map);
+        // Insert the Vertex and its Attributes
+        this.getModel().insert(new Object[] {vertex},attributes
+                               , null, null, null);
+        
+        Entity newEntity=(Entity) vertex.getUserObject();
+        if (prefs.getModelingLanguage()==Preferences.ModelingLanguage.UML)
+            newEntity.getPrefs().setView(ViewPreferences.ViewType.UML);
+        if (prefs.getModelingLanguage()==Preferences.ModelingLanguage.INGENIAS)
+            newEntity.getPrefs().setView(ViewPreferences.ViewType.INGENIAS);
+        
+        return vertex;
+    }
+
+  public DefaultGraphCell insertDuplicated(Point point, ingenias.editor.entities.Entity
+                                             entity) {
+        // CellView information is not available after creating the cell.
+        
+        // Create a Map that holds the attributes for the Vertex
+        Map map =new Hashtable();
+        // Snap the Point to the Grid
+        point = convert(this.snap(new Point(point)));
+        
+        
+        // Construct Vertex with no Label
+        DefaultGraphCell vertex = null;
+        Dimension size = null;
+        
+        
+if (entity.getClass().equals(DPDFSMMel.class)) {
+            vertex = new DPDFSMMelCell( (DPDFSMMel) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((DPDFSMMel) entity);
+        }
+        else
+
+        if (entity.getClass().equals(MetaElemento.class)) {
+            vertex = new MetaElementoCell( (MetaElemento) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((MetaElemento) entity);
+        }
+        else
+
+        if (entity.getClass().equals(Relation.class)) {
+            vertex = new RelationCell( (Relation) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((Relation) entity);
+        }
+        else
+
+        
+                                                                                                                                        
+         {}; // Just in case there is no allowed entity in the diagram
+        
+        if (vertex == null) {
+            JOptionPane.showMessageDialog(this,
+                                          "Object not allowed in this diagram "+this.getID()+":"+ 
+                                          entity.getId()+":"+entity.getClass().getName()+
+                                          this.getClass().getName(),"Warning", JOptionPane.WARNING_MESSAGE);    }
+        else {
+            
+            // Add a Bounds Attribute to the Map
+            GraphConstants.setBounds(map, new Rectangle(point, size));
+            
+            // Construct a Map from cells to Maps (for insert)
+            Hashtable attributes = new Hashtable();
+            // Associate the Vertex with its Attributes
+            attributes.put(vertex, map);
+            // Insert the Vertex and its Attributes
+            this.getModel().insert(new Object[] {vertex},attributes
+                                   , null, null, null);
+        }
+        return vertex;
+        
+    }
 
 
   public String toString() {

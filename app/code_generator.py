@@ -53,6 +53,7 @@ class Code_generator:
             getInstanciaNRelacion = self.getInstanciaNRelacion(name, o)
             createCell = self.createCell(name, o)
             getDefaultSize = self.getDefaultSize(name, o)
+            insertDuplicated = self.insertDuplicated(name, o)
 
             d = {"who"+mod_name: name+mod_name,
                  "whoDataEntity": name+"DataEntity",
@@ -64,6 +65,7 @@ class Code_generator:
                  "getInstanciaNRelacion": getInstanciaNRelacion,
                  "createCell": createCell,
                  "getDefaultSize": getDefaultSize,
+                 "insertDuplicated": insertDuplicated,
                  "getAllowedEntities": getAllowedEntities}
             toret = template.safe_substitute(d)
 
@@ -207,6 +209,25 @@ class Code_generator:
             toret += ent.safe_substitute(dd)
         toret +='\n       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); '
         d = {"entity": toret
+             }
+
+        return template.safe_substitute(d)
+
+    def insertDuplicated(self, name, ob):
+        with open("source_templates/insertDuplicated.txt") as f:
+            template = Template(f.read())
+        with open("source_templates/insertDuplicatedEntities.txt") as f:
+            ent = Template(f.read())
+
+        toret = ""
+
+        for e in ob.entities:
+            dd={
+                "name":e.name,
+                "namecell":e.name+"Cell"
+            }
+            toret += ent.safe_substitute(dd)
+        d = {"entities": toret
              }
 
         return template.safe_substitute(d)
