@@ -1,0 +1,6 @@
+if (entity.getType().equalsIgnoreCase("$name")) {
+            return $nameview.getSize(($name)entity);      
+        }
+        else
+
+        

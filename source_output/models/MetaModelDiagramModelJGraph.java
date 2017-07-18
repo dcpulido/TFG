@@ -435,6 +435,26 @@ if (entity.equalsIgnoreCase("DPDFSMMel")) {
        throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
 }
 
+  public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
+if (entity.getType().equalsIgnoreCase("DPDFSMMel")) {
+            return DPDFSMMelView.getSize((DPDFSMMel)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("MetaElemento")) {
+            return MetaElementoView.getSize((MetaElemento)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Relation")) {
+            return RelationView.getSize((Relation)entity);      
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 

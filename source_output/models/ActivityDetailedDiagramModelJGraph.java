@@ -652,6 +652,61 @@ if (entity.equalsIgnoreCase("Role")) {
        throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
 }
 
+  public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
+if (entity.getType().equalsIgnoreCase("Role")) {
+            return RoleView.getSize((Role)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("BehavioralWP")) {
+            return BehavioralWPView.getSize((BehavioralWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Task")) {
+            return TaskView.getSize((Task)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("StructuralWP")) {
+            return StructuralWPView.getSize((StructuralWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("WFConsumed")) {
+            return WFConsumedView.getSize((WFConsumed)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("CompositeWP")) {
+            return CompositeWPView.getSize((CompositeWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Activity")) {
+            return ActivityView.getSize((Activity)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("FreeWP")) {
+            return FreeWPView.getSize((FreeWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("WPProduced")) {
+            return WPProducedView.getSize((WPProduced)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("StructuredWP")) {
+            return StructuredWPView.getSize((StructuredWP)entity);      
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 

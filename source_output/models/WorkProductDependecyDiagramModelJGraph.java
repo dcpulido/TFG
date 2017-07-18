@@ -436,6 +436,41 @@ if (entity.equalsIgnoreCase("FreeWP")) {
        throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
 }
 
+  public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
+if (entity.getType().equalsIgnoreCase("FreeWP")) {
+            return FreeWPView.getSize((FreeWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Work Product")) {
+            return Work ProductView.getSize((Work Product)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("CompositeWP")) {
+            return CompositeWPView.getSize((CompositeWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("BehavioralWP")) {
+            return BehavioralWPView.getSize((BehavioralWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("StructuredWP")) {
+            return StructuredWPView.getSize((StructuredWP)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("StructuralWP")) {
+            return StructuralWPView.getSize((StructuralWP)entity);      
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 

@@ -622,6 +622,71 @@ if (entity.equalsIgnoreCase("InitialNode")) {
        throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
 }
 
+  public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
+if (entity.getType().equalsIgnoreCase("InitialNode")) {
+            return InitialNodeView.getSize((InitialNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Process")) {
+            return ProcessView.getSize((Process)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Activity")) {
+            return ActivityView.getSize((Activity)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("EndNode")) {
+            return EndNodeView.getSize((EndNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("ActivityKind")) {
+            return ActivityKindView.getSize((ActivityKind)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("ForkNode")) {
+            return ForkNodeView.getSize((ForkNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("InitialMetaNode")) {
+            return InitialMetaNodeView.getSize((InitialMetaNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("JoinNode")) {
+            return JoinNodeView.getSize((JoinNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("iPhase")) {
+            return iPhaseView.getSize((iPhase)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("TerminalMetaNode")) {
+            return TerminalMetaNodeView.getSize((TerminalMetaNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("DecissionNode")) {
+            return DecissionNodeView.getSize((DecissionNode)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("Phase")) {
+            return PhaseView.getSize((Phase)entity);      
+        }
+        else
+
+        
+       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); 
+}
+
     
 
 

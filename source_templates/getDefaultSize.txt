@@ -1,0 +1,3 @@
+public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
+$entity
+}

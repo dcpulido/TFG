@@ -52,6 +52,7 @@ class Code_generator:
             getPossibleRelationships = self.getPossibleRelationships(name, o)
             getInstanciaNRelacion = self.getInstanciaNRelacion(name, o)
             createCell = self.createCell(name, o)
+            getDefaultSize = self.getDefaultSize(name, o)
 
             d = {"who"+mod_name: name+mod_name,
                  "whoDataEntity": name+"DataEntity",
@@ -62,6 +63,7 @@ class Code_generator:
                  "getPossibleRelationships": getPossibleRelationships,
                  "getInstanciaNRelacion": getInstanciaNRelacion,
                  "createCell": createCell,
+                 "getDefaultSize": getDefaultSize,
                  "getAllowedEntities": getAllowedEntities}
             toret = template.safe_substitute(d)
 
@@ -180,6 +182,27 @@ class Code_generator:
                 "name":e.name,
                 "cratename":"create"+e.name,
                 "namecell":e.name+"Cell"
+            }
+            toret += ent.safe_substitute(dd)
+        toret +='\n       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); '
+        d = {"entity": toret
+             }
+
+        return template.safe_substitute(d)
+
+
+    def getDefaultSize(self, name, ob):
+        with open("source_templates/getDefaultSize.txt") as f:
+            template = Template(f.read())
+        with open("source_templates/getDefaultSizeEntity.txt") as f:
+            ent = Template(f.read())
+
+        toret = ""
+
+        for e in ob.entities:
+            dd={
+                "name":e.name,
+                "nameview":e.name+"View"
             }
             toret += ent.safe_substitute(dd)
         toret +='\n       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); '
