@@ -312,6 +312,88 @@ public class ActivityDetailedDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WPContains");
+        
+                relationships.add("WFProduces");
+        
+                relationships.add("WFProduces");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WFConsumes");
+        
+                relationships.add("WFConsumes");
+        
+                relationships.add("WFResponsible");
+        
+                relationships.add("WFResponsible");
+        
+                relationships.add("WPContains");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WpContains");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("Role");
+        
+                entities.add("BehavioralWP");
+        
+                entities.add("Task");
+        
+                entities.add("StructuralWP");
+        
+                entities.add("WFConsumed");
+        
+                entities.add("CompositeWP");
+        
+                entities.add("Activity");
+        
+                entities.add("FreeWP");
+        
+                entities.add("WPProduced");
+        
+                entities.add("StructuredWP");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 

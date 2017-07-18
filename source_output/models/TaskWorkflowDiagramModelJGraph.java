@@ -452,6 +452,142 @@ public class TaskWorkflowDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("WFResponsible");
+        
+                relationships.add("WFResponsible");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WFConsumes");
+        
+                relationships.add("WFConsumes");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WFProduces");
+        
+                relationships.add("WFProduces");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("StructuralWP");
+        
+                entities.add("InitialMetaNode");
+        
+                entities.add("FreeWP");
+        
+                entities.add("ForkNode");
+        
+                entities.add("WPProduced");
+        
+                entities.add("BehavioralWP");
+        
+                entities.add("EndNode");
+        
+                entities.add("WFConsumed");
+        
+                entities.add("TerminalMetaNode");
+        
+                entities.add("Task");
+        
+                entities.add("Role");
+        
+                entities.add("InitialNode");
+        
+                entities.add("ActivityKind");
+        
+                entities.add("StructuredWP");
+        
+                entities.add("CompositeWP");
+        
+                entities.add("DecissionNode");
+        
+                entities.add("JoinNode");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 

@@ -1,0 +1,8 @@
+public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+$relationships
+        
+        
+        return relationships;
+    }

@@ -232,6 +232,58 @@ public class WorkProductDependecyDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WP Depends");
+        
+                relationships.add("WP Depends");
+        
+                relationships.add("WP Depends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WP Depends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("WP Depends");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("FreeWP");
+        
+                entities.add("Work Product");
+        
+                entities.add("CompositeWP");
+        
+                entities.add("BehavioralWP");
+        
+                entities.add("StructuredWP");
+        
+                entities.add("StructuralWP");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 

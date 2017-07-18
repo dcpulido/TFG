@@ -103,6 +103,12 @@ public class $whoModelJGraph extends ModelJGraph {
 
   $creaToolBar
 
+  $getAllowedRelationships
+
+  $getAllowedEntities
+
+  getPOssibleRelationships
+
     
 
 

@@ -192,6 +192,46 @@ public class MetaModelDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("Related");
+        
+                relationships.add("Composition");
+        
+                relationships.add("Aggregation");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Association");
+        
+                relationships.add("none");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("DPDFSMMel");
+        
+                entities.add("DPDFSMMel");
+        
+                entities.add("MetaElemento");
+        
+                entities.add("Relation");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 

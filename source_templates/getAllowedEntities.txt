@@ -1,0 +1,8 @@
+    public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+$entities        
+        
+        
+        return entities;
+    }

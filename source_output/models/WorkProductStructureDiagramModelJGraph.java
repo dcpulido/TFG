@@ -252,6 +252,60 @@ public class WorkProductStructureDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("WPContains");
+        
+                relationships.add("none");
+        
+                relationships.add("none");
+        
+                relationships.add("WpContains");
+        
+                relationships.add("WPContains");
+        
+                relationships.add("none");
+        
+                relationships.add("WpContains");
+        
+                relationships.add("none");
+        
+                relationships.add("WPContains");
+        
+                relationships.add("none");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("Work Product");
+        
+                entities.add("StructuralWP");
+        
+                entities.add("StructuredWP");
+        
+                entities.add("DPDFSMMel");
+        
+                entities.add("FreeWP");
+        
+                entities.add("CompositeWP");
+        
+                entities.add("BehavioralWP");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 

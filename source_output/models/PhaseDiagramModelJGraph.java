@@ -352,6 +352,104 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("Follows");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Follows");
+        
+                relationships.add("Follows");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("InitialNode");
+        
+                entities.add("Process");
+        
+                entities.add("Activity");
+        
+                entities.add("EndNode");
+        
+                entities.add("ActivityKind");
+        
+                entities.add("ForkNode");
+        
+                entities.add("InitialMetaNode");
+        
+                entities.add("JoinNode");
+        
+                entities.add("iPhase");
+        
+                entities.add("TerminalMetaNode");
+        
+                entities.add("DecissionNode");
+        
+                entities.add("Phase");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 

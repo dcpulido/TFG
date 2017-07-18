@@ -232,6 +232,48 @@ public class WorkProductContentDiagramModelJGraph extends ModelJGraph {
         }
     }
 
+  public static Vector<String> getAllowedRelationships(){
+        Vector<String> relationships=new   Vector<String>();
+        
+        relationships.add("Quote Relationship");
+        
+                relationships.add("Extends");
+        
+                relationships.add("Quote");
+        
+                relationships.add("Relate");
+        
+                relationships.add("Define");
+        
+        
+        
+        
+        return relationships;
+    }
+
+      public static Vector<String> getAllowedEntities(){
+        Vector<String> entities=new   Vector<String>();
+
+        entities.add("DPDFSMMel");
+        
+                entities.add("Relation");
+        
+                entities.add("MetaElemento");
+        
+                entities.add("Atributo");
+        
+                entities.add("Operacion");
+        
+                entities.add("DPDFSMMel");
+        
+                
+        
+        
+        return entities;
+    }
+
+  getPOssibleRelationships
+
     
 
 
