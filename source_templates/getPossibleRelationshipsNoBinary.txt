@@ -1,0 +1,6 @@
+if (selectedEdge instanceof $edge &&
+                    ($edge.acceptConnection(this.getModel(), selected))) {
+                    v.add("$name");
+                }
+                
+                

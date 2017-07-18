@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e3eba4-dcdb-47b7-9dc3-67637554e702" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code_generator.py" afterPath="$PROJECT_DIR$/app/code_generator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_templates/ModelJGraph_Template.txt" afterPath="$PROJECT_DIR$/source_templates/ModelJGraph_Template.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,8 +70,8 @@
             <state relative-caret-position="598">
               <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
               <folding>
-                <marker date="1500378076483" expanded="true" signature="306:537" ph="..." />
-                <marker date="1500378076483" expanded="true" signature="440:537" ph="..." />
+                <marker date="1500378928645" expanded="true" signature="306:537" ph="..." />
+                <marker date="1500378928645" expanded="true" signature="440:537" ph="..." />
               </folding>
             </state>
           </provider>
@@ -207,7 +198,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1729" />
+    <option name="x" value="5329" />
     <option name="y" value="-4" />
     <option name="width" value="1871" />
     <option name="height" value="1084" />
@@ -762,8 +753,8 @@
         <state relative-caret-position="598">
           <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
           <folding>
-            <marker date="1500378076483" expanded="true" signature="306:537" ph="..." />
-            <marker date="1500378076483" expanded="true" signature="440:537" ph="..." />
+            <marker date="1500378928645" expanded="true" signature="306:537" ph="..." />
+            <marker date="1500378928645" expanded="true" signature="440:537" ph="..." />
           </folding>
         </state>
       </provider>

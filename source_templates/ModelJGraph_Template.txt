@@ -107,7 +107,7 @@ public class $whoModelJGraph extends ModelJGraph {
 
   $getAllowedEntities
 
-  getPOssibleRelationships
+  $getPossibleRelationships
 
     
 

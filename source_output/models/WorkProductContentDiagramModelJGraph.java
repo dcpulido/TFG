@@ -272,7 +272,98 @@ public class WorkProductContentDiagramModelJGraph extends ModelJGraph {
         return entities;
     }
 
-  getPOssibleRelationships
+  // Gets the name of the possible relationships for the selected GraphCells.
+    // A relationship can be binary (DefaultEdge) or n-ary (NAryEdge).
+    // The requested action is slightly different depending on selected items.
+    // According to the number of Edges in selected, the action can be:
+    // 0 => Propose a relationship between selected according included classes.
+    // 1 and it is NAryEdge => The class of that NAryEdge if it is possible according implements java.io.Serializable
+    //      current cardinality and included classes..
+    // other cases => Error, no relationships are allowed.
+    public Object[] getPossibleRelationships(GraphCell[] selected) {
+        // Possible relationships initialization.
+        Vector v = new Vector();
+        
+        // Search for NAryEdges in selected.
+        int nAryEdgesNum = 0;
+        int edgesNum = 0;
+        NAryEdge selectedEdge = null;
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i] instanceof NAryEdge) {
+                nAryEdgesNum++;
+                selectedEdge = (NAryEdge) selected[i];
+            }
+            else if (selected[i] instanceof DefaultEdge) {
+                edgesNum++;
+                
+                // Connections are only possible with two or more elements and without binary edges.
+            }
+        }
+        if (selected.length >= 2 && edgesNum == 0) {
+            
+            // The number of NAryEdges is considered.
+            if (nAryEdgesNum == 0) {
+                // acceptConnection methods only admits vertex parameters.
+                // Binary relationships.         
+
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if (Quote RelationshipEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("Quote Relationship");
+                }
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("Extends");
+                }
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if (QuoteEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("Quote");
+                }
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if (RelateEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("Relate");
+                }
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if (DefineEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("Define");
+                }       
+            }
+            else if (nAryEdgesNum == 1) {
+if (selectedEdge instanceof Quote RelationshipEdge &&
+                    (Quote RelationshipEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("Quote Relationship");
+                }
+                
+                if (selectedEdge instanceof ExtendsEdge &&
+                    (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("Extends");
+                }
+                
+                if (selectedEdge instanceof QuoteEdge &&
+                    (QuoteEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("Quote");
+                }
+                
+                if (selectedEdge instanceof RelateEdge &&
+                    (RelateEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("Relate");
+                }
+                
+                if (selectedEdge instanceof DefineEdge &&
+                    (DefineEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("Define");
+                }
+                
+                   
+            }
+        }
+        
+        return v.toArray();
+    }
 
     
 

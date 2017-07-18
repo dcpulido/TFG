@@ -1,0 +1,6 @@
+
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if ($edge.acceptConnection(this.getModel(), selected)) {
+                    v.add("$name");
+                }
