@@ -62,7 +62,7 @@ public class MetaModelDiagramPanel extends JGraph {
 								m, BasicMarqueeHandler mh) {
 		super(m, mh);
 
-		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.MetaModelDiagram.CellViewFactory()());
+		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.MetaModelDiagramCellViewFactory()());
 	}
 
 
@@ -100,7 +100,7 @@ public class MetaModelDiagramPanel extends JGraph {
 
 public DefaultGraphCell createCell(String entity) throws InvalidEntity{
 if (entity.equalsIgnoreCase("DPDFSMMel")) {
-            DPDFSMMel nentity=getOM().$createname(getMJGraph().getNewId("DPDFSMMel"));
+            DPDFSMMel nentity=new DPDFSMMel(((Model)getModel()).getNewId("DPDFSMMel"));
             DefaultGraphCell vertex = new
             DPDFSMMelCell(nentity);
             // Default Size for the cell with the new entity
@@ -109,7 +109,7 @@ if (entity.equalsIgnoreCase("DPDFSMMel")) {
         else
 
         if (entity.equalsIgnoreCase("MetaElemento")) {
-            MetaElemento nentity=getOM().$createname(getMJGraph().getNewId("MetaElemento"));
+            MetaElemento nentity=new MetaElemento(((Model)getModel()).getNewId("MetaElemento"));
             DefaultGraphCell vertex = new
             MetaElementoCell(nentity);
             // Default Size for the cell with the new entity
@@ -118,7 +118,7 @@ if (entity.equalsIgnoreCase("DPDFSMMel")) {
         else
 
         if (entity.equalsIgnoreCase("Relation")) {
-            Relation nentity=getOM().$createname(getMJGraph().getNewId("Relation"));
+            Relation nentity=new Relation(((Model)getModel()).getNewId("Relation"));
             DefaultGraphCell vertex = new
             RelationCell(nentity);
             // Default Size for the cell with the new entity

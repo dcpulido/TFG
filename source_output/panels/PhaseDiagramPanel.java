@@ -62,7 +62,7 @@ public class PhaseDiagramPanel extends JGraph {
 								m, BasicMarqueeHandler mh) {
 		super(m, mh);
 
-		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.PhaseDiagram.CellViewFactory()());
+		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.PhaseDiagramCellViewFactory()());
 	}
 
 
@@ -118,7 +118,7 @@ public class PhaseDiagramPanel extends JGraph {
 
 public DefaultGraphCell createCell(String entity) throws InvalidEntity{
 if (entity.equalsIgnoreCase("InitialNode")) {
-            InitialNode nentity=getOM().$createname(getMJGraph().getNewId("InitialNode"));
+            InitialNode nentity=new InitialNode(((Model)getModel()).getNewId("InitialNode"));
             DefaultGraphCell vertex = new
             InitialNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -127,7 +127,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("Process")) {
-            Process nentity=getOM().$createname(getMJGraph().getNewId("Process"));
+            Process nentity=new Process(((Model)getModel()).getNewId("Process"));
             DefaultGraphCell vertex = new
             ProcessCell(nentity);
             // Default Size for the cell with the new entity
@@ -136,7 +136,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("Activity")) {
-            Activity nentity=getOM().$createname(getMJGraph().getNewId("Activity"));
+            Activity nentity=new Activity(((Model)getModel()).getNewId("Activity"));
             DefaultGraphCell vertex = new
             ActivityCell(nentity);
             // Default Size for the cell with the new entity
@@ -145,7 +145,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("EndNode")) {
-            EndNode nentity=getOM().$createname(getMJGraph().getNewId("EndNode"));
+            EndNode nentity=new EndNode(((Model)getModel()).getNewId("EndNode"));
             DefaultGraphCell vertex = new
             EndNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -154,7 +154,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("ActivityKind")) {
-            ActivityKind nentity=getOM().$createname(getMJGraph().getNewId("ActivityKind"));
+            ActivityKind nentity=new ActivityKind(((Model)getModel()).getNewId("ActivityKind"));
             DefaultGraphCell vertex = new
             ActivityKindCell(nentity);
             // Default Size for the cell with the new entity
@@ -163,7 +163,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("ForkNode")) {
-            ForkNode nentity=getOM().$createname(getMJGraph().getNewId("ForkNode"));
+            ForkNode nentity=new ForkNode(((Model)getModel()).getNewId("ForkNode"));
             DefaultGraphCell vertex = new
             ForkNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -172,7 +172,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("InitialMetaNode")) {
-            InitialMetaNode nentity=getOM().$createname(getMJGraph().getNewId("InitialMetaNode"));
+            InitialMetaNode nentity=new InitialMetaNode(((Model)getModel()).getNewId("InitialMetaNode"));
             DefaultGraphCell vertex = new
             InitialMetaNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -181,7 +181,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("JoinNode")) {
-            JoinNode nentity=getOM().$createname(getMJGraph().getNewId("JoinNode"));
+            JoinNode nentity=new JoinNode(((Model)getModel()).getNewId("JoinNode"));
             DefaultGraphCell vertex = new
             JoinNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -190,7 +190,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("iPhase")) {
-            iPhase nentity=getOM().$createname(getMJGraph().getNewId("iPhase"));
+            iPhase nentity=new iPhase(((Model)getModel()).getNewId("iPhase"));
             DefaultGraphCell vertex = new
             iPhaseCell(nentity);
             // Default Size for the cell with the new entity
@@ -199,7 +199,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("TerminalMetaNode")) {
-            TerminalMetaNode nentity=getOM().$createname(getMJGraph().getNewId("TerminalMetaNode"));
+            TerminalMetaNode nentity=new TerminalMetaNode(((Model)getModel()).getNewId("TerminalMetaNode"));
             DefaultGraphCell vertex = new
             TerminalMetaNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -208,7 +208,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("DecissionNode")) {
-            DecissionNode nentity=getOM().$createname(getMJGraph().getNewId("DecissionNode"));
+            DecissionNode nentity=new DecissionNode(((Model)getModel()).getNewId("DecissionNode"));
             DefaultGraphCell vertex = new
             DecissionNodeCell(nentity);
             // Default Size for the cell with the new entity
@@ -217,7 +217,7 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         else
 
         if (entity.equalsIgnoreCase("Phase")) {
-            Phase nentity=getOM().$createname(getMJGraph().getNewId("Phase"));
+            Phase nentity=new Phase(((Model)getModel()).getNewId("Phase"));
             DefaultGraphCell vertex = new
             PhaseCell(nentity);
             // Default Size for the cell with the new entity

@@ -62,7 +62,7 @@ public class WorkProductStructureDiagramPanel extends JGraph {
 								m, BasicMarqueeHandler mh) {
 		super(m, mh);
 
-		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.WorkProductStructureDiagram.CellViewFactory()());
+		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.WorkProductStructureDiagramCellViewFactory()());
 	}
 
 
@@ -108,7 +108,7 @@ public class WorkProductStructureDiagramPanel extends JGraph {
 
 public DefaultGraphCell createCell(String entity) throws InvalidEntity{
 if (entity.equalsIgnoreCase("Work Product")) {
-            Work Product nentity=getOM().$createname(getMJGraph().getNewId("Work Product"));
+            Work Product nentity=new Work Product(((Model)getModel()).getNewId("Work Product"));
             DefaultGraphCell vertex = new
             Work ProductCell(nentity);
             // Default Size for the cell with the new entity
@@ -117,7 +117,7 @@ if (entity.equalsIgnoreCase("Work Product")) {
         else
 
         if (entity.equalsIgnoreCase("StructuralWP")) {
-            StructuralWP nentity=getOM().$createname(getMJGraph().getNewId("StructuralWP"));
+            StructuralWP nentity=new StructuralWP(((Model)getModel()).getNewId("StructuralWP"));
             DefaultGraphCell vertex = new
             StructuralWPCell(nentity);
             // Default Size for the cell with the new entity
@@ -126,7 +126,7 @@ if (entity.equalsIgnoreCase("Work Product")) {
         else
 
         if (entity.equalsIgnoreCase("StructuredWP")) {
-            StructuredWP nentity=getOM().$createname(getMJGraph().getNewId("StructuredWP"));
+            StructuredWP nentity=new StructuredWP(((Model)getModel()).getNewId("StructuredWP"));
             DefaultGraphCell vertex = new
             StructuredWPCell(nentity);
             // Default Size for the cell with the new entity
@@ -135,7 +135,7 @@ if (entity.equalsIgnoreCase("Work Product")) {
         else
 
         if (entity.equalsIgnoreCase("DPDFSMMel")) {
-            DPDFSMMel nentity=getOM().$createname(getMJGraph().getNewId("DPDFSMMel"));
+            DPDFSMMel nentity=new DPDFSMMel(((Model)getModel()).getNewId("DPDFSMMel"));
             DefaultGraphCell vertex = new
             DPDFSMMelCell(nentity);
             // Default Size for the cell with the new entity
@@ -144,7 +144,7 @@ if (entity.equalsIgnoreCase("Work Product")) {
         else
 
         if (entity.equalsIgnoreCase("FreeWP")) {
-            FreeWP nentity=getOM().$createname(getMJGraph().getNewId("FreeWP"));
+            FreeWP nentity=new FreeWP(((Model)getModel()).getNewId("FreeWP"));
             DefaultGraphCell vertex = new
             FreeWPCell(nentity);
             // Default Size for the cell with the new entity
@@ -153,7 +153,7 @@ if (entity.equalsIgnoreCase("Work Product")) {
         else
 
         if (entity.equalsIgnoreCase("CompositeWP")) {
-            CompositeWP nentity=getOM().$createname(getMJGraph().getNewId("CompositeWP"));
+            CompositeWP nentity=new CompositeWP(((Model)getModel()).getNewId("CompositeWP"));
             DefaultGraphCell vertex = new
             CompositeWPCell(nentity);
             // Default Size for the cell with the new entity
@@ -162,7 +162,7 @@ if (entity.equalsIgnoreCase("Work Product")) {
         else
 
         if (entity.equalsIgnoreCase("BehavioralWP")) {
-            BehavioralWP nentity=getOM().$createname(getMJGraph().getNewId("BehavioralWP"));
+            BehavioralWP nentity=new BehavioralWP(((Model)getModel()).getNewId("BehavioralWP"));
             DefaultGraphCell vertex = new
             BehavioralWPCell(nentity);
             // Default Size for the cell with the new entity

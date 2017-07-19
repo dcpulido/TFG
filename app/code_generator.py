@@ -50,7 +50,7 @@ class Code_generator:
             name = o.name.replace(" ", "")
             logging.info("Generating Panel: "+name)
             getAllowedEntities = self.getAllowedEntities(name, o)
-            createCell = self.createCell(name, o)
+            createCell = self.createCellPanel(name, o)
             getDefaultSize = self.getDefaultSize(name, o)
             insertDuplicated = self.insertDuplicated(name, o)
             d = {"who"+mod_name: name+mod_name,
@@ -222,6 +222,28 @@ class Code_generator:
             template = Template(f.read())
             f.close()
         with open("source_templates/createCellEntity.txt") as f:
+            ent = Template(f.read())
+            f.close()
+
+        toret = ""
+
+        for e in ob.entities:
+            dd = {
+                "name": e.name,
+                "cratename": "create"+e.name,
+                "namecell": e.name+"Cell"
+            }
+            toret += ent.safe_substitute(dd)
+        toret += '\n       throw new ingenias.exception.InvalidEntity("Entity type "+entity+" is not allowed in this diagram"); '
+        d = {"entity": toret}
+
+        return template.safe_substitute(d)
+
+    def createCellPanel(self, name, ob):
+        with open("source_templates/createCell.txt") as f:
+            template = Template(f.read())
+            f.close()
+        with open("source_templates/createCellPanel.txt") as f:
             ent = Template(f.read())
             f.close()
 

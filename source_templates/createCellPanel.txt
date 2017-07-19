@@ -1,0 +1,10 @@
+if (entity.equalsIgnoreCase("$name")) {
+            $name nentity=new $name(((Model)getModel()).getNewId("$name"));
+            DefaultGraphCell vertex = new
+            $namecell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        
