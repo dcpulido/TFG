@@ -43,18 +43,68 @@ class Code_generator:
         self.generate_CellViewFactory(ob)
         self.generate_ActionsFactory(ob)
         self.generate_DataEntityWidgetPreferences(ob)
+        self.generate_DataEntity(ob)
+        self.generate_ModelEntity(ob)
+
+    def generate_DataEntity(self, ob,
+                            mod_name="DataEntity",
+                            dir="entities"):
+        logging.info(
+            "Generating DataEntity >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        for o in ob:
+            name = o.name.replace(" ", "")
+            logging.info("Generating DataEntity: "+name)
+            d = {"nameDataEntity": name +
+                 "DataEntity"}
+            toret = template.safe_substitute(d)
+            with open("source_output/" +
+                      dir +
+                      "/" +
+                      name +
+                      mod_name +
+                      '.java', 'w+') as fo:
+                fo.write(toret)
+                fo.close()
+
+    def generate_ModelEntity(self, ob,
+                             mod_name="ModelEntity",
+                             dir="entities"):
+        logging.info(
+            "Generating ModelEntity >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        for o in ob:
+            name = o.name.replace(" ", "")
+            logging.info("Generating ModelEntity: "+name)
+            d = {"nameModelEntity": name + "ModelEntity",
+                 "name": name}
+            toret = template.safe_substitute(d)
+            with open("source_output/" +
+                      dir +
+                      "/" +
+                      name +
+                      mod_name +
+                      '.java', 'w+') as fo:
+                fo.write(toret)
+                fo.close()
 
     def generate_DataEntityWidgetPreferences(self, ob,
                                              mod_name="DataEntityWidgetPreferences",
                                              dir="widget"):
-        logging.info("Generating DataEntityWidgetPreferences >>>>>>>>>>>>>>>>>")
+        logging.info(
+            "Generating DataEntityWidgetPreferences >>>>>>>>>>>>>>>>>")
         with open("source_templates/"+mod_name+"_Template.txt") as f:
             template = Template(f.read())
             f.close()
         for o in ob:
             name = o.name.replace(" ", "")
             logging.info("Generating DataEntityWidgetPreferences: "+name)
-            d = {"nameDataEntityWidgetPreferences": name+"DataEntityWidgetPreferences"}
+            d = {"nameDataEntityWidgetPreferences": name +
+                 "DataEntityWidgetPreferences"}
             toret = template.safe_substitute(d)
             with open("source_output/" +
                       dir +
