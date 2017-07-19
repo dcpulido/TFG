@@ -1,0 +1,4 @@
+if (v.getClass().equals($nameEdge.class)){
+            return new $nameView(v);
+        }
+        

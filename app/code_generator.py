@@ -40,6 +40,30 @@ class Code_generator:
         ob = self.remove_repeats(ob)
         self.generate_ModelJGraph(ob, "ModelJGraph", "models")
         self.generate_Panel(ob)
+        self.generate_CellViewFactory(ob)
+
+    def generate_CellViewFactory(self, ob, mod_name="CellViewFactory", dir="cellfactories"):
+        logging.info("Generating cellfactories >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+
+        for o in ob:
+            name = o.name.replace(" ", "")
+            logging.info("Generating cellfactorie: "+name)
+            createVertexView = self.createVertexView(name, o)
+
+            d = {"nameCellViewFactory": name + "CellViewFactory",
+                 "content": createVertexView}
+            toret = template.safe_substitute(d)
+            with open("source_output/" +
+                      dir +
+                      "/" +
+                      name +
+                      mod_name +
+                      '.java', 'w+') as fo:
+                fo.write(toret)
+                fo.close()
 
     def generate_Panel(self, ob, mod_name="Panel", dir="panels"):
         logging.info("Generating panels >>>>>>>>>>>>>>>>>")
@@ -111,6 +135,30 @@ class Code_generator:
                       '.java', 'w+') as fo:
                 fo.write(toret)
                 fo.close()
+
+    def createVertexView(self, name, ob):
+        with open("source_templates/CellViewFactoryEntities.txt") as f:
+            entities = Template(f.read())
+            f.close()
+        with open("source_templates/CellViewFactoryRelations.txt") as f:
+            relations = Template(f.read())
+            f.close()
+
+        toret = ""
+        for k in ob.entities:
+            dd = {
+                "name": k.name,
+                "nameView": k.name+"View"
+            }
+            toret += entities.safe_substitute(dd)
+        for k in ob.relations:
+            dd = {
+                "nameView": k.name+"View",
+                "nameEdge": k.name+"Edge"
+            }
+            toret += relations.safe_substitute(dd)
+
+        return toret
 
     def creaToolBar(self, name, ob):
         with open("source_templates/creaToolBar.txt") as f:

@@ -1,0 +1,4 @@
+if (userObject.getClass().equals($name.class)){
+            return new $nameView(v);
+        }
+        
