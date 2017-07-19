@@ -42,6 +42,28 @@ class Code_generator:
         self.generate_Panel(ob)
         self.generate_CellViewFactory(ob)
         self.generate_ActionsFactory(ob)
+        self.generate_DataEntityWidgetPreferences(ob)
+
+    def generate_DataEntityWidgetPreferences(self, ob,
+                                             mod_name="DataEntityWidgetPreferences",
+                                             dir="widget"):
+        logging.info("Generating DataEntityWidgetPreferences >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        for o in ob:
+            name = o.name.replace(" ", "")
+            logging.info("Generating DataEntityWidgetPreferences: "+name)
+            d = {"nameDataEntityWidgetPreferences": name+"DataEntityWidgetPreferences"}
+            toret = template.safe_substitute(d)
+            with open("source_output/" +
+                      dir +
+                      "/" +
+                      name +
+                      mod_name +
+                      '.java', 'w+') as fo:
+                fo.write(toret)
+                fo.close()
 
     def generate_ActionsFactory(self, ob, mod_name="ActionsFactory", dir="actions/diagram"):
         logging.info("Generating ActionsFactory >>>>>>>>>>>>>>>>>")
@@ -52,7 +74,8 @@ class Code_generator:
             name = o.name.replace(" ", "")
             logging.info("Generating ActionsFactory: "+name)
             createChangeViewActions = self.createChangeViewActions(name, o)
-            createDiagramSpecificInsertActions = self.createDiagramSpecificInsertActions(name, o)
+            createDiagramSpecificInsertActions = self.createDiagramSpecificInsertActions(
+                name, o)
 
             d = {"nameActionsFactory": name+"ActionsFactory",
                  "createChangeViewActions": createChangeViewActions,
@@ -161,7 +184,7 @@ class Code_generator:
                 fo.write(toret)
                 fo.close()
 
-    #ActionsFactory exclusive
+    # ActionsFactory exclusive
     def createChangeViewActions(self, name, ob):
         with open("source_templates/createChangeViewActions.txt") as f:
             template = Template(f.read())
@@ -185,11 +208,11 @@ class Code_generator:
             }
             toret += relations.safe_substitute(dd)
 
-        d={
-            "content":toret
+        d = {
+            "content": toret
         }
         return template.safe_substitute(d)
-    
+
     def createDiagramSpecificInsertActions(self, name, ob):
         with open("source_templates/createDiagramSpecificInsertActions.txt") as f:
             template = Template(f.read())
@@ -209,8 +232,7 @@ class Code_generator:
 
         return template.safe_substitute(d)
 
-
-    #CellViewFactory exclusive
+    # CellViewFactory exclusive
     def createVertexView(self, name, ob):
         with open("source_templates/CellViewFactoryEntities.txt") as f:
             entities = Template(f.read())
@@ -235,6 +257,7 @@ class Code_generator:
 
         return toret
 #/////////////////////////////////////////7
+
     def creaToolBar(self, name, ob):
         with open("source_templates/creaToolBar.txt") as f:
             template = Template(f.read())
