@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06e3eba4-dcdb-47b7-9dc3-67637554e702" name="Default" comment="" />
+    <list default="true" id="06e3eba4-dcdb-47b7-9dc3-67637554e702" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/ActivityDetailedDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/MetaModelDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/PhaseDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/TaskWorkflowDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductContentDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductDependecyDiagramModelJGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" afterPath="$PROJECT_DIR$/source_output/models/WorkProductStructureDiagramModelJGraph.java" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,8 +204,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1729" />
-    <option name="y" value="-1084" />
+    <option name="x" value="5329" />
+    <option name="y" value="-4" />
     <option name="width" value="1871" />
     <option name="height" value="1084" />
   </component>
@@ -454,7 +463,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1729" y="-1084" width="1871" height="1084" extended-state="6" />
+    <frame x="5329" y="-4" width="1871" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

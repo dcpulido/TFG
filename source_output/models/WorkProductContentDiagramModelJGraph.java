@@ -618,6 +618,27 @@ if (entity.getClass().equals(DPDFSMMel.class)) {
     }
 
 
+  public synchronized JGraph cloneJGraph(IDEState ids){
+        
+        
+        
+        AgentModelModelJGraph jg=new  AgentModelModelJGraph(
+                                                            (AgentModelDataEntity) this.mde,name, ids.om,
+                                                            new Model(ids),new BasicMarqueeHandler(),ids.prefs); 
+        
+        this.setSelectionCells(getGraphLayoutCache().getCells(false,true,false,false));
+        Action copyaction =new EventRedirectorForGraphCopy(this,this.getTransferHandler().getCopyAction(),null  );          
+        Action pasteaction =new EventRedirectorPasteForGraphCopy(jg,jg.getTransferHandler().getPasteAction(),null   );
+        copyaction.actionPerformed(new ActionEvent(this,0,"hello"));        
+        pasteaction.actionPerformed(new ActionEvent(this,0,"hello"));
+        jg.invalidate();
+        jg.doLayout();
+        
+        return jg;
+        
+    }
+
+
   public String toString() {
     return this.getID();
   }
