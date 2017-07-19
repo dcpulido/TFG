@@ -1,0 +1,26 @@
+if (ent.getClass().getName().equals("ingenias.editor.entities.$name")){
+            possibleViews.add(new AbstractAction("NOICON") {
+                public void actionPerformed(ActionEvent e) {
+                    ingenias.editor.cell.RenderComponentManager.setRelationshipView(ViewPreferences.ViewType.NOICON, ent, cell, graph);
+                    graph.repaint();
+                }
+            });
+        }
+        if (ent.getClass().getName().equals("ingenias.editor.entities.$name")){
+            possibleViews.add(new AbstractAction("INGENIAS") {
+                public void actionPerformed(ActionEvent e) {
+                    ingenias.editor.cell.RenderComponentManager.setRelationshipView(ViewPreferences.ViewType.INGENIAS, ent, cell, graph);
+                    graph.repaint();
+                }
+            });
+        }
+        if (ent.getClass().getName().equals("ingenias.editor.entities.$name")){
+            possibleViews.add(new AbstractAction("LABEL") {
+                public void actionPerformed(ActionEvent e) {
+                    ingenias.editor.cell.RenderComponentManager.setRelationshipView(ViewPreferences.ViewType.LABEL, ent, cell, graph);
+                    graph.repaint();
+                }
+            });
+        }
+
+        

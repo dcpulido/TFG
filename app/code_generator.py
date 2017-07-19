@@ -41,6 +41,31 @@ class Code_generator:
         self.generate_ModelJGraph(ob, "ModelJGraph", "models")
         self.generate_Panel(ob)
         self.generate_CellViewFactory(ob)
+        self.generate_ActionsFactory(ob)
+
+    def generate_ActionsFactory(self, ob, mod_name="ActionsFactory", dir="actions/diagram"):
+        logging.info("Generating ActionsFactory >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        for o in ob:
+            name = o.name.replace(" ", "")
+            logging.info("Generating ActionsFactory: "+name)
+            createChangeViewActions = self.createChangeViewActions(name, o)
+            #createDiagramSpecificInsertActions = self.createDiagramSpecificInsertActions(name, o)
+
+            d = {"nameActionsFactory": name+"ActionsFactory",
+                 "createChangeViewActions": createChangeViewActions,
+                 "createDiagramSpecificInsertActions": "createDiagramSpecificInsertActions"}
+            toret = template.safe_substitute(d)
+            with open("source_output/" +
+                      dir +
+                      "/" +
+                      name +
+                      mod_name +
+                      '.java', 'w+') as fo:
+                fo.write(toret)
+                fo.close()
 
     def generate_CellViewFactory(self, ob, mod_name="CellViewFactory", dir="cellfactories"):
         logging.info("Generating cellfactories >>>>>>>>>>>>>>>>>")
@@ -136,6 +161,60 @@ class Code_generator:
                 fo.write(toret)
                 fo.close()
 
+    #ActionsFactory exclusive
+    def createChangeViewActions(self, name, ob):
+        with open("source_templates/createChangeViewActions.txt") as f:
+            template = Template(f.read())
+            f.close()
+        with open("source_templates/createChangeViewActionsEntities.txt") as f:
+            entities = Template(f.read())
+            f.close()
+        with open("source_templates/createChangeViewActionsRelations.txt") as f:
+            relations = Template(f.read())
+            f.close()
+
+        toret = ""
+        for k in ob.entities:
+            dd = {
+                "name": k.name
+            }
+            toret += entities.safe_substitute(dd)
+        for k in ob.relations:
+            dd = {
+                "name": k.name
+            }
+            toret += relations.safe_substitute(dd)
+
+        d={
+            "content":toret
+        }
+        return template.safe_substitute(d)
+    """
+    def createDiagramSpecificInsertActions(self, name, ob):
+        with open("source_templates/CellViewFactoryEntities.txt") as f:
+            entities = Template(f.read())
+            f.close()
+        with open("source_templates/CellViewFactoryRelations.txt") as f:
+            relations = Template(f.read())
+            f.close()
+
+        toret = ""
+        for k in ob.entities:
+            dd = {
+                "name": k.name,
+                "nameView": k.name+"View"
+            }
+            toret += entities.safe_substitute(dd)
+        for k in ob.relations:
+            dd = {
+                "nameView": k.name+"View",
+                "nameEdge": k.name+"Edge"
+            }
+            toret += relations.safe_substitute(dd)
+
+        return toret"""
+
+    #CellViewFactory exclusive
     def createVertexView(self, name, ob):
         with open("source_templates/CellViewFactoryEntities.txt") as f:
             entities = Template(f.read())
@@ -159,7 +238,7 @@ class Code_generator:
             toret += relations.safe_substitute(dd)
 
         return toret
-
+#/////////////////////////////////////////7
     def creaToolBar(self, name, ob):
         with open("source_templates/creaToolBar.txt") as f:
             template = Template(f.read())

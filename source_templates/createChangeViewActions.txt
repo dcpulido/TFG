@@ -1,0 +1,8 @@
+protected Vector<AbstractAction> createChangeViewActions(final DefaultGraphCell cell, final ModelJGraph graph) {
+        Vector<AbstractAction> possibleViews=new Vector<AbstractAction>();
+        final ingenias.editor.entities.Entity ent=((ingenias.editor.entities.Entity)cell.getUserObject());
+
+$content
+
+    return possibleViews;
+}
