@@ -457,6 +457,142 @@ if (ent.getClass().getName().equals("ingenias.editor.entities.Role")){
     return possibleViews;
 }
 
-createDiagramSpecificInsertActions
+protected Vector<AbstractAction> createDiagramSpecificInsertActions(final Point pt, final ModelJGraph graph) {
+        Vector<AbstractAction> nobjects=new Vector<AbstractAction>();
+
+        nobjects.add(
+                     new AbstractAction("Insert Role") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Role");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Role is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert BehavioralWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "BehavioralWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type BehavioralWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert Task") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Task");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Task is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert StructuralWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "StructuralWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type StructuralWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert WFConsumed") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "WFConsumed");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type WFConsumed is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert CompositeWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "CompositeWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type CompositeWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert Activity") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Activity");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Activity is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert FreeWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "FreeWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type FreeWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert WPProduced") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "WPProduced");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type WPProduced is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert StructuredWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "StructuredWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type StructuredWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+
+
+    return nobjects;
+}
 
 }

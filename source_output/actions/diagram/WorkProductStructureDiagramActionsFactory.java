@@ -313,6 +313,103 @@ if (ent.getClass().getName().equals("ingenias.editor.entities.Work Product")){
     return possibleViews;
 }
 
-createDiagramSpecificInsertActions
+protected Vector<AbstractAction> createDiagramSpecificInsertActions(final Point pt, final ModelJGraph graph) {
+        Vector<AbstractAction> nobjects=new Vector<AbstractAction>();
+
+        nobjects.add(
+                     new AbstractAction("Insert Work Product") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Work Product");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Work Product is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert StructuralWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "StructuralWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type StructuralWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert StructuredWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "StructuredWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type StructuredWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert DPDFSMMel") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "DPDFSMMel");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type DPDFSMMel is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert FreeWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "FreeWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type FreeWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert CompositeWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "CompositeWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type CompositeWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert BehavioralWP") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "BehavioralWP");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type BehavioralWP is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+
+
+    return nobjects;
+}
 
 }

@@ -1,0 +1,7 @@
+protected Vector<AbstractAction> createDiagramSpecificInsertActions(final Point pt, final ModelJGraph graph) {
+        Vector<AbstractAction> nobjects=new Vector<AbstractAction>();
+
+$entities
+
+    return nobjects;
+}

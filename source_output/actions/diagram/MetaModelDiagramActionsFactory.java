@@ -296,6 +296,51 @@ if (ent.getClass().getName().equals("ingenias.editor.entities.DPDFSMMel")){
     return possibleViews;
 }
 
-createDiagramSpecificInsertActions
+protected Vector<AbstractAction> createDiagramSpecificInsertActions(final Point pt, final ModelJGraph graph) {
+        Vector<AbstractAction> nobjects=new Vector<AbstractAction>();
+
+        nobjects.add(
+                     new AbstractAction("Insert DPDFSMMel") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "DPDFSMMel");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type DPDFSMMel is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert MetaElemento") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "MetaElemento");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type MetaElemento is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert Relation") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Relation");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Relation is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+
+
+    return nobjects;
+}
 
 }

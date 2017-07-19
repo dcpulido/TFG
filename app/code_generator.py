@@ -52,11 +52,11 @@ class Code_generator:
             name = o.name.replace(" ", "")
             logging.info("Generating ActionsFactory: "+name)
             createChangeViewActions = self.createChangeViewActions(name, o)
-            #createDiagramSpecificInsertActions = self.createDiagramSpecificInsertActions(name, o)
+            createDiagramSpecificInsertActions = self.createDiagramSpecificInsertActions(name, o)
 
             d = {"nameActionsFactory": name+"ActionsFactory",
                  "createChangeViewActions": createChangeViewActions,
-                 "createDiagramSpecificInsertActions": "createDiagramSpecificInsertActions"}
+                 "createDiagramSpecificInsertActions": createDiagramSpecificInsertActions}
             toret = template.safe_substitute(d)
             with open("source_output/" +
                       dir +
@@ -189,30 +189,26 @@ class Code_generator:
             "content":toret
         }
         return template.safe_substitute(d)
-    """
+    
     def createDiagramSpecificInsertActions(self, name, ob):
-        with open("source_templates/CellViewFactoryEntities.txt") as f:
-            entities = Template(f.read())
+        with open("source_templates/createDiagramSpecificInsertActions.txt") as f:
+            template = Template(f.read())
             f.close()
-        with open("source_templates/CellViewFactoryRelations.txt") as f:
-            relations = Template(f.read())
+        with open("source_templates/createDiagramSpecificInsertActionsEntities.txt") as f:
+            entities = Template(f.read())
             f.close()
 
         toret = ""
         for k in ob.entities:
             dd = {
-                "name": k.name,
-                "nameView": k.name+"View"
+                "name": k.name
             }
             toret += entities.safe_substitute(dd)
-        for k in ob.relations:
-            dd = {
-                "nameView": k.name+"View",
-                "nameEdge": k.name+"Edge"
-            }
-            toret += relations.safe_substitute(dd)
 
-        return toret"""
+        d = {"entities": toret}
+
+        return template.safe_substitute(d)
+
 
     #CellViewFactory exclusive
     def createVertexView(self, name, ob):

@@ -403,6 +403,168 @@ if (ent.getClass().getName().equals("ingenias.editor.entities.InitialNode")){
     return possibleViews;
 }
 
-createDiagramSpecificInsertActions
+protected Vector<AbstractAction> createDiagramSpecificInsertActions(final Point pt, final ModelJGraph graph) {
+        Vector<AbstractAction> nobjects=new Vector<AbstractAction>();
+
+        nobjects.add(
+                     new AbstractAction("Insert InitialNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "InitialNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type InitialNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert Process") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Process");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Process is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert Activity") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Activity");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Activity is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert EndNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "EndNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type EndNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert ActivityKind") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "ActivityKind");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type ActivityKind is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert ForkNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "ForkNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type ForkNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert InitialMetaNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "InitialMetaNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type InitialMetaNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert JoinNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "JoinNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type JoinNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert iPhase") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "iPhase");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type iPhase is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert TerminalMetaNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "TerminalMetaNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type TerminalMetaNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert DecissionNode") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "DecissionNode");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type DecissionNode is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        nobjects.add(
+                     new AbstractAction("Insert Phase") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "Phase");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type Phase is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+
+
+    return nobjects;
+}
 
 }

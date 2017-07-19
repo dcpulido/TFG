@@ -1,0 +1,13 @@
+        nobjects.add(
+                     new AbstractAction("Insert $name") {
+            public void actionPerformed(ActionEvent ev) {
+                try {
+                    graph.insert(pt, "$name");
+                } catch (InvalidEntity e) {                     
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(graph, "Object type $name is not allowed in this diagram",
+                                                  "Warning", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
