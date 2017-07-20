@@ -63,6 +63,9 @@ class Code_generator:
         with open("source_templates/ProjectMenuCreatorDiagram.txt") as f:
             diag = Template(f.read())
             f.close()
+        with open("source_templates/ProjectMenuCreatorDiagram2.txt") as f:
+            diag2 = Template(f.read())
+            f.close()
 
         toret = ""
         for o in ob:
@@ -71,7 +74,15 @@ class Code_generator:
                  "image":""}
             toret += diag.safe_substitute(d)
 
-        d = {"diagram": toret}
+        toret2 = ""
+        for o in ob:
+            name = o.name.replace(" ", "")
+            d = {"nameModelJGraph": name +"ModelJGraph",
+                 "modeloname":"modelo"+name}
+            toret2 += diag2.safe_substitute(d)
+
+        d = {"diagram": toret,
+        "diagram2":toret2}
         toret = template.safe_substitute(d)
         with open("source_output/" +
                   dir +

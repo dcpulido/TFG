@@ -1,0 +1,3 @@
+        if (userObject.getClass().equals(ingenias.editor.models.$nameModelJGraph.class))
+            return $modeloname;
+

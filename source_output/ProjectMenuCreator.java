@@ -873,41 +873,28 @@ public class ProjectTreeRenderer extends javax.swing.tree.DefaultTreeCellRendere
         
         
         
-        if (userObject.getClass().equals(ingenias.editor.models.EnvironmentModelModelJGraph.class))
-            return modeloEnvironmentModel;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.ComponentDiagramModelJGraph.class))
-            return modeloComponentDiagram;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.OrganizationModelModelJGraph.class))
-            return modeloOrganizationModel;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.TasksAndGoalsModelModelJGraph.class))
-            return modeloTasksAndGoalsModel;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.InteractionModelModelJGraph.class))
-            return modeloInteractionModel;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.ActivityDiagramModelJGraph.class))
-            return modeloActivityDiagram;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.AgentModelModelJGraph.class))
-            return modeloAgentModel;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.UseCaseDiagramModelJGraph.class))
-            return modeloUseCaseDiagram;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDiagramModelJGraph.class))
-            return modeloWorkProductDiagram;
-        
+        if (userObject.getClass().equals(ingenias.editor.models.WorkProductContentDiagramModelJGraph.class))
+            return modeloWorkProductContentDiagram;
+
+        if (userObject.getClass().equals(ingenias.editor.models.MetaModelDiagramModelJGraph.class))
+            return modeloMetaModelDiagram;
+
         if (userObject.getClass().equals(ingenias.editor.models.PhaseDiagramModelJGraph.class))
             return modeloPhaseDiagram;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.RoleDiagramModelJGraph.class))
-            return modeloRoleDiagram;
-        
-        if (userObject.getClass().equals(ingenias.editor.models.DeployDiagramModelJGraph.class))
-            return modeloDeployDiagram;
+
+        if (userObject.getClass().equals(ingenias.editor.models.ActivityDetailedDiagramModelJGraph.class))
+            return modeloActivityDetailedDiagram;
+
+        if (userObject.getClass().equals(ingenias.editor.models.WorkProductStructureDiagramModelJGraph.class))
+            return modeloWorkProductStructureDiagram;
+
+        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDependecyDiagramModelJGraph.class))
+            return modeloWorkProductDependecyDiagram;
+
+        if (userObject.getClass().equals(ingenias.editor.models.TaskWorkflowDiagramModelJGraph.class))
+            return modeloTaskWorkflowDiagram;
+
+
         
         return null;
     }
