@@ -2036,7 +2036,7 @@ public class ObjectSave extends ObjectSaveAbs{
 			
         }
         
-		
+$diagrams
 		
 		
 		Hashtable ht = new Hashtable();

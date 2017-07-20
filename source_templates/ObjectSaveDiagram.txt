@@ -1,0 +1,8 @@
+        if (en.getClass().equals(ingenias.editor.entities.$nameDataEntity.class)){
+            ingenias.editor.entities.$nameDataEntity nen=(ingenias.editor.entities.$nameDataEntity)en;
+            String _name;
+            
+            
+        }
+        
+        

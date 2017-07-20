@@ -45,6 +45,36 @@ class Code_generator:
         self.generate_DataEntityWidgetPreferences(ob)
         self.generate_DataEntity(ob)
         self.generate_ModelEntity(ob)
+        self.generate_ObjectSave(ob)
+
+    def generate_ObjectSave(self, ob,
+                            mod_name="ObjectSave",
+                            dir="persistence"):
+        logging.info(
+            "Generating ObjectSave >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        with open("source_templates/ObjectSaveDiagram.txt") as f:
+            diag = Template(f.read())
+            f.close()
+
+        toret = ""
+        for o in ob:
+            name = o.name.replace(" ", "")
+            d = {"nameDataEntity": name +
+                 "DataEntity"}
+            toret += diag.safe_substitute(d)
+
+        d = {"diagram": toret}
+        toret = template.safe_substitute(d)
+        with open("source_output/" +
+                  dir +
+                  "/" +
+                  mod_name +
+                  '.java', 'w+') as fo:
+            fo.write(toret)
+            fo.close()
 
     def generate_DataEntity(self, ob,
                             mod_name="DataEntity",
