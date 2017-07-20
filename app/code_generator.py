@@ -50,6 +50,36 @@ class Code_generator:
         self.generate_ModelEntity(ob)
         self.generate_ObjectSave(ob)
         self.generate_ObjectManager(ob)
+        self.generate_ProjectMenuCreator(ob)
+
+    def generate_ProjectMenuCreator(self, ob,
+                               mod_name="ProjectMenuCreator",
+                               dir=""):
+        logging.info(
+            "Generating ProjectMenuCreator >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        with open("source_templates/ProjectMenuCreatorDiagram.txt") as f:
+            diag = Template(f.read())
+            f.close()
+
+        toret = ""
+        for o in ob:
+            name = o.name.replace(" ", "")
+            d = {"nameModelJGraph": name +"ModelJGraph",
+                 "image":""}
+            toret += diag.safe_substitute(d)
+
+        d = {"diagram": toret}
+        toret = template.safe_substitute(d)
+        with open("source_output/" +
+                  dir +
+                  "/" +
+                  mod_name +
+                  '.java', 'w+') as fo:
+            fo.write(toret)
+            fo.close()
 
     def generate_ObjectManager(self, ob,
                                mod_name="ObjectManager",

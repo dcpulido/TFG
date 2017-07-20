@@ -578,41 +578,7 @@ public class ProjectTreeRenderer extends javax.swing.tree.DefaultTreeCellRendere
 		
 		
 		
-        if (userObject.getClass().equals(ingenias.editor.models.EnvironmentModelModelJGraph.class))
-            return "images/menvdiag.gif";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.ComponentDiagramModelJGraph.class))
-            return "images/musediag.gif";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.OrganizationModelModelJGraph.class))
-            return "images/morgdiag.gif";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.TasksAndGoalsModelModelJGraph.class))
-            return "images/mtaskgoal.gif";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.InteractionModelModelJGraph.class))
-            return "images/minterdiag.gif";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.ActivityDiagramModelJGraph.class))
-            return "images/mtaskWFDiag.png";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.AgentModelModelJGraph.class))
-            return "images/magdiag.gif";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.UseCaseDiagramModelJGraph.class))
-            return "images/musediag.png";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDiagramModelJGraph.class))
-            return "images/mWorkPDiag.png";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.PhaseDiagramModelJGraph.class))
-            return "images/mPhaseDiagr.png";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.RoleDiagramModelJGraph.class))
-            return "images/mactStrDiag.png";
-		
-        if (userObject.getClass().equals(ingenias.editor.models.DeployDiagramModelJGraph.class))
-            return "images/musediag.gif";
+        $diagram
 		
         return null;
     }
