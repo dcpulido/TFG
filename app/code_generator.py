@@ -54,7 +54,7 @@ class Code_generator:
         self.generate_ProjectMenuCreator(ob)
         self.generate_Relations(ob)
 
-    def generate_Relations(self, ob, entDir="entities",widDir="widget"):
+    def generate_Relations(self, ob, entDir="entities", widDir="widget", cellDir="cell"):
         logging.info(
             "Generating Relations >>>>>>>>>>>>>>>>>")
         with open("source_templates/javaRelation.txt") as f:
@@ -74,6 +74,15 @@ class Code_generator:
             f.close()
         with open("source_templates/targetRoleWidgetRelation.txt") as f:
             targetwidget = Template(f.read())
+            f.close()
+        with open("source_templates/relationCellView.txt") as f:
+            cellView = Template(f.read())
+            f.close()
+        with open("source_templates/relationCellRenderer.txt") as f:
+            cellRenderer = Template(f.read())
+            f.close()
+        with open("source_templates/relationCellEdge.txt") as f:
+            cellEdge = Template(f.read())
             f.close()
 
         relations = []
@@ -129,7 +138,8 @@ class Code_generator:
                         fo.close()
 
                     toret = ""
-                    d = {"namesourceRoleWidgetPreferences": name + "sourceRoleWidgetPreferences"}
+                    d = {"namesourceRoleWidgetPreferences": name +
+                         "sourceRoleWidgetPreferences"}
                     toret += sourcewidget.safe_substitute(d)
                     with open("source_output/" +
                               widDir +
@@ -141,13 +151,61 @@ class Code_generator:
                         fo.close()
 
                     toret = ""
-                    d = {"nametargetRoleWidgetPreferences": name + "targetRoleWidgetPreferences"}
+                    d = {"nametargetRoleWidgetPreferences": name +
+                         "targetRoleWidgetPreferences"}
                     toret += targetwidget.safe_substitute(d)
                     with open("source_output/" +
                               widDir +
                               "/" +
                               name +
                               "targetRoleWidgetPreferences" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"nameView": name + "View",
+                         "nameRenderer": name+"Renderer",
+                         "name": name}
+                    toret += cellView.safe_substitute(d)
+                    with open("source_output/" +
+                              cellDir +
+                              "/" +
+                              name +
+                              "View" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"nameNOICONPanel": name + "NOICONPanel",
+                         "nameINGENIASPanel": name + "INGENIASPanel",
+                         "nameLABELPanel": name + "LABELPanel",
+                         "nameRenderer": name+"Renderer",
+                         "name": name}
+                    toret += cellRenderer.safe_substitute(d)
+                    with open("source_output/" +
+                              cellDir +
+                              "/" +
+                              name +
+                              "Renderer" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"nameEdge": name + "Edge",
+                         "namesource": name + "source",
+                         "nametarget": name + "target",
+                         "namesourceRole": name + "sourceRole()",
+                         "nametargetRole": name + "targetRole()",
+                         "name": name}
+                    toret += cellEdge.safe_substitute(d)
+                    with open("source_output/" +
+                              cellDir +
+                              "/" +
+                              name +
+                              "Edge" +
                               '.java', 'w+') as fo:
                         fo.write(toret)
                         fo.close()
