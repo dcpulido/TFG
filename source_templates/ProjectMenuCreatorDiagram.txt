@@ -1,2 +1,29 @@
-        if (userObject.getClass().equals(ingenias.editor.models.$nameModelJGraph.class))
-            return "$image";
+        if (ids.getDiagramFilter().isValidDiagram("$name")){
+            // Menu to add a Phase Diagram instance
+            ma=new DiagramCreationAction(){
+                public String getActionName(){
+                    return "Add $name";
+                }
+                public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
+                    $nameModelJGraph mjg =
+                    new $nameModelJGraph(new
+                                                $nameDataEntity(diagramName), diagramName, ids.om, new Model(ids),
+                                                new BasicMarqueeHandler(), ids.prefs );
+                    $nameActionsFactory ema=new  $nameActionsFactory(resources,ids);
+                    mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
+                    MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
+                    mjg.setMarqueeHandler(marquee);
+                    ids.gm.addModel(path, diagramName, mjg);
+                    ids.addNewDiagram(mjg);
+                    return mjg;
+                }
+                public String getIconName() {
+                    // TODO Auto-generated method stub
+                    return "$image";
+                }
+            };
+            actions.add(ma);
+        }
+
+
+

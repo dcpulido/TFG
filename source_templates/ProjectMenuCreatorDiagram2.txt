@@ -1,3 +1,41 @@
-        if (userObject.getClass().equals(ingenias.editor.models.$nameModelJGraph.class))
-            return $modeloname;
+                if (ids.getDiagramFilter().isValidDiagram("$name")){
+                    menu.add(
+                             new AbstractAction("Add $name") {
+                        
+                        public void actionPerformed(ActionEvent e) {
+                            TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
+                            DefaultMutableTreeNode dmtn = (DefaultMutableTreeNode) tp.
+                            getLastPathComponent();
+                            if (tp != null && dmtn.getUserObject()instanceof String) {
+                                String diagramName = JOptionPane.showInputDialog(owner,
+                                                                                 "Type graph name",
+                                                                                 "New graph",
+                                                                                 JOptionPane.QUESTION_MESSAGE);
+                                if (diagramName != null && ids.gm.existsModel(diagramName)) {
+                                    
+                                    JOptionPane.showMessageDialog(owner,
+                                                                  "There exists a model with the same name. Please, select another",
+                                                                  "Warning",
+                                                                  JOptionPane.WARNING_MESSAGE);
+                                }
+                                else
+                                    if (diagramName != null) {
+                                        $nameModelJGraph mjg =
+                                        new $nameModelJGraph(new
+                                                                    $nameDataEntity(
+                                                                                           diagramName), diagramName, ids.om, new Model(ids),
+                                                                    new BasicMarqueeHandler(), ids.prefs );
+                                        $nameActionsFactory ema=new  $nameActionsFactory(resources,ids);
+                                        mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
+                                        MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
+                                        mjg.setMarqueeHandler(marquee);
+                                        ids.gm.addModel(tp.getPath(), diagramName, mjg);
+                                        ids.addNewDiagram(mjg);
+                                        
+                                    }
+                            }
+                            
+                        }
+                    });
+                }
 

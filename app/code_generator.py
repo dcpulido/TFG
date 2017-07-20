@@ -1,7 +1,7 @@
 from string import Template
 import logging
 import sys
-reload(sys)  
+reload(sys)
 sys.setdefaultencoding('utf8')
 # diccionario para las imagenes
 images = {
@@ -50,11 +50,12 @@ class Code_generator:
         self.generate_ModelEntity(ob)
         self.generate_ObjectSave(ob)
         self.generate_ObjectManager(ob)
+        self.generate_ProjectTreeRenderer(ob)
         self.generate_ProjectMenuCreator(ob)
 
     def generate_ProjectMenuCreator(self, ob,
-                               mod_name="ProjectMenuCreator",
-                               dir=""):
+                                    mod_name="ProjectMenuCreator",
+                                    dir=""):
         logging.info(
             "Generating ProjectMenuCreator >>>>>>>>>>>>>>>>>")
         with open("source_templates/"+mod_name+"_Template.txt") as f:
@@ -70,19 +71,64 @@ class Code_generator:
         toret = ""
         for o in ob:
             name = o.name.replace(" ", "")
-            d = {"nameModelJGraph": name +"ModelJGraph",
-                 "image":""}
+            d = {"nameModelJGraph": name + "ModelJGraph",
+                 "nameActionsFactory": name + "ActionsFactory",
+                 "name": name,
+                 "nameDataEntity": name + "DataEntity",
+                 "image": ""}
             toret += diag.safe_substitute(d)
 
         toret2 = ""
         for o in ob:
             name = o.name.replace(" ", "")
-            d = {"nameModelJGraph": name +"ModelJGraph",
-                 "modeloname":"modelo"+name}
+            d = {"nameModelJGraph": name + "ModelJGraph",
+                 "nameActionsFactory": name + "ActionsFactory",
+                 "name": name,
+                 "nameDataEntity": name + "DataEntity"}
             toret2 += diag2.safe_substitute(d)
 
         d = {"diagram": toret,
-        "diagram2":toret2}
+             "diagram2": toret2}
+        toret = template.safe_substitute(d)
+        with open("source_output/" +
+                  dir +
+                  "/" +
+                  mod_name +
+                  '.java', 'w+') as fo:
+            fo.write(toret)
+            fo.close()
+
+    def generate_ProjectTreeRenderer(self, ob,
+                                     mod_name="ProjectTreeRenderer",
+                                     dir=""):
+        logging.info(
+            "Generating ProjectTreeRenderer >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        with open("source_templates/ProjectTreeRendererDiagram.txt") as f:
+            diag = Template(f.read())
+            f.close()
+        with open("source_templates/ProjectTreeRendererDiagram2.txt") as f:
+            diag2 = Template(f.read())
+            f.close()
+
+        toret = ""
+        for o in ob:
+            name = o.name.replace(" ", "")
+            d = {"nameModelJGraph": name + "ModelJGraph",
+                 "image": ""}
+            toret += diag.safe_substitute(d)
+
+        toret2 = ""
+        for o in ob:
+            name = o.name.replace(" ", "")
+            d = {"nameModelJGraph": name + "ModelJGraph",
+                 "modeloname": "modelo"+name}
+            toret2 += diag2.safe_substitute(d)
+
+        d = {"diagram": toret,
+             "diagram2": toret2}
         toret = template.safe_substitute(d)
         with open("source_output/" +
                   dir +
