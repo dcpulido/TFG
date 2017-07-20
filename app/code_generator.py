@@ -118,7 +118,7 @@ class Code_generator:
 
                     toret = ""
                     d = {"nameWidgetPreferences": name + "WidgetPreferences"}
-                    toret += java.safe_substitute(d)
+                    toret += widget.safe_substitute(d)
                     with open("source_output/" +
                               widDir +
                               "/" +
@@ -130,7 +130,7 @@ class Code_generator:
 
                     toret = ""
                     d = {"namesourceRoleWidgetPreferences": name + "sourceRoleWidgetPreferences"}
-                    toret += java.safe_substitute(d)
+                    toret += sourcewidget.safe_substitute(d)
                     with open("source_output/" +
                               widDir +
                               "/" +
@@ -142,7 +142,7 @@ class Code_generator:
 
                     toret = ""
                     d = {"nametargetRoleWidgetPreferences": name + "targetRoleWidgetPreferences"}
-                    toret += java.safe_substitute(d)
+                    toret += targetwidget.safe_substitute(d)
                     with open("source_output/" +
                               widDir +
                               "/" +

@@ -27,13 +27,13 @@ package ingenias.editor.widget;
 import org.jgraph.graph.*;
 import java.util.*;
 
-public class AContainsMEsourceRoleWidgetPreferences extends EntityWidgetPreferences {
+public class $namesourceRoleWidgetPreferences extends EntityWidgetPreferences {
 
   Hashtable preferredWidget=new Hashtable();
   Hashtable defaultValues=new Hashtable();
 
 
-  public AContainsMEsourceRoleWidgetPreferences() {
+  public $namesourceRoleWidgetPreferences() {
   super();
   String[] preferredOrder={""};
   this.setPreferredOrder(preferredOrder);

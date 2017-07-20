@@ -28,14 +28,14 @@ package ingenias.editor.widget;
 import org.jgraph.graph.*;
 import java.util.*;
 
-public class AContainsMEWidgetPreferences extends EntityWidgetPreferences {
+public class $nameWidgetPreferences extends EntityWidgetPreferences {
 
   Hashtable preferredWidget=new Hashtable();
   Hashtable defaultValues=new Hashtable();
 
   
 
-  public AContainsMEWidgetPreferences() {
+  public $nameWidgetPreferences() {
   super();
   String[] preferredOrder={"Label",""};
   this.setPreferredOrder(preferredOrder);

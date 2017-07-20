@@ -23,57 +23,54 @@
 
 */
 
-package ingenias.editor.entities;
+package ingenias.editor.widget;
+import org.jgraph.graph.*;
 import java.util.*;
 
-public class $name extends NAryEdgeEntity {
+public class WFResponsibletargetRoleWidgetPreferences extends EntityWidgetPreferences {
+
+  Hashtable preferredWidget=new Hashtable();
+  Hashtable defaultValues=new Hashtable();
 
 
-  public java.lang.String Label;
-
-
-
-
-  public $name(String id) {
-    super(id);
-    ModelEntity em=null;
-  }
-
+  public WFResponsibletargetRoleWidgetPreferences() {
+  super();
+  String[] preferredOrder={"Label",""};
+  this.setPreferredOrder(preferredOrder);
+  Vector result=null;
+  
+   preferredWidget.put("Label",ingenias.editor.widget.CustomJTextField.class);
+   result=new Vector();
+   
+   defaultValues.put("Label",result);
+  
+  };
 
 
 
   
-      public java.lang.String getLabel(){
-        return Label;
-      }
-   public void setLabel(java.lang.String
-                    Label){
-        this.Label=Label;
-      }
 
+  public Object getWidget(String attName)  throws IllegalAccessException,InstantiationException{
+   Class result=null;
+   ConfigurableWidget instance=null;
+   if (preferredWidget.get(attName)!=null)
+    result= ((Class)preferredWidget.get(attName));
+   else
+    return (super.getWidget(attName));
+   if (result!=null){
+    instance=(ConfigurableWidget)result.newInstance();
+    Vector values=(Vector)defaultValues.get(attName);
+    instance.setDefaultValues(values);  
+   }
+   return instance;
+  }
 
-public void fromMap(Map ht){
-super.fromMap(ht);
-
-if (ht.get("Label") instanceof String)
- this.setLabel(ht.get("Label").toString());
-
-
-
-}
-public void toMap(Map ht){
-super.toMap(ht);
-
-if (this.getLabel() instanceof String)
- ht.put("Label",this.getLabel().toString());
-
-
-}
-
-public String toString(){
- return getId()+":"+getType();
-}
+  public void configureWidget(ConfigurableWidget cw){
+ 
+  }
 
 
 
 }
+
+
