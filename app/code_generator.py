@@ -53,6 +53,52 @@ class Code_generator:
         self.generate_ProjectTreeRenderer(ob)
         self.generate_ProjectMenuCreator(ob)
         self.generate_Relations(ob)
+        self.generate_Relations_xml(ob)
+
+    def generate_Relations_xml(self, ob, entDir="rendererxml"):
+        logging.info(
+            "Generating xml >>>>>>>>>>>>>>>>>")
+        with open("source_templates/ingenias.txt") as f:
+            ingenias = f.read()
+            f.close()
+        with open("source_templates/label.txt") as f:
+            label = f.read()
+            f.close()
+        with open("source_templates/noicon.txt") as f:
+            noicon = f.read()
+            f.close()
+
+        relations = []
+        for o in ob:
+            for e in o.relations:
+                name = e.name.replace(" ", "")
+                if name not in relations:
+                    with open("source_output/" +
+                              entDir +
+                              "/" +
+                              name +
+                              'INGENIASPanel.xml', 'w+') as fo:
+                        fo.write(ingenias)
+                        fo.close()
+
+                    with open("source_output/" +
+                              entDir +
+                              "/" +
+                              name +
+                              'NOICONPanel.xml', 'w+') as fo:
+                        fo.write(noicon)
+                        fo.close()
+
+                    with open("source_output/" +
+                              entDir +
+                              "/" +
+                              name +
+                              'LABELPanel.xml', 'w+') as fo:
+                        fo.write(label)
+                        fo.close()
+
+                else:
+                    relations.append(name)
 
     def generate_Relations(self, ob, entDir="entities", widDir="widget", cellDir="cell"):
         logging.info(
