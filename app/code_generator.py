@@ -52,6 +52,62 @@ class Code_generator:
         self.generate_ObjectManager(ob)
         self.generate_ProjectTreeRenderer(ob)
         self.generate_ProjectMenuCreator(ob)
+        self.generate_Relations(ob)
+
+    def generate_Relations(self, ob, dir="entities"):
+        logging.info(
+            "Generating Relations >>>>>>>>>>>>>>>>>")
+        with open("source_templates/javaRelation.txt") as f:
+            java = Template(f.read())
+            f.close()
+        with open("source_templates/sourceRelation.txt") as f:
+            source = Template(f.read())
+            f.close()
+        with open("source_templates/targetRelation.txt") as f:
+            target = Template(f.read())
+            f.close()
+
+        relations = []
+        for o in ob:
+            for e in o.relations:
+                name = e.name.replace(" ", "")
+                if name not in relations:
+                    toret = ""
+                    d = {"name": name}
+                    toret += java.safe_substitute(d)
+                    with open("source_output/" +
+                              dir +
+                              "/" +
+                              name +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"namesourceRole": name + "sourceRole"}
+                    toret += java.safe_substitute(d)
+                    with open("source_output/" +
+                              dir +
+                              "/" +
+                              name +
+                              "sourceRole" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"nametargetRole": name + "targetRole"}
+                    toret += java.safe_substitute(d)
+                    with open("source_output/" +
+                              dir +
+                              "/" +
+                              name +
+                              "targetRole" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+                else:
+                    relations.append(name)
 
     def generate_ProjectMenuCreator(self, ob,
                                     mod_name="ProjectMenuCreator",
