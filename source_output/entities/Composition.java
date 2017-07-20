@@ -26,7 +26,7 @@
 package ingenias.editor.entities;
 import java.util.*;
 
-public class AContainsME extends NAryEdgeEntity {
+public class Composition extends NAryEdgeEntity {
 
 
   public java.lang.String Label;
@@ -34,7 +34,7 @@ public class AContainsME extends NAryEdgeEntity {
 
 
 
-  public AContainsME(String id) {
+  public Composition(String id) {
     super(id);
     ModelEntity em=null;
   }

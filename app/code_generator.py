@@ -54,7 +54,7 @@ class Code_generator:
         self.generate_ProjectMenuCreator(ob)
         self.generate_Relations(ob)
 
-    def generate_Relations(self, ob, dir="entities"):
+    def generate_Relations(self, ob, entDir="entities",widDir="widget"):
         logging.info(
             "Generating Relations >>>>>>>>>>>>>>>>>")
         with open("source_templates/javaRelation.txt") as f:
@@ -66,6 +66,15 @@ class Code_generator:
         with open("source_templates/targetRelation.txt") as f:
             target = Template(f.read())
             f.close()
+        with open("source_templates/javaWidgetRelation.txt") as f:
+            widget = Template(f.read())
+            f.close()
+        with open("source_templates/sourceRoleWidgetRelation.txt") as f:
+            sourcewidget = Template(f.read())
+            f.close()
+        with open("source_templates/targetRoleWidgetRelation.txt") as f:
+            targetwidget = Template(f.read())
+            f.close()
 
         relations = []
         for o in ob:
@@ -76,7 +85,7 @@ class Code_generator:
                     d = {"name": name}
                     toret += java.safe_substitute(d)
                     with open("source_output/" +
-                              dir +
+                              entDir +
                               "/" +
                               name +
                               '.java', 'w+') as fo:
@@ -87,7 +96,7 @@ class Code_generator:
                     d = {"namesourceRole": name + "sourceRole"}
                     toret += java.safe_substitute(d)
                     with open("source_output/" +
-                              dir +
+                              entDir +
                               "/" +
                               name +
                               "sourceRole" +
@@ -99,10 +108,46 @@ class Code_generator:
                     d = {"nametargetRole": name + "targetRole"}
                     toret += java.safe_substitute(d)
                     with open("source_output/" +
-                              dir +
+                              entDir +
                               "/" +
                               name +
                               "targetRole" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"nameWidgetPreferences": name + "WidgetPreferences"}
+                    toret += java.safe_substitute(d)
+                    with open("source_output/" +
+                              widDir +
+                              "/" +
+                              name +
+                              "WidgetPreferences" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"namesourceRoleWidgetPreferences": name + "sourceRoleWidgetPreferences"}
+                    toret += java.safe_substitute(d)
+                    with open("source_output/" +
+                              widDir +
+                              "/" +
+                              name +
+                              "sourceRoleWidgetPreferences" +
+                              '.java', 'w+') as fo:
+                        fo.write(toret)
+                        fo.close()
+
+                    toret = ""
+                    d = {"nametargetRoleWidgetPreferences": name + "targetRoleWidgetPreferences"}
+                    toret += java.safe_substitute(d)
+                    with open("source_output/" +
+                              widDir +
+                              "/" +
+                              name +
+                              "targetRoleWidgetPreferences" +
                               '.java', 'w+') as fo:
                         fo.write(toret)
                         fo.close()

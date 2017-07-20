@@ -24,32 +24,43 @@
 */
 
 package ingenias.editor.entities;
+
+
 import java.util.*;
 
-public class WFConsumes extends NAryEdgeEntity {
+public class $nametargetRole extends RoleEntity {
 
 
   public java.lang.String Label;
 
 
+ static int idCounter=0;
+
+ public $nametargetRole() {
+        super("$nametargetRole"+idCounter);
+        idCounter++;
+
+      }
 
 
-  public WFConsumes(String id) {
+
+  public $nametargetRole(String id) {
     super(id);
-    ModelEntity em=null;
+
   }
 
 
 
-
-  
       public java.lang.String getLabel(){
         return Label;
       }
-   public void setLabel(java.lang.String
+       public void setLabel(java.lang.String
                     Label){
         this.Label=Label;
       }
+
+
+
 
 
 public void fromMap(Map ht){
@@ -65,15 +76,9 @@ public void toMap(Map ht){
 super.toMap(ht);
 
 if (this.getLabel() instanceof String)
- ht.put("Label",this.getLabel().toString());
-
-
-}
-
-public String toString(){
- return getId()+":"+getType();
-}
-
-
+ ht.put("Label",encodeutf8Text(this.getLabel().toString()));
 
 }
+
+}
+            
