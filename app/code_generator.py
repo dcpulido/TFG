@@ -1,5 +1,8 @@
 from string import Template
 import logging
+import sys
+reload(sys)  
+sys.setdefaultencoding('utf8')
 # diccionario para las imagenes
 images = {
 
@@ -46,6 +49,36 @@ class Code_generator:
         self.generate_DataEntity(ob)
         self.generate_ModelEntity(ob)
         self.generate_ObjectSave(ob)
+        self.generate_ObjectManager(ob)
+
+    def generate_ObjectManager(self, ob,
+                               mod_name="ObjectManager",
+                               dir=""):
+        logging.info(
+            "Generating ObjectManager >>>>>>>>>>>>>>>>>")
+        with open("source_templates/"+mod_name+"_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        with open("source_templates/ObjectManagerDiagram.txt") as f:
+            diag = Template(f.read())
+            f.close()
+
+        toret = ""
+        for o in ob:
+            name = o.name.replace(" ", "")
+            d = {"nameModelEntity": name +
+                 "ModelEntity"}
+            toret += diag.safe_substitute(d)
+
+        d = {"diagram": toret}
+        toret = template.safe_substitute(d)
+        with open("source_output/" +
+                  dir +
+                  "/" +
+                  mod_name +
+                  '.java', 'w+') as fo:
+            fo.write(toret)
+            fo.close()
 
     def generate_ObjectSave(self, ob,
                             mod_name="ObjectSave",

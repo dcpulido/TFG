@@ -1,0 +1,2 @@
+
+        result.add($nameModelEntity.class);
