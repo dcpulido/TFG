@@ -75,47 +75,44 @@ public class PhaseDiagramCellViewFactory implements CellViewFactory {
     protected VertexView createVertexView(Object v) {
         Object userObject = ( (DefaultGraphCell) v).getUserObject();
         
-if (userObject.getClass().equals(InitialNode.class)){
-            return new InitialNodeView(v);
+if (userObject.getClass().equals(Node.class)){
+            return new NodeView(v);
+        }
+        if (userObject.getClass().equals(DecisionNode.class)){
+            return new DecisionNodeView(v);
         }
         if (userObject.getClass().equals(Process.class)){
             return new ProcessView(v);
         }
+        if (userObject.getClass().equals(Phase.class)){
+            return new PhaseView(v);
+        }
         if (userObject.getClass().equals(Activity.class)){
             return new ActivityView(v);
         }
-        if (userObject.getClass().equals(EndNode.class)){
-            return new EndNodeView(v);
-        }
-        if (userObject.getClass().equals(ActivityKind.class)){
-            return new ActivityKindView(v);
-        }
-        if (userObject.getClass().equals(ForkNode.class)){
-            return new ForkNodeView(v);
-        }
-        if (userObject.getClass().equals(InitialMetaNode.class)){
-            return new InitialMetaNodeView(v);
-        }
-        if (userObject.getClass().equals(JoinNode.class)){
-            return new JoinNodeView(v);
+        if (userObject.getClass().equals(InitialNode.class)){
+            return new InitialNodeView(v);
         }
         if (userObject.getClass().equals(iPhase.class)){
             return new iPhaseView(v);
         }
-        if (userObject.getClass().equals(TerminalMetaNode.class)){
-            return new TerminalMetaNodeView(v);
+        if (userObject.getClass().equals(ForkNode.class)){
+            return new ForkNodeView(v);
         }
-        if (userObject.getClass().equals(DecissionNode.class)){
-            return new DecissionNodeView(v);
+        if (userObject.getClass().equals(EndNode.class)){
+            return new EndNodeView(v);
         }
-        if (userObject.getClass().equals(Phase.class)){
-            return new PhaseView(v);
+        if (userObject.getClass().equals(JoinNode.class)){
+            return new JoinNodeView(v);
         }
-        if (v.getClass().equals(FollowsEdge.class)){
-            return new FollowsView(v);
+        if (v.getClass().equals(FollowsGuardedEdge.class)){
+            return new FollowsGuardedView(v);
         }
         if (v.getClass().equals(ExtendsEdge.class)){
             return new ExtendsView(v);
+        }
+        if (v.getClass().equals(FollowsEdge.class)){
+            return new FollowsView(v);
         }
               
         

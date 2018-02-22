@@ -2731,19 +2731,11 @@ public class ObjectManager extends javax.swing.tree.DefaultMutableTreeNode imple
         //result.add(UMLObject.class);
         
 
-        result.add(WorkProductContentDiagramModelEntity.class);
-
-        result.add(MetaModelDiagramModelEntity.class);
+        result.add(WorkProductDiagramModelEntity.class);
 
         result.add(PhaseDiagramModelEntity.class);
 
-        result.add(ActivityDetailedDiagramModelEntity.class);
-
-        result.add(WorkProductStructureDiagramModelEntity.class);
-
-        result.add(WorkProductDependecyDiagramModelEntity.class);
-
-        result.add(TaskWorkflowDiagramModelEntity.class);
+        result.add(ActivityWPDiagramModelEntity.class);
 
         
         return result;

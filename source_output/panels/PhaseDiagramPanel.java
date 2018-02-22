@@ -86,29 +86,25 @@ public class PhaseDiagramPanel extends JGraph {
     public static Vector<String> getAllowedEntities(){
         Vector<String> entities=new   Vector<String>();
 
-        entities.add("InitialNode");
+        entities.add("Node");
+        
+                entities.add("DecisionNode");
         
                 entities.add("Process");
         
+                entities.add("Phase");
+        
                 entities.add("Activity");
         
-                entities.add("EndNode");
-        
-                entities.add("ActivityKind");
-        
-                entities.add("ForkNode");
-        
-                entities.add("InitialMetaNode");
-        
-                entities.add("JoinNode");
+                entities.add("InitialNode");
         
                 entities.add("iPhase");
         
-                entities.add("TerminalMetaNode");
+                entities.add("ForkNode");
         
-                entities.add("DecissionNode");
+                entities.add("EndNode");
         
-                entities.add("Phase");
+                entities.add("JoinNode");
         
                 
         
@@ -117,10 +113,19 @@ public class PhaseDiagramPanel extends JGraph {
     }
 
 public DefaultGraphCell createCell(String entity) throws InvalidEntity{
-if (entity.equalsIgnoreCase("InitialNode")) {
-            InitialNode nentity=new InitialNode(((Model)getModel()).getNewId("InitialNode"));
+if (entity.equalsIgnoreCase("Node")) {
+            Node nentity=new Node(((Model)getModel()).getNewId("Node"));
             DefaultGraphCell vertex = new
-            InitialNodeCell(nentity);
+            NodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("DecisionNode")) {
+            DecisionNode nentity=new DecisionNode(((Model)getModel()).getNewId("DecisionNode"));
+            DefaultGraphCell vertex = new
+            DecisionNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
@@ -135,6 +140,15 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         }
         else
 
+        if (entity.equalsIgnoreCase("Phase")) {
+            Phase nentity=new Phase(((Model)getModel()).getNewId("Phase"));
+            DefaultGraphCell vertex = new
+            PhaseCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
         if (entity.equalsIgnoreCase("Activity")) {
             Activity nentity=new Activity(((Model)getModel()).getNewId("Activity"));
             DefaultGraphCell vertex = new
@@ -144,46 +158,10 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         }
         else
 
-        if (entity.equalsIgnoreCase("EndNode")) {
-            EndNode nentity=new EndNode(((Model)getModel()).getNewId("EndNode"));
+        if (entity.equalsIgnoreCase("InitialNode")) {
+            InitialNode nentity=new InitialNode(((Model)getModel()).getNewId("InitialNode"));
             DefaultGraphCell vertex = new
-            EndNodeCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("ActivityKind")) {
-            ActivityKind nentity=new ActivityKind(((Model)getModel()).getNewId("ActivityKind"));
-            DefaultGraphCell vertex = new
-            ActivityKindCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("ForkNode")) {
-            ForkNode nentity=new ForkNode(((Model)getModel()).getNewId("ForkNode"));
-            DefaultGraphCell vertex = new
-            ForkNodeCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("InitialMetaNode")) {
-            InitialMetaNode nentity=new InitialMetaNode(((Model)getModel()).getNewId("InitialMetaNode"));
-            DefaultGraphCell vertex = new
-            InitialMetaNodeCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("JoinNode")) {
-            JoinNode nentity=new JoinNode(((Model)getModel()).getNewId("JoinNode"));
-            DefaultGraphCell vertex = new
-            JoinNodeCell(nentity);
+            InitialNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
@@ -198,28 +176,28 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         }
         else
 
-        if (entity.equalsIgnoreCase("TerminalMetaNode")) {
-            TerminalMetaNode nentity=new TerminalMetaNode(((Model)getModel()).getNewId("TerminalMetaNode"));
+        if (entity.equalsIgnoreCase("ForkNode")) {
+            ForkNode nentity=new ForkNode(((Model)getModel()).getNewId("ForkNode"));
             DefaultGraphCell vertex = new
-            TerminalMetaNodeCell(nentity);
+            ForkNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
         else
 
-        if (entity.equalsIgnoreCase("DecissionNode")) {
-            DecissionNode nentity=new DecissionNode(((Model)getModel()).getNewId("DecissionNode"));
+        if (entity.equalsIgnoreCase("EndNode")) {
+            EndNode nentity=new EndNode(((Model)getModel()).getNewId("EndNode"));
             DefaultGraphCell vertex = new
-            DecissionNodeCell(nentity);
+            EndNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
         else
 
-        if (entity.equalsIgnoreCase("Phase")) {
-            Phase nentity=new Phase(((Model)getModel()).getNewId("Phase"));
+        if (entity.equalsIgnoreCase("JoinNode")) {
+            JoinNode nentity=new JoinNode(((Model)getModel()).getNewId("JoinNode"));
             DefaultGraphCell vertex = new
-            PhaseCell(nentity);
+            JoinNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
@@ -230,8 +208,13 @@ if (entity.equalsIgnoreCase("InitialNode")) {
 }
 
 public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
-if (entity.getType().equalsIgnoreCase("InitialNode")) {
-            return InitialNodeView.getSize((InitialNode)entity);      
+if (entity.getType().equalsIgnoreCase("Node")) {
+            return NodeView.getSize((Node)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("DecisionNode")) {
+            return DecisionNodeView.getSize((DecisionNode)entity);      
         }
         else
 
@@ -240,33 +223,18 @@ if (entity.getType().equalsIgnoreCase("InitialNode")) {
         }
         else
 
+        if (entity.getType().equalsIgnoreCase("Phase")) {
+            return PhaseView.getSize((Phase)entity);      
+        }
+        else
+
         if (entity.getType().equalsIgnoreCase("Activity")) {
             return ActivityView.getSize((Activity)entity);      
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("EndNode")) {
-            return EndNodeView.getSize((EndNode)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("ActivityKind")) {
-            return ActivityKindView.getSize((ActivityKind)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("ForkNode")) {
-            return ForkNodeView.getSize((ForkNode)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("InitialMetaNode")) {
-            return InitialMetaNodeView.getSize((InitialMetaNode)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("JoinNode")) {
-            return JoinNodeView.getSize((JoinNode)entity);      
+        if (entity.getType().equalsIgnoreCase("InitialNode")) {
+            return InitialNodeView.getSize((InitialNode)entity);      
         }
         else
 
@@ -275,18 +243,18 @@ if (entity.getType().equalsIgnoreCase("InitialNode")) {
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("TerminalMetaNode")) {
-            return TerminalMetaNodeView.getSize((TerminalMetaNode)entity);      
+        if (entity.getType().equalsIgnoreCase("ForkNode")) {
+            return ForkNodeView.getSize((ForkNode)entity);      
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("DecissionNode")) {
-            return DecissionNodeView.getSize((DecissionNode)entity);      
+        if (entity.getType().equalsIgnoreCase("EndNode")) {
+            return EndNodeView.getSize((EndNode)entity);      
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("Phase")) {
-            return PhaseView.getSize((Phase)entity);      
+        if (entity.getType().equalsIgnoreCase("JoinNode")) {
+            return JoinNodeView.getSize((JoinNode)entity);      
         }
         else
 
@@ -338,10 +306,17 @@ public DefaultGraphCell insertDuplicated(Point point, ingenias.editor.entities.E
         Dimension size = null;
         
         
-if (entity.getClass().equals(InitialNode.class)) {
-            vertex = new InitialNodeCell( (InitialNode) entity);
+if (entity.getClass().equals(Node.class)) {
+            vertex = new NodeCell( (Node) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((InitialNode) entity);
+            size = AgentView.getSize((Node) entity);
+        }
+        else
+
+        if (entity.getClass().equals(DecisionNode.class)) {
+            vertex = new DecisionNodeCell( (DecisionNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((DecisionNode) entity);
         }
         else
 
@@ -352,6 +327,13 @@ if (entity.getClass().equals(InitialNode.class)) {
         }
         else
 
+        if (entity.getClass().equals(Phase.class)) {
+            vertex = new PhaseCell( (Phase) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((Phase) entity);
+        }
+        else
+
         if (entity.getClass().equals(Activity.class)) {
             vertex = new ActivityCell( (Activity) entity);
             // Default Size for the new Vertex with the new entity within
@@ -359,38 +341,10 @@ if (entity.getClass().equals(InitialNode.class)) {
         }
         else
 
-        if (entity.getClass().equals(EndNode.class)) {
-            vertex = new EndNodeCell( (EndNode) entity);
+        if (entity.getClass().equals(InitialNode.class)) {
+            vertex = new InitialNodeCell( (InitialNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((EndNode) entity);
-        }
-        else
-
-        if (entity.getClass().equals(ActivityKind.class)) {
-            vertex = new ActivityKindCell( (ActivityKind) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((ActivityKind) entity);
-        }
-        else
-
-        if (entity.getClass().equals(ForkNode.class)) {
-            vertex = new ForkNodeCell( (ForkNode) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((ForkNode) entity);
-        }
-        else
-
-        if (entity.getClass().equals(InitialMetaNode.class)) {
-            vertex = new InitialMetaNodeCell( (InitialMetaNode) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((InitialMetaNode) entity);
-        }
-        else
-
-        if (entity.getClass().equals(JoinNode.class)) {
-            vertex = new JoinNodeCell( (JoinNode) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((JoinNode) entity);
+            size = AgentView.getSize((InitialNode) entity);
         }
         else
 
@@ -401,24 +355,24 @@ if (entity.getClass().equals(InitialNode.class)) {
         }
         else
 
-        if (entity.getClass().equals(TerminalMetaNode.class)) {
-            vertex = new TerminalMetaNodeCell( (TerminalMetaNode) entity);
+        if (entity.getClass().equals(ForkNode.class)) {
+            vertex = new ForkNodeCell( (ForkNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((TerminalMetaNode) entity);
+            size = AgentView.getSize((ForkNode) entity);
         }
         else
 
-        if (entity.getClass().equals(DecissionNode.class)) {
-            vertex = new DecissionNodeCell( (DecissionNode) entity);
+        if (entity.getClass().equals(EndNode.class)) {
+            vertex = new EndNodeCell( (EndNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((DecissionNode) entity);
+            size = AgentView.getSize((EndNode) entity);
         }
         else
 
-        if (entity.getClass().equals(Phase.class)) {
-            vertex = new PhaseCell( (Phase) entity);
+        if (entity.getClass().equals(JoinNode.class)) {
+            vertex = new JoinNodeCell( (JoinNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((Phase) entity);
+            size = AgentView.getSize((JoinNode) entity);
         }
         else
 

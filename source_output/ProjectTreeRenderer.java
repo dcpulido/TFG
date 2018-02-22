@@ -578,19 +578,11 @@ public class ProjectTreeRenderer extends javax.swing.tree.DefaultTreeCellRendere
         
         
         
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductContentDiagramModelJGraph.class))
-            return "";
-        if (userObject.getClass().equals(ingenias.editor.models.MetaModelDiagramModelJGraph.class))
+        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDiagramModelJGraph.class))
             return "";
         if (userObject.getClass().equals(ingenias.editor.models.PhaseDiagramModelJGraph.class))
             return "";
-        if (userObject.getClass().equals(ingenias.editor.models.ActivityDetailedDiagramModelJGraph.class))
-            return "";
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductStructureDiagramModelJGraph.class))
-            return "";
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDependecyDiagramModelJGraph.class))
-            return "";
-        if (userObject.getClass().equals(ingenias.editor.models.TaskWorkflowDiagramModelJGraph.class))
+        if (userObject.getClass().equals(ingenias.editor.models.ActivityWPDiagramModelJGraph.class))
             return "";
 
         
@@ -873,26 +865,14 @@ public class ProjectTreeRenderer extends javax.swing.tree.DefaultTreeCellRendere
         
         
         
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductContentDiagramModelJGraph.class))
-            return modeloWorkProductContentDiagram;
-
-        if (userObject.getClass().equals(ingenias.editor.models.MetaModelDiagramModelJGraph.class))
-            return modeloMetaModelDiagram;
+        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDiagramModelJGraph.class))
+            return modeloWorkProductDiagram;
 
         if (userObject.getClass().equals(ingenias.editor.models.PhaseDiagramModelJGraph.class))
             return modeloPhaseDiagram;
 
-        if (userObject.getClass().equals(ingenias.editor.models.ActivityDetailedDiagramModelJGraph.class))
-            return modeloActivityDetailedDiagram;
-
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductStructureDiagramModelJGraph.class))
-            return modeloWorkProductStructureDiagram;
-
-        if (userObject.getClass().equals(ingenias.editor.models.WorkProductDependecyDiagramModelJGraph.class))
-            return modeloWorkProductDependecyDiagram;
-
-        if (userObject.getClass().equals(ingenias.editor.models.TaskWorkflowDiagramModelJGraph.class))
-            return modeloTaskWorkflowDiagram;
+        if (userObject.getClass().equals(ingenias.editor.models.ActivityWPDiagramModelJGraph.class))
+            return modeloActivityWPDiagram;
 
 
         

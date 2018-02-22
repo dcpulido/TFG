@@ -64,47 +64,18 @@ public class ProjectMenuCreator {
         Vector<DiagramCreationAction> actions=new Vector<DiagramCreationAction>();
         DiagramCreationAction ma=null;
         
-        if (ids.getDiagramFilter().isValidDiagram("WorkProductContentDiagram")){
+        if (ids.getDiagramFilter().isValidDiagram("WorkProductDiagram")){
             // Menu to add a Phase Diagram instance
             ma=new DiagramCreationAction(){
                 public String getActionName(){
-                    return "Add WorkProductContentDiagram";
+                    return "Add WorkProductDiagram";
                 }
                 public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
-                    WorkProductContentDiagramModelJGraph mjg =
-                    new WorkProductContentDiagramModelJGraph(new
-                                                WorkProductContentDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
+                    WorkProductDiagramModelJGraph mjg =
+                    new WorkProductDiagramModelJGraph(new
+                                                WorkProductDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
                                                 new BasicMarqueeHandler(), ids.prefs );
-                    WorkProductContentDiagramActionsFactory ema=new  WorkProductContentDiagramActionsFactory(resources,ids);
-                    mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                    MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                    mjg.setMarqueeHandler(marquee);
-                    ids.gm.addModel(path, diagramName, mjg);
-                    ids.addNewDiagram(mjg);
-                    return mjg;
-                }
-                public String getIconName() {
-                    // TODO Auto-generated method stub
-                    return "";
-                }
-            };
-            actions.add(ma);
-        }
-
-
-
-        if (ids.getDiagramFilter().isValidDiagram("MetaModelDiagram")){
-            // Menu to add a Phase Diagram instance
-            ma=new DiagramCreationAction(){
-                public String getActionName(){
-                    return "Add MetaModelDiagram";
-                }
-                public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
-                    MetaModelDiagramModelJGraph mjg =
-                    new MetaModelDiagramModelJGraph(new
-                                                MetaModelDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
-                                                new BasicMarqueeHandler(), ids.prefs );
-                    MetaModelDiagramActionsFactory ema=new  MetaModelDiagramActionsFactory(resources,ids);
+                    WorkProductDiagramActionsFactory ema=new  WorkProductDiagramActionsFactory(resources,ids);
                     mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
                     MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
                     mjg.setMarqueeHandler(marquee);
@@ -151,105 +122,18 @@ public class ProjectMenuCreator {
 
 
 
-        if (ids.getDiagramFilter().isValidDiagram("ActivityDetailedDiagram")){
+        if (ids.getDiagramFilter().isValidDiagram("ActivityWPDiagram")){
             // Menu to add a Phase Diagram instance
             ma=new DiagramCreationAction(){
                 public String getActionName(){
-                    return "Add ActivityDetailedDiagram";
+                    return "Add ActivityWPDiagram";
                 }
                 public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
-                    ActivityDetailedDiagramModelJGraph mjg =
-                    new ActivityDetailedDiagramModelJGraph(new
-                                                ActivityDetailedDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
+                    ActivityWPDiagramModelJGraph mjg =
+                    new ActivityWPDiagramModelJGraph(new
+                                                ActivityWPDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
                                                 new BasicMarqueeHandler(), ids.prefs );
-                    ActivityDetailedDiagramActionsFactory ema=new  ActivityDetailedDiagramActionsFactory(resources,ids);
-                    mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                    MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                    mjg.setMarqueeHandler(marquee);
-                    ids.gm.addModel(path, diagramName, mjg);
-                    ids.addNewDiagram(mjg);
-                    return mjg;
-                }
-                public String getIconName() {
-                    // TODO Auto-generated method stub
-                    return "";
-                }
-            };
-            actions.add(ma);
-        }
-
-
-
-        if (ids.getDiagramFilter().isValidDiagram("WorkProductStructureDiagram")){
-            // Menu to add a Phase Diagram instance
-            ma=new DiagramCreationAction(){
-                public String getActionName(){
-                    return "Add WorkProductStructureDiagram";
-                }
-                public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
-                    WorkProductStructureDiagramModelJGraph mjg =
-                    new WorkProductStructureDiagramModelJGraph(new
-                                                WorkProductStructureDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
-                                                new BasicMarqueeHandler(), ids.prefs );
-                    WorkProductStructureDiagramActionsFactory ema=new  WorkProductStructureDiagramActionsFactory(resources,ids);
-                    mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                    MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                    mjg.setMarqueeHandler(marquee);
-                    ids.gm.addModel(path, diagramName, mjg);
-                    ids.addNewDiagram(mjg);
-                    return mjg;
-                }
-                public String getIconName() {
-                    // TODO Auto-generated method stub
-                    return "";
-                }
-            };
-            actions.add(ma);
-        }
-
-
-
-        if (ids.getDiagramFilter().isValidDiagram("WorkProductDependecyDiagram")){
-            // Menu to add a Phase Diagram instance
-            ma=new DiagramCreationAction(){
-                public String getActionName(){
-                    return "Add WorkProductDependecyDiagram";
-                }
-                public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
-                    WorkProductDependecyDiagramModelJGraph mjg =
-                    new WorkProductDependecyDiagramModelJGraph(new
-                                                WorkProductDependecyDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
-                                                new BasicMarqueeHandler(), ids.prefs );
-                    WorkProductDependecyDiagramActionsFactory ema=new  WorkProductDependecyDiagramActionsFactory(resources,ids);
-                    mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                    MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                    mjg.setMarqueeHandler(marquee);
-                    ids.gm.addModel(path, diagramName, mjg);
-                    ids.addNewDiagram(mjg);
-                    return mjg;
-                }
-                public String getIconName() {
-                    // TODO Auto-generated method stub
-                    return "";
-                }
-            };
-            actions.add(ma);
-        }
-
-
-
-        if (ids.getDiagramFilter().isValidDiagram("TaskWorkflowDiagram")){
-            // Menu to add a Phase Diagram instance
-            ma=new DiagramCreationAction(){
-                public String getActionName(){
-                    return "Add TaskWorkflowDiagram";
-                }
-                public ModelJGraph execute(String diagramName,Object[] path, IDEState ids){
-                    TaskWorkflowDiagramModelJGraph mjg =
-                    new TaskWorkflowDiagramModelJGraph(new
-                                                TaskWorkflowDiagramDataEntity(diagramName), diagramName, ids.om, new Model(ids),
-                                                new BasicMarqueeHandler(), ids.prefs );
-                    TaskWorkflowDiagramActionsFactory ema=new  TaskWorkflowDiagramActionsFactory(resources,ids);
+                    ActivityWPDiagramActionsFactory ema=new  ActivityWPDiagramActionsFactory(resources,ids);
                     mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
                     MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
                     mjg.setMarqueeHandler(marquee);
@@ -285,9 +169,9 @@ public class ProjectMenuCreator {
             if (tp != null && dmtn.getUserObject()instanceof String) {
                 // Menu to add a EnvironmentModel model instance
                 
-                if (ids.getDiagramFilter().isValidDiagram("WorkProductContentDiagram")){
+                if (ids.getDiagramFilter().isValidDiagram("WorkProductDiagram")){
                     menu.add(
-                             new AbstractAction("Add WorkProductContentDiagram") {
+                             new AbstractAction("Add WorkProductDiagram") {
                         
                         public void actionPerformed(ActionEvent e) {
                             TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
@@ -307,53 +191,12 @@ public class ProjectMenuCreator {
                                 }
                                 else
                                     if (diagramName != null) {
-                                        WorkProductContentDiagramModelJGraph mjg =
-                                        new WorkProductContentDiagramModelJGraph(new
-                                                                    WorkProductContentDiagramDataEntity(
+                                        WorkProductDiagramModelJGraph mjg =
+                                        new WorkProductDiagramModelJGraph(new
+                                                                    WorkProductDiagramDataEntity(
                                                                                            diagramName), diagramName, ids.om, new Model(ids),
                                                                     new BasicMarqueeHandler(), ids.prefs );
-                                        WorkProductContentDiagramActionsFactory ema=new  WorkProductContentDiagramActionsFactory(resources,ids);
-                                        mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                                        MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                                        mjg.setMarqueeHandler(marquee);
-                                        ids.gm.addModel(tp.getPath(), diagramName, mjg);
-                                        ids.addNewDiagram(mjg);
-                                        
-                                    }
-                            }
-                            
-                        }
-                    });
-                }
-
-                if (ids.getDiagramFilter().isValidDiagram("MetaModelDiagram")){
-                    menu.add(
-                             new AbstractAction("Add MetaModelDiagram") {
-                        
-                        public void actionPerformed(ActionEvent e) {
-                            TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
-                            DefaultMutableTreeNode dmtn = (DefaultMutableTreeNode) tp.
-                            getLastPathComponent();
-                            if (tp != null && dmtn.getUserObject()instanceof String) {
-                                String diagramName = JOptionPane.showInputDialog(owner,
-                                                                                 "Type graph name",
-                                                                                 "New graph",
-                                                                                 JOptionPane.QUESTION_MESSAGE);
-                                if (diagramName != null && ids.gm.existsModel(diagramName)) {
-                                    
-                                    JOptionPane.showMessageDialog(owner,
-                                                                  "There exists a model with the same name. Please, select another",
-                                                                  "Warning",
-                                                                  JOptionPane.WARNING_MESSAGE);
-                                }
-                                else
-                                    if (diagramName != null) {
-                                        MetaModelDiagramModelJGraph mjg =
-                                        new MetaModelDiagramModelJGraph(new
-                                                                    MetaModelDiagramDataEntity(
-                                                                                           diagramName), diagramName, ids.om, new Model(ids),
-                                                                    new BasicMarqueeHandler(), ids.prefs );
-                                        MetaModelDiagramActionsFactory ema=new  MetaModelDiagramActionsFactory(resources,ids);
+                                        WorkProductDiagramActionsFactory ema=new  WorkProductDiagramActionsFactory(resources,ids);
                                         mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
                                         MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
                                         mjg.setMarqueeHandler(marquee);
@@ -408,9 +251,9 @@ public class ProjectMenuCreator {
                     });
                 }
 
-                if (ids.getDiagramFilter().isValidDiagram("ActivityDetailedDiagram")){
+                if (ids.getDiagramFilter().isValidDiagram("ActivityWPDiagram")){
                     menu.add(
-                             new AbstractAction("Add ActivityDetailedDiagram") {
+                             new AbstractAction("Add ActivityWPDiagram") {
                         
                         public void actionPerformed(ActionEvent e) {
                             TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
@@ -430,135 +273,12 @@ public class ProjectMenuCreator {
                                 }
                                 else
                                     if (diagramName != null) {
-                                        ActivityDetailedDiagramModelJGraph mjg =
-                                        new ActivityDetailedDiagramModelJGraph(new
-                                                                    ActivityDetailedDiagramDataEntity(
+                                        ActivityWPDiagramModelJGraph mjg =
+                                        new ActivityWPDiagramModelJGraph(new
+                                                                    ActivityWPDiagramDataEntity(
                                                                                            diagramName), diagramName, ids.om, new Model(ids),
                                                                     new BasicMarqueeHandler(), ids.prefs );
-                                        ActivityDetailedDiagramActionsFactory ema=new  ActivityDetailedDiagramActionsFactory(resources,ids);
-                                        mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                                        MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                                        mjg.setMarqueeHandler(marquee);
-                                        ids.gm.addModel(tp.getPath(), diagramName, mjg);
-                                        ids.addNewDiagram(mjg);
-                                        
-                                    }
-                            }
-                            
-                        }
-                    });
-                }
-
-                if (ids.getDiagramFilter().isValidDiagram("WorkProductStructureDiagram")){
-                    menu.add(
-                             new AbstractAction("Add WorkProductStructureDiagram") {
-                        
-                        public void actionPerformed(ActionEvent e) {
-                            TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
-                            DefaultMutableTreeNode dmtn = (DefaultMutableTreeNode) tp.
-                            getLastPathComponent();
-                            if (tp != null && dmtn.getUserObject()instanceof String) {
-                                String diagramName = JOptionPane.showInputDialog(owner,
-                                                                                 "Type graph name",
-                                                                                 "New graph",
-                                                                                 JOptionPane.QUESTION_MESSAGE);
-                                if (diagramName != null && ids.gm.existsModel(diagramName)) {
-                                    
-                                    JOptionPane.showMessageDialog(owner,
-                                                                  "There exists a model with the same name. Please, select another",
-                                                                  "Warning",
-                                                                  JOptionPane.WARNING_MESSAGE);
-                                }
-                                else
-                                    if (diagramName != null) {
-                                        WorkProductStructureDiagramModelJGraph mjg =
-                                        new WorkProductStructureDiagramModelJGraph(new
-                                                                    WorkProductStructureDiagramDataEntity(
-                                                                                           diagramName), diagramName, ids.om, new Model(ids),
-                                                                    new BasicMarqueeHandler(), ids.prefs );
-                                        WorkProductStructureDiagramActionsFactory ema=new  WorkProductStructureDiagramActionsFactory(resources,ids);
-                                        mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                                        MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                                        mjg.setMarqueeHandler(marquee);
-                                        ids.gm.addModel(tp.getPath(), diagramName, mjg);
-                                        ids.addNewDiagram(mjg);
-                                        
-                                    }
-                            }
-                            
-                        }
-                    });
-                }
-
-                if (ids.getDiagramFilter().isValidDiagram("WorkProductDependecyDiagram")){
-                    menu.add(
-                             new AbstractAction("Add WorkProductDependecyDiagram") {
-                        
-                        public void actionPerformed(ActionEvent e) {
-                            TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
-                            DefaultMutableTreeNode dmtn = (DefaultMutableTreeNode) tp.
-                            getLastPathComponent();
-                            if (tp != null && dmtn.getUserObject()instanceof String) {
-                                String diagramName = JOptionPane.showInputDialog(owner,
-                                                                                 "Type graph name",
-                                                                                 "New graph",
-                                                                                 JOptionPane.QUESTION_MESSAGE);
-                                if (diagramName != null && ids.gm.existsModel(diagramName)) {
-                                    
-                                    JOptionPane.showMessageDialog(owner,
-                                                                  "There exists a model with the same name. Please, select another",
-                                                                  "Warning",
-                                                                  JOptionPane.WARNING_MESSAGE);
-                                }
-                                else
-                                    if (diagramName != null) {
-                                        WorkProductDependecyDiagramModelJGraph mjg =
-                                        new WorkProductDependecyDiagramModelJGraph(new
-                                                                    WorkProductDependecyDiagramDataEntity(
-                                                                                           diagramName), diagramName, ids.om, new Model(ids),
-                                                                    new BasicMarqueeHandler(), ids.prefs );
-                                        WorkProductDependecyDiagramActionsFactory ema=new  WorkProductDependecyDiagramActionsFactory(resources,ids);
-                                        mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
-                                        MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
-                                        mjg.setMarqueeHandler(marquee);
-                                        ids.gm.addModel(tp.getPath(), diagramName, mjg);
-                                        ids.addNewDiagram(mjg);
-                                        
-                                    }
-                            }
-                            
-                        }
-                    });
-                }
-
-                if (ids.getDiagramFilter().isValidDiagram("TaskWorkflowDiagram")){
-                    menu.add(
-                             new AbstractAction("Add TaskWorkflowDiagram") {
-                        
-                        public void actionPerformed(ActionEvent e) {
-                            TreePath tp = ids.gm.arbolProyecto.getSelectionPath();
-                            DefaultMutableTreeNode dmtn = (DefaultMutableTreeNode) tp.
-                            getLastPathComponent();
-                            if (tp != null && dmtn.getUserObject()instanceof String) {
-                                String diagramName = JOptionPane.showInputDialog(owner,
-                                                                                 "Type graph name",
-                                                                                 "New graph",
-                                                                                 JOptionPane.QUESTION_MESSAGE);
-                                if (diagramName != null && ids.gm.existsModel(diagramName)) {
-                                    
-                                    JOptionPane.showMessageDialog(owner,
-                                                                  "There exists a model with the same name. Please, select another",
-                                                                  "Warning",
-                                                                  JOptionPane.WARNING_MESSAGE);
-                                }
-                                else
-                                    if (diagramName != null) {
-                                        TaskWorkflowDiagramModelJGraph mjg =
-                                        new TaskWorkflowDiagramModelJGraph(new
-                                                                    TaskWorkflowDiagramDataEntity(
-                                                                                           diagramName), diagramName, ids.om, new Model(ids),
-                                                                    new BasicMarqueeHandler(), ids.prefs );
-                                        TaskWorkflowDiagramActionsFactory ema=new  TaskWorkflowDiagramActionsFactory(resources,ids);
+                                        ActivityWPDiagramActionsFactory ema=new  ActivityWPDiagramActionsFactory(resources,ids);
                                         mjg.setUI(new EmbeddedAndPopupCellEditor(ids,resources));
                                         MarqueeHandler marquee=new MarqueeHandler(mjg, resources,ids,ema);
                                         mjg.setMarqueeHandler(marquee);

@@ -1212,16 +1212,8 @@ public class ObjectSave extends ObjectSaveAbs{
         
         
         
-        if (en.getClass().equals(ingenias.editor.entities.WorkProductContentDiagramDataEntity.class)){
-            ingenias.editor.entities.WorkProductContentDiagramDataEntity nen=(ingenias.editor.entities.WorkProductContentDiagramDataEntity)en;
-            String _name;
-            
-            
-        }
-        
-        
-        if (en.getClass().equals(ingenias.editor.entities.MetaModelDiagramDataEntity.class)){
-            ingenias.editor.entities.MetaModelDiagramDataEntity nen=(ingenias.editor.entities.MetaModelDiagramDataEntity)en;
+        if (en.getClass().equals(ingenias.editor.entities.WorkProductDiagramDataEntity.class)){
+            ingenias.editor.entities.WorkProductDiagramDataEntity nen=(ingenias.editor.entities.WorkProductDiagramDataEntity)en;
             String _name;
             
             
@@ -1236,32 +1228,8 @@ public class ObjectSave extends ObjectSaveAbs{
         }
         
         
-        if (en.getClass().equals(ingenias.editor.entities.ActivityDetailedDiagramDataEntity.class)){
-            ingenias.editor.entities.ActivityDetailedDiagramDataEntity nen=(ingenias.editor.entities.ActivityDetailedDiagramDataEntity)en;
-            String _name;
-            
-            
-        }
-        
-        
-        if (en.getClass().equals(ingenias.editor.entities.WorkProductStructureDiagramDataEntity.class)){
-            ingenias.editor.entities.WorkProductStructureDiagramDataEntity nen=(ingenias.editor.entities.WorkProductStructureDiagramDataEntity)en;
-            String _name;
-            
-            
-        }
-        
-        
-        if (en.getClass().equals(ingenias.editor.entities.WorkProductDependecyDiagramDataEntity.class)){
-            ingenias.editor.entities.WorkProductDependecyDiagramDataEntity nen=(ingenias.editor.entities.WorkProductDependecyDiagramDataEntity)en;
-            String _name;
-            
-            
-        }
-        
-        
-        if (en.getClass().equals(ingenias.editor.entities.TaskWorkflowDiagramDataEntity.class)){
-            ingenias.editor.entities.TaskWorkflowDiagramDataEntity nen=(ingenias.editor.entities.TaskWorkflowDiagramDataEntity)en;
+        if (en.getClass().equals(ingenias.editor.entities.ActivityWPDiagramDataEntity.class)){
+            ingenias.editor.entities.ActivityWPDiagramDataEntity nen=(ingenias.editor.entities.ActivityWPDiagramDataEntity)en;
             String _name;
             
             

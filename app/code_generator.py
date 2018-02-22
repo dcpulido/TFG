@@ -1,6 +1,7 @@
 from string import Template
 import logging
 import sys
+import os
 reload(sys)
 sys.setdefaultencoding('utf8')
 # diccionario para las imagenes
@@ -54,6 +55,12 @@ class Code_generator:
         self.generate_ProjectMenuCreator(ob)
         self.generate_Relations(ob)
         self.generate_Relations_xml(ob)
+        self.move_persistent_directories(ob)
+
+    def move_persistent_directories(self, ob):
+        logging.info(
+            "copying directories >>>>>>>>>>>>>>>>>")
+        os.system("cp -r persistent_directories/* source_output/")
 
     def generate_Relations_xml(self, ob, entDir="rendererxml"):
         logging.info(

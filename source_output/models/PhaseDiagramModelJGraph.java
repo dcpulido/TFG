@@ -107,24 +107,44 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
             toolbar.setFloatable(false);
             ImageIcon undoIcon = null;
             JButton jb = null;
-            Image img_InitialNode =
+            Image img_Node =
             ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_InitialNode);
-            Action InitialNode=
-            new AbstractAction("InitialNode", undoIcon) {
+            undoIcon = new ImageIcon(img_Node);
+            Action Node=
+            new AbstractAction("Node", undoIcon) {
                 public void actionPerformed(ActionEvent e) {
                     try{
-                        insert(new Point(0, 0), "InitialNode");
+                        insert(new Point(0, 0), "Node");
                     } catch (InvalidEntity e1) {
                         e1.printStackTrace();
                     }
                 }
             };
-            InitialNode.setEnabled(true);
-            jb = new JButton(InitialNode);
+            Node.setEnabled(true);
+            jb = new JButton(Node);
             jb.setText("");
-            jb.setName("InitialNode");
-            jb.setToolTipText("InitialNode");
+            jb.setName("Node");
+            jb.setToolTipText("Node");
+            toolbar.add(jb);
+
+                        Image img_DecisionNode =
+            ImageLoader.getImage("");
+            undoIcon = new ImageIcon(img_DecisionNode);
+            Action DecisionNode=
+            new AbstractAction("DecisionNode", undoIcon) {
+                public void actionPerformed(ActionEvent e) {
+                    try{
+                        insert(new Point(0, 0), "DecisionNode");
+                    } catch (InvalidEntity e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            };
+            DecisionNode.setEnabled(true);
+            jb = new JButton(DecisionNode);
+            jb.setText("");
+            jb.setName("DecisionNode");
+            jb.setToolTipText("DecisionNode");
             toolbar.add(jb);
 
                         Image img_Process =
@@ -147,6 +167,26 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
             jb.setToolTipText("Process");
             toolbar.add(jb);
 
+                        Image img_Phase =
+            ImageLoader.getImage("");
+            undoIcon = new ImageIcon(img_Phase);
+            Action Phase=
+            new AbstractAction("Phase", undoIcon) {
+                public void actionPerformed(ActionEvent e) {
+                    try{
+                        insert(new Point(0, 0), "Phase");
+                    } catch (InvalidEntity e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            };
+            Phase.setEnabled(true);
+            jb = new JButton(Phase);
+            jb.setText("");
+            jb.setName("Phase");
+            jb.setToolTipText("Phase");
+            toolbar.add(jb);
+
                         Image img_Activity =
             ImageLoader.getImage("");
             undoIcon = new ImageIcon(img_Activity);
@@ -167,104 +207,24 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
             jb.setToolTipText("Activity");
             toolbar.add(jb);
 
-                        Image img_EndNode =
+                        Image img_InitialNode =
             ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_EndNode);
-            Action EndNode=
-            new AbstractAction("EndNode", undoIcon) {
+            undoIcon = new ImageIcon(img_InitialNode);
+            Action InitialNode=
+            new AbstractAction("InitialNode", undoIcon) {
                 public void actionPerformed(ActionEvent e) {
                     try{
-                        insert(new Point(0, 0), "EndNode");
+                        insert(new Point(0, 0), "InitialNode");
                     } catch (InvalidEntity e1) {
                         e1.printStackTrace();
                     }
                 }
             };
-            EndNode.setEnabled(true);
-            jb = new JButton(EndNode);
+            InitialNode.setEnabled(true);
+            jb = new JButton(InitialNode);
             jb.setText("");
-            jb.setName("EndNode");
-            jb.setToolTipText("EndNode");
-            toolbar.add(jb);
-
-                        Image img_ActivityKind =
-            ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_ActivityKind);
-            Action ActivityKind=
-            new AbstractAction("ActivityKind", undoIcon) {
-                public void actionPerformed(ActionEvent e) {
-                    try{
-                        insert(new Point(0, 0), "ActivityKind");
-                    } catch (InvalidEntity e1) {
-                        e1.printStackTrace();
-                    }
-                }
-            };
-            ActivityKind.setEnabled(true);
-            jb = new JButton(ActivityKind);
-            jb.setText("");
-            jb.setName("ActivityKind");
-            jb.setToolTipText("ActivityKind");
-            toolbar.add(jb);
-
-                        Image img_ForkNode =
-            ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_ForkNode);
-            Action ForkNode=
-            new AbstractAction("ForkNode", undoIcon) {
-                public void actionPerformed(ActionEvent e) {
-                    try{
-                        insert(new Point(0, 0), "ForkNode");
-                    } catch (InvalidEntity e1) {
-                        e1.printStackTrace();
-                    }
-                }
-            };
-            ForkNode.setEnabled(true);
-            jb = new JButton(ForkNode);
-            jb.setText("");
-            jb.setName("ForkNode");
-            jb.setToolTipText("ForkNode");
-            toolbar.add(jb);
-
-                        Image img_InitialMetaNode =
-            ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_InitialMetaNode);
-            Action InitialMetaNode=
-            new AbstractAction("InitialMetaNode", undoIcon) {
-                public void actionPerformed(ActionEvent e) {
-                    try{
-                        insert(new Point(0, 0), "InitialMetaNode");
-                    } catch (InvalidEntity e1) {
-                        e1.printStackTrace();
-                    }
-                }
-            };
-            InitialMetaNode.setEnabled(true);
-            jb = new JButton(InitialMetaNode);
-            jb.setText("");
-            jb.setName("InitialMetaNode");
-            jb.setToolTipText("InitialMetaNode");
-            toolbar.add(jb);
-
-                        Image img_JoinNode =
-            ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_JoinNode);
-            Action JoinNode=
-            new AbstractAction("JoinNode", undoIcon) {
-                public void actionPerformed(ActionEvent e) {
-                    try{
-                        insert(new Point(0, 0), "JoinNode");
-                    } catch (InvalidEntity e1) {
-                        e1.printStackTrace();
-                    }
-                }
-            };
-            JoinNode.setEnabled(true);
-            jb = new JButton(JoinNode);
-            jb.setText("");
-            jb.setName("JoinNode");
-            jb.setToolTipText("JoinNode");
+            jb.setName("InitialNode");
+            jb.setToolTipText("InitialNode");
             toolbar.add(jb);
 
                         Image img_iPhase =
@@ -287,64 +247,64 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
             jb.setToolTipText("iPhase");
             toolbar.add(jb);
 
-                        Image img_TerminalMetaNode =
+                        Image img_ForkNode =
             ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_TerminalMetaNode);
-            Action TerminalMetaNode=
-            new AbstractAction("TerminalMetaNode", undoIcon) {
+            undoIcon = new ImageIcon(img_ForkNode);
+            Action ForkNode=
+            new AbstractAction("ForkNode", undoIcon) {
                 public void actionPerformed(ActionEvent e) {
                     try{
-                        insert(new Point(0, 0), "TerminalMetaNode");
+                        insert(new Point(0, 0), "ForkNode");
                     } catch (InvalidEntity e1) {
                         e1.printStackTrace();
                     }
                 }
             };
-            TerminalMetaNode.setEnabled(true);
-            jb = new JButton(TerminalMetaNode);
+            ForkNode.setEnabled(true);
+            jb = new JButton(ForkNode);
             jb.setText("");
-            jb.setName("TerminalMetaNode");
-            jb.setToolTipText("TerminalMetaNode");
+            jb.setName("ForkNode");
+            jb.setToolTipText("ForkNode");
             toolbar.add(jb);
 
-                        Image img_DecissionNode =
+                        Image img_EndNode =
             ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_DecissionNode);
-            Action DecissionNode=
-            new AbstractAction("DecissionNode", undoIcon) {
+            undoIcon = new ImageIcon(img_EndNode);
+            Action EndNode=
+            new AbstractAction("EndNode", undoIcon) {
                 public void actionPerformed(ActionEvent e) {
                     try{
-                        insert(new Point(0, 0), "DecissionNode");
+                        insert(new Point(0, 0), "EndNode");
                     } catch (InvalidEntity e1) {
                         e1.printStackTrace();
                     }
                 }
             };
-            DecissionNode.setEnabled(true);
-            jb = new JButton(DecissionNode);
+            EndNode.setEnabled(true);
+            jb = new JButton(EndNode);
             jb.setText("");
-            jb.setName("DecissionNode");
-            jb.setToolTipText("DecissionNode");
+            jb.setName("EndNode");
+            jb.setToolTipText("EndNode");
             toolbar.add(jb);
 
-                        Image img_Phase =
+                        Image img_JoinNode =
             ImageLoader.getImage("");
-            undoIcon = new ImageIcon(img_Phase);
-            Action Phase=
-            new AbstractAction("Phase", undoIcon) {
+            undoIcon = new ImageIcon(img_JoinNode);
+            Action JoinNode=
+            new AbstractAction("JoinNode", undoIcon) {
                 public void actionPerformed(ActionEvent e) {
                     try{
-                        insert(new Point(0, 0), "Phase");
+                        insert(new Point(0, 0), "JoinNode");
                     } catch (InvalidEntity e1) {
                         e1.printStackTrace();
                     }
                 }
             };
-            Phase.setEnabled(true);
-            jb = new JButton(Phase);
+            JoinNode.setEnabled(true);
+            jb = new JButton(JoinNode);
             jb.setText("");
-            jb.setName("Phase");
-            jb.setToolTipText("Phase");
+            jb.setName("JoinNode");
+            jb.setToolTipText("JoinNode");
             toolbar.add(jb);
 
             
@@ -355,9 +315,11 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
   public static Vector<String> getAllowedRelationships(){
         Vector<String> relationships=new   Vector<String>();
         
-        relationships.add("Follows");
+        relationships.add("FollowsGuarded");
         
                 relationships.add("Extends");
+        
+                relationships.add("Follows");
         
         
         
@@ -368,29 +330,25 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
       public static Vector<String> getAllowedEntities(){
         Vector<String> entities=new   Vector<String>();
 
-        entities.add("InitialNode");
+        entities.add("Node");
+        
+                entities.add("DecisionNode");
         
                 entities.add("Process");
         
+                entities.add("Phase");
+        
                 entities.add("Activity");
         
-                entities.add("EndNode");
-        
-                entities.add("ActivityKind");
-        
-                entities.add("ForkNode");
-        
-                entities.add("InitialMetaNode");
-        
-                entities.add("JoinNode");
+                entities.add("InitialNode");
         
                 entities.add("iPhase");
         
-                entities.add("TerminalMetaNode");
+                entities.add("ForkNode");
         
-                entities.add("DecissionNode");
+                entities.add("EndNode");
         
-                entities.add("Phase");
+                entities.add("JoinNode");
         
                 
         
@@ -434,24 +392,34 @@ public class PhaseDiagramModelJGraph extends ModelJGraph {
 
 
                 // N-ary relationships. Sometimes they can be also binary.
-                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
-                    v.add("Follows");
+                if (FollowsGuardedEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("FollowsGuarded");
                 }
 
                 // N-ary relationships. Sometimes they can be also binary.
                 if (ExtendsEdge.acceptConnection(this.getModel(), selected)) {
                     v.add("Extends");
+                }
+
+                // N-ary relationships. Sometimes they can be also binary.
+                if (FollowsEdge.acceptConnection(this.getModel(), selected)) {
+                    v.add("Follows");
                 }       
             }
             else if (nAryEdgesNum == 1) {
-if (selectedEdge instanceof FollowsEdge &&
-                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
-                    v.add("Follows");
+if (selectedEdge instanceof FollowsGuardedEdge &&
+                    (FollowsGuardedEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("FollowsGuarded");
                 }
                 
                 if (selectedEdge instanceof ExtendsEdge &&
                     (ExtendsEdge.acceptConnection(this.getModel(), selected))) {
                     v.add("Extends");
+                }
+                
+                if (selectedEdge instanceof FollowsEdge &&
+                    (FollowsEdge.acceptConnection(this.getModel(), selected))) {
+                    v.add("Follows");
                 }
                 
                    
@@ -480,14 +448,14 @@ if (selectedEdge instanceof FollowsEdge &&
         }
         if (nAryEdgesNum <= 1 && edgesNum == 0) {
             
-if (relacion.equalsIgnoreCase("Follows")) {
+if (relacion.equalsIgnoreCase("FollowsGuarded")) {
                 // ResponsibleNEdge already exists.
-                if (nAryEdgesNum == 1 && selectedEdge instanceof FollowsEdge) {
+                if (nAryEdgesNum == 1 && selectedEdge instanceof FollowsGuardedEdge) {
                     return selectedEdge;
                 }
                 // There is no NAryEdges in selected.
                 else if (nAryEdgesNum == 0) {
-                    return new FollowsEdge(new Follows(getMJGraph().getNewId()));
+                    return new FollowsGuardedEdge(new FollowsGuarded(getMJGraph().getNewId()));
                 }
             }
             
@@ -502,6 +470,17 @@ if (relacion.equalsIgnoreCase("Follows")) {
                 }
             }
             
+            if (relacion.equalsIgnoreCase("Follows")) {
+                // ResponsibleNEdge already exists.
+                if (nAryEdgesNum == 1 && selectedEdge instanceof FollowsEdge) {
+                    return selectedEdge;
+                }
+                // There is no NAryEdges in selected.
+                else if (nAryEdgesNum == 0) {
+                    return new FollowsEdge(new Follows(getMJGraph().getNewId()));
+                }
+            }
+            
             
             
         }
@@ -510,10 +489,19 @@ if (relacion.equalsIgnoreCase("Follows")) {
     }
 
   public DefaultGraphCell createCell(String entity) throws InvalidEntity{
-if (entity.equalsIgnoreCase("InitialNode")) {
-            InitialNode nentity=getOM().$createname(getMJGraph().getNewId("InitialNode"));
+if (entity.equalsIgnoreCase("Node")) {
+            Node nentity=getOM().$createname(getMJGraph().getNewId("Node"));
             DefaultGraphCell vertex = new
-            InitialNodeCell(nentity);
+            NodeCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
+        if (entity.equalsIgnoreCase("DecisionNode")) {
+            DecisionNode nentity=getOM().$createname(getMJGraph().getNewId("DecisionNode"));
+            DefaultGraphCell vertex = new
+            DecisionNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
@@ -528,6 +516,15 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         }
         else
 
+        if (entity.equalsIgnoreCase("Phase")) {
+            Phase nentity=getOM().$createname(getMJGraph().getNewId("Phase"));
+            DefaultGraphCell vertex = new
+            PhaseCell(nentity);
+            // Default Size for the cell with the new entity
+            return vertex;
+        }
+        else
+
         if (entity.equalsIgnoreCase("Activity")) {
             Activity nentity=getOM().$createname(getMJGraph().getNewId("Activity"));
             DefaultGraphCell vertex = new
@@ -537,46 +534,10 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         }
         else
 
-        if (entity.equalsIgnoreCase("EndNode")) {
-            EndNode nentity=getOM().$createname(getMJGraph().getNewId("EndNode"));
+        if (entity.equalsIgnoreCase("InitialNode")) {
+            InitialNode nentity=getOM().$createname(getMJGraph().getNewId("InitialNode"));
             DefaultGraphCell vertex = new
-            EndNodeCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("ActivityKind")) {
-            ActivityKind nentity=getOM().$createname(getMJGraph().getNewId("ActivityKind"));
-            DefaultGraphCell vertex = new
-            ActivityKindCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("ForkNode")) {
-            ForkNode nentity=getOM().$createname(getMJGraph().getNewId("ForkNode"));
-            DefaultGraphCell vertex = new
-            ForkNodeCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("InitialMetaNode")) {
-            InitialMetaNode nentity=getOM().$createname(getMJGraph().getNewId("InitialMetaNode"));
-            DefaultGraphCell vertex = new
-            InitialMetaNodeCell(nentity);
-            // Default Size for the cell with the new entity
-            return vertex;
-        }
-        else
-
-        if (entity.equalsIgnoreCase("JoinNode")) {
-            JoinNode nentity=getOM().$createname(getMJGraph().getNewId("JoinNode"));
-            DefaultGraphCell vertex = new
-            JoinNodeCell(nentity);
+            InitialNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
@@ -591,28 +552,28 @@ if (entity.equalsIgnoreCase("InitialNode")) {
         }
         else
 
-        if (entity.equalsIgnoreCase("TerminalMetaNode")) {
-            TerminalMetaNode nentity=getOM().$createname(getMJGraph().getNewId("TerminalMetaNode"));
+        if (entity.equalsIgnoreCase("ForkNode")) {
+            ForkNode nentity=getOM().$createname(getMJGraph().getNewId("ForkNode"));
             DefaultGraphCell vertex = new
-            TerminalMetaNodeCell(nentity);
+            ForkNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
         else
 
-        if (entity.equalsIgnoreCase("DecissionNode")) {
-            DecissionNode nentity=getOM().$createname(getMJGraph().getNewId("DecissionNode"));
+        if (entity.equalsIgnoreCase("EndNode")) {
+            EndNode nentity=getOM().$createname(getMJGraph().getNewId("EndNode"));
             DefaultGraphCell vertex = new
-            DecissionNodeCell(nentity);
+            EndNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
         else
 
-        if (entity.equalsIgnoreCase("Phase")) {
-            Phase nentity=getOM().$createname(getMJGraph().getNewId("Phase"));
+        if (entity.equalsIgnoreCase("JoinNode")) {
+            JoinNode nentity=getOM().$createname(getMJGraph().getNewId("JoinNode"));
             DefaultGraphCell vertex = new
-            PhaseCell(nentity);
+            JoinNodeCell(nentity);
             // Default Size for the cell with the new entity
             return vertex;
         }
@@ -623,8 +584,13 @@ if (entity.equalsIgnoreCase("InitialNode")) {
 }
 
   public Dimension getDefaultSize(Entity entity) throws InvalidEntity{
-if (entity.getType().equalsIgnoreCase("InitialNode")) {
-            return InitialNodeView.getSize((InitialNode)entity);      
+if (entity.getType().equalsIgnoreCase("Node")) {
+            return NodeView.getSize((Node)entity);      
+        }
+        else
+
+        if (entity.getType().equalsIgnoreCase("DecisionNode")) {
+            return DecisionNodeView.getSize((DecisionNode)entity);      
         }
         else
 
@@ -633,33 +599,18 @@ if (entity.getType().equalsIgnoreCase("InitialNode")) {
         }
         else
 
+        if (entity.getType().equalsIgnoreCase("Phase")) {
+            return PhaseView.getSize((Phase)entity);      
+        }
+        else
+
         if (entity.getType().equalsIgnoreCase("Activity")) {
             return ActivityView.getSize((Activity)entity);      
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("EndNode")) {
-            return EndNodeView.getSize((EndNode)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("ActivityKind")) {
-            return ActivityKindView.getSize((ActivityKind)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("ForkNode")) {
-            return ForkNodeView.getSize((ForkNode)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("InitialMetaNode")) {
-            return InitialMetaNodeView.getSize((InitialMetaNode)entity);      
-        }
-        else
-
-        if (entity.getType().equalsIgnoreCase("JoinNode")) {
-            return JoinNodeView.getSize((JoinNode)entity);      
+        if (entity.getType().equalsIgnoreCase("InitialNode")) {
+            return InitialNodeView.getSize((InitialNode)entity);      
         }
         else
 
@@ -668,18 +619,18 @@ if (entity.getType().equalsIgnoreCase("InitialNode")) {
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("TerminalMetaNode")) {
-            return TerminalMetaNodeView.getSize((TerminalMetaNode)entity);      
+        if (entity.getType().equalsIgnoreCase("ForkNode")) {
+            return ForkNodeView.getSize((ForkNode)entity);      
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("DecissionNode")) {
-            return DecissionNodeView.getSize((DecissionNode)entity);      
+        if (entity.getType().equalsIgnoreCase("EndNode")) {
+            return EndNodeView.getSize((EndNode)entity);      
         }
         else
 
-        if (entity.getType().equalsIgnoreCase("Phase")) {
-            return PhaseView.getSize((Phase)entity);      
+        if (entity.getType().equalsIgnoreCase("JoinNode")) {
+            return JoinNodeView.getSize((JoinNode)entity);      
         }
         else
 
@@ -739,10 +690,17 @@ if (entity.getType().equalsIgnoreCase("InitialNode")) {
         Dimension size = null;
         
         
-if (entity.getClass().equals(InitialNode.class)) {
-            vertex = new InitialNodeCell( (InitialNode) entity);
+if (entity.getClass().equals(Node.class)) {
+            vertex = new NodeCell( (Node) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((InitialNode) entity);
+            size = AgentView.getSize((Node) entity);
+        }
+        else
+
+        if (entity.getClass().equals(DecisionNode.class)) {
+            vertex = new DecisionNodeCell( (DecisionNode) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((DecisionNode) entity);
         }
         else
 
@@ -753,6 +711,13 @@ if (entity.getClass().equals(InitialNode.class)) {
         }
         else
 
+        if (entity.getClass().equals(Phase.class)) {
+            vertex = new PhaseCell( (Phase) entity);
+            // Default Size for the new Vertex with the new entity within
+            size = AgentView.getSize((Phase) entity);
+        }
+        else
+
         if (entity.getClass().equals(Activity.class)) {
             vertex = new ActivityCell( (Activity) entity);
             // Default Size for the new Vertex with the new entity within
@@ -760,38 +725,10 @@ if (entity.getClass().equals(InitialNode.class)) {
         }
         else
 
-        if (entity.getClass().equals(EndNode.class)) {
-            vertex = new EndNodeCell( (EndNode) entity);
+        if (entity.getClass().equals(InitialNode.class)) {
+            vertex = new InitialNodeCell( (InitialNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((EndNode) entity);
-        }
-        else
-
-        if (entity.getClass().equals(ActivityKind.class)) {
-            vertex = new ActivityKindCell( (ActivityKind) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((ActivityKind) entity);
-        }
-        else
-
-        if (entity.getClass().equals(ForkNode.class)) {
-            vertex = new ForkNodeCell( (ForkNode) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((ForkNode) entity);
-        }
-        else
-
-        if (entity.getClass().equals(InitialMetaNode.class)) {
-            vertex = new InitialMetaNodeCell( (InitialMetaNode) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((InitialMetaNode) entity);
-        }
-        else
-
-        if (entity.getClass().equals(JoinNode.class)) {
-            vertex = new JoinNodeCell( (JoinNode) entity);
-            // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((JoinNode) entity);
+            size = AgentView.getSize((InitialNode) entity);
         }
         else
 
@@ -802,24 +739,24 @@ if (entity.getClass().equals(InitialNode.class)) {
         }
         else
 
-        if (entity.getClass().equals(TerminalMetaNode.class)) {
-            vertex = new TerminalMetaNodeCell( (TerminalMetaNode) entity);
+        if (entity.getClass().equals(ForkNode.class)) {
+            vertex = new ForkNodeCell( (ForkNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((TerminalMetaNode) entity);
+            size = AgentView.getSize((ForkNode) entity);
         }
         else
 
-        if (entity.getClass().equals(DecissionNode.class)) {
-            vertex = new DecissionNodeCell( (DecissionNode) entity);
+        if (entity.getClass().equals(EndNode.class)) {
+            vertex = new EndNodeCell( (EndNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((DecissionNode) entity);
+            size = AgentView.getSize((EndNode) entity);
         }
         else
 
-        if (entity.getClass().equals(Phase.class)) {
-            vertex = new PhaseCell( (Phase) entity);
+        if (entity.getClass().equals(JoinNode.class)) {
+            vertex = new JoinNodeCell( (JoinNode) entity);
             // Default Size for the new Vertex with the new entity within
-            size = AgentView.getSize((Phase) entity);
+            size = AgentView.getSize((JoinNode) entity);
         }
         else
 
