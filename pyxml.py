@@ -34,8 +34,10 @@ from app.showDetails import showDetails
 
 # DBUS____________________________________________->
 #
-# Clase orientada a crear metodos accesibles mediante DBUS con el fin de proporcionar
-# un metodo de comunicacion interproceso al IDE si en un futuro se quisiese implementar
+# Clase orientada a crear metodos accesibles
+# mediante DBUS con el fin de proporcionar
+# un metodo de comunicacion interproceso al
+# IDE si en un futuro se quisiese implementar
 #
 #
 
@@ -56,10 +58,10 @@ from app.showDetails import showDetails
 #      stop_flask()
 #
 
-#_______________FLASK________________->
+# _______________FLASK________________->
 class flaskApp(threading.Thread):
     """
-    Clase orientada a proporcionar una interfaz 
+    Clase orientada a proporcionar una interfaz
     web simple si no se quisiese utilizar el
     modo normal por terminal
     """
@@ -84,7 +86,7 @@ def hello():
 def shutdown():
     """
     Apagado mediante post a shutdown
-    :return: 
+    :return:
     """
     shutdown_server()
     return 'Server shutting down...'
@@ -110,8 +112,15 @@ def parse_xml():
         if au == "":
             au = autor
 
-        logging.info("FLASK: "+ou+" "+inp+" "+au)
-        init_the_parse(inp, ou, au)
+        logging.info("FLASK: " +
+                     ou +
+                     " " +
+                     inp +
+                     " " +
+                     au)
+        init_the_parse(inp,
+                       ou,
+                       au)
 
     return redirect("http://localhost:5000/")
 
@@ -170,8 +179,8 @@ def getEncodeOps():
                        'diagrams': getEncodeDig(c['bin-data'])})
     str1 = "["
     for t in toret1:
-        str1 += json.dumps(t)+","
-    return str1[:len(str1)-1]+"]"
+        str1 += json.dumps(t) + ","
+    return str1[:len(str1) - 1] + "]"
 
 
 def getEncodeDig(dig):
@@ -205,7 +214,7 @@ def getEncodeRel(rel):
 
 
 def stop_flask():
-    urllib2.urlopen(flaskconf['name']+"shutdown").read()
+    urllib2.urlopen(flaskconf['name'] + "shutdown").read()
 
 
 def shutdown_server():
@@ -215,7 +224,7 @@ def shutdown_server():
     func()
 
 
-#_____________________________________MAIN____________________________________________->
+# MAIN____________________________________________->
 #
 # Hilo principal y metodos de proposito general y control de la aplicacion
 #
@@ -234,9 +243,9 @@ def ConfigSectionMap(section, Config):
         try:
             dict1[option] = Config.get(section, option)
             if dict1[option] == -1:
-                DebugPrint("skip: %s" % option)
-        except:
-            print("exception on %s!" % option)
+                logging.info("skip: %s" % option)
+        except Exception:
+            logging.info("exception on %s!" % option)
             dict1[option] = None
     return dict1
 
@@ -300,7 +309,7 @@ def init_the_parse(input, output, autor):
 
     parser.setContentHandler(Handler)
 
-    logging.info("Parsing file: "+input)
+    logging.info("Parsing file: " + input)
     parser.parse(input)
 
     # HERE printar relaciones y relaciones complejas
@@ -318,8 +327,8 @@ def init_the_parse(input, output, autor):
 def init_code_generation(obj):
     """
     inicia la generacion de codigo
-    :param xmls: 
-    :return: 
+    :param xmls:
+    :return:
     """
     logging.info("Generating sources")
     ccdg = Code_generator()
@@ -343,7 +352,7 @@ def usage():
     print
     print " -b habilitar dominio dbus"
     print
-    print " -x habilitar interfaz web en "+flaskconf['name']
+    print " -x habilitar interfaz web en " + flaskconf['name']
     print
     print " -c Modo test"
 
@@ -499,7 +508,8 @@ if (__name__ == "__main__"):
                     dig = hmiDetails.showShellOps(oper)
                     if dig != "nope":
                         op2 = raw_input(
-                            "x(eliminar)/d(parsear)/dd(detalles)/q(retroceder)??:")
+                            "x(eliminar)/d(parsear)/"
+                            "dd(detalles)/q(retroceder)??:")
                         os.system("clear")
                         if op2 == "d":
                             finalize_parse(dig['bin-data'],
