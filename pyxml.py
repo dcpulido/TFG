@@ -32,7 +32,7 @@ from app.showDetails import showDetails
 # ////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-#_____________________________________DBUS____________________________________________->
+# DBUS____________________________________________->
 #
 # Clase orientada a crear metodos accesibles mediante DBUS con el fin de proporcionar
 # un metodo de comunicacion interproceso al IDE si en un futuro se quisiese implementar
@@ -40,7 +40,7 @@ from app.showDetails import showDetails
 #
 
 # class DBUSService(threading.Thread,dbus.service.Object):
- #   def run(self):
+#   def run(self):
 #      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
 #      dbus.service.Object.__init__(self, bus_name, dbusconf['name'])
 #      logging.info("DBUS:Starting service")
@@ -282,6 +282,7 @@ def get_dbus_conf():
             myprior = ConfigSectionMap(sec, Config)
     return myprior
 
+
 def init_the_parse(input, output, autor):
     """
     inicia parseo de xml
@@ -313,6 +314,7 @@ def init_the_parse(input, output, autor):
 
     finalize_parse(dig, output, autor)
 
+
 def init_code_generation(obj):
     """
     inicia la generacion de codigo
@@ -320,7 +322,7 @@ def init_code_generation(obj):
     :return: 
     """
     logging.info("Generating sources")
-    ccdg=Code_generator()
+    ccdg = Code_generator()
     ccdg.generate(obj)
 
 
