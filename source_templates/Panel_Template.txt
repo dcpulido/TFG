@@ -62,7 +62,7 @@ public class $whoPanel extends JGraph {
 								m, BasicMarqueeHandler mh) {
 		super(m, mh);
 
-		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.$whoCellViewFactory());
+		this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.$whoCellViewFactory);
 	}
 
 

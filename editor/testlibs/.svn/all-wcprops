@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/ingenias/!svn/ver/280/trunk/IDK/editor/testlibs
+END
+GPL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/GPL.txt
+END
+marathon-python.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/marathon-python.jar
+END
+marathon-ruby.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/marathon-ruby.jar
+END
+marathon.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ingenias/!svn/ver/280/trunk/IDK/editor/testlibs/marathon.jar
+END
+marathon-runtime.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/marathon-runtime.jar
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/ChangeLog
+END
+marathon
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/marathon
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/readme.txt
+END
+LGPL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/LGPL.txt
+END
+sampleapp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/sampleapp.jar
+END
+marathon.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ingenias/!svn/ver/131/trunk/IDK/editor/testlibs/marathon.bat
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type
+END
+ReferenceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type/ReferenceType.java
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type/Type.java
+END
+VoidType.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type/VoidType.java
+END
+ClassOrInterfaceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type/ClassOrInterfaceType.java
+END
+PrimitiveType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type/PrimitiveType.java
+END
+WildcardType.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/type/WildcardType.java
+END

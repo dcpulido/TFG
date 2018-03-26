@@ -1,0 +1,273 @@
+
+<HTML>
+<BODY>
+	<center><A href="index.html">Main Index</A></center>
+	<hr/>
+<H1>Diagram name : <font color="#0000CC">SprintPhaseActivityWF </font> <font size="6"> </font></H1>
+<H1> Diagram type : <font color="#0000CC">PhaseDiagram</font></H1>
+<H2>Description :</H2>
+ 
+<P>
+<div align="center"><img src="SprintPhaseActivityWF.png" usemap="#mymap">
+<map name="mymap">
+  
+   <AREA SHAPE=rect COORDS="213,7,288,74" HREF="#Sprint">
+  
+   <AREA SHAPE=rect COORDS="723,118,753,148" HREF="#EndSprintPhases">
+  
+   <AREA SHAPE=rect COORDS="82,25,112,55" HREF="#InitiateSprintPhases">
+  
+   <AREA SHAPE=rect COORDS="398,245,526,312" HREF="#Release Work">
+  
+   <AREA SHAPE=rect COORDS="436,108,486,158" HREF="#CheckSprintWork">
+  
+</map>
+</P>
+<H2 align="left">Entities appearing in this diagram :</H2>
+	<TABLE BORDER="1" bgcolor="#FFFF00">
+      <tr>
+       <td align="center" bgcolor="666666"><font color="#FFFFFF"><strong>NAME</strong></font>           
+       </td>
+<td align="center" bgcolor="666666"><font color="#FFFFFF"><strong>TYPE</strong></font>           
+       </td>       
+<td align="center" bgcolor="666666"><font color="#FFFFFF"><strong>DESCRIPTION</strong></font>           
+       </td>           
+  </tr>
+	
+	 
+	<TR><TD valign="top">
+	<a name="Sprint"/>
+	  <strong> Sprint</strong><br>
+	</TD><TD valign="top">
+	<strong>iPhase</strong>
+	</TD><TD valign="top">
+	
+		<p> It appears in diagrams:
+		<ul>
+		
+		 <li><a href="SprintPhaseActivityWF.html">SprintPhaseActivityWF</a>: PhaseDiagram </li>
+		
+		</ul>
+			</p>
+	</TD></TR>
+	 
+	<TR><TD valign="top">
+	<a name="EndSprintPhases"/>
+	  <strong> EndSprintPhases</strong><br>
+	</TD><TD valign="top">
+	<strong>EndNode</strong>
+	</TD><TD valign="top">
+	
+		<p> It appears in diagrams:
+		<ul>
+		
+		 <li><a href="SprintPhaseActivityWF.html">SprintPhaseActivityWF</a>: PhaseDiagram </li>
+		
+		</ul>
+			</p>
+	</TD></TR>
+	 
+	<TR><TD valign="top">
+	<a name="InitiateSprintPhases"/>
+	  <strong> InitiateSprintPhases</strong><br>
+	</TD><TD valign="top">
+	<strong>InitialNode</strong>
+	</TD><TD valign="top">
+	
+		<p> It appears in diagrams:
+		<ul>
+		
+		 <li><a href="SprintPhaseActivityWF.html">SprintPhaseActivityWF</a>: PhaseDiagram </li>
+		
+		</ul>
+			</p>
+	</TD></TR>
+	 
+	<TR><TD valign="top">
+	<a name="Release Work"/>
+	  <strong> Release Work</strong><br>
+	</TD><TD valign="top">
+	<strong>Activity</strong>
+	</TD><TD valign="top">
+	
+		<p> It appears in diagrams:
+		<ul>
+		
+		 <li><a href="SprintPhaseActivityWF.html">SprintPhaseActivityWF</a>: PhaseDiagram </li>
+		
+		</ul>
+			</p>
+	</TD></TR>
+	 
+	<TR><TD valign="top">
+	<a name="CheckSprintWork"/>
+	  <strong> CheckSprintWork</strong><br>
+	</TD><TD valign="top">
+	<strong>DecisionNode</strong>
+	</TD><TD valign="top">
+	
+		<p> It appears in diagrams:
+		<ul>
+		
+		 <li><a href="SprintPhaseActivityWF.html">SprintPhaseActivityWF</a>: PhaseDiagram </li>
+		
+		</ul>
+			</p>
+	</TD></TR>
+	 
+	</TABLE>
+	
+	
+<H2 align="left"> Relationships appearing in this diagram:</H2>
+	
+	<TABLE BORDER="1" bgcolor="#FFFF00">
+      <tr>
+       </td>
+       <td align="center" bgcolor="666666"><font color="#FFFFFF"><strong>TYPE</strong></font>           
+       </td>
+<td align="center" bgcolor="666666"><font color="#FFFFFF"><strong>SOURCE</strong></font>           
+       </td>       
+<td align="center" bgcolor="666666"><font color="#FFFFFF"><strong>TARGET</strong></font>           
+       </td>           
+  </tr>
+	
+	 
+             	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 Sprint
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 Sprint
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 InitiateSprintPhases
+	              
+	                 </TD><TD valign="top">
+	                 Sprint
+	              
+       	 
+               </TD></TR>
+       
+             	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 EndSprintPhases
+	              
+	                 </TD><TD valign="top">
+	                 Release Work
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 EndSprintPhases
+	              
+       	 
+               </TD></TR>
+       
+             	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 InitiateSprintPhases
+	              
+	                 </TD><TD valign="top">
+	                 Sprint
+	              
+       	 
+               </TD></TR>
+       
+             	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 EndSprintPhases
+	              
+	                 </TD><TD valign="top">
+	                 Release Work
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 Release Work
+	              
+       	 
+               </TD></TR>
+       
+             	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 EndSprintPhases
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 Sprint
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 Release Work
+	              
+       	 	   
+                   <TR><TD valign="top">
+	             DPDFPrecedes<br>
+	             
+	                 </TD><TD valign="top">
+	                 CheckSprintWork
+	              
+	                 </TD><TD valign="top">
+	                 Sprint
+	              
+       	 
+               </TD></TR>
+       
+	</TABLE>
+	
+</BODY>
+</htML>

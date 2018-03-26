@@ -1,0 +1,25 @@
+
+
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##stereotype text="IUConcurrence" HorizontalAlignment="CENTER" /#
+##/panel #
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.LEFT,0,0)"#
+##collectionpanel Background="white" id="InteractionUnits"#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)"  Background="white"   #
+##iconlabel icon="images/attribute.gif" /#
+##label text="Unit:"/# 
+##label name="InteractionUnits_Id"/#
+##/panel#
+##/collectionpanel#
+##/panel#
+##linepanel Background="white" /#
+##/vbox#
+##/panel#	
+					
+		

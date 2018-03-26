@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter
+END
+Visitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/Visitor.java
+END
+Codegen.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/Codegen.java
+END
+TemplateDataRepeat.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/TemplateDataRepeat.java
+END
+SplitHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/SplitHandler.java
+END
+TemplateHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/TemplateHandler.java
+END
+Tag.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/Tag.java
+END
+TemplateTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/TemplateTree.java
+END
+VisitorWithTreeAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/VisitorWithTreeAccess.java
+END
+TemplateDataVar.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/137/trunk/IDK/editor/srccodegen/ingenias/generator/interpreter/TemplateDataVar.java
+END

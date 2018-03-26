@@ -1,0 +1,10 @@
+
+
+
+##panel layout="BorderLayout"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##label id="Label"  /#
+##stereotype text="DPDFPrecedes" HorizontalAlignment="CENTER" /#
+##/vbox#
+##/panel#
+

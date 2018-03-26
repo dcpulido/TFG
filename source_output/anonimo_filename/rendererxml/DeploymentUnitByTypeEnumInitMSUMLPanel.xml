@@ -1,0 +1,36 @@
+
+
+							##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+							##vbox Background="white" constraints="BorderLayout.CENTER" #
+							##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+							##stereotype text="DeplmntUnitEnumMS" HorizontalAlignment="CENTER" /#
+							##/panel #
+							##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+							##label id="Id"/#
+							##/panel#
+							##linepanel Background="white"/#
+							##panel layout="FlowLayout(FlowLayout.LEFT,5,0)"  Background="white"   #
+							##iconlabel icon="images/attribute.gif" /#
+							##label text="type:"/# 
+							##label id="AgentTypeDeployed"/#
+							##/panel#
+							##panel layout="FlowLayout(FlowLayout.LEFT,5,0)"  Background="white"   #
+							##iconlabel icon="images/attribute.gif" /#
+							##label text="ninstances:"/# 
+							##label id="NumberInstances"/#
+							##/panel#
+							##collectionpanel Background="white" id="InitialState"#
+							##panel layout="FlowLayout(FlowLayout.LEFT,5,0)"  Background="white"   #
+							##iconlabel icon="images/attribute.gif" /#
+							##label text="pieceOfInitialMS:"/# 
+							##label name="InitialState_Id"/#
+							##label text=" type:"/# 
+							##label name="InitialState_InstanceType"/#							
+							##/panel#
+							##/collectionpanel#
+							##linepanel Background="white" /#
+							##/vbox#
+							##/panel#
+						
+						
+		

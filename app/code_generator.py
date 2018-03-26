@@ -2,18 +2,85 @@ from string import Template
 import logging
 import sys
 import os
+import json
 reload(sys)
 sys.setdefaultencoding('utf8')
-# diccionario para las imagenes
-images = {
-
-}
 
 
 class Code_generator:
 
-    def __init__(self):
-        pass
+    def __init__(self, conf):
+        self.conf = conf
+
+    def get_template(self, mod_name):
+        with open(self.conf["input"] +
+                  "/" +
+                  mod_name +
+                  "_Template.txt") as f:
+            template = Template(f.read())
+            f.close()
+        return template
+
+    def gen_dir(self, dir):
+        try:
+            os.system("mkdir -p " +
+                      self.gen_name +
+                      dir)
+        except Exception:
+            logging.info("error generando: " + dir)
+
+    def write_file(self,
+                   template,
+                   dir,
+                   name,
+                   mod_name,
+                   d):
+        if mod_name == "Entity":
+            mod_name = ""
+            print name
+        toret = template.safe_substitute(d)
+        with open(self.gen_name +
+                  dir +
+                  "/" +
+                  name +
+                  mod_name +
+                  '.java', 'w+') as fo:
+            # logging.info("Writing: " + name + mod_name + ".java")
+            fo.write(toret)
+            fo.close()
+
+    def generic_gen(self, ob, mod_name, dir):
+        logging.info("Generating " + dir + ">>>>>>>>>>>>>>>>>")
+        template = self.get_template(mod_name)
+        with open(self.conf["input"] +
+                  "/json_specs/" +
+                  mod_name +
+                  ".json") as f:
+            key_dic = json.loads(f.read())
+            f.close()
+
+        template = self.get_template(mod_name)
+        self.gen_dir(dir)
+        for o in ob:
+            name = o.name.replace(" ", "")
+
+            logging.info("Generating " + dir + ": " + name)
+            tt = {}
+            for k in key_dic.keys():
+                if key_dic[k] == "":
+                    fun = eval("self." + k)
+                    tt[k] = fun(name, o)
+                else:
+                    if key_dic[k] == "name":
+                        tt[k] = name
+                    else:
+                        nn = eval(key_dic[k])
+                        tt[k] = nn
+            self.write_file(template,
+                            dir,
+                            name,
+                            mod_name,
+                            tt)
 
     def remove_repeats(self, ob):
 
@@ -39,39 +106,88 @@ class Code_generator:
             d.entities = entities
             d.relations = relations
         return ob
+    def create_entities(self, ob, dirent, dirview):
+        template = self.get_template("Entity")
+        view = self.get_template("View")
+        with open(self.conf["input"] +
+                  "/json_specs/" +
+                  "Entity" +
+                  ".json") as f:
+            key_dic = json.loads(f.read())
+            f.close()
 
-    def generate(self, ob):
+        for o in ob:
+            for e in o.entities:
+                name = e.name
+                tt = {}
+                for k in key_dic.keys():
+                    if key_dic[k] == "":
+                        fun = eval("self." + k)
+                        tt[k] = fun(name, o)
+                    else:
+                        if key_dic[k] == "name":
+                            tt[k] = name
+                        else:
+                            nn = eval(key_dic[k])
+                            tt[k] = nn
+                """self.write_file(template,
+                            dirent,
+                            name,
+                            "",
+                            tt)"""
+                print "view "+name
+                self.write_file(template,
+                                dirview,
+                                name,
+                                "View",
+                                tt)
+
+
+    def generate(self, ob, name):
+        self.gen_name = self.conf["output"] + \
+            "/" + \
+            name + \
+            "/"
+        os.system("mkdir " + self.gen_name)
         ob = self.remove_repeats(ob)
-        self.generate_ModelJGraph(ob, "ModelJGraph", "models")
-        self.generate_Panel(ob)
-        self.generate_CellViewFactory(ob)
-        self.generate_ActionsFactory(ob)
-        self.generate_DataEntityWidgetPreferences(ob)
-        self.generate_DataEntity(ob)
-        self.generate_ModelEntity(ob)
+        self.move_persistent_directories(ob)
+
+        self.generic_gen(ob, "ModelJGraph", "models")
+        self.generic_gen(ob, "Panel", "panels")
+        self.generic_gen(ob, "CellViewFactory", "cellfactories")
+        self.generic_gen(ob, "ActionsFactory", "actions/diagram")
+        self.generic_gen(ob, "DataEntityWidgetPreferences", "widget")
+        self.generic_gen(ob, "DataEntity", "entities")
+        self.generic_gen(ob, "ModelEntity", "entities")
+
+        self.create_entities(ob, "entities", "cell")
+
         self.generate_ObjectSave(ob)
         self.generate_ObjectManager(ob)
         self.generate_ProjectTreeRenderer(ob)
         self.generate_ProjectMenuCreator(ob)
         self.generate_Relations(ob)
         self.generate_Relations_xml(ob)
-        self.move_persistent_directories(ob)
+        # self.move_persistent_directories(ob)
+
+
 
     def move_persistent_directories(self, ob):
         logging.info(
             "copying directories >>>>>>>>>>>>>>>>>")
-        os.system("cp -r persistent_directories/* source_output/")
+        os.system("cp -r persistent_directories/* " + self.gen_name)
 
     def generate_Relations_xml(self, ob, entDir="rendererxml"):
         logging.info(
             "Generating xml >>>>>>>>>>>>>>>>>")
-        with open("source_templates/ingenias.txt") as f:
+        self.gen_dir(entDir)
+        with open(self.conf["input"] + "/ingenias.txt") as f:
             ingenias = f.read()
             f.close()
-        with open("source_templates/label.txt") as f:
+        with open(self.conf["input"] + "/label.txt") as f:
             label = f.read()
             f.close()
-        with open("source_templates/noicon.txt") as f:
+        with open(self.conf["input"] + "/noicon.txt") as f:
             noicon = f.read()
             f.close()
 
@@ -80,7 +196,7 @@ class Code_generator:
             for e in o.relations:
                 name = e.name.replace(" ", "")
                 if name not in relations:
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               entDir +
                               "/" +
                               name +
@@ -88,7 +204,7 @@ class Code_generator:
                         fo.write(ingenias)
                         fo.close()
 
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               entDir +
                               "/" +
                               name +
@@ -96,7 +212,7 @@ class Code_generator:
                         fo.write(noicon)
                         fo.close()
 
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               entDir +
                               "/" +
                               name +
@@ -114,31 +230,34 @@ class Code_generator:
                            cellDir="cell"):
         logging.info(
             "Generating Relations >>>>>>>>>>>>>>>>>")
-        with open("source_templates/javaRelation.txt") as f:
+        self.gen_dir(entDir)
+        self.gen_dir(widDir)
+        self.gen_dir(cellDir)
+        with open(self.conf["input"] + "/javaRelation.txt") as f:
             java = Template(f.read())
             f.close()
-        with open("source_templates/sourceRelation.txt") as f:
+        with open(self.conf["input"] + "/sourceRelation.txt") as f:
             source = Template(f.read())
             f.close()
-        with open("source_templates/targetRelation.txt") as f:
+        with open(self.conf["input"] + "/targetRelation.txt") as f:
             target = Template(f.read())
             f.close()
-        with open("source_templates/javaWidgetRelation.txt") as f:
+        with open(self.conf["input"] + "/javaWidgetRelation.txt") as f:
             widget = Template(f.read())
             f.close()
-        with open("source_templates/sourceRoleWidgetRelation.txt") as f:
+        with open(self.conf["input"] + "/sourceRoleWidgetRelation.txt") as f:
             sourcewidget = Template(f.read())
             f.close()
-        with open("source_templates/targetRoleWidgetRelation.txt") as f:
+        with open(self.conf["input"] + "/targetRoleWidgetRelation.txt") as f:
             targetwidget = Template(f.read())
             f.close()
-        with open("source_templates/relationCellView.txt") as f:
+        with open(self.conf["input"] + "/relationCellView.txt") as f:
             cellView = Template(f.read())
             f.close()
-        with open("source_templates/relationCellRenderer.txt") as f:
+        with open(self.conf["input"] + "/relationCellRenderer.txt") as f:
             cellRenderer = Template(f.read())
             f.close()
-        with open("source_templates/relationCellEdge.txt") as f:
+        with open(self.conf["input"] + "/relationCellEdge.txt") as f:
             cellEdge = Template(f.read())
             f.close()
 
@@ -150,7 +269,7 @@ class Code_generator:
                     toret = ""
                     d = {"name": name}
                     toret += java.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               entDir +
                               "/" +
                               name +
@@ -160,8 +279,8 @@ class Code_generator:
 
                     toret = ""
                     d = {"namesourceRole": name + "sourceRole"}
-                    toret += java.safe_substitute(d)
-                    with open("source_output/" +
+                    toret += source.safe_substitute(d)
+                    with open(self.gen_name +
                               entDir +
                               "/" +
                               name +
@@ -172,8 +291,8 @@ class Code_generator:
 
                     toret = ""
                     d = {"nametargetRole": name + "targetRole"}
-                    toret += java.safe_substitute(d)
-                    with open("source_output/" +
+                    toret += target.safe_substitute(d)
+                    with open(self.gen_name +
                               entDir +
                               "/" +
                               name +
@@ -185,7 +304,7 @@ class Code_generator:
                     toret = ""
                     d = {"nameWidgetPreferences": name + "WidgetPreferences"}
                     toret += widget.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               widDir +
                               "/" +
                               name +
@@ -198,7 +317,7 @@ class Code_generator:
                     d = {"namesourceRoleWidgetPreferences": name +
                          "sourceRoleWidgetPreferences"}
                     toret += sourcewidget.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               widDir +
                               "/" +
                               name +
@@ -211,7 +330,7 @@ class Code_generator:
                     d = {"nametargetRoleWidgetPreferences": name +
                          "targetRoleWidgetPreferences"}
                     toret += targetwidget.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               widDir +
                               "/" +
                               name +
@@ -225,7 +344,7 @@ class Code_generator:
                          "nameRenderer": name + "Renderer",
                          "name": name}
                     toret += cellView.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               cellDir +
                               "/" +
                               name +
@@ -241,7 +360,7 @@ class Code_generator:
                          "nameRenderer": name + "Renderer",
                          "name": name}
                     toret += cellRenderer.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               cellDir +
                               "/" +
                               name +
@@ -258,7 +377,7 @@ class Code_generator:
                          "nametargetRole": name + "targetRole()",
                          "name": name}
                     toret += cellEdge.safe_substitute(d)
-                    with open("source_output/" +
+                    with open(self.gen_name +
                               cellDir +
                               "/" +
                               name +
@@ -274,15 +393,15 @@ class Code_generator:
                                     dir=""):
         logging.info(
             "Generating ProjectMenuCreator >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
+        with open(self.conf["input"] + "/" +
                   mod_name +
                   "_Template.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/ProjectMenuCreatorDiagram.txt") as f:
+        with open(self.conf["input"] + "/ProjectMenuCreatorDiagram.txt") as f:
             diag = Template(f.read())
             f.close()
-        with open("source_templates/ProjectMenuCreatorDiagram2.txt") as f:
+        with open(self.conf["input"] + "/ProjectMenuCreatorDiagram2.txt") as f:
             diag2 = Template(f.read())
             f.close()
 
@@ -308,7 +427,7 @@ class Code_generator:
         d = {"diagram": toret,
              "diagram2": toret2}
         toret = template.safe_substitute(d)
-        with open("source_output/" +
+        with open(self.gen_name +
                   dir +
                   "/" +
                   mod_name +
@@ -321,15 +440,15 @@ class Code_generator:
                                      dir=""):
         logging.info(
             "Generating ProjectTreeRenderer >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
+        with open(self.conf["input"] + "/" +
                   mod_name +
                   "_Template.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/ProjectTreeRendererDiagram.txt") as f:
+        with open(self.conf["input"] + "/ProjectTreeRendererDiagram.txt") as f:
             diag = Template(f.read())
             f.close()
-        with open("source_templates/ProjectTreeRendererDiagram2.txt") as f:
+        with open(self.conf["input"] + "/ProjectTreeRendererDiagram2.txt") as f:
             diag2 = Template(f.read())
             f.close()
 
@@ -345,12 +464,14 @@ class Code_generator:
             name = o.name.replace(" ", "")
             d = {"nameModelJGraph": name + "ModelJGraph",
                  "modeloname": "modelo" + name}
+
+            # "modeloname": "modelo" + name}
             toret2 += diag2.safe_substitute(d)
 
         d = {"diagram": toret,
              "diagram2": toret2}
         toret = template.safe_substitute(d)
-        with open("source_output/" +
+        with open(self.gen_name +
                   dir +
                   "/" +
                   mod_name +
@@ -363,12 +484,12 @@ class Code_generator:
                                dir=""):
         logging.info(
             "Generating ObjectManager >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
+        with open(self.conf["input"] + "/" +
                   mod_name +
                   "_Template.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/ObjectManagerDiagram.txt") as f:
+        with open(self.conf["input"] + "/ObjectManagerDiagram.txt") as f:
             diag = Template(f.read())
             f.close()
 
@@ -381,7 +502,7 @@ class Code_generator:
 
         d = {"diagram": toret}
         toret = template.safe_substitute(d)
-        with open("source_output/" +
+        with open(self.gen_name +
                   dir +
                   "/" +
                   mod_name +
@@ -394,12 +515,12 @@ class Code_generator:
                             dir="persistence"):
         logging.info(
             "Generating ObjectSave >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
+        with open(self.conf["input"] + "/" +
                   mod_name +
                   "_Template.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/ObjectSaveDiagram.txt") as f:
+        with open(self.conf["input"] + "/ObjectSaveDiagram.txt") as f:
             diag = Template(f.read())
             f.close()
 
@@ -409,10 +530,12 @@ class Code_generator:
             d = {"nameDataEntity": name +
                  "DataEntity"}
             toret += diag.safe_substitute(d)
-
         d = {"diagram": toret}
         toret = template.safe_substitute(d)
-        with open("source_output/" +
+        os.system("mkdir " +
+                  self.gen_name +
+                  dir)
+        with open(self.gen_name +
                   dir +
                   "/" +
                   mod_name +
@@ -420,230 +543,14 @@ class Code_generator:
             fo.write(toret)
             fo.close()
 
-    def generate_DataEntity(self, ob,
-                            mod_name="DataEntity",
-                            dir="entities"):
-        logging.info(
-            "Generating DataEntity >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating DataEntity: " + name)
-            d = {"nameDataEntity": name +
-                 "DataEntity"}
-            toret = template.safe_substitute(d)
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java', 'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    def generate_ModelEntity(self, ob,
-                             mod_name="ModelEntity",
-                             dir="entities"):
-        logging.info(
-            "Generating ModelEntity >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating ModelEntity: " + name)
-            d = {"nameModelEntity": name + "ModelEntity",
-                 "name": name}
-            toret = template.safe_substitute(d)
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java', 'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    def generate_DataEntityWidgetPreferences(self,
-                                             ob,
-                                             mod_name="DataEntityWidgetPreferences",
-                                             dir="widget"):
-        logging.info(
-            "Generating DataEntityWidgetPreferences >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating DataEntityWidgetPreferences: " + name)
-            d = {"nameDataEntityWidgetPreferences": name +
-                 "DataEntityWidgetPreferences"}
-            toret = template.safe_substitute(d)
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java', 'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    def generate_ActionsFactory(self,
-                                ob,
-                                mod_name="ActionsFactory",
-                                dir="actions/diagram"):
-        logging.info("Generating ActionsFactory >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating ActionsFactory: " + name)
-            createChangeViewActions = self.createChangeViewActions(name, o)
-            createDiagramSpecificInsertActions = self.createDiagramSpecificInsertActions(
-                name,
-                o)
-
-            d = {"nameActionsFactory": name + "ActionsFactory",
-                 "createChangeViewActions": createChangeViewActions,
-                 "createDiagramSpecificInsertActions": createDiagramSpecificInsertActions}
-            toret = template.safe_substitute(d)
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java',
-                      'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    def generate_CellViewFactory(self,
-                                 ob,
-                                 mod_name="CellViewFactory",
-                                 dir="cellfactories"):
-        logging.info("Generating cellfactories >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating cellfactorie: " + name)
-            createVertexView = self.createVertexView(name, o)
-
-            d = {"nameCellViewFactory": name + "CellViewFactory",
-                 "content": createVertexView}
-            toret = template.safe_substitute(d)
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java', 'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    def generate_Panel(self, ob, mod_name="Panel", dir="panels"):
-        logging.info("Generating panels >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating Panel: " + name)
-            getAllowedEntities = self.getAllowedEntities(name, o)
-            createCell = self.createCellPanel(name, o)
-            getDefaultSize = self.getDefaultSize(name, o)
-            insertDuplicated = self.insertDuplicated(name, o)
-            d = {"who" +
-                 mod_name: name + mod_name,
-                 "whoDataEntity": name + "DataEntity",
-                 "whoCellViewFactory": name + "CellViewFactory()",
-                 "who": name,
-                 "createCell": createCell,
-                 "getDefaultSize": getDefaultSize,
-                 "insertDuplicated": insertDuplicated,
-                 "getAllowedEntities": getAllowedEntities}
-            toret = template.safe_substitute(d)
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java', 'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    def generate_ModelJGraph(self,
-                             ob,
-                             mod_name="ModelJGraph",
-                             dir="models"):
-        logging.info("Generating models >>>>>>>>>>>>>>>>>")
-        with open("source_templates/" +
-                  mod_name +
-                  "_Template.txt") as f:
-            template = Template(f.read())
-            f.close()
-
-        for o in ob:
-            name = o.name.replace(" ", "")
-            logging.info("Generating Model: " + name)
-            creaToolBar = self.creaToolBar(name, o)
-            getAllowedRelationships = self.getAllowedRelationships(name, o)
-            getAllowedEntities = self.getAllowedEntities(name, o)
-            getPossibleRelationships = self.getPossibleRelationships(name, o)
-            getInstanciaNRelacion = self.getInstanciaNRelacion(name, o)
-            createCell = self.createCell(name, o)
-            getDefaultSize = self.getDefaultSize(name, o)
-            insertDuplicated = self.insertDuplicated(name, o)
-
-            d = {"who" + mod_name: name + mod_name,
-                 "whoDataEntity": name + "DataEntity",
-                 "whoCellViewFactory": name + ".CellViewFactory()",
-                 "who": name,
-                 "creaToolBar": creaToolBar,
-                 "getAllowedRelationships": getAllowedRelationships,
-                 "getPossibleRelationships": getPossibleRelationships,
-                 "getInstanciaNRelacion": getInstanciaNRelacion,
-                 "createCell": createCell,
-                 "getDefaultSize": getDefaultSize,
-                 "insertDuplicated": insertDuplicated,
-                 "getAllowedEntities": getAllowedEntities}
-            toret = template.safe_substitute(d)
-
-            with open("source_output/" +
-                      dir +
-                      "/" +
-                      name +
-                      mod_name +
-                      '.java', 'w+') as fo:
-                fo.write(toret)
-                fo.close()
-
-    # ActionsFactory exclusive
     def createChangeViewActions(self, name, ob):
-        with open("source_templates/createChangeViewActions.txt") as f:
+        with open(self.conf["input"] + "/createChangeViewActions.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/createChangeViewActionsEntities.txt") as f:
+        with open(self.conf["input"] + "/createChangeViewActionsEntities.txt") as f:
             entities = Template(f.read())
             f.close()
-        with open("source_templates/"
+        with open(self.conf["input"] + "/"
                   "createChangeViewActionsRelations.txt") as f:
             relations = Template(f.read())
             f.close()
@@ -666,11 +573,11 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def createDiagramSpecificInsertActions(self, name, ob):
-        with open("source_templates/"
+        with open(self.conf["input"] + "/"
                   "createDiagramSpecificInsertActions.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/"
+        with open(self.conf["input"] + "/"
                   "createDiagramSpecificInsertActionsEntities.txt") as f:
             entities = Template(f.read())
             f.close()
@@ -688,10 +595,10 @@ class Code_generator:
 
     # CellViewFactory exclusive
     def createVertexView(self, name, ob):
-        with open("source_templates/CellViewFactoryEntities.txt") as f:
+        with open(self.conf["input"] + "/CellViewFactoryEntities.txt") as f:
             entities = Template(f.read())
             f.close()
-        with open("source_templates/CellViewFactoryRelations.txt") as f:
+        with open(self.conf["input"] + "/CellViewFactoryRelations.txt") as f:
             relations = Template(f.read())
             f.close()
 
@@ -713,10 +620,10 @@ class Code_generator:
 # /////////////////////////////////////////7
 
     def creaToolBar(self, name, ob):
-        with open("source_templates/creaToolBar.txt") as f:
+        with open(self.conf["input"] + "/creaToolBar.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/creaToolBarEntities.txt") as f:
+        with open(self.conf["input"] + "/creaToolBarEntities.txt") as f:
             ent = Template(f.read())
             f.close()
 
@@ -736,10 +643,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def getAllowedRelationships(self, name, ob):
-        with open("source_templates/getAllowedRelationships.txt") as f:
+        with open(self.conf["input"] + "/getAllowedRelationships.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/"
+        with open(self.conf["input"] + "/"
                   "getAllowedRelationshipsRelationships.txt") as f:
             ent = Template(f.read())
             f.close()
@@ -756,10 +663,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def getAllowedEntities(self, name, ob):
-        with open("source_templates/getAllowedEntities.txt") as f:
+        with open(self.conf["input"] + "/getAllowedEntities.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/getAllowedEntitiesEntities.txt") as f:
+        with open(self.conf["input"] + "/getAllowedEntitiesEntities.txt") as f:
             ent = Template(f.read())
             f.close()
 
@@ -775,13 +682,13 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def getPossibleRelationships(self, name, ob):
-        with open("source_templates/getPossibleRelationships.txt") as f:
+        with open(self.conf["input"] + "/getPossibleRelationships.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/getPossibleRelationshipsBinary.txt") as f:
+        with open(self.conf["input"] + "/getPossibleRelationshipsBinary.txt") as f:
             ent = Template(f.read())
             f.close()
-        with open("source_templates/"
+        with open(self.conf["input"] + "/"
                   "getPossibleRelationshipsNoBinary.txt") as f:
             ent2 = Template(f.read())
             f.close()
@@ -801,10 +708,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def getInstanciaNRelacion(self, name, ob):
-        with open("source_templates/getInstanciaNRelacion.txt") as f:
+        with open(self.conf["input"] + "/getInstanciaNRelacion.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/"
+        with open(self.conf["input"] + "/"
                   "getInstanciaNRelacionRelationship.txt") as f:
             ent = Template(f.read())
             f.close()
@@ -821,10 +728,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def createCell(self, name, ob):
-        with open("source_templates/createCell.txt") as f:
+        with open(self.conf["input"] + "/createCell.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/createCellEntity.txt") as f:
+        with open(self.conf["input"] + "/createCellEntity.txt") as f:
             ent = Template(f.read())
             f.close()
 
@@ -833,7 +740,7 @@ class Code_generator:
         for e in ob.entities:
             dd = {
                 "name": e.name,
-                "cratename": "create" + e.name,
+                "createname": "create" + e.name,
                 "namecell": e.name + "Cell"
             }
             toret += ent.safe_substitute(dd)
@@ -844,10 +751,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def createCellPanel(self, name, ob):
-        with open("source_templates/createCell.txt") as f:
+        with open(self.conf["input"] + "/createCell.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/createCellPanel.txt") as f:
+        with open(self.conf["input"] + "/createCellPanel.txt") as f:
             ent = Template(f.read())
             f.close()
 
@@ -867,10 +774,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def getDefaultSize(self, name, ob):
-        with open("source_templates/getDefaultSize.txt") as f:
+        with open(self.conf["input"] + "/getDefaultSize.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/getDefaultSizeEntity.txt") as f:
+        with open(self.conf["input"] + "/getDefaultSizeEntity.txt") as f:
             ent = Template(f.read())
             f.close()
 
@@ -889,10 +796,10 @@ class Code_generator:
         return template.safe_substitute(d)
 
     def insertDuplicated(self, name, ob):
-        with open("source_templates/insertDuplicated.txt") as f:
+        with open(self.conf["input"] + "/insertDuplicated.txt") as f:
             template = Template(f.read())
             f.close()
-        with open("source_templates/insertDuplicatedEntities.txt") as f:
+        with open(self.conf["input"] + "/insertDuplicatedEntities.txt") as f:
             ent = Template(f.read())
             f.close()
 

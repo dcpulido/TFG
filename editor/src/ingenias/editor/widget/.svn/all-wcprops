@@ -1,0 +1,2255 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ingenias/!svn/ver/147/trunk/IDK/editor/src/ingenias/editor/widget
+END
+DeploymentUnitByTypeMSEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/widget/DeploymentUnitByTypeMSEntityWidgetPreferences.java
+END
+EResourceBelongsTosourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EResourceBelongsTosourceRoleWidgetPreferences.java
+END
+AOPMentalStatePatternWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AOPMentalStatePatternWidgetPreferences.java
+END
+INGENIASComponentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/INGENIASComponentWidgetPreferences.java
+END
+ContributesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ContributesourceRoleWidgetPreferences.java
+END
+WFFollowsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFFollowsWidgetPreferences.java
+END
+HasCommenttargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/HasCommenttargetRoleWidgetPreferences.java
+END
+GRASIAAgentDescriptionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GRASIAAgentDescriptionWidgetPreferences.java
+END
+IUIterateWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IUIterateWidgetPreferences.java
+END
+UIPrecedessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIPrecedessourceRoleWidgetPreferences.java
+END
+AutonomousEntityQueryWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AutonomousEntityQueryWidgetPreferences.java
+END
+DeploymentPackageWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DeploymentPackageWidgetPreferences.java
+END
+GroupBelongsToOrganizationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GroupBelongsToOrganizationWidgetPreferences.java
+END
+GTDestroystargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDestroystargetRoleWidgetPreferences.java
+END
+AGORelationshipOrgWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationshipOrgWidgetPreferences.java
+END
+RoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/RoleWidgetPreferences.java
+END
+DecisionNodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DecisionNodeWidgetPreferences.java
+END
+GTFailsHelperTasktargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTFailsHelperTasktargetRoleWidgetPreferences.java
+END
+DecisionNodesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DecisionNodesourceRoleWidgetPreferences.java
+END
+GRASIASpecificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GRASIASpecificationWidgetPreferences.java
+END
+ApplicationBelongsTotargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationBelongsTotargetRoleWidgetPreferences.java
+END
+WFResponsableWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFResponsableWidgetPreferences.java
+END
+AHasMSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSWidgetPreferences.java
+END
+OrganizationNetworkWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OrganizationNetworkWidgetPreferences.java
+END
+GTSatisfiestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTSatisfiestargetRoleWidgetPreferences.java
+END
+ControlMentalEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ControlMentalEntityWidgetPreferences.java
+END
+InteractionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/InteractionWidgetPreferences.java
+END
+GeneralEventWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GeneralEventWidgetPreferences.java
+END
+MethodWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MethodWidgetPreferences.java
+END
+SpecificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/SpecificationWidgetPreferences.java
+END
+WFPursueWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFPursueWidgetPreferences.java
+END
+CDUsesCodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/CDUsesCodeWidgetPreferences.java
+END
+SlotWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/SlotWidgetPreferences.java
+END
+GTSatisfiesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTSatisfiesWidgetPreferences.java
+END
+AInheritsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AInheritsWidgetPreferences.java
+END
+LifelineWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/LifelineWidgetPreferences.java
+END
+IHasSpectargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IHasSpectargetRoleWidgetPreferences.java
+END
+WFConsumesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFConsumesWidgetPreferences.java
+END
+AUMLSpecificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSpecificationWidgetPreferences.java
+END
+OHasGrouptargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasGrouptargetRoleWidgetPreferences.java
+END
+WFDecidessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecidessourceRoleWidgetPreferences.java
+END
+AContainsMEWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AContainsMEWidgetPreferences.java
+END
+MergeNodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MergeNodeWidgetPreferences.java
+END
+INGENIASUseCaseWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/INGENIASUseCaseWidgetPreferences.java
+END
+TextNoteWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TextNoteWidgetPreferences.java
+END
+WFFollowstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFFollowstargetRoleWidgetPreferences.java
+END
+ContributeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ContributeWidgetPreferences.java
+END
+InteractionUnitWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/InteractionUnitWidgetPreferences.java
+END
+ParticipatesInUseCasetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ParticipatesInUseCasetargetRoleWidgetPreferences.java
+END
+MentalStateWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MentalStateWidgetPreferences.java
+END
+ConcreteAgentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ConcreteAgentWidgetPreferences.java
+END
+IPursuessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IPursuessourceRoleWidgetPreferences.java
+END
+Editable.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/widget/Editable.java
+END
+StateGoalWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/StateGoalWidgetPreferences.java
+END
+WorkflowBoxWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WorkflowBoxWidgetPreferences.java
+END
+AUMLAlternativeRowWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLAlternativeRowWidgetPreferences.java
+END
+UseCaseWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UseCaseWidgetPreferences.java
+END
+AInstanceOfWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AInstanceOfWidgetPreferences.java
+END
+GraphicsUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/widget/GraphicsUtils.java
+END
+AGOInconditionalSubordinationRelationshipMemberWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOInconditionalSubordinationRelationshipMemberWidgetPreferences.java
+END
+UMLAssociationsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLAssociationsourceRoleWidgetPreferences.java
+END
+AgentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentWidgetPreferences.java
+END
+UIColaboratessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIColaboratessourceRoleWidgetPreferences.java
+END
+WFDecomposessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecomposessourceRoleWidgetPreferences.java
+END
+IInitiatesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IInitiatesWidgetPreferences.java
+END
+WFResponsabletargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFResponsabletargetRoleWidgetPreferences.java
+END
+AUMLSelectionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSelectionWidgetPreferences.java
+END
+AHasMSProcessortargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSProcessortargetRoleWidgetPreferences.java
+END
+ConditionalMentalStateWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ConditionalMentalStateWidgetPreferences.java
+END
+WFUsestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFUsestargetRoleWidgetPreferences.java
+END
+MessagePassingWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MessagePassingWidgetPreferences.java
+END
+ARoleInheritanceWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ARoleInheritanceWidgetPreferences.java
+END
+GTOrDependsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTOrDependsWidgetPreferences.java
+END
+ParameterWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ParameterWidgetPreferences.java
+END
+ApplicationBelongsToWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationBelongsToWidgetPreferences.java
+END
+GTCreatesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTCreatesWidgetPreferences.java
+END
+WFProducesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFProducesWidgetPreferences.java
+END
+InformationMentalEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/InformationMentalEntityWidgetPreferences.java
+END
+DNDComponentInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DNDComponentInterface.java
+END
+WFPursuesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFPursuesourceRoleWidgetPreferences.java
+END
+OHasMembersourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasMembersourceRoleWidgetPreferences.java
+END
+ODecomposesGrouptargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ODecomposesGrouptargetRoleWidgetPreferences.java
+END
+OHasWFWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasWFWidgetPreferences.java
+END
+UMLSendsMessagetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLSendsMessagetargetRoleWidgetPreferences.java
+END
+WFSpecifiesExecutionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFSpecifiesExecutionWidgetPreferences.java
+END
+UMLRealizesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLRealizesWidgetPreferences.java
+END
+ODecomposesGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ODecomposesGroupWidgetPreferences.java
+END
+WFSpecifiesExecutionsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFSpecifiesExecutionsourceRoleWidgetPreferences.java
+END
+IncludestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IncludestargetRoleWidgetPreferences.java
+END
+WFContainsTasksourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFContainsTasksourceRoleWidgetPreferences.java
+END
+IAccessessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IAccessessourceRoleWidgetPreferences.java
+END
+MentalInstanceSpecificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MentalInstanceSpecificationWidgetPreferences.java
+END
+WFStartstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFStartstargetRoleWidgetPreferences.java
+END
+GTAffectssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTAffectssourceRoleWidgetPreferences.java
+END
+DnDJTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/widget/DnDJTree.java
+END
+EResourceBelongsToWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EResourceBelongsToWidgetPreferences.java
+END
+IColaboratessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IColaboratessourceRoleWidgetPreferences.java
+END
+INGENIASCodeComponentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/INGENIASCodeComponentWidgetPreferences.java
+END
+UIExecutestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIExecutestargetRoleWidgetPreferences.java
+END
+WFConnectssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFConnectssourceRoleWidgetPreferences.java
+END
+MentalEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MentalEntityWidgetPreferences.java
+END
+WFStartsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFStartsWidgetPreferences.java
+END
+WFUsesMethodWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFUsesMethodWidgetPreferences.java
+END
+GTDecomposesANDWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDecomposesANDWidgetPreferences.java
+END
+SymbolicMentalStatePatternWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/SymbolicMentalStatePatternWidgetPreferences.java
+END
+UseCasePursuessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UseCasePursuessourceRoleWidgetPreferences.java
+END
+AInstanceOftargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AInstanceOftargetRoleWidgetPreferences.java
+END
+INGENIASObjectWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/INGENIASObjectWidgetPreferences.java
+END
+ParticipatesInUseCaseWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ParticipatesInUseCaseWidgetPreferences.java
+END
+ApplicationEventSlotsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationEventSlotsWidgetPreferences.java
+END
+EPerceivesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EPerceivesWidgetPreferences.java
+END
+IInitiatestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IInitiatestargetRoleWidgetPreferences.java
+END
+GTDecomposesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDecomposesWidgetPreferences.java
+END
+WFDecomposesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecomposesWidgetPreferences.java
+END
+HasCommentsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/HasCommentsourceRoleWidgetPreferences.java
+END
+AUMLContainerWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLContainerWidgetPreferences.java
+END
+AGORelationship1targetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationship1targetRoleWidgetPreferences.java
+END
+UMLClassifierWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLClassifierWidgetPreferences.java
+END
+AGORelationship2targetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationship2targetRoleWidgetPreferences.java
+END
+AGORelationship3targetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationship3targetRoleWidgetPreferences.java
+END
+AHasMSManagerWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSManagerWidgetPreferences.java
+END
+GTInheritstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTInheritstargetRoleWidgetPreferences.java
+END
+GTDestroyssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDestroyssourceRoleWidgetPreferences.java
+END
+AGOInconditionalSubordinationRelationshipOrgWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOInconditionalSubordinationRelationshipOrgWidgetPreferences.java
+END
+WFParticipatestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFParticipatestargetRoleWidgetPreferences.java
+END
+EPerceivesPollingWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EPerceivesPollingWidgetPreferences.java
+END
+UMLCommentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLCommentWidgetPreferences.java
+END
+UMLComponentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLComponentWidgetPreferences.java
+END
+OrganizationGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OrganizationGroupWidgetPreferences.java
+END
+MethodParameterWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MethodParameterWidgetPreferences.java
+END
+ApplicationBelongsTosourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationBelongsTosourceRoleWidgetPreferences.java
+END
+WFParticipatesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFParticipatesWidgetPreferences.java
+END
+UIInitiatesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIInitiatesWidgetPreferences.java
+END
+GTSatisfiessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTSatisfiessourceRoleWidgetPreferences.java
+END
+GTPursuestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTPursuestargetRoleWidgetPreferences.java
+END
+UMLDescribesUseCaseWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLDescribesUseCaseWidgetPreferences.java
+END
+ColumnWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ColumnWidgetPreferences.java
+END
+WFContainsTaskWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFContainsTaskWidgetPreferences.java
+END
+EPerceivesNotificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EPerceivesNotificationWidgetPreferences.java
+END
+IHasSpecsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IHasSpecsourceRoleWidgetPreferences.java
+END
+FileSpecPatternMappingWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/FileSpecPatternMappingWidgetPreferences.java
+END
+JoinNodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/JoinNodeWidgetPreferences.java
+END
+ApplicationEventWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationEventWidgetPreferences.java
+END
+UMLAnnotatedElementWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLAnnotatedElementWidgetPreferences.java
+END
+GTAffectsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTAffectsWidgetPreferences.java
+END
+ActivityFinalWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ActivityFinalWidgetPreferences.java
+END
+ContributeNegativelyWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ContributeNegativelyWidgetPreferences.java
+END
+DefinesDeploymenttargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DefinesDeploymenttargetRoleWidgetPreferences.java
+END
+OHasGroupsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasGroupsourceRoleWidgetPreferences.java
+END
+ExtendsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ExtendsWidgetPreferences.java
+END
+AUMLInteractionDiagramDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLInteractionDiagramDataEntityWidgetPreferences.java
+END
+AGOCondSubordinationRelationshipGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOCondSubordinationRelationshipGroupWidgetPreferences.java
+END
+ConversationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ConversationWidgetPreferences.java
+END
+BelieveWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/BelieveWidgetPreferences.java
+END
+TaskWSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TaskWSWidgetPreferences.java
+END
+UISelectiontargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UISelectiontargetRoleWidgetPreferences.java
+END
+AgentComponentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentComponentWidgetPreferences.java
+END
+RuntimeFactWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/RuntimeFactWidgetPreferences.java
+END
+AUMLSendSimpleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSendSimpleWidgetPreferences.java
+END
+EPerceivestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EPerceivestargetRoleWidgetPreferences.java
+END
+WFFollowssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFFollowssourceRoleWidgetPreferences.java
+END
+AUMLUseProtocoltargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLUseProtocoltargetRoleWidgetPreferences.java
+END
+TestingPackageWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TestingPackageWidgetPreferences.java
+END
+ParticipatesInUseCasesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ParticipatesInUseCasesourceRoleWidgetPreferences.java
+END
+NaturalLanguageAgentDescriptionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/NaturalLanguageAgentDescriptionWidgetPreferences.java
+END
+AUMLUseProtocolWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLUseProtocolWidgetPreferences.java
+END
+WFCancelstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFCancelstargetRoleWidgetPreferences.java
+END
+AHasMStargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMStargetRoleWidgetPreferences.java
+END
+WFCancelsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFCancelsWidgetPreferences.java
+END
+ODecomposesWFtargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ODecomposesWFtargetRoleWidgetPreferences.java
+END
+ForkNodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ForkNodeWidgetPreferences.java
+END
+ODecomposesWFWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ODecomposesWFWidgetPreferences.java
+END
+WFResponsablesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFResponsablesourceRoleWidgetPreferences.java
+END
+AHasMSProcessorsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSProcessorsourceRoleWidgetPreferences.java
+END
+WFEndstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFEndstargetRoleWidgetPreferences.java
+END
+WFUsessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFUsessourceRoleWidgetPreferences.java
+END
+OHasWFtargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasWFtargetRoleWidgetPreferences.java
+END
+GTInheritsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTInheritsWidgetPreferences.java
+END
+AGOSubordinationRelationshipMemberWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOSubordinationRelationshipMemberWidgetPreferences.java
+END
+GTFailstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTFailstargetRoleWidgetPreferences.java
+END
+UMLDescribesUseCasetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLDescribesUseCasetargetRoleWidgetPreferences.java
+END
+AGOClientServerRelationshipGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOClientServerRelationshipGroupWidgetPreferences.java
+END
+ODecomposesGroupsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ODecomposesGroupsourceRoleWidgetPreferences.java
+END
+ProtocolWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ProtocolWidgetPreferences.java
+END
+TaskWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TaskWidgetPreferences.java
+END
+UMLSendsMessagesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLSendsMessagesourceRoleWidgetPreferences.java
+END
+ExtendstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ExtendstargetRoleWidgetPreferences.java
+END
+ApplicationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationWidgetPreferences.java
+END
+AUMLAlternativeBoxWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLAlternativeBoxWidgetPreferences.java
+END
+ObjectSlotWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ObjectSlotWidgetPreferences.java
+END
+IncludessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IncludessourceRoleWidgetPreferences.java
+END
+WFConnectsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFConnectsWidgetPreferences.java
+END
+AUMLSendSimpletargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSendSimpletargetRoleWidgetPreferences.java
+END
+SubProtocolWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/SubProtocolWidgetPreferences.java
+END
+ApplicationWSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ApplicationWSWidgetPreferences.java
+END
+WFPlaystargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFPlaystargetRoleWidgetPreferences.java
+END
+MentalStatePatternWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MentalStatePatternWidgetPreferences.java
+END
+WSConnectstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WSConnectstargetRoleWidgetPreferences.java
+END
+WFStartssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFStartssourceRoleWidgetPreferences.java
+END
+DecisionNodeInputWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DecisionNodeInputWidgetPreferences.java
+END
+WFDecomposesWFtargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecomposesWFtargetRoleWidgetPreferences.java
+END
+PROLOGAgentDescriptionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/PROLOGAgentDescriptionWidgetPreferences.java
+END
+AGOCondSubordinationRelationshipMemberWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOCondSubordinationRelationshipMemberWidgetPreferences.java
+END
+WFPlaysWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFPlaysWidgetPreferences.java
+END
+ShareToupleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ShareToupleWidgetPreferences.java
+END
+WrapFlowPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/widget/WrapFlowPanel.java
+END
+UIColaboratesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIColaboratesWidgetPreferences.java
+END
+GTDecomposesORWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDecomposesORWidgetPreferences.java
+END
+AUMLSelectiontargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSelectiontargetRoleWidgetPreferences.java
+END
+AInstanceOfsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AInstanceOfsourceRoleWidgetPreferences.java
+END
+AHasMSManagertargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSManagertargetRoleWidgetPreferences.java
+END
+OrganizationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OrganizationWidgetPreferences.java
+END
+IInitiatessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IInitiatessourceRoleWidgetPreferences.java
+END
+ARoleInheritancetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ARoleInheritancetargetRoleWidgetPreferences.java
+END
+AGOSubordinationRelationshipGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOSubordinationRelationshipGroupWidgetPreferences.java
+END
+AgentWSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentWSWidgetPreferences.java
+END
+DeployDiagramDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DeployDiagramDataEntityWidgetPreferences.java
+END
+CDUsesCodetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/CDUsesCodetargetRoleWidgetPreferences.java
+END
+MentalStateManagerWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MentalStateManagerWidgetPreferences.java
+END
+AGORelationship1sourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationship1sourceRoleWidgetPreferences.java
+END
+AGORelationship2sourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationship2sourceRoleWidgetPreferences.java
+END
+DeploymentUnitByTypeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DeploymentUnitByTypeWidgetPreferences.java
+END
+AGORelationship3sourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationship3sourceRoleWidgetPreferences.java
+END
+UIInitiatestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIInitiatestargetRoleWidgetPreferences.java
+END
+AUMLComponentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLComponentWidgetPreferences.java
+END
+AGOInconditionalSubordinationRelationshipGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOInconditionalSubordinationRelationshipGroupWidgetPreferences.java
+END
+WFConsumestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFConsumestargetRoleWidgetPreferences.java
+END
+WFResponsibleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFResponsibleWidgetPreferences.java
+END
+GTInheritssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTInheritssourceRoleWidgetPreferences.java
+END
+UMLClassWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLClassWidgetPreferences.java
+END
+UMLObjectWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLObjectWidgetPreferences.java
+END
+UMLRealizestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLRealizestargetRoleWidgetPreferences.java
+END
+InteractionModelDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/InteractionModelDataEntityWidgetPreferences.java
+END
+FrameFactWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/FrameFactWidgetPreferences.java
+END
+AgentRequirementsQueryWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentRequirementsQueryWidgetPreferences.java
+END
+WFParticipatessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFParticipatessourceRoleWidgetPreferences.java
+END
+AContainsMEtargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AContainsMEtargetRoleWidgetPreferences.java
+END
+ActionUMLWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ActionUMLWidgetPreferences.java
+END
+UMLSpecificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLSpecificationWidgetPreferences.java
+END
+IUConcurrenceWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IUConcurrenceWidgetPreferences.java
+END
+GTPursuessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTPursuessourceRoleWidgetPreferences.java
+END
+IncludesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IncludesWidgetPreferences.java
+END
+ActivityDiagramDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ActivityDiagramDataEntityWidgetPreferences.java
+END
+IPursuesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IPursuesWidgetPreferences.java
+END
+AGORelationshipMemberWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationshipMemberWidgetPreferences.java
+END
+DefinesDeploymentsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DefinesDeploymentsourceRoleWidgetPreferences.java
+END
+GoalWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GoalWidgetPreferences.java
+END
+UISelectionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UISelectionWidgetPreferences.java
+END
+GTDecomposestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDecomposestargetRoleWidgetPreferences.java
+END
+UISelectionsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UISelectionsourceRoleWidgetPreferences.java
+END
+UMLActivityDiagramDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLActivityDiagramDataEntityWidgetPreferences.java
+END
+EPerceivessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EPerceivessourceRoleWidgetPreferences.java
+END
+AUMLUseProtocolsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLUseProtocolsourceRoleWidgetPreferences.java
+END
+AGOSubordinationRelationshipOrgWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOSubordinationRelationshipOrgWidgetPreferences.java
+END
+GTDependstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDependstargetRoleWidgetPreferences.java
+END
+GRASIAMentalStatePatternWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GRASIAMentalStatePatternWidgetPreferences.java
+END
+AGOClientServerRelationshipMemberWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOClientServerRelationshipMemberWidgetPreferences.java
+END
+GTCreatestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTCreatestargetRoleWidgetPreferences.java
+END
+WFProducestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFProducestargetRoleWidgetPreferences.java
+END
+WFResponsibletargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFResponsibletargetRoleWidgetPreferences.java
+END
+EndNodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EndNodeWidgetPreferences.java
+END
+EnvironmentModelDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EnvironmentModelDataEntityWidgetPreferences.java
+END
+GTDependsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDependsWidgetPreferences.java
+END
+ComponentDiagramDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ComponentDiagramDataEntityWidgetPreferences.java
+END
+AInheritstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AInheritstargetRoleWidgetPreferences.java
+END
+AHasMSsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSsourceRoleWidgetPreferences.java
+END
+ODecomposesWFsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ODecomposesWFsourceRoleWidgetPreferences.java
+END
+MentalStateProcessorWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/MentalStateProcessorWidgetPreferences.java
+END
+StackEntryWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/StackEntryWidgetPreferences.java
+END
+WFEndssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFEndssourceRoleWidgetPreferences.java
+END
+OHasWFsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasWFsourceRoleWidgetPreferences.java
+END
+GTFailssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTFailssourceRoleWidgetPreferences.java
+END
+DeploymentUnitByTypeWithInitMSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DeploymentUnitByTypeWithInitMSWidgetPreferences.java
+END
+UMLDescribesUseCasesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLDescribesUseCasesourceRoleWidgetPreferences.java
+END
+RemoteProcedureCallWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/RemoteProcedureCallWidgetPreferences.java
+END
+GTAndDependsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTAndDependsWidgetPreferences.java
+END
+AgentDescriptionWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentDescriptionWidgetPreferences.java
+END
+EResourceBelongsTotargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EResourceBelongsTotargetRoleWidgetPreferences.java
+END
+Autonomous_entityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/Autonomous_entityWidgetPreferences.java
+END
+AgentModelDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentModelDataEntityWidgetPreferences.java
+END
+IColaboratesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IColaboratesWidgetPreferences.java
+END
+ContributetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ContributetargetRoleWidgetPreferences.java
+END
+OrganizationModelDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OrganizationModelDataEntityWidgetPreferences.java
+END
+ExtendssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ExtendssourceRoleWidgetPreferences.java
+END
+DefinesDeploymentWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DefinesDeploymentWidgetPreferences.java
+END
+UseCasePursuesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UseCasePursuesWidgetPreferences.java
+END
+UIPrecedestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIPrecedestargetRoleWidgetPreferences.java
+END
+AUMLSendSimplesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSendSimplesourceRoleWidgetPreferences.java
+END
+DeploymentUnitByTypeEnumInitMSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DeploymentUnitByTypeEnumInitMSWidgetPreferences.java
+END
+WFPlayssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFPlayssourceRoleWidgetPreferences.java
+END
+WSConnectssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WSConnectssourceRoleWidgetPreferences.java
+END
+UMLAssociationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLAssociationWidgetPreferences.java
+END
+WFDecomposesWFWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecomposesWFWidgetPreferences.java
+END
+DecisionNodetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/DecisionNodetargetRoleWidgetPreferences.java
+END
+WFDecomposesWFsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecomposesWFsourceRoleWidgetPreferences.java
+END
+GroupBelongsToOrganizationORoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GroupBelongsToOrganizationORoleWidgetPreferences.java
+END
+InternalApplicationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/InternalApplicationWidgetPreferences.java
+END
+AUMLPortWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLPortWidgetPreferences.java
+END
+AGORelationshipGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGORelationshipGroupWidgetPreferences.java
+END
+ContributePositivelyWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ContributePositivelyWidgetPreferences.java
+END
+GTDestroysWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDestroysWidgetPreferences.java
+END
+AUMLSelectionsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AUMLSelectionsourceRoleWidgetPreferences.java
+END
+GeneralizesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GeneralizesWidgetPreferences.java
+END
+AHasMSManagersourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSManagersourceRoleWidgetPreferences.java
+END
+RoleWSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/RoleWSWidgetPreferences.java
+END
+AHasMSProcessorWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AHasMSProcessorWidgetPreferences.java
+END
+EntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EntityWidgetPreferences.java
+END
+WFUsesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFUsesWidgetPreferences.java
+END
+CompromiseWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/CompromiseWidgetPreferences.java
+END
+ConfigurableWidget.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ConfigurableWidget.java
+END
+RuntimeConversationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/RuntimeConversationWidgetPreferences.java
+END
+WFFollowsGuardedWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFFollowsGuardedWidgetPreferences.java
+END
+ARoleInheritancesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ARoleInheritancesourceRoleWidgetPreferences.java
+END
+SlotValueSpecificationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/SlotValueSpecificationWidgetPreferences.java
+END
+OHasMemberWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasMemberWidgetPreferences.java
+END
+CDUsesCodesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/CDUsesCodesourceRoleWidgetPreferences.java
+END
+RuntimeEventWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/RuntimeEventWidgetPreferences.java
+END
+WFDecidestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecidestargetRoleWidgetPreferences.java
+END
+WFEndsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFEndsWidgetPreferences.java
+END
+GTModifiesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTModifiesWidgetPreferences.java
+END
+UIInitiatessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIInitiatessourceRoleWidgetPreferences.java
+END
+WFConsumessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFConsumessourceRoleWidgetPreferences.java
+END
+GoalStateWSWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GoalStateWSWidgetPreferences.java
+END
+WFDecidesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecidesWidgetPreferences.java
+END
+InitialNodeWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/InitialNodeWidgetPreferences.java
+END
+IHasSpecWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IHasSpecWidgetPreferences.java
+END
+UMLRealizessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLRealizessourceRoleWidgetPreferences.java
+END
+GTPursuesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTPursuesWidgetPreferences.java
+END
+IAccessesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IAccessesWidgetPreferences.java
+END
+AContainsMEsourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AContainsMEsourceRoleWidgetPreferences.java
+END
+TasksAndGoalsModelDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TasksAndGoalsModelDataEntityWidgetPreferences.java
+END
+OHasGroupWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasGroupWidgetPreferences.java
+END
+IPursuestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IPursuestargetRoleWidgetPreferences.java
+END
+TestWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TestWidgetPreferences.java
+END
+TransferableWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TransferableWrapper.java
+END
+UMLAssociationtargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLAssociationtargetRoleWidgetPreferences.java
+END
+UIColaboratestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIColaboratestargetRoleWidgetPreferences.java
+END
+WSConnectsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WSConnectsWidgetPreferences.java
+END
+WFDecomposestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFDecomposestargetRoleWidgetPreferences.java
+END
+EnvironmentApplicationWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/EnvironmentApplicationWidgetPreferences.java
+END
+UIPrecedesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UIPrecedesWidgetPreferences.java
+END
+CustomJTextArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/CustomJTextArea.java
+END
+TextUseCaseWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/TextUseCaseWidgetPreferences.java
+END
+GTDecomposessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDecomposessourceRoleWidgetPreferences.java
+END
+GroupBelongsToOrganizationTRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GroupBelongsToOrganizationTRoleWidgetPreferences.java
+END
+UseCaseDiagramDataEntityWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UseCaseDiagramDataEntityWidgetPreferences.java
+END
+FileSpecMappingWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/FileSpecMappingWidgetPreferences.java
+END
+CommunicationEventWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/widget/CommunicationEventWidgetPreferences.java
+END
+WFPursuetargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFPursuetargetRoleWidgetPreferences.java
+END
+WorkflowWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WorkflowWidgetPreferences.java
+END
+OHasMembertargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/OHasMembertargetRoleWidgetPreferences.java
+END
+AgentModelBelieveWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AgentModelBelieveWidgetPreferences.java
+END
+FactWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/FactWidgetPreferences.java
+END
+GTDependssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTDependssourceRoleWidgetPreferences.java
+END
+GTCreatessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTCreatessourceRoleWidgetPreferences.java
+END
+WFProducessourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFProducessourceRoleWidgetPreferences.java
+END
+WFSpecifiesExecutiontargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFSpecifiesExecutiontargetRoleWidgetPreferences.java
+END
+WFResponsiblesourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFResponsiblesourceRoleWidgetPreferences.java
+END
+AGOClientServerRelationshipOrgWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOClientServerRelationshipOrgWidgetPreferences.java
+END
+ResourceWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ResourceWidgetPreferences.java
+END
+CustomJComboBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/147/trunk/IDK/editor/src/ingenias/editor/widget/CustomJComboBox.java
+END
+WFContainsTasktargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFContainsTasktargetRoleWidgetPreferences.java
+END
+GTFailsWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTFailsWidgetPreferences.java
+END
+AInheritssourceRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AInheritssourceRoleWidgetPreferences.java
+END
+PlanWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/PlanWidgetPreferences.java
+END
+IAccessestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IAccessestargetRoleWidgetPreferences.java
+END
+ConsumesWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/ConsumesWidgetPreferences.java
+END
+ScrolledTArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/147/trunk/IDK/editor/src/ingenias/editor/widget/ScrolledTArea.java
+END
+GTAffectstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/GTAffectstargetRoleWidgetPreferences.java
+END
+UMLSendsMessageWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UMLSendsMessageWidgetPreferences.java
+END
+IColaboratestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/IColaboratestargetRoleWidgetPreferences.java
+END
+WFConnectstargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/WFConnectstargetRoleWidgetPreferences.java
+END
+AGOCondSubordinationRelationshipOrgWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/AGOCondSubordinationRelationshipOrgWidgetPreferences.java
+END
+CustomJTextField.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/CustomJTextField.java
+END
+UseCasePursuestargetRoleWidgetPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/widget/UseCasePursuestargetRoleWidgetPreferences.java
+END

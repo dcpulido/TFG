@@ -1,0 +1,91 @@
+8
+
+dir
+336
+https://ingenias.svn.sourceforge.net/svnroot/ingenias/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast
+https://ingenias.svn.sourceforge.net/svnroot/ingenias
+
+
+
+2007-12-23T03:12:45.575000Z
+3
+escalope
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+95f194ad-9441-0410-9784-e312ea4ffdb5
+
+visitor
+dir
+
+ImportDeclaration.java
+file
+
+
+
+
+2009-11-08T23:20:12.000000Z
+f32b2e51edc8ede980b4c067061345fb
+2007-12-23T03:12:45.575000Z
+3
+escalope
+
+type
+dir
+
+TypeParameter.java
+file
+
+
+
+
+2009-11-08T23:20:12.000000Z
+ca28cd413b47933ea51efe0d513c967e
+2007-12-23T03:12:45.575000Z
+3
+escalope
+
+Node.java
+file
+
+
+
+
+2009-11-08T23:20:12.000000Z
+787bc9486c2e083806171bf7bdc27254
+2007-12-23T03:12:45.575000Z
+3
+escalope
+
+stmt
+dir
+
+body
+dir
+
+expr
+dir
+
+CompilationUnit.java
+file
+
+
+
+
+2009-11-08T23:20:12.000000Z
+07317f2b7c8c9b6d36c1f513eb261838
+2007-12-23T03:12:45.575000Z
+3
+escalope
+

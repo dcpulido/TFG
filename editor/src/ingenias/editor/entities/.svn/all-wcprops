@@ -1,0 +1,2285 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities
+END
+InternalApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/InternalApplication.java
+END
+GTPursues.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTPursues.java
+END
+AUMLInteractionDiagramModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLInteractionDiagramModelEntity.java
+END
+MergeNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MergeNode.java
+END
+AUMLSendSimpletargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSendSimpletargetRole.java
+END
+SubProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/SubProtocol.java
+END
+MentalStateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MentalStateManager.java
+END
+AGORelationship1sourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationship1sourceRole.java
+END
+ComponentDiagramDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ComponentDiagramDataEntity.java
+END
+UseCasePursues.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UseCasePursues.java
+END
+AUMLAlternativeRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLAlternativeRow.java
+END
+ODecomposesGrouptargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ODecomposesGrouptargetRole.java
+END
+GTSatisfiessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTSatisfiessourceRole.java
+END
+TestingPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/TestingPackage.java
+END
+ShareTouple.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ShareTouple.java
+END
+EPerceivessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EPerceivessourceRole.java
+END
+GroupBelongsToOrganizationORole.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GroupBelongsToOrganizationORole.java
+END
+WFConnectstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFConnectstargetRole.java
+END
+DecisionNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DecisionNode.java
+END
+AHasMSProcessortargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSProcessortargetRole.java
+END
+ConditionalMentalState.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ConditionalMentalState.java
+END
+WFUsestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFUsestargetRole.java
+END
+MentalInstanceSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MentalInstanceSpecification.java
+END
+WFStartstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFStartstargetRole.java
+END
+AHasMSManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSManager.java
+END
+GTDepends.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDepends.java
+END
+DefinesDeployment.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/DefinesDeployment.java
+END
+ARoleInheritancesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ARoleInheritancesourceRole.java
+END
+SlotValueSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/SlotValueSpecification.java
+END
+WFFollows.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFFollows.java
+END
+OHasMembersourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasMembersourceRole.java
+END
+UIInitiates.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIInitiates.java
+END
+ActionUML.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ActionUML.java
+END
+DeploymentUnitByTypeWithInitMS.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/70/trunk/IDK/editor/src/ingenias/editor/entities/DeploymentUnitByTypeWithInitMS.java
+END
+UMLDescribesUseCasesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLDescribesUseCasesourceRole.java
+END
+WFDecomposesWFsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecomposesWFsourceRole.java
+END
+InitialNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/InitialNode.java
+END
+IHasSpec.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IHasSpec.java
+END
+UMLRealizessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLRealizessourceRole.java
+END
+AUMLSelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSelection.java
+END
+IAccessessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IAccessessourceRole.java
+END
+DefinesDeploymenttargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/DefinesDeploymenttargetRole.java
+END
+IncludessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IncludessourceRole.java
+END
+WFConnects.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFConnects.java
+END
+CDUsesCodetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/CDUsesCodetargetRole.java
+END
+EndNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/EndNode.java
+END
+EnvironmentModelDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/EnvironmentModelDataEntity.java
+END
+ExtendssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ExtendssourceRole.java
+END
+RuntimeConversation.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/75/trunk/IDK/editor/src/ingenias/editor/entities/RuntimeConversation.java
+END
+WFFollowsGuarded.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFFollowsGuarded.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Test.java
+END
+GTDependssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDependssourceRole.java
+END
+ContributesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ContributesourceRole.java
+END
+StateGoal.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/StateGoal.java
+END
+WorkflowBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/WorkflowBox.java
+END
+AContainsMEtargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AContainsMEtargetRole.java
+END
+GTFailssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTFailssourceRole.java
+END
+GTDecomposessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDecomposessourceRole.java
+END
+DeployDiagramModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DeployDiagramModelEntity.java
+END
+IColaboratestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IColaboratestargetRole.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Role.java
+END
+WFResponsabletargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFResponsabletargetRole.java
+END
+GTAffects.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTAffects.java
+END
+ActivityFinal.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ActivityFinal.java
+END
+ContributeNegatively.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ContributeNegatively.java
+END
+ForkNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ForkNode.java
+END
+ObjectSlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ObjectSlot.java
+END
+WFResponsibletargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFResponsibletargetRole.java
+END
+OrganizationModelDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/OrganizationModelDataEntity.java
+END
+Compromise.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Compromise.java
+END
+InteractionModelModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/InteractionModelModelEntity.java
+END
+INGENIASComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/INGENIASComponent.java
+END
+CDUsesCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/CDUsesCode.java
+END
+Slot.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Slot.java
+END
+IPursuessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IPursuessourceRole.java
+END
+InformationMentalEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/InformationMentalEntity.java
+END
+WFPursuesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFPursuesourceRole.java
+END
+INGENIASObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/INGENIASObject.java
+END
+WFParticipates.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFParticipates.java
+END
+AUMLUseProtocoltargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLUseProtocoltargetRole.java
+END
+DecisionNodetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DecisionNodetargetRole.java
+END
+GoalStateWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/GoalStateWS.java
+END
+WFDecides.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecides.java
+END
+GTAffectstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTAffectstargetRole.java
+END
+ActivityDiagramModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ActivityDiagramModelEntity.java
+END
+UMLSendsMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLSendsMessage.java
+END
+GTDestroystargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDestroystargetRole.java
+END
+AGORelationshipOrg.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationshipOrg.java
+END
+AContainsME.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AContainsME.java
+END
+IInitiates.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IInitiates.java
+END
+AGORelationship3targetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationship3targetRole.java
+END
+JoinNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/JoinNode.java
+END
+ApplicationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/entities/ApplicationEvent.java
+END
+UMLAnnotatedElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLAnnotatedElement.java
+END
+ODecomposesWFtargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ODecomposesWFtargetRole.java
+END
+AgentWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentWS.java
+END
+DeployDiagramDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DeployDiagramDataEntity.java
+END
+GTCreatestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTCreatestargetRole.java
+END
+WFProducestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFProducestargetRole.java
+END
+AHasMSProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSProcessor.java
+END
+Entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ingenias/!svn/ver/99/trunk/IDK/editor/src/ingenias/editor/entities/Entity.java
+END
+WFUses.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFUses.java
+END
+UMLActivityDiagramModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLActivityDiagramModelEntity.java
+END
+AOPMentalStatePattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AOPMentalStatePattern.java
+END
+Method.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Method.java
+END
+Specification.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Specification.java
+END
+WFPursue.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFPursue.java
+END
+ParticipatesInUseCasetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ParticipatesInUseCasetargetRole.java
+END
+MentalState.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MentalState.java
+END
+ConcreteAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ConcreteAgent.java
+END
+AInstanceOftargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AInstanceOftargetRole.java
+END
+WFFollowssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFFollowssourceRole.java
+END
+FrameFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/FrameFact.java
+END
+AgentRequirementsQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentRequirementsQuery.java
+END
+WFParticipatessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFParticipatessourceRole.java
+END
+OHasWFsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasWFsourceRole.java
+END
+NAryEdgeEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/NAryEdgeEntity.java
+END
+WFDecomposesWF.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecomposesWF.java
+END
+ViewPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ViewPreferences.java
+END
+WFConsumessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFConsumessourceRole.java
+END
+TextUseCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/TextUseCase.java
+END
+OHasGrouptargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasGrouptargetRole.java
+END
+WFDecidessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecidessourceRole.java
+END
+WFDecomposessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecomposessourceRole.java
+END
+AGORelationship2targetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationship2targetRole.java
+END
+EnvironmentModelModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/EnvironmentModelModelEntity.java
+END
+FileSpecPatternMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/FileSpecPatternMapping.java
+END
+AHasMStargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMStargetRole.java
+END
+ComponentDiagramModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ComponentDiagramModelEntity.java
+END
+WFCancels.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFCancels.java
+END
+AUMLAlternativeBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLAlternativeBox.java
+END
+ActivityDiagramDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ActivityDiagramDataEntity.java
+END
+RoleWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/RoleWS.java
+END
+Fact.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Fact.java
+END
+Interaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Interaction.java
+END
+GeneralEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/entities/GeneralEvent.java
+END
+GTCreates.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTCreates.java
+END
+WFProduces.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFProduces.java
+END
+UseCasePursuessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UseCasePursuessourceRole.java
+END
+ApplicationBelongsTosourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ApplicationBelongsTosourceRole.java
+END
+InteractionModelDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/InteractionModelDataEntity.java
+END
+WFEndssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFEndssourceRole.java
+END
+UMLAssociation.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLAssociation.java
+END
+AgentModelModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentModelModelEntity.java
+END
+GroupBelongsToOrganization.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GroupBelongsToOrganization.java
+END
+AUMLSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSpecification.java
+END
+WFContainsTasksourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFContainsTasksourceRole.java
+END
+AGORelationship1targetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationship1targetRole.java
+END
+UMLClassifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLClassifier.java
+END
+OrganizationModelModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/OrganizationModelModelEntity.java
+END
+AGOSubordinationRelationshipGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOSubordinationRelationshipGroup.java
+END
+AHasMSManagersourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSManagersourceRole.java
+END
+OrganizationNetwork.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/OrganizationNetwork.java
+END
+GTSatisfiestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTSatisfiestargetRole.java
+END
+ControlMentalEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ControlMentalEntity.java
+END
+InteractionUnit.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/InteractionUnit.java
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Parameter.java
+END
+ApplicationBelongsTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ApplicationBelongsTo.java
+END
+SymbolicMentalStatePattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/SymbolicMentalStatePattern.java
+END
+EPerceivestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EPerceivestargetRole.java
+END
+PROLOGAgentDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/PROLOGAgentDescription.java
+END
+AGOCondSubordinationRelationshipMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOCondSubordinationRelationshipMember.java
+END
+WFPlays.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFPlays.java
+END
+WSConnectssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WSConnectssourceRole.java
+END
+GTModifies.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTModifies.java
+END
+UIInitiatessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIInitiatessourceRole.java
+END
+Consumes.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/Consumes.java
+END
+RoleEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/RoleEntity.java
+END
+UIColaboratessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIColaboratessourceRole.java
+END
+HasCommentsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/HasCommentsourceRole.java
+END
+AUMLContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLContainer.java
+END
+IHasSpecsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IHasSpecsourceRole.java
+END
+IInitiatessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IInitiatessourceRole.java
+END
+ARoleInheritancetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ARoleInheritancetargetRole.java
+END
+Includes.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/Includes.java
+END
+OHasMembertargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasMembertargetRole.java
+END
+AgentModelBelieve.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentModelBelieve.java
+END
+EResourceBelongsTosourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EResourceBelongsTosourceRole.java
+END
+Contribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/Contribute.java
+END
+OrganizationGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/OrganizationGroup.java
+END
+MethodParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MethodParameter.java
+END
+AUMLSendSimple.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSendSimple.java
+END
+UMLDescribesUseCasetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLDescribesUseCasetargetRole.java
+END
+WFDecomposesWFtargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecomposesWFtargetRole.java
+END
+UMLRealizestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLRealizestargetRole.java
+END
+UISelectionsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UISelectionsourceRole.java
+END
+UMLActivityDiagramDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLActivityDiagramDataEntity.java
+END
+StackEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/StackEntry.java
+END
+WFPlayssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFPlayssourceRole.java
+END
+IAccessestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IAccessestargetRole.java
+END
+AutonomousEntityQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AutonomousEntityQuery.java
+END
+DeploymentPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DeploymentPackage.java
+END
+TasksAndGoalsModelModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/TasksAndGoalsModelModelEntity.java
+END
+Agent.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Agent.java
+END
+IncludestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IncludestargetRole.java
+END
+EPerceivesNotification.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EPerceivesNotification.java
+END
+ExtendstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ExtendstargetRole.java
+END
+Application.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Application.java
+END
+Organization.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Organization.java
+END
+GTDependstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDependstargetRole.java
+END
+GRASIAMentalStatePattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/GRASIAMentalStatePattern.java
+END
+AGOClientServerRelationshipMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOClientServerRelationshipMember.java
+END
+IColaborates.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IColaborates.java
+END
+ContributetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ContributetargetRole.java
+END
+Generalizes.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/Generalizes.java
+END
+Workflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Workflow.java
+END
+AHasMS.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMS.java
+END
+GTOrDepends.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTOrDepends.java
+END
+GTDecomposesAND.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDecomposesAND.java
+END
+UMLComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLComment.java
+END
+UMLComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLComponent.java
+END
+AgentComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentComponent.java
+END
+RuntimeFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/RuntimeFact.java
+END
+GTFailstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTFailstargetRole.java
+END
+DecisionNodeInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DecisionNodeInput.java
+END
+UMLObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLObject.java
+END
+GTDecomposestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDecomposestargetRole.java
+END
+Plan.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Plan.java
+END
+IUIterate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/IUIterate.java
+END
+UIPrecedessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIPrecedessourceRole.java
+END
+UseCaseDiagramModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UseCaseDiagramModelEntity.java
+END
+UMLAssociationsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLAssociationsourceRole.java
+END
+WFSpecifiesExecutionsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFSpecifiesExecutionsourceRole.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Task.java
+END
+UMLSendsMessagesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLSendsMessagesourceRole.java
+END
+IUConcurrence.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/IUConcurrence.java
+END
+GTPursuessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTPursuessourceRole.java
+END
+AgentModelDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentModelDataEntity.java
+END
+GTDestroys.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDestroys.java
+END
+AUMLSelectionsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSelectionsourceRole.java
+END
+IPursuestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IPursuestargetRole.java
+END
+WFPursuetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFPursuetargetRole.java
+END
+DeploymentUnitByTypeMSEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/entities/DeploymentUnitByTypeMSEntity.java
+END
+EPerceivesPolling.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EPerceivesPolling.java
+END
+AGOSubordinationRelationshipMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOSubordinationRelationshipMember.java
+END
+GTInheritssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTInheritssourceRole.java
+END
+UMLClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLClass.java
+END
+DeploymentUnitByTypeEnumInitMS.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/70/trunk/IDK/editor/src/ingenias/editor/entities/DeploymentUnitByTypeEnumInitMS.java
+END
+EnvironmentApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/EnvironmentApplication.java
+END
+UIPrecedes.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIPrecedes.java
+END
+GTFails.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTFails.java
+END
+AInheritssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AInheritssourceRole.java
+END
+AGOInconditionalSubordinationRelationshipMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOInconditionalSubordinationRelationshipMember.java
+END
+ODecomposesGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ODecomposesGroup.java
+END
+WFDecomposes.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecomposes.java
+END
+Protocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Protocol.java
+END
+Autonomous_entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Autonomous_entity.java
+END
+ContributePositively.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ContributePositively.java
+END
+OHasGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasGroup.java
+END
+WFResponsable.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFResponsable.java
+END
+WFFollowstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFFollowstargetRole.java
+END
+ARoleInheritance.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ARoleInheritance.java
+END
+MentalEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MentalEntity.java
+END
+WFStarts.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFStarts.java
+END
+WFUsesMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFUsesMethod.java
+END
+WFParticipatestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFParticipatestargetRole.java
+END
+OHasWFtargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasWFtargetRole.java
+END
+GTInherits.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTInherits.java
+END
+WFConsumestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFConsumestargetRole.java
+END
+WFResponsible.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFResponsible.java
+END
+UISelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UISelection.java
+END
+AUMLSendSimplesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSendSimplesourceRole.java
+END
+WFDecidestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecidestargetRole.java
+END
+WFEnds.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFEnds.java
+END
+WFDecomposestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFDecomposestargetRole.java
+END
+GRASIAAgentDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/GRASIAAgentDescription.java
+END
+UMLRealizes.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLRealizes.java
+END
+WFContainsTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFContainsTask.java
+END
+ODecomposesGroupsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ODecomposesGroupsourceRole.java
+END
+AGORelationshipGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationshipGroup.java
+END
+TasksAndGoalsModelDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/TasksAndGoalsModelDataEntity.java
+END
+CommunicationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/entities/CommunicationEvent.java
+END
+UseCasePursuestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UseCasePursuestargetRole.java
+END
+ApplicationBelongsTotargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ApplicationBelongsTotargetRole.java
+END
+TextNote.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/TextNote.java
+END
+UIExecutestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIExecutestargetRole.java
+END
+WFConnectssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFConnectssourceRole.java
+END
+AHasMSProcessorsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSProcessorsourceRole.java
+END
+WFEndstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFEndstargetRole.java
+END
+WFUsessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFUsessourceRole.java
+END
+WFStartssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFStartssourceRole.java
+END
+AUMLComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLComponent.java
+END
+AGOInconditionalSubordinationRelationshipGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOInconditionalSubordinationRelationshipGroup.java
+END
+Goal.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Goal.java
+END
+RuntimeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/RuntimeEvent.java
+END
+WSConnects.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WSConnects.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Resource.java
+END
+WFContainsTasktargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFContainsTasktargetRole.java
+END
+WFConsumes.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFConsumes.java
+END
+AInstanceOf.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AInstanceOf.java
+END
+WFSpecifiesExecution.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFSpecifiesExecution.java
+END
+GTDecomposes.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDecomposes.java
+END
+Column.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Column.java
+END
+WFCancelstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFCancelstargetRole.java
+END
+AHasMSManagertargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSManagertargetRole.java
+END
+FileSpecMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/FileSpecMapping.java
+END
+INGENIASCodeComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/INGENIASCodeComponent.java
+END
+AGOInconditionalSubordinationRelationshipOrg.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOInconditionalSubordinationRelationshipOrg.java
+END
+MentalStatePattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MentalStatePattern.java
+END
+WSConnectstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WSConnectstargetRole.java
+END
+UIInitiatestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIInitiatestargetRole.java
+END
+DefinesDeploymentsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/DefinesDeploymentsourceRole.java
+END
+CDUsesCodesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/CDUsesCodesourceRole.java
+END
+UIColaboratestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIColaboratestargetRole.java
+END
+AGOClientServerRelationshipOrg.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOClientServerRelationshipOrg.java
+END
+ModelDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ModelDataEntity.java
+END
+HasCommenttargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/HasCommenttargetRole.java
+END
+IHasSpectargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IHasSpectargetRole.java
+END
+IInitiatestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IInitiatestargetRole.java
+END
+NaturalLanguageAgentDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/NaturalLanguageAgentDescription.java
+END
+ModelEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ModelEntity.java
+END
+AUMLUseProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLUseProtocol.java
+END
+AGOSubordinationRelationshipOrg.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOSubordinationRelationshipOrg.java
+END
+AgentDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AgentDescription.java
+END
+EResourceBelongsTotargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EResourceBelongsTotargetRole.java
+END
+AUMLPort.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLPort.java
+END
+AContainsMEsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AContainsMEsourceRole.java
+END
+GRASIASpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/GRASIASpecification.java
+END
+MessagePassing.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MessagePassing.java
+END
+IColaboratessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IColaboratessourceRole.java
+END
+TaskWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/TaskWS.java
+END
+UISelectiontargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UISelectiontargetRole.java
+END
+ODecomposesWF.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ODecomposesWF.java
+END
+WFResponsablesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFResponsablesourceRole.java
+END
+WFPlaystargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFPlaystargetRole.java
+END
+AGORelationshipMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationshipMember.java
+END
+MentalStateProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/MentalStateProcessor.java
+END
+WFResponsiblesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFResponsiblesourceRole.java
+END
+Lifeline.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Lifeline.java
+END
+UseCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UseCase.java
+END
+ApplicationEventSlots.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ApplicationEventSlots.java
+END
+EPerceives.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EPerceives.java
+END
+AUMLUseProtocolsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLUseProtocolsourceRole.java
+END
+GroupBelongsToOrganizationTRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GroupBelongsToOrganizationTRole.java
+END
+UseCaseDiagramDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UseCaseDiagramDataEntity.java
+END
+AGOCondSubordinationRelationshipOrg.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOCondSubordinationRelationshipOrg.java
+END
+DecisionNodesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/DecisionNodesourceRole.java
+END
+GTAffectssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTAffectssourceRole.java
+END
+EResourceBelongsTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/EResourceBelongsTo.java
+END
+GTDestroyssourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDestroyssourceRole.java
+END
+Believe.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/Believe.java
+END
+ApplicationWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/ApplicationWS.java
+END
+AGORelationship3sourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationship3sourceRole.java
+END
+IPursues.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IPursues.java
+END
+ODecomposesWFsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ODecomposesWFsourceRole.java
+END
+UIPrecedestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIPrecedestargetRole.java
+END
+OHasMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasMember.java
+END
+UMLAssociationtargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLAssociationtargetRole.java
+END
+GTCreatessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTCreatessourceRole.java
+END
+WFProducessourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFProducessourceRole.java
+END
+WFSpecifiesExecutiontargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/WFSpecifiesExecutiontargetRole.java
+END
+AInherits.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AInherits.java
+END
+UMLSendsMessagetargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLSendsMessagetargetRole.java
+END
+GTPursuestargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTPursuestargetRole.java
+END
+UMLDescribesUseCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UMLDescribesUseCase.java
+END
+ParticipatesInUseCasesourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ParticipatesInUseCasesourceRole.java
+END
+GTDecomposesOR.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTDecomposesOR.java
+END
+AUMLSelectiontargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AUMLSelectiontargetRole.java
+END
+AInstanceOfsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AInstanceOfsourceRole.java
+END
+UMLSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/UMLSpecification.java
+END
+RemoteProcedureCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/RemoteProcedureCall.java
+END
+GTAndDepends.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTAndDepends.java
+END
+IAccesses.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/IAccesses.java
+END
+GTFailsHelperTasktargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTFailsHelperTasktargetRole.java
+END
+INGENIASUseCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/INGENIASUseCase.java
+END
+GTInheritstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTInheritstargetRole.java
+END
+OHasGroupsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasGroupsourceRole.java
+END
+AUMLInteractionDiagramDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/entities/AUMLInteractionDiagramDataEntity.java
+END
+AGOCondSubordinationRelationshipGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOCondSubordinationRelationshipGroup.java
+END
+Conversation.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/75/trunk/IDK/editor/src/ingenias/editor/entities/Conversation.java
+END
+Extends.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/Extends.java
+END
+AGORelationship2sourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGORelationship2sourceRole.java
+END
+DeploymentUnitByType.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/70/trunk/IDK/editor/src/ingenias/editor/entities/DeploymentUnitByType.java
+END
+AInheritstargetRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AInheritstargetRole.java
+END
+AHasMSsourceRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AHasMSsourceRole.java
+END
+GTSatisfies.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/GTSatisfies.java
+END
+OHasWF.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/OHasWF.java
+END
+ParticipatesInUseCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/ParticipatesInUseCase.java
+END
+AGOClientServerRelationshipGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/AGOClientServerRelationshipGroup.java
+END
+UIColaborates.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/181/trunk/IDK/editor/src/ingenias/editor/entities/UIColaborates.java
+END

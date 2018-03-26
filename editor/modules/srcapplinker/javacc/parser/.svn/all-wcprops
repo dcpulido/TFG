@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser
+END
+Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/Token.java
+END
+TokenMgrError.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/TokenMgrError.java
+END
+SimpleCharStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/SimpleCharStream.java
+END
+java_1_5.jj
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/java_1_5.jj
+END
+ParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ParseException.java
+END
+JavaParserTokenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/JavaParserTokenManager.java
+END
+JavaParserConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/JavaParserConstants.java
+END
+JavaParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/JavaParser.java
+END

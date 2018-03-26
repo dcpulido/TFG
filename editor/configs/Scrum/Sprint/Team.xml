@@ -1,0 +1,314 @@
+<filter>
+	<name>INGENIAS Scrum</name>
+	<author>Juan Carlos Gonzalez Moreno</author>
+	<date>20/10/2011</date>
+	<diagrams>
+		<diagrams>
+			
+			<diagram name="OrganizationModel">
+				
+				<entity>Agent</entity>
+				
+				<entity>Role</entity>
+				
+				<entity>Resource</entity>
+				
+				<entity>EnvironmentApplication</entity>
+				
+				<entity>InternalApplication</entity>
+				
+				<entity>Task</entity>
+				
+				<entity>Interaction</entity>
+				
+				<entity>INGENIASUseCase</entity>
+                
+				<entity>Goal</entity>
+				
+				<entity>FrameFact</entity>
+				
+				<entity>ApplicationEventSlots</entity>
+				
+				<entity>TextNote</entity>
+				
+				<entity>UMLComment</entity>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+          		<relationship>EResourceBelongsTo</relationship>
+				
+          		<relationship>GTPursues</relationship>
+				
+          		<relationship>WFConnects</relationship>
+				
+          		<relationship>WFUses</relationship>
+				
+          		<relationship>WFContainsTask</relationship>
+				
+          		<relationship>WFConsumes</relationship>
+				
+          		<relationship>Consumes</relationship>
+				
+          		<relationship>WFDecomposes</relationship>
+				
+          		<relationship>WFProduces</relationship>
+				
+          		<relationship>WFSpecifiesExecution</relationship>
+				
+          		<relationship>WFResponsable</relationship>
+				
+          		<relationship>WFParticipates</relationship>
+				
+          		<relationship>WFPlays</relationship>
+				
+          		<relationship>WFDecomposesWF</relationship>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+			</diagram>
+			
+			<diagram name="AgentModel">
+				
+				<entity>Agent</entity>
+				
+				<entity>Role</entity>
+				
+				<entity>Goal</entity>
+				
+				<entity>Fact</entity>
+				
+				<entity>Task</entity>
+				
+				<entity>FrameFact</entity>
+				
+				<entity>ApplicationEventSlots</entity>
+				
+				<entity>MentalState</entity>
+				
+				<entity>ConditionalMentalState</entity>
+				
+				<entity>Conversation</entity>
+				
+				<entity>UMLComment</entity>
+				
+				<entity>TextNote</entity>
+				
+				<entity>EnvironmentApplication</entity>
+				
+				<entity>InternalApplication</entity>
+				
+				<entity>MentalInstanceSpecification</entity>
+				
+				
+          		<relationship>GTPursues</relationship>
+				
+          		<relationship>AInherits</relationship>
+				
+          		<relationship>AHasMS</relationship>
+				
+          		<relationship>AHasMSManager</relationship>
+				
+          		<relationship>AHasMSProcessor</relationship>
+				
+          		<relationship>WFResponsable</relationship>
+				
+          		<relationship>AInstanceOf</relationship>
+				
+          		<relationship>AContainsME</relationship>
+				
+          		<relationship>WFPlays</relationship>
+				
+          		<relationship>ARoleInheritance</relationship>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+          		<relationship>WFUses</relationship>
+				
+          		<relationship>EResourceBelongsTo</relationship>
+				
+          		<relationship>ApplicationBelongsTo</relationship>
+				
+			</diagram>
+			
+			<diagram name="EnvironmentModel">
+				
+				<entity>Agent</entity>
+				
+				<entity>InternalApplication</entity>
+				
+				<entity>EnvironmentApplication</entity>
+				
+				<entity>TextNote</entity>
+				
+				<entity>UMLComment</entity>
+				
+          		<relationship>EPerceivesNotification</relationship>
+				
+          		<relationship>EResourceBelongsTo</relationship>
+				
+          		<relationship>ApplicationBelongsTo</relationship>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+			</diagram>
+			
+			<diagram name="TasksAndGoalsModel">
+				
+				<entity>Agent</entity>
+				
+				<entity>ApplicationEventSlots</entity>
+				
+				<entity>Role</entity>
+				
+				<entity>Goal</entity>
+				
+				<entity>Task</entity>
+				
+				<entity>FrameFact</entity>
+				
+				<entity>EnvironmentApplication</entity>
+				
+				<entity>InternalApplication</entity>
+				
+				<entity>TextNote</entity>
+				
+				<entity>Conversation</entity>
+				
+				<entity>UMLComment</entity>
+				
+				<entity>Interaction</entity>
+				
+          		<relationship>GTPursues</relationship>
+				
+          		<relationship>GTCreates</relationship>          		
+				
+          		<relationship>GTDestroys</relationship>
+				
+          		<relationship>GTModifies</relationship>
+				
+          		<relationship>GTFails</relationship>
+				
+          		<relationship>GTSatisfies</relationship>
+				
+          		<relationship>WFResponsable</relationship>
+				
+          		<relationship>WFConsumes</relationship>
+				
+          		<relationship>Consumes</relationship>
+				
+          		<relationship>WFUses</relationship>
+				
+          		<relationship>WFUsesMethod</relationship>
+				
+          		<relationship>WFProduces</relationship>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+          		<relationship>WFParticipates</relationship>
+				
+          		<relationship>WFCancels</relationship>
+				
+          		<relationship>IAccesses</relationship>
+				
+			</diagram>
+			
+			<diagram name="InteractionModel">
+				
+				<entity>Agent</entity>
+				
+				<entity>Role</entity>
+				
+				<entity>Task</entity>
+				
+				<entity>Goal</entity>
+				
+				<entity>Interaction</entity>
+				
+				<entity>InteractionUnit</entity>
+				
+				<entity>GRASIASpecification</entity>
+				
+				<entity>TextNote</entity>
+				
+				<entity>UMLComment</entity>
+				
+          		<relationship>IInitiates</relationship>
+				
+          		<relationship>IColaborates</relationship>
+				
+          		<relationship>UIInitiates</relationship>
+				
+          		<relationship>UIColaborates</relationship>
+				
+          		<relationship>UISelection</relationship>
+				
+          		<relationship>IPursues</relationship>
+				
+          		<relationship>GTPursues</relationship>
+				
+          		<relationship>IHasSpec</relationship>
+				
+          		<relationship>UIPrecedes</relationship>
+				
+          		<relationship>UMLSendsMessage</relationship>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+          		<relationship>IAccesses</relationship>
+				
+			</diagram>
+			
+			<diagram name="ComponentDiagram">
+				
+				<entity>INGENIASComponent</entity>
+				
+				<entity>INGENIASCodeComponent</entity>
+				
+				<entity>EnvironmentApplication</entity>
+				
+				<entity>InternalApplication</entity>
+				
+				<entity>Task</entity>
+				
+				<entity>Test</entity>
+				
+				<entity>UMLComment</entity>
+				
+          		<relationship>CDUsesCode</relationship>
+				
+          		<relationship>UMLRealizes</relationship>
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+			</diagram>
+			
+			<diagram name="DeployDiagram">
+				
+				<entity>TestingPackage</entity>
+				
+				<entity>DeploymentPackage</entity>
+				
+				<entity>INGENIASComponent</entity>
+				
+				<entity>EnvironmentApplication</entity>
+				
+				<entity>InternalApplication</entity>
+				
+				<entity>UMLComment</entity>
+				
+				<entity>DeploymentUnitByType</entity>
+				
+				<entity>DeploymentUnitByTypeEnumInitMS</entity>
+				
+				<entity>DeploymentUnitByTypeMSEntity</entity>
+				
+				
+          		<relationship>UMLAnnotatedElement</relationship>
+				
+          		<relationship>DefinesDeployment</relationship>
+				
+			</diagram>
+			
+		</diagrams>
+	</diagrams>
+</filter>

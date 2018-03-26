@@ -1,0 +1,31 @@
+
+
+							##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+							##vbox Background="white" constraints="BorderLayout.CENTER" #
+							##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+							##stereotype text="instance" HorizontalAlignment="CENTER" /#
+							##/panel #
+							##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+							##label id="Id"/#
+							##/panel#
+							##linepanel Background="white"/#
+							##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+							##iconlabel icon="images/attribute.gif" /#
+							##label text="Entity:"/# 
+							##label text=":"/#
+							##label name="InstanceType"/# 
+							##/panel#
+							##collectionpanel Background="white" id="SlotsValues" #
+							##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+							##iconlabel icon="images/attribute.gif" /#
+							##label text="Name:"/# 
+							##label name="SlotsValues_Slot"/# 
+							##label text="="/# 
+							##label name="SlotsValues_Value"/# 
+							##/panel#
+							##/collectionpanel#
+							##linepanel Background="white" /#
+							##/vbox#
+							##/panel#	
+						
+		

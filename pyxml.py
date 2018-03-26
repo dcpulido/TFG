@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # Ejemplo de uso
 # python pyxml.py -i default2.xml -a david -o filename.xml
 import xml.sax
@@ -26,6 +27,7 @@ from app.parser import Parser
 from app.mongohandler import mongoHandler
 from app.reparser import reParser
 from app.showDetails import showDetails
+from app.compiler import Compiler
 
 # ////////////////////////////////////////////////////////////////////////////////////////////////
 # APP
@@ -250,7 +252,7 @@ def ConfigSectionMap(section, Config):
     return dict1
 
 
-def get_general_conf():
+def get_conf(conf):
     """
     recupera seccion General de conf
     :return: diccionario
@@ -259,35 +261,7 @@ def get_general_conf():
     Config.read("./conf/config.conf")
     myprior = {}
     for sec in Config.sections():
-        if sec == "General":
-            myprior = ConfigSectionMap(sec, Config)
-    return myprior
-
-
-def get_flask_conf():
-    """
-    recupera seccion Flask de conf
-    :return: diccionario
-    """
-    Config = ConfigParser.ConfigParser()
-    Config.read("./conf/config.conf")
-    myprior = {}
-    for sec in Config.sections():
-        if sec == "Flask":
-            myprior = ConfigSectionMap(sec, Config)
-    return myprior
-
-
-def get_dbus_conf():
-    """
-    recupera seccion Dbus de conf
-    :return: diccionario
-    """
-    Config = ConfigParser.ConfigParser()
-    Config.read("./conf/config.conf")
-    myprior = {}
-    for sec in Config.sections():
-        if sec == "Dbus":
+        if sec == conf:
             myprior = ConfigSectionMap(sec, Config)
     return myprior
 
@@ -324,18 +298,22 @@ def init_the_parse(input, output, autor):
     finalize_parse(dig, output, autor)
 
 
-def init_code_generation(obj):
+def init_code_generation(conf,
+                         obj,
+                         name):
     """
     inicia la generacion de codigo
     :param xmls:
     :return:
     """
     logging.info("Generating sources")
-    ccdg = Code_generator()
-    ccdg.generate(obj)
+    ccdg = Code_generator(conf)
+    ccdg.generate(obj, name)
 
 
-def finalize_parse(dig, output, autor):
+def finalize_parse(dig,
+                   output,
+                   autor):
     par = Parser(dig, output)
     par.setAuthorDate(autor)
     par.toXML()
@@ -367,9 +345,13 @@ if (__name__ == "__main__"):
     reparser = reParser()
     hmiDetails = showDetails()
     logging.info("get conf from conf/config.conf")
-    generalconf = get_general_conf()
-    dbusconf = get_dbus_conf()
-    flaskconf = get_flask_conf()
+    generalconf = get_conf("General")
+    dbusconf = get_conf("Dbus")
+    flaskconf = get_conf("Flask")
+    generatorconf = get_conf("Generator")
+    compilerconf = get_conf("Compiler")
+
+    cmp = Compiler(generatorconf, compilerconf)
 
     logging.info("parsing args")
     dbusMode = False
@@ -495,7 +477,8 @@ if (__name__ == "__main__"):
                 print "         3_Indicar Entrada"
                 print "         4_Indicar Salida"
                 print "         d_Iniciar Parseado"
-                print "         l_Lanzar Parseado"
+                print "         l_Generar código"
+                print "         c_Compilar código"
                 print "         x_Borrar DB"
                 print "         q_Salir"
                 print " "
@@ -539,7 +522,14 @@ if (__name__ == "__main__"):
                             "d(generar)/q(retroceder)??:")
                         os.system("clear")
                         if op2 == "d":
-                            init_code_generation(dig['bin-data'])
+                            name = dig["autor"] + \
+                                "_" + \
+                                dig["output"].split("/")[1].split(".")[0]
+                            init_code_generation(generatorconf,
+                                                 dig['bin-data'],
+                                                 name)
+                if op == "c":
+                    os.system("clear")
 
                 if op == "x":
                     os.system("clear")

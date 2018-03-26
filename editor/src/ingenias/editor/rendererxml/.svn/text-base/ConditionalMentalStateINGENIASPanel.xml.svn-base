@@ -1,0 +1,17 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel #
+##/panel#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel layout="FlowLayout(FlowLayout.CENTER,0,0)" Background="white"  #
+##label Foreground="blue" icon="images/cmstate.gif" HorizontalAlignment="CENTER" /#
+##/panel# 
+##mytextpane id="Condition" Columns="20" HorizontalAlignment="CENTER" /#
+##/vbox#
+##/panel#
+					
+		

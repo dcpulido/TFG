@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project cid="568" version="1.1">
+<projectproperties>
+<projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
+<projectproperty id="jadeout" module="Ingenias Agent Framework generator"  name="JADE output folder" value="outputjade"  tooltip="The folder that will hold generated JADE agents" />
+<projectproperty id="jadeperm" module="Ingenias Agent Framework generator"  name="JADE output folder for non overwritable files" value="outputperm"  tooltip="The folder that will hold generated elements that should not be regenerated" />
+<projectproperty id="producecode" module="Ingenias Agent Framework generator"  name="Triggers the use of code components" value="yes"  tooltip="Write &quot;yes&quot; if you want to use code componentes, and &quot;no&quot; in any other case" />
+<projectproperty id="htmldoc" module="HTML Document generator"  name="HTML document folder" value="html1"  tooltip="The document folder that will contain HTML version of this specification" />
+<projectproperty id="jadeout" module="JADE agents generator"  name="JADE output folder" value="outputjade"  tooltip="The folder that will hold generated JADE agents" />
+ <openeddiagram>entorno localizacion</openeddiagram> <openeddiagram>descripción del agente</openeddiagram> <openeddiagram>tarea usando la aplicación</openeddiagram> <openeddiagram>reaccionando ante cambios</openeddiagram></projectproperties>
+<leafpackages>
+   <path>
+    <package id="Project"/>
+   </path>
+</leafpackages>
+<objects>
+<object id="Estado mental inicial" type="ingenias.editor.entities.MentalState">
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="550" type="ingenias.editor.entities.ObjectSlot">
+<mapproperties>
+<key id="Name">etiquetas</key>
+<key id="Type"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="545" type="ingenias.editor.entities.Method">
+<objectproperty id="Parameter" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Name">dameLocalizacion</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Result">String</key>
+</mapproperties>
+</object>
+<object id="Mapa" type="ingenias.editor.entities.FrameFact">
+<objectproperty id="Slots" collection="true">
+<object id="550" type="ingenias.editor.entities.ObjectSlot">
+<mapproperties>
+<key id="Name">etiquetas</key>
+<key id="Type"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Un ejemplo de resultado" type="ingenias.editor.entities.FrameFact">
+<objectproperty id="Slots" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Un ejemplo de entrada" type="ingenias.editor.entities.FrameFact">
+<objectproperty id="Slots" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="CambioLocalizacion" type="ingenias.editor.entities.ApplicationEventSlots">
+<objectproperty id="Source">
+<object id="Servicio Localizacion" type="ingenias.editor.entities.EnvironmentApplication">
+<objectproperty id="Methods" collection="true">
+<object id="545" type="ingenias.editor.entities.Method">
+<objectproperty id="Parameter" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Name">dameLocalizacion</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Result">String</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="Slots" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Mi Objetivo" type="ingenias.editor.entities.Goal">
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Adaptarse al entorno fisico" type="ingenias.editor.entities.Goal">
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Servicio Localizacion" type="ingenias.editor.entities.EnvironmentApplication">
+<objectproperty id="Methods" collection="true">
+<object id="545" type="ingenias.editor.entities.Method">
+<objectproperty id="Parameter" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Name">dameLocalizacion</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Result">String</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Mi Tarea" type="ingenias.editor.entities.Task">
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Reaccion ante cambio de localizacion" type="ingenias.editor.entities.Task">
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+<object id="Agente Software" type="ingenias.editor.entities.Agent">
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+</objects>
+<relationships>
+<relationship id="542" type="ingenias.editor.entities.ApplicationBelongsTo">
+<object id="542" type="ingenias.editor.entities.ApplicationBelongsTo">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Agente Software" class="ingenias.editor.entities.Agent" roleName="ApplicationBelongsTosource" type="ingenias.editor.entities.ApplicationBelongsTosourceRole" dgcid="31060520">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Servicio Localizacion" class="ingenias.editor.entities.EnvironmentApplication" roleName="ApplicationBelongsTotarget" type="ingenias.editor.entities.ApplicationBelongsTotargetRole" dgcid="2100104">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="543" type="ingenias.editor.entities.EPerceivesNotification">
+<object id="543" type="ingenias.editor.entities.EPerceivesNotification">
+<objectproperty id="Event">
+<object id="CambioLocalizacion" type="ingenias.editor.entities.ApplicationEventSlots">
+<objectproperty id="Source">
+<object id="Servicio Localizacion" type="ingenias.editor.entities.EnvironmentApplication">
+<objectproperty id="Methods" collection="true">
+<object id="545" type="ingenias.editor.entities.Method">
+<objectproperty id="Parameter" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Name">dameLocalizacion</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Result">String</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="Slots" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">UML</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="ApplicationMethod">
+<object id="545" type="ingenias.editor.entities.Method">
+<objectproperty id="Parameter" collection="true">
+</objectproperty>
+<mapproperties>
+<key id="Name">dameLocalizacion</key>
+<key id="_view_type">INGENIAS</key>
+<key id="Result">String</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Agente Software" class="ingenias.editor.entities.Agent" roleName="EPerceivessource" type="ingenias.editor.entities.EPerceivessourceRole" dgcid="31060520">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Servicio Localizacion" class="ingenias.editor.entities.EnvironmentApplication" roleName="EPerceivestarget" type="ingenias.editor.entities.EPerceivestargetRole" dgcid="2100104">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="549" type="ingenias.editor.entities.AContainsME">
+<object id="549" type="ingenias.editor.entities.AContainsME">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Mapa" class="ingenias.editor.entities.FrameFact" roleName="AContainsMEtarget" type="ingenias.editor.entities.AContainsMEtargetRole" dgcid="32486152">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Estado mental inicial" class="ingenias.editor.entities.MentalState" roleName="AContainsMEsource" type="ingenias.editor.entities.AContainsMEsourceRole" dgcid="667621">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="547" type="ingenias.editor.entities.AHasMS">
+<object id="547" type="ingenias.editor.entities.AHasMS">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Estado mental inicial" class="ingenias.editor.entities.MentalState" roleName="AHasMStarget" type="ingenias.editor.entities.AHasMStargetRole" dgcid="667621">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Agente Software" class="ingenias.editor.entities.Agent" roleName="AHasMSsource" type="ingenias.editor.entities.AHasMSsourceRole" dgcid="22806380">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="554" type="ingenias.editor.entities.GTSatisfies">
+<object id="554" type="ingenias.editor.entities.GTSatisfies">
+<objectproperty id="SatisfactionCondition">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Mi Tarea" class="ingenias.editor.entities.Task" roleName="GTSatisfiessource" type="ingenias.editor.entities.GTSatisfiessourceRole" dgcid="10963650">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Mi Objetivo" class="ingenias.editor.entities.Goal" roleName="GTSatisfiestarget" type="ingenias.editor.entities.GTSatisfiestargetRole" dgcid="26771608">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="561" type="ingenias.editor.entities.WFConsumes">
+<object id="561" type="ingenias.editor.entities.WFConsumes">
+<objectproperty id="Condition">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Un ejemplo de entrada" class="ingenias.editor.entities.FrameFact" roleName="WFConsumestarget" type="ingenias.editor.entities.WFConsumestargetRole" dgcid="22342276">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Mi Tarea" class="ingenias.editor.entities.Task" roleName="WFConsumessource" type="ingenias.editor.entities.WFConsumessourceRole" dgcid="10963650">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="552" type="ingenias.editor.entities.WFUses">
+<object id="552" type="ingenias.editor.entities.WFUses">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Servicio Localizacion" class="ingenias.editor.entities.EnvironmentApplication" roleName="WFUsestarget" type="ingenias.editor.entities.WFUsestargetRole" dgcid="15904484">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Mi Tarea" class="ingenias.editor.entities.Task" roleName="WFUsessource" type="ingenias.editor.entities.WFUsessourceRole" dgcid="10963650">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="558" type="ingenias.editor.entities.WFProduces">
+<object id="558" type="ingenias.editor.entities.WFProduces">
+<objectproperty id="Condition">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Mi Tarea" class="ingenias.editor.entities.Task" roleName="WFProducessource" type="ingenias.editor.entities.WFProducessourceRole" dgcid="10963650">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Un ejemplo de resultado" class="ingenias.editor.entities.FrameFact" roleName="WFProducestarget" type="ingenias.editor.entities.WFProducestargetRole" dgcid="18269349">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="563" type="ingenias.editor.entities.WFConsumes">
+<object id="563" type="ingenias.editor.entities.WFConsumes">
+<objectproperty id="Condition">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Reaccion ante cambio de localizacion" class="ingenias.editor.entities.Task" roleName="WFConsumessource" type="ingenias.editor.entities.WFConsumessourceRole" dgcid="2928892">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="CambioLocalizacion" class="ingenias.editor.entities.ApplicationEventSlots" roleName="WFConsumestarget" type="ingenias.editor.entities.WFConsumestargetRole" dgcid="24789596">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="565" type="ingenias.editor.entities.GTSatisfies">
+<object id="565" type="ingenias.editor.entities.GTSatisfies">
+<objectproperty id="SatisfactionCondition">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Reaccion ante cambio de localizacion" class="ingenias.editor.entities.Task" roleName="GTSatisfiessource" type="ingenias.editor.entities.GTSatisfiessourceRole" dgcid="2928892">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Adaptarse al entorno fisico" class="ingenias.editor.entities.Goal" roleName="GTSatisfiestarget" type="ingenias.editor.entities.GTSatisfiestargetRole" dgcid="19301221">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="566" type="ingenias.editor.entities.WFUses">
+<object id="566" type="ingenias.editor.entities.WFUses">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Reaccion ante cambio de localizacion" class="ingenias.editor.entities.Task" roleName="WFUsessource" type="ingenias.editor.entities.WFUsessourceRole" dgcid="2928892">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Servicio Localizacion" class="ingenias.editor.entities.EnvironmentApplication" roleName="WFUsestarget" type="ingenias.editor.entities.WFUsestargetRole" dgcid="8690933">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="567" type="ingenias.editor.entities.GTModifies">
+<object id="567" type="ingenias.editor.entities.GTModifies">
+<objectproperty id="Condition">
+</objectproperty>
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Reaccion ante cambio de localizacion" class="ingenias.editor.entities.Task" roleName="WFConsumessource" type="ingenias.editor.entities.WFConsumessourceRole" dgcid="2928892">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Mapa" class="ingenias.editor.entities.FrameFact" roleName="WFConsumestarget" type="ingenias.editor.entities.WFConsumestargetRole" dgcid="1724607">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="568" type="ingenias.editor.entities.WFResponsable">
+<object id="568" type="ingenias.editor.entities.WFResponsable">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Reaccion ante cambio de localizacion" class="ingenias.editor.entities.Task" roleName="WFResponsabletarget" type="ingenias.editor.entities.WFResponsabletargetRole" dgcid="2928892">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Agente Software" class="ingenias.editor.entities.Agent" roleName="WFResponsablesource" type="ingenias.editor.entities.WFResponsablesourceRole" dgcid="19888005">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+</relationships>
+<models> 
+ <model id="entorno localizacion" type="ingenias.editor.EnvironmentModelModelJGraph">
+<object id="entorno localizacion" type="ingenias.editor.entities.EnvironmentModelDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="543" nid="18810119" type="EPerceivesNotification">
+
+	<connected id="2100104">
+
+
+
+	</connected>
+	<connected id="31060520">
+
+
+	</connected>
+	</node>
+			
+	<node id="Agente Software" nid="31060520" type="Agent">
+
+	</node>
+			
+	<node id="Servicio Localizacion" nid="2100104" type="EnvironmentApplication">
+
+	</node>
+			
+	<node id="542" nid="16813159" type="ApplicationBelongsTo">
+
+	<connected id="31060520">
+
+
+	</connected>
+	<connected id="2100104">
+
+
+
+	</connected>
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="225" y="164" width="191" height="45"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="114" y="98" width="105" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="391" y="86" width="205" height="55"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="229" y="56" width="151" height="15"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="descripción del agente" type="ingenias.editor.AgentModelModelJGraph">
+<object id="descripción del agente" type="ingenias.editor.entities.AgentModelDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="Estado mental inicial" nid="667621" type="MentalState">
+
+	</node>
+			
+	<node id="549" nid="3520226" type="AContainsME">
+
+	<connected id="667621">
+
+
+	</connected>
+	<connected id="32486152">
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Mapa" nid="32486152" type="FrameFact">
+
+	</node>
+			
+	<node id="547" nid="18692919" type="AHasMS">
+
+	<connected id="22806380">
+
+
+	</connected>
+	<connected id="667621">
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Agente Software" nid="22806380" type="Agent">
+
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="242" y="127" width="132" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="386" y="135" width="97" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="515" y="119" width="111" height="55"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="146" y="133" width="64" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="29" y="121" width="105" height="40"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="tarea usando la aplicación" type="ingenias.editor.TasksAndGoalsModelModelJGraph">
+<object id="tarea usando la aplicación" type="ingenias.editor.entities.TasksAndGoalsModelDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="Mi Objetivo" nid="26771608" type="Goal">
+
+	</node>
+			
+	<node id="561" nid="23920111" type="WFConsumes">
+
+	<connected id="10963650">
+
+
+	</connected>
+	<connected id="22342276">
+
+
+
+	</connected>
+	</node>
+			
+	<node id="554" nid="16000055" type="GTSatisfies">
+
+	<connected id="10963650">
+
+
+	</connected>
+	<connected id="26771608">
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Un ejemplo de resultado" nid="18269349" type="FrameFact">
+
+	</node>
+			
+	<node id="Mi Tarea" nid="10963650" type="Task">
+
+	</node>
+			
+	<node id="552" nid="1340310" type="WFUses">
+
+	<connected id="10963650">
+
+
+	</connected>
+	<connected id="15904484">
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Un ejemplo de entrada" nid="22342276" type="FrameFact">
+
+	</node>
+			
+	<node id="Servicio Localizacion" nid="15904484" type="EnvironmentApplication">
+
+	</node>
+			
+	<node id="558" nid="30140008" type="WFProduces">
+
+	<connected id="18269349">
+
+
+
+	</connected>
+	<connected id="10963650">
+
+
+	</connected>
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="10" y="104" width="74" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="334" y="83" width="98" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="120" y="115" width="87" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="453" y="148" width="155" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="243" y="101" width="55" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="241" y="162" width="62" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="469" y="33" width="143" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="173" y="197" width="205" height="55"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="331" y="132" width="88" height="15"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="reaccionando ante cambios" type="ingenias.editor.TasksAndGoalsModelModelJGraph">
+<object id="reaccionando ante cambios" type="ingenias.editor.entities.TasksAndGoalsModelDataEntity">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="Mapa" nid="1724607" type="FrameFact">
+
+	</node>
+			
+	<node id="Agente Software" nid="19888005" type="Agent">
+
+	</node>
+			
+	<node id="566" nid="32463392" type="WFUses">
+
+	<connected id="2928892"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="466.0" y="157.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="465.0" y="115.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	<connected id="8690933">
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="466.0" y="157.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="468.5" y="207.5"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	</node>
+			
+	<node id="568" nid="8715750" type="WFResponsable">
+
+	<connected id="19888005"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="656.5" y="114.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="784.5" y="114.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	<connected id="2928892">
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="656.5" y="114.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="465.0" y="115.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	</node>
+			
+	<node id="Servicio Localizacion" nid="8690933" type="EnvironmentApplication">
+
+	</node>
+			
+	<node id="Adaptarse al entorno fisico" nid="19301221" type="Goal">
+
+	</node>
+			
+	<node id="CambioLocalizacion" nid="24789596" type="ApplicationEventSlots">
+
+	</node>
+			
+	<node id="567" nid="24922740" type="GTModifies">
+
+	<connected id="2928892"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="306.5" y="149.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="465.0" y="115.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	<connected id="1724607">
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="306.5" y="149.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="186.5" y="175.5"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	</node>
+			
+	<node id="563" nid="9947665" type="WFConsumes">
+
+	<connected id="2928892">
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="286.0" y="89.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="465.0" y="115.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	<connected id="24789596">
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="286.0" y="89.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="119.5" y="66.5"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	</node>
+			
+	<node id="Reaccion ante cambio de localizacion" nid="2928892" type="Task">
+
+	</node>
+			
+	<node id="565" nid="2673590" type="GTSatisfies">
+
+	<connected id="2928892">
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="461.5" y="74.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="465.0" y="115.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	<connected id="19301221">
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="461.5" y="74.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="459.5" y="34.0"></point>
+		</attr>
+
+</list>
+		</attr>
+
+
+	</connected>
+	</node>
+	</graph>
+
+
+	<layout>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="131" y="148" width="111" height="55"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="732" y="94" width="105" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="435" y="150" width="62" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="601" y="107" width="111" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="366" y="180" width="205" height="55"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="374" y="14" width="171" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="15" y="39" width="209" height="55"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="264" y="142" width="85" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="237" y="82" width="98" height="15"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="349" y="95" width="232" height="40"></rectangle>		</attr>
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="418" y="67" width="87" height="15"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+</models>
+</project>

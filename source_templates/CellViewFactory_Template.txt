@@ -75,7 +75,7 @@ public class $nameCellViewFactory implements CellViewFactory {
     protected VertexView createVertexView(Object v) {
         Object userObject = ( (DefaultGraphCell) v).getUserObject();
         
-$content      
+$createVertexView      
         
         return null;
     }

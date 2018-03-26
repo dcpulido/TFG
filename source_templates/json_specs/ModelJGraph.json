@@ -1,0 +1,14 @@
+{
+    "whoModelJGraph":"name + mod_name",
+    "creaToolBar": "self.creaToolBar(name + \"DataEntity\", o)",
+    "whoCellViewFactory": "name + \".CellViewFactory()\"",
+    "who": "name",
+    "whoDataEntity":"name + \"DataEntity\"",
+    "getAllowedRelationships": "",
+    "getPossibleRelationships": "",
+    "getInstanciaNRelacion": "",
+    "createCell": "",
+    "getDefaultSize": "",
+    "insertDuplicated": "",
+    "getAllowedEntities": ""
+}

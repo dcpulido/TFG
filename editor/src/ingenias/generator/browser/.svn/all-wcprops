@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser
+END
+Graph.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/Graph.java
+END
+GraphEntityImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphEntityImp.java
+END
+GraphImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphImp.java
+END
+GraphRelationshipFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphRelationshipFactory.java
+END
+GraphCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphCollection.java
+END
+GraphAttributeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphAttributeFactory.java
+END
+AttributedElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/AttributedElement.java
+END
+GraphRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphRelationship.java
+END
+GraphCollectionImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphCollectionImp.java
+END
+Browser.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/Browser.java
+END
+GraphRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphRole.java
+END
+GraphAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphAttribute.java
+END
+GraphEntityFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphEntityFactory.java
+END
+AttributedElementImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/AttributedElementImp.java
+END
+GraphFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphFactory.java
+END
+BrowserImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/BrowserImp.java
+END
+GraphRelationshipImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphRelationshipImp.java
+END
+GraphRoleImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphRoleImp.java
+END
+RelationshipFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/RelationshipFactory.java
+END
+GraphAttributeImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphAttributeImp.java
+END
+NotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/NotFound.java
+END
+GraphEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/139/trunk/IDK/editor/src/ingenias/generator/browser/GraphEntity.java
+END

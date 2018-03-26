@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception
+END
+TextTagEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/TextTagEmpty.java
+END
+CannotJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/CannotJoin.java
+END
+MultipleInitialPoints.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/MultipleInitialPoints.java
+END
+VersionNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/VersionNotFound.java
+END
+WrongConversion.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/WrongConversion.java
+END
+InvalidPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/InvalidPath.java
+END
+UnknownVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/UnknownVersion.java
+END
+CannotLoadDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/CannotLoadDiagram.java
+END
+NullEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/NullEntity.java
+END
+InvalidGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/InvalidGraph.java
+END
+CycleInProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/CycleInProtocol.java
+END
+WrongTypedDOMNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/WrongTypedDOMNode.java
+END
+IncorrectOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/IncorrectOutput.java
+END
+InvalidAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/InvalidAttribute.java
+END
+GenerationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/GenerationException.java
+END
+NotInitialised.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/NotInitialised.java
+END
+WrongParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/WrongParameters.java
+END
+AlreadyExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/AlreadyExists.java
+END
+NotWellFormed.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/NotWellFormed.java
+END
+InvalidProjectProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/InvalidProjectProperty.java
+END
+CannotLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/CannotLoad.java
+END
+InvalidEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/InvalidEntity.java
+END
+InvalidColection.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/InvalidColection.java
+END
+BadElementClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/BadElementClass.java
+END
+ParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/ParseException.java
+END
+FileTagEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/FileTagEmpty.java
+END
+UnknowFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/UnknowFormat.java
+END
+DamagedFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/DamagedFormat.java
+END
+NotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/119/trunk/IDK/editor/srccodegen/ingenias/exception/NotFound.java
+END

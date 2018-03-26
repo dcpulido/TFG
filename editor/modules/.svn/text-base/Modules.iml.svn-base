@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/srcapplinker" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/srcatai" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/srccodeuploader" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/srcexample" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/srchtmldoc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/srciam" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/srcreflectiontest" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib6" level="project" />
+    <orderEntry type="library" name="lib10" level="project" />
+    <orderEntry type="library" name="lib7" level="project" />
+    <orderEntry type="library" name="messages" level="project" />
+    <orderEntry type="library" name="lib1" level="project" />
+    <orderEntry type="library" name="lib9" level="project" />
+    <orderEntry type="library" name="lib2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../workspace/cinema/analyserlib/Jgraph_5.9.2/jgraph.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib11" level="project" />
+    <orderEntry type="library" name="lib4" level="project" />
+    <orderEntry type="library" name="lib3" level="project" />
+    <orderEntry type="library" name="old" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="lib5" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../iaf/modiaf.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Editor" />
+    <orderEntry type="module" module-name="Iaf" />
+  </component>
+</module>
+

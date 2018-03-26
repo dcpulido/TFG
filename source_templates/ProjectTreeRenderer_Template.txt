@@ -71,6 +71,8 @@ public class ProjectTreeRenderer extends javax.swing.tree.DefaultTreeCellRendere
     static ImageIcon modeloUseCaseDiagram=new ImageIcon(ImageLoader.getImage("images/musediag.png"));
     
     static ImageIcon modeloWorkProductDiagram=new ImageIcon(ImageLoader.getImage("images/mWorkPDiag.png"));
+
+    static ImageIcon modeloActivityWPDiagram=new ImageIcon(ImageLoader.getImage("images/mtaskWFDiag.png"));
     
     static ImageIcon modeloPhaseDiagram=new ImageIcon(ImageLoader.getImage("images/mPhaseDiag.png"));
     

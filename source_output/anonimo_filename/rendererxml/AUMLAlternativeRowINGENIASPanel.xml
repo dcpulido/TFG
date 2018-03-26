@@ -1,0 +1,15 @@
+
+
+						##dashedpanel layout="BorderLayout" Background="white" #
+						##panel constraints="BorderLayout.NORTH" Background="white" layout="FlowLayout(FlowLayout.LEFT)"#
+						##panel Background="white" #
+						##label id="_LCondition" Text="["/#
+						##label id="Condition" Text=""/#
+						##label id="_RCondition" Text="]"/#
+						##/panel#
+						##/panel#
+						##textarea id="_Text" Rows="20" constraints="BorderLayout.CENTER" Columns="50"/#
+						##/dashedpanel #
+						
+					
+		

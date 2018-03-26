@@ -1,0 +1,10 @@
+{
+    "whoPanel": "name + mod_name",
+    "whoDataEntity": "name + \"DataEntity\"",
+    "whoCellViewFactory": "name + \"CellViewFactory()\"",
+    "who": "name",
+    "createCell": "",
+    "getDefaultSize": "",
+    "insertDuplicated": "",
+    "getAllowedEntities": ""
+}

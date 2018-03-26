@@ -70,7 +70,7 @@ public class $whoModelJGraph extends ModelJGraph {
                   ToolTipManager.sharedInstance().registerComponent(this);            
                   
         
-    this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.$whoCellViewFactory());
+    this.getGraphLayoutCache().setFactory(new ingenias.editor.cellfactories.$whoCellViewFactory);
   }
 
 

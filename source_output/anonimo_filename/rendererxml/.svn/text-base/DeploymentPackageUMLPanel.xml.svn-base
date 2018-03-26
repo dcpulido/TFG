@@ -1,0 +1,37 @@
+
+
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##stereotype text="DeploymentPackage" HorizontalAlignment="CENTER" /#
+##/panel #
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##collectionpanel Background="white" id="AgentsDeployed"#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)"  Background="white"   #
+##iconlabel icon="images/attribute.gif" /#
+##label text="id:"/# 
+##label name="AgentsDeployed_Id"/#
+##label text="type:"/# 
+##label name="AgentsDeployed_AgentTypeDeployed"/#
+##label text=" ninstances:"/# 
+##label name="AgentsDeployed_NumberInstances"/#
+##/panel#
+##/collectionpanel#
+##collectionpanel Background="white" id="Parameters"#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)"  Background="white"   #
+##iconlabel icon="images/attribute.gif" /#
+##label text="name:"/# 
+##label name="Parameters_Name"/#
+##label text="value:"/# 
+##label name="Parameters_Value"/#
+##/panel#
+##/collectionpanel#
+##linepanel Background="white" /#
+
+##/vbox#
+##/panel#	
+					
+		

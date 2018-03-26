@@ -1,0 +1,87 @@
+8
+
+dir
+336
+https://ingenias.svn.sourceforge.net/svnroot/ingenias/trunk/IDK/editor/src
+https://ingenias.svn.sourceforge.net/svnroot/ingenias
+
+
+
+2009-11-05T23:33:58.064522Z
+335
+escalope
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+95f194ad-9441-0410-9784-e312ea4ffdb5
+
+dom
+dir
+
+arpa.wav
+file
+
+
+
+
+2009-11-08T23:20:05.000000Z
+b8e58c5d3581153fe2cb51dd81e2c4c7
+2007-12-23T03:12:45.575000Z
+3
+escalope
+has-props
+
+META-INF
+dir
+
+net
+dir
+
+Runme.java
+file
+
+
+
+
+2009-11-08T23:20:05.000000Z
+3ce2cb359c58e38656f188d111c1939c
+2007-12-23T03:12:45.575000Z
+3
+escalope
+
+org
+dir
+
+javadocs
+dir
+
+watershot.wav
+file
+
+
+
+
+2009-11-08T23:20:05.000000Z
+1ecc023bf17f033a23c4f64f55a645b4
+2007-12-23T03:12:45.575000Z
+3
+escalope
+has-props
+
+ingenias
+dir
+
+com
+dir
+

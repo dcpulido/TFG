@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body
+END
+BodyDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/BodyDeclaration.java
+END
+VariableDeclaratorId.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/VariableDeclaratorId.java
+END
+EmptyTypeDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/EmptyTypeDeclaration.java
+END
+AnnotationMemberDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/AnnotationMemberDeclaration.java
+END
+ModifierSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/ModifierSet.java
+END
+EnumDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/EnumDeclaration.java
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/Parameter.java
+END
+AnnotationDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/AnnotationDeclaration.java
+END
+EnumConstantDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/EnumConstantDeclaration.java
+END
+VariableDeclarator.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/VariableDeclarator.java
+END
+MethodDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/MethodDeclaration.java
+END
+TypeDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/TypeDeclaration.java
+END
+InitializerDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/InitializerDeclaration.java
+END
+FieldDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/FieldDeclaration.java
+END
+ConstructorDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/ConstructorDeclaration.java
+END
+EmptyMemberDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/EmptyMemberDeclaration.java
+END
+ClassOrInterfaceDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/modules/srcapplinker/javacc/parser/ast/body/ClassOrInterfaceDeclaration.java
+END

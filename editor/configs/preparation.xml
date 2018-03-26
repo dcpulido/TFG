@@ -1,0 +1,131 @@
+<filter>
+	<name>INGENIAS Scrum Preparation</name>
+	<author>Juan Carlos Gonzalez Moreno</author>
+	<date>20/3/2013</date>
+	<diagrams>
+        <diagram name="AgentModel">
+            
+            <entity>Agent</entity>
+            
+            <entity>Role</entity>
+            
+            <entity>Goal</entity>
+            
+            <entity>Task</entity>
+            
+            <entity>EnvironmentApplication</entity>
+            
+            <entity>InternalApplication</entity>
+            
+            <entity>MentalState</entity>
+            
+            <entity>ConditionalMentalState</entity>
+            
+            <entity>MentalInstanceSpecification</entity>
+            
+            <entity>ApplicationEventSlots</entity>
+            
+            <entity>Fact</entity>
+            
+            <entity>FrameFact</entity>
+            
+            <entity>Conversation</entity>
+            
+            <entity>UMLComment</entity>
+            
+            <entity>TextNote</entity>
+            
+            <relationship>GTPursues</relationship>
+            
+            <relationship>AInherits</relationship>
+            
+            <relationship>AHasMS</relationship>
+            
+            <relationship>AHasMSManager</relationship>
+            
+            <relationship>AHasMSProcessor</relationship>
+            
+            <relationship>WFResponsable</relationship>
+            
+            <relationship>AInstanceOf</relationship>
+            
+            <relationship>AContainsME</relationship>
+            
+            <relationship>WFPlays</relationship>
+            
+            <relationship>ARoleInheritance</relationship>
+            
+            <relationship>UMLAnnotatedElement</relationship>
+            
+            <relationship>WFUses</relationship>
+            
+            <relationship>EResourceBelongsTo</relationship>
+            
+            <relationship>ApplicationBelongsTo</relationship>
+            
+        </diagram>
+        
+        <diagram name="OrganizationModel">
+            
+            <entity>Agent</entity>
+            
+            <entity>Role</entity>
+            
+            <entity>Resource</entity>
+            
+            <entity>EnvironmentApplication</entity>
+            
+            <entity>InternalApplication</entity>
+            
+            <entity>Task</entity>
+            
+            <entity>Interaction</entity>
+            
+            <entity>INGENIASUseCase</entity>
+            
+            <entity>Goal</entity>
+            
+            <entity>FrameFact</entity>
+            
+            <entity>ApplicationEventSlots</entity>
+            
+            <entity>TextNote</entity>
+            
+            <entity>UMLComment</entity>
+            
+            <relationship>UMLAnnotatedElement</relationship>
+            
+            <relationship>EResourceBelongsTo</relationship>
+            
+            <relationship>GTPursues</relationship>
+            
+            <relationship>WFConnects</relationship>
+            
+            <relationship>WFUses</relationship>
+            
+            <relationship>WFContainsTask</relationship>
+            
+            <relationship>WFConsumes</relationship>
+            
+            <relationship>Consumes</relationship>
+            
+            <relationship>WFDecomposes</relationship>
+            
+            <relationship>WFProduces</relationship>
+            
+            <relationship>WFSpecifiesExecution</relationship>
+            
+            <relationship>WFResponsable</relationship>
+            
+            <relationship>WFParticipates</relationship>
+            
+            <relationship>WFPlays</relationship>
+            
+            <relationship>WFDecomposesWF</relationship>
+            
+            <relationship>UMLAnnotatedElement</relationship>
+            
+        </diagram>
+        
+	</diagrams>
+</filter>

@@ -1,0 +1,16 @@
+# $Id: marathon 242 2009-01-06 07:14:28Z kd $
+
+PROG=`which "$0"`
+DIST=`dirname $PROG`
+
+if [ "$DIST" = "." ]
+then
+	DIST=`pwd`
+fi
+
+CLASSPATH=$DIST:$DIST/marathon.jar:$DIST/marathon-python.jar:$DIST/marathon-ruby.jar:$DIST/marathon-runtime.jar
+CLASSPATH=$CLASSPATH:$DIST/Support/forms-1.2.1/forms-1.2.1.jar:$DIST/Support/jaccess-1.3/jaccess.jar:$DIST/Support/jedit-textArea.jar:$DIST/Support/jline-0.9.93.jar:$DIST/Support/junit3.8.2/junit.jar:$DIST/Support/looks-2.2.0/looks-2.2.0.jar:$DIST/Support/vldocking_2.1.5C.jar
+
+export CLASSPATH
+
+java -Dcom.apple.mrj.application.growbox.intrudes=false -Dcom.apple.mrj.application.live-resize=true -Dcom.apple.macos.smallTabs=true -Dmarathon.home="$DIST" -Dpython.cachedir="$HOME/.jycache" net.sourceforge.marathon.Main $*

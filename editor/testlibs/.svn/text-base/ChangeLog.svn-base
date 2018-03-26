@@ -1,0 +1,381 @@
+******** $Id: ChangeLog 232 2009-01-02 13:07:26Z kd $
+
+2 January 2009 (release 2.0b4)
+
+Note: Quite a few of these fixes and ideas for the fixes are from Steve Spencer and Mustafa Hafeez from Visokio.
+
+Fixes:
+
+1. Using SwingUtilities.invokeAndWait whenever a component is accessed during the play.
+2. Before an opeartion is performed on a component, now we use getFocusableState() on the window to wait for it to become focusable.
+   this check is performed only if the window is focusable.
+3. click() parameters are causing classcast exception in Ruby. Fixed.
+4. Navigator expands all the branches when we start Marathon.
+5. Added default values for file hidden pattern.
+6. Fixed NPE in getNodeForDirectory
+7. jEdit-TextArea is from latest SVN
+8. select_menu action waits for the sub menu to open before performing a click
+9. Fixed the state of Marathon (where the editor becomes non-editable) when a record/play fails.
+10. Fixed stop on JUnit runner (earlier it was taking lot of time to stop the test run)
+11. Some spurious selects are being recorded (This can't be avoided). So while playing some of these generate warnings instead of failures.
+12. Removed select calls recording on table. Performed using click recording now.
+13. Removed dependence on SwingEventMonitor and AWTEventMonitor. JAccess is still needed for top level window listener. But planning to remove
+    that dependence also in a later version.
+14. Most windows set their parent correctly. So they should be displaying on their parent window.
+15. Removed separate jyton-2.5 support. Set the home directory to a jython 2.5 installation to use it.
+16. Packages marathon-jruby and marathon-jython are renamed. The version numbers are removed.
+    
+New Features:
+
+1. Added Home parameter to python and ruby panels. Use these to use different version of scripting language than the one bundled.
+2. When application launch time is set to 0, now Marathon does not wait for the first window to open. Useful for non-GUI testing.
+3. Marathon assertion mechanism launches a new window now. It also highlights the currently selected component. During the window is open
+   click operations can be used to select a component.
+4. Support for a wait action. Useful when you need to wait for a change in the status of a component before performing other operations.
+5. Support for multiple module directories (Thanks to John on the marathontesting group)
+6. Support for checklists (semi-manual test cases)
+7. Support for annotated screencaptures
+8. Support for exploratory testing mode
+9. Added a show-report functionality to the Main window
+10. Added enable checklists and generate reports options to Marathon menu
+11. Some components (like slider, toggle buttons etc.) record the action immediately.
+12. Added window_closed recording.
+13. Added window state change recording (i.e size and move) in raw recording mode.
+14. Added mouse drag event recording in raw recording mode.
+15. Components can be selected using property map in the names. So, select('{type: JTextField}') works when a single text field is on the
+    dialog.
+16. Changed the component info recording. Now a map of properties are being recorded.
+17. In Lists, Trees the text on the label is recorded instead of indices and full path. Makes the scripts look nicer and easy.
+18. Added support for recording internal frames as top level windows.
+
+   
+18 October 2008 (release 2.0b3)
+
+1. Setting the selectiondialog using current selection.
+2. actions.xml: removed find-selected. That is the only one available.
+3. MarathonTextArea: added PaintedSearchSelection. used when multiple lines are selected and
+   search is selected.
+4. Implemented find/replace methods. Updated search option.
+5. Added selectioncolor to textarea.props
+6. Added search shortcuts to keys.props
+7. Preferences: removed the dependency of converttotabs.
+8. SearchDialog: implemented replace options.
+9. Searcher: implemented regex and reverse searches.
+10. TestMarathonNamingStrategy: isShowin() is implemented for MyComponent
+11. Added RegexReverser and TestRegexReverser
+12. AbstractNamingStrategy: Checks whether the component isShowing() when getComponent(id) is called
+13. MarathonNamingStrategy: getTitle(w) does not return null anytime.
+14. MComponent/MList/MMenu/MTable/MTree: removed component.isShowing(). This is implemented in ANS.
+ actions.xml: removed find-selected. That is the only one available.
+ 3. MarathonTextArea: added PaintedSearchSelection. used when multiple lines are selected and
+    search is selected.
+4. Implemented find/replace methods. Updated search option.
+5. Added selectioncolor to textarea.props
+6. Added search shortcuts to keys.props
+7. Preferences: removed the dependency of converttotabs.
+8. SearchDialog: implemented replace options.
+9. Searcher: implemented regex and reverse searches.
+10. TestMarathonNamingStrategy: isShowin() is implemented for MyComponent
+11. Added RegexReverser and TestRegexReverser
+12. AbstractNamingStrategy: Checks whether the component isShowing() when getComponent(id) is called
+13. MarathonNamingStrategy: getTitle(w) does not return null anytime.
+14. MComponent/MList/MMenu/MTable/MTree: removed component.isShowing(). This is implemented in ANS.
+15. Added ComponentResolvers for file and color choosers: DefaultComponentResolver
+16. Added MColorChooser and MFileChooser
+17. JEditEditor: Fixed positioning of caret in the editor when a file is opened.
+18. Added SearchDialog and Searcher
+19. DisplayWindow: added menu items for search,find-next and find-prev.
+20. DisplayWindow: added search toolbar item
+21. DisplayWindow: removed accel keys for the commands supported by text area (undo,redo,cut,copy,paste)
+22. MarathonTextArea: menu accel keys are removed for textarea commands
+23. Icons: added search toolbar button
+
+13 October 2008 (release 2.0b2)
+
+1. Fixed problem with ruby script model where double clicking on stack trace does not open the file.
+2. Added test_setup to fixture. This function acts like a setup for test() after the window is open.
+
+01 October 2008 (release 2.0b1)
+
+1. Lot of modifications and feature additions. Resetting the SVN as well as the
+   release notes from this release
+
+
+##################################################################################################################################
+
+13 August 2008 (release 1.2.1.1)
+
+1. Fixed: tab key in editor
+2. Fixed: Illegal indent editor when running a old testcase
+3. Fixed: Current working directory in Testing application from project settings dialog
+4. Fixed: NPE in MTableCell (calling getEditingRow() before checking isEditing())
+5. Fixed: Race condition in scrollComponentIntoView (FireableMouseClickEvent)
+6. Update: defineVariable (PythonScript) sets the variables as attributes in __builtin__ package
+7. Added faq.txt and faq.rb (Needed to setup the FAQ page in google groups)
+
+30 July 2008 (release 1.2.1)
+
+1. MarathonNamingStrategy1_1_4 added to provide backward compatibility
+2. PreferencesDialog provides preferences for setting tab conversion and tab length.
+3. DnD transferhandler message now properly shows the source/target transfer handler name.
+4. Inserting script now indents properly. And also a from ... import * is added and only the function name is used.
+5. Default indenting changes to 4 spaces.
+6. While inserting a script the default parameter values (if any) are shown.
+7. The display is cleared before a test case is launched.
+8. AUT is launched with the AUT class path appended with marathon.jar, jaccess.jar, rmi-lite.jar and jython.jar. Looks is not loaded.
+
+16 June 2008 (release 1.2.0)
+
+1. Fixed a bug with the editor where a spurious character is appended when closing a triple-quoted string.
+2. Improvement in performance when names are created for components.
+3. Marathon doesn't create new names each and every time a component is accessed now. The names are recreated when the top-level window is
+   changed.
+   
+06 May 2008 (release 1.1.4)
+
+Bug Fixes:
+
+1. Marathon identifies the AUT exit and displays a message
+2. Properties given in the properties tab of Project settings are being passed now.
+
+Features:
+
+1. dump_components() and get_named_components() functions added
+
+01 October 2007 (release 1.1.1)
+
+Bug Fixes:
+
+1. Backward compatibility when regex searches are used
+2. assert_p recording prefixes a '/' if the first character is a '/'
+
+Features:
+
+1. Using fieldnames for component naming. Define marathon.USE_FIELD_NAMES to turn on this functionality.
+2. Defined marathon.COMPONENT_SEARCH_RETRY_COUNT and marathon.RETRY_INTERVAL_MS to set the component finder timeout values.
+3. Defined marathon.WINDOW_TIMEOUT - use this property to set default timeout value for window() calls.
+
+19 September 2007 (release 1.1)
+
+Bug Fixes:
+
+1. Applied patch for supporting VK_* in key()
+2. Applied patch to add focusLost() in RecordingEventListener
+
+Features:
+
+1. Support for Jython 2.2
+2. Modified the Regex support
+
+17 January 2007 (release 1.0.4)
+
+Bug Fixes:
+
+1. Fix path issues on windows
+2. Marathon ignores file/dir names starting with '.' when creating __init__.py file.
+
+21 November 2006 (release 1.0.3 includes fixes for 1.0.1 and 1.0.2)
+
+Features:
+
+1.  Set marathon.project.file property to use a different name than '.project'
+2.  window() function now supports [RE]...[RE]. So we can wait for one or the other window.
+3.  Added patch.jar to CLASSPATH. Hopefully, from now onwards small fixes can be deployed fast.
+
+Bug Fixes:
+
+1.  Fixed a bunch of NPE
+    a. valueChanged() for a tree node
+	b. Dockable#getSelectedDockable returning NULL
+	c. MComboBox#getText returning NULL when no elements are selected.
+	d. TreeNode selection and expansion (in some cases)
+2.  MLabel does not support setText (what was I thinking?). So clicks will be recorded on Labels now.
+3.  Memory overflow errors because of HTML editor pane for output.
+4.  Ignoring exception when scrollToView raises a RTE.
+5.  AWTSync#sync() throwing a RTE waiting for the EventQueue to be emptied. Not needed because we use invokeAndWait.
+6.  Fix for recording rightClicks.
+7.  Hardcoded path separator (:) while using Test option during MPF creation.
+
+18 October 2006 (release 1.0)
+
+Features:
+
+1.  ComboBox recording is fixed. Now customcombobox from Sun tutorial works under Marathon.
+2.  Hide files from Navigator/JUnit.
+3.  VLToolbars - Making use VLToolBars for Main toolbar/navigator and JUnit. This allows for repositioning of Toolbars.
+    Not sure how useful it is - since we do not have too many commands.
+4.  Made Navigator/JUnit windows dockable. You can move them into different positions on the screen.
+5.  Edit commands - cut/copy/paste/redo/undo on the toolbar.
+6.  Tabbed editor makes use of VLDocking framework. The editor tabs even show small icons for Test/Capture scripts.
+7.  Marathon internally handles Modal dialogs. We do not need the 'Run main in separate thread option.
+8.  Desktop configuration and Window size/position are saved into preferences and restored when Marathon is launched.
+9.  All paths in Marathon project file are relative to the project directory.
+10. Preferences option in Marathon menu. Allows to select the hot key and menu combination for involing Marathon
+    assertions menu. You can also set file name patterns to ignore in Navigator/JUnit panels.
+12. You can use Preferences to select a Font for the editor windows.
+13. Marathon is behaves more natively on Mac.
+14. Marathon Project Files (.mpf files) are not used. The preferences are saved in a .project file in Project directory.
+15. CaptureScripts renamed to Modules.
+
+Recording and Replay enhancements:
+
+1. Most keyboard actions are captured.
+2. select_menu script element is used to record a menu action. The same is used along with a hot key if a menu
+   accelerator key is used.
+3. When Recording the Main display window is minimized and a small controller window is shown. This frees up the
+   space on the desktop.
+4. No needed user actions are overridden by Marathon. So clicking a button twice records two clicks.
+5. When playing if the component is not visible in the current window - the component is brought into the window
+   before playing the actions.
+6. Enhanced the concept of Collection components (JTable/JTree/JList) and associated Cell components (table cell,
+   tree node, list item). Now individual select script elements are available for both of them.
+7. List, Table and Tree allows multiple selection of items.
+8. Support for JProgressBar and JSlider.
+9. Drag and drop support. There is a problem with drag and drop involving text components. This need to be fixed by
+   maintaining the current caret position and text selection (if any). Will be fixed in a later release.
+
+Changes/Bugs Fixed:
+
+1. Even if another tab is selected after starting recording, the script is recorded in the original editor.
+2. updateView is not called by TabbedEditor when a tab is removed.
+3. Button states for save/saveAs and saveAll.
+4. NPE when a testcase fails
+5. File->exit menu action not prompting for save dirty buffers.
+6. The combo box displayed prompting for MPF file(directory) size depends on the entries in the saved preferences.
+7. Combo box not selecting the last used project.
+8. Tab name update when a untitled file is saved.
+9. A new Fixture dialog - sorts the fixtures alphabetically, allows doubleclicking and selecting a fixture.
+10. Most windows are resizeable.
+11. When the application under test aborts, the error message shown is more legible.
+12. Bug in editor when using scroll wheel.
+
+29 August 2006 (release 0.92)
+
+	- Fix: Tabbed pane is recorded using ChangeListener. Should work
+	  well for all TAB_LAYOUT options.
+	- Fix: Menus are recorded using MenuListener. Should work well
+	  even when a menu item is selected after hovering over the parent
+	  menu item.
+	- Fix: Deadlocks. Few deadlocks started occuring when eventqueues
+	  are being pushed/popped. Fixed. Marathon should not hang in these
+	  cases.
+
+18 August 2006 (Source release of 0.91)
+
+	- Add: Multiple file editing using tabbed editing.
+	- Add: SaveAll and SaveAs option.
+	- Add: Edit menu with undo,redo,cut,copy and paste options.
+	- Change: MacOS LAF - the command key is META instead of CTL.
+	- Change: The output from the script (sys.error and sys.output) and the
+			  output from Application under test (System.out and System.err)
+			  are captured and displayed in the outpane. The error output is
+			  in red, regular output is in blue. The output from script is
+			  italicised.  3. Docking for JUnit, Output and Result panes.
+	- Change: MacOS LAF - the Menu bar is at the top of the screen.
+
+	- Fix: Changed variable naming convention.
+	- Add: A slow running mode (tortoise as toolbar command) is added. the
+		   default delay is 1000ms. Can be changed by setting
+		   marathon.runtime.default.delay.  2. A different Java can be
+		   selected to run the application through MPF configuration.
+	- Fix: For scrolling in JComponents. - by Ranga
+	- Change: marathon.runtime.port is dynamically allocated.
+	          marathon.runtime.port property is no more valid.
+
+	- Fix: Added am/pm to the timestamp when creating Version.java
+	- Fix: When playing the highlighted line is brought into display area of
+	       text editor.
+	- Fix: Select is recorded only on editable components - by Ranga.
+	- Fix: TestRunner - by Ranga
+	- Fix: Static initialization code in PythonScript is calling getResource()
+	       on class. - from marathon-help forum.
+	- Fix: TextAreaPainter - not setting tabSize and giving a Null pointer
+	       exception.
+
+	- Deleted: KeyStrokeDialog
+
+01 June 2005
+	Add: Added the VL Docking framework to provide docking support to marathon
+	Change: Removed the ResultDialog and added a result pane. Double Clicking on the
+			error will take the user to the specified file and line
+	Fix:    Added assertion on selected tab for JTabbedPane
+	
+
+29 October 2004
+	- Change: Added build.xml to demo application to run marathon using ant.
+	- Fix: Marathon now supports windows open with same title. Earlier it is
+	supported only when there is a parent-child relationship between the
+	windows.
+	- Fix: Removed waitFor* calls from playback.py, marathon and windowmonitor
+	that are not used.
+	- Change: Added getWindow() call to playback.py. Use this to get the title
+	of currently opened window.
+	- Change: Duplicate window titles get indexed title names. For eg. if two
+	windows with title "XXX" are open, the first window will give "XXX" and
+	the second window will give "XXX(1)" as titles.
+	- Change: Fixture generator can generate fixtures for Main() that does not
+	return.
+	- Fix: Double clicking in JUnit panel opens testcase in the editor.
+	- Fix: Cut&Paste in Windows adding extra new lines. This has been fixed.
+	- Add: A new fixture generator class added to be used by both Fixture
+	generation and "new fixture" command.
+	- Fix: The application class path is *prepended* to system classpath.
+
+19 September 2004
+	- Change: report format to include the project name
+	- Change: Added userGuide/DeveloperGuide into the help menu
+	- Change: Added report display in the JUnit panel
+	- Fix: Times reported for test runs
+	- Change: TestSuites/TestCases are displayed in standard order now.
+	- Change: Added BrowserLauncher for displaying the report/help in browser
+	- Change: Added Marathon.iml (IDEA module) into CVS (Thanks to Scott)
+
+31 August 2004
+	- Fix: Call the testcase only if the setup succeeds
+	- Fix: RequestFocus() has been added in the Click and Key events. This
+	has been causing problems by not replaying some click events in rare
+	cases.
+	- Change: InsertScript Actions now does not insert the import statement.
+	- Fix: If the List in combo box does not use JLabel there is a
+	possibility of failure.
+	- Change: MComponent interface provides for finding whether a 'select' is
+	needed to be recorded or not. This is required for avoiding spurious
+	'Select' recordings on jbuttons.
+	- Fix: JTree works even for non-defaulttreemodels.
+	- Change: We check for a valid testcase (by looking for test() and
+	useFixture() in the script) before executing.
+	- Change: Support for selecting a fixture. Double clicking on the status
+	bar (on fixture or line number) provides facilities to change fixture or
+	goto line.
+	- Fix: Removed focus gained and focus lost events - They are supposed to be
+	generated by the requestFocus() call in the mouse and key events.
+	- Fix: If the testcases directory does not exist, the TestCreator used to
+	throw null pointer exception .
+	- Fix: The working directory is being set properly for the application
+	under test.
+	- Fix: Jython interpreter is being initialized only once.
+	- Fix: The error output from the application is being redirected to the
+	console window.
+	- Change: Added New menu into the File menu option
+	- Change: Updated documentation for multiple fixtures and changes in menu
+	options
+	- Change: Menu options --> changed the names for creating new testcase and
+	capture script
+
+21 July 2004
+	- Support for recursive usage of system properties in MPF
+	
+20 July 2004
+	- Support for System properties in Class path and python path added to MPF
+	- Refactored ComponentResolver
+	
+19 July 2004
+	- Fixed a bug related to JTree. When a treenode is not assigned an
+	  object the system throws a Null pointer exception and does not
+	  record the click().
+10 July 2004
+	- Added support for Marathon Project Files
+	- Added Support for creating Python fixtures
+	- Linux support has been fixed - Marathon works on Linux now
+
+// vim:ts=4 sw=4 ai

@@ -1,0 +1,5 @@
+{
+    "nameActionsFactory": "name + \"ActionsFactory\"",
+    "createChangeViewActions": "",
+    "createDiagramSpecificInsertActions": ""
+}
