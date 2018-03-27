@@ -136,6 +136,15 @@ def exposeOperations():
     return getEncodeOps()
 
 
+@app.route("/profiles", methods=['GET'])
+def exposeProfiles():
+    """
+    get stored profiles
+    :return: encoded profiles
+    """
+    return getEncodeProf()
+
+
 @app.route("/getID", methods=['POST'])
 def getID():
     """
@@ -163,8 +172,10 @@ def delID():
         mongohand.deleteByIdMongoDB(data["id"])
     return render_template('index.html')
 
-
+# entre getEncodeOps y getEncodeProf hay un año y medio de diferencia...
 # ENCODE json en cascada
+
+
 def getEncodeOps():
     """
     :return: operaciones en json
@@ -183,6 +194,14 @@ def getEncodeOps():
     for t in toret1:
         str1 += json.dumps(t) + ","
     return str1[:len(str1) - 1] + "]"
+
+
+def getEncodeProf():
+    """
+    :return: operaciones en json
+    """
+    logging.info("FLASK encoding profiles")
+    return json.dumps(cmp.get_profiles())
 
 
 def getEncodeDig(dig):
@@ -478,7 +497,7 @@ if (__name__ == "__main__"):
                 print "         4_Indicar Salida"
                 print "         d_Iniciar Parseado"
                 print "         l_Generar código"
-                print "         c_Compilar código"
+                print "         c_Perfiles"
                 print "         x_Borrar DB"
                 print "         q_Salir"
                 print " "
@@ -522,14 +541,31 @@ if (__name__ == "__main__"):
                             "d(generar)/q(retroceder)??:")
                         os.system("clear")
                         if op2 == "d":
+                            ex = ""
+                            if "/" in dig["output"]:
+                                ex = dig["output"].split("/")[1].split(".")[0]
+                            else:
+                                ex = dig["output"]
                             name = dig["autor"] + \
                                 "_" + \
-                                dig["output"].split("/")[1].split(".")[0]
+                                ex
                             init_code_generation(generatorconf,
                                                  dig['bin-data'],
                                                  name)
                 if op == "c":
                     os.system("clear")
+                    profs = cmp.get_profiles()
+                    dig = hmiDetails.showShellProfs(profs)
+                    if dig != "nope":
+                        op2 = raw_input(
+                            "d(compilar)/l(lanzar)/r(borrar)q(retroceder)??:")
+                        os.system("clear")
+                        if op2 == "d":
+                            cmp.compile(dig)
+                        if op2 == "l":
+                            cmp.start_prof(dig)
+                        if op2 == "r":
+                            cmp.remove_prof(dig)
 
                 if op == "x":
                     os.system("clear")

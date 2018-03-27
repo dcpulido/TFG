@@ -49,6 +49,23 @@ class showDetails:
             except ValueError:
                 logging.critical("Dont choose comming back")
 
+    def showShellProfs(self, profiles):
+        aux = 0
+        for d in profiles:
+            print str(aux) + \
+                " " + \
+                d
+            aux = aux + 1
+        print
+        op = raw_input("selecciona una op o bien q para salir??: ")
+        if op != 'q':
+            try:
+                return profiles[int(op) - 1]
+            except TypeError:
+                logging.critical("(type) Dont choose comming back")
+            except ValueError:
+                logging.critical("(value) Dont choose comming back")
+
     def showDetailsOp(self, op):
         k = ""
         while k != "q":

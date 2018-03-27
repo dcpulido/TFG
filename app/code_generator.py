@@ -37,7 +37,6 @@ class Code_generator:
                    d):
         if mod_name == "Entity":
             mod_name = ""
-            print name
         toret = template.safe_substitute(d)
         with open(self.gen_name +
                   dir +
@@ -49,7 +48,10 @@ class Code_generator:
             fo.write(toret)
             fo.close()
 
-    def generic_gen(self, ob, mod_name, dir):
+    def generic_gen(self,
+                    ob,
+                    mod_name,
+                    dir):
         logging.info("Generating " + dir + ">>>>>>>>>>>>>>>>>")
         template = self.get_template(mod_name)
         with open(self.conf["input"] +
@@ -106,6 +108,7 @@ class Code_generator:
             d.entities = entities
             d.relations = relations
         return ob
+
     def create_entities(self, ob, dirent, dirview):
         template = self.get_template("Entity")
         view = self.get_template("View")
@@ -135,13 +138,11 @@ class Code_generator:
                             name,
                             "",
                             tt)"""
-                print "view "+name
                 self.write_file(template,
                                 dirview,
                                 name,
                                 "View",
                                 tt)
-
 
     def generate(self, ob, name):
         self.gen_name = self.conf["output"] + \
@@ -169,8 +170,6 @@ class Code_generator:
         self.generate_Relations(ob)
         self.generate_Relations_xml(ob)
         # self.move_persistent_directories(ob)
-
-
 
     def move_persistent_directories(self, ob):
         logging.info(

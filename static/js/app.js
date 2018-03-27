@@ -12,8 +12,15 @@ app.controller('ctrl',
         $scope.detailedOperation=null;
         $http.get('http://localhost:5000/operations').
             success(function(data) {
+                console.log("OPERATIONS");
                 console.log(data);
                 $scope.operations = data;
+            });
+        $http.get('http://localhost:5000/profiles').
+            success(function(data) {
+                console.log("PROFILES");
+                console.log(data);
+                $scope.profiles = data;
             });
         $scope.detailedInfoId=function(id){
             var i=0;

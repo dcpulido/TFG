@@ -1,0 +1,12 @@
+
+
+##dashedpanel layout="BorderLayout" Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="FlowLayout(FlowLayout.LEFT)"#
+##panel border="LineBorder(Color.black,1)" Background="white" #
+##label Text="Alternative"/#
+##/panel#
+##/panel#
+##textarea id="_Text" Rows="20" constraints="BorderLayout.CENTER" Columns="50"/#
+##/dashedpanel #
+					
+		

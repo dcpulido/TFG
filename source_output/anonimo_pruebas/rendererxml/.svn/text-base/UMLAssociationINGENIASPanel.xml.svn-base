@@ -1,0 +1,12 @@
+
+
+
+##panel layout="BorderLayout"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##label id="Label"  /#
+##label id="Label1" text="(UMLAssociation)"/# /#
+
+##/vbox#
+##/panel#
+					
+		

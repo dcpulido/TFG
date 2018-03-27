@@ -1,0 +1,9 @@
+
+
+						
+						##panel layout="BorderLayout" Background="white"#
+						##label id="Id"/#
+						##label Foreground="blue" icon="images/iusecase.gif" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+						##/panel#
+					
+		

@@ -1,0 +1,2831 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ingenias/!svn/ver/335/trunk/IDK/editor/src/ingenias/editor/rendererxml
+END
+WFResponsibleINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFResponsibleINGENIASPanel.xml
+END
+AGOSubordinationRelationshipOrgLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipOrgLABELPanel.xml
+END
+IInitiatesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IInitiatesLABELPanel.xml
+END
+AGOCondSubordinationRelationshipMemberINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipMemberINGENIASPanel.xml
+END
+WFDecidesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecidesNOICONPanel.xml
+END
+WFPlaysINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFPlaysINGENIASPanel.xml
+END
+AUMLSelectionLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSelectionLABELPanel.xml
+END
+WFDecomposesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecomposesNOICONPanel.xml
+END
+WFEndsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFEndsINGENIASPanel.xml
+END
+HTMLLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/335/trunk/IDK/editor/src/ingenias/editor/rendererxml/HTMLLabel.java
+END
+DashedBorderPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DashedBorderPanel.java
+END
+LinePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/LinePanel.java
+END
+UMLAnnotatedElementNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLAnnotatedElementNOICONPanel.xml
+END
+ContributePositivelyNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributePositivelyNOICONPanel.xml
+END
+ARoleInheritanceLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ARoleInheritanceLABELPanel.xml
+END
+WFContainsTaskINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFContainsTaskINGENIASPanel.xml
+END
+GTDependsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDependsLABELPanel.xml
+END
+GTOrDependsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTOrDependsLABELPanel.xml
+END
+AUMLContainerINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLContainerINGENIASPanel.xml
+END
+ApplicationBelongsToLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationBelongsToLABELPanel.xml
+END
+MergeNodeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MergeNodeUMLPanel.xml
+END
+UseCasePursuesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UseCasePursuesNOICONPanel.xml
+END
+ApplicationBelongsToNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationBelongsToNOICONPanel.xml
+END
+TextNoteINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TextNoteINGENIASPanel.xml
+END
+DecisionNodeInputNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DecisionNodeInputNOICONPanel.xml
+END
+UMLRealizesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLRealizesLABELPanel.xml
+END
+WFEndsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFEndsNOICONPanel.xml
+END
+INGENIASComponentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/INGENIASComponentINGENIASPanel.xml
+END
+INGENIASComponentUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/INGENIASComponentUMLPanel.xml
+END
+OrganizationGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OrganizationGroupINGENIASPanel.xml
+END
+GoalINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GoalINGENIASPanel.xml
+END
+AUMLAlternativeRowUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLAlternativeRowUMLPanel.xml
+END
+DeploymentUnitByTypeEnumInitMSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeEnumInitMSUMLPanel.xml
+END
+WFContainsTaskNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFContainsTaskNOICONPanel.xml
+END
+WSConnectsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WSConnectsINGENIASPanel.xml
+END
+OHasWFINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasWFINGENIASPanel.xml
+END
+IColaboratesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IColaboratesLABELPanel.xml
+END
+AGOSubordinationRelationshipOrgNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipOrgNOICONPanel.xml
+END
+AInstanceOfINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AInstanceOfINGENIASPanel.xml
+END
+ApplicationEventSlotsUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationEventSlotsUMLPanel.xml
+END
+AGOClientServerRelationshipGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipGroupINGENIASPanel.xml
+END
+WFCancelsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFCancelsNOICONPanel.xml
+END
+AHasMSManagerNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSManagerNOICONPanel.xml
+END
+AGORelationshipOrgINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipOrgINGENIASPanel.xml
+END
+EPerceivesNotificationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesNotificationINGENIASPanel.xml
+END
+UseCasePursuesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UseCasePursuesLABELPanel.xml
+END
+OrganizationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OrganizationUMLPanel.xml
+END
+ConditionalMentalStateUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConditionalMentalStateUMLPanel.xml
+END
+ForkNodeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ForkNodeUMLPanel.xml
+END
+AgentWSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/75/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentWSINGENIASPanel.xml
+END
+ParticipatesInUseCaseLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ParticipatesInUseCaseLABELPanel.xml
+END
+AgentModelBelieveUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentModelBelieveUMLPanel.xml
+END
+SubProtocolINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/SubProtocolINGENIASPanel.xml
+END
+EPerceivesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesLABELPanel.xml
+END
+AHasMSProcessorINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSProcessorINGENIASPanel.xml
+END
+MentalStateManagerUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalStateManagerUMLPanel.xml
+END
+WFUsesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFUsesINGENIASPanel.xml
+END
+WFDecomposesWFLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecomposesWFLABELPanel.xml
+END
+GTDecomposesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesLABELPanel.xml
+END
+RuntimeConversationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RuntimeConversationUMLPanel.xml
+END
+WSConnectsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WSConnectsNOICONPanel.xml
+END
+UIInitiatesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIInitiatesNOICONPanel.xml
+END
+UseCasePursuesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UseCasePursuesINGENIASPanel.xml
+END
+WFDecomposesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecomposesLABELPanel.xml
+END
+WFPursueINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFPursueINGENIASPanel.xml
+END
+MentalStateProcessorUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalStateProcessorUMLPanel.xml
+END
+RuntimeFactINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RuntimeFactINGENIASPanel.xml
+END
+PaintModePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/PaintModePanel.java
+END
+UIColaboratesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIColaboratesNOICONPanel.xml
+END
+AGOClientServerRelationshipOrgINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipOrgINGENIASPanel.xml
+END
+AGORelationshipGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipGroupLABELPanel.xml
+END
+IHasSpecNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IHasSpecNOICONPanel.xml
+END
+FrameFactINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/FrameFactINGENIASPanel.xml
+END
+AgentRequirementsQueryINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentRequirementsQueryINGENIASPanel.xml
+END
+GTDestroysLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDestroysLABELPanel.xml
+END
+IInitiatesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IInitiatesNOICONPanel.xml
+END
+ShareToupleINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ShareToupleINGENIASPanel.xml
+END
+AGOInconditionalSubordinationRelationshipOrgLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipOrgLABELPanel.xml
+END
+JMultilineLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/src/ingenias/editor/rendererxml/JMultilineLabel.java
+END
+GeneralizesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GeneralizesNOICONPanel.xml
+END
+EResourceBelongsToNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EResourceBelongsToNOICONPanel.xml
+END
+DecisionNodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DecisionNodeINGENIASPanel.xml
+END
+IUConcurrenceUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IUConcurrenceUMLPanel.xml
+END
+AHasMSManagerINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSManagerINGENIASPanel.xml
+END
+ConversationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConversationUMLPanel.xml
+END
+UISelectionNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UISelectionNOICONPanel.xml
+END
+UMLDescribesUseCaseLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLDescribesUseCaseLABELPanel.xml
+END
+AGOCondSubordinationRelationshipMemberNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipMemberNOICONPanel.xml
+END
+WFPlaysNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFPlaysNOICONPanel.xml
+END
+AGOClientServerRelationshipOrgNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipOrgNOICONPanel.xml
+END
+WFDecidesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecidesLABELPanel.xml
+END
+WFContainsTaskLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFContainsTaskLABELPanel.xml
+END
+IHasSpecLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IHasSpecLABELPanel.xml
+END
+AGOSubordinationRelationshipMemberINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipMemberINGENIASPanel.xml
+END
+GTPursuesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTPursuesLABELPanel.xml
+END
+UIInitiatesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIInitiatesINGENIASPanel.xml
+END
+GTAffectsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTAffectsLABELPanel.xml
+END
+ContributeNegativelyLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributeNegativelyLABELPanel.xml
+END
+GTFailsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTFailsINGENIASPanel.xml
+END
+OHasGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasGroupLABELPanel.xml
+END
+EPerceivesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesINGENIASPanel.xml
+END
+ApplicationEventSlotsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationEventSlotsINGENIASPanel.xml
+END
+ActionUMLINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ActionUMLINGENIASPanel.xml
+END
+IUIterateUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IUIterateUMLPanel.xml
+END
+ExtendsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ExtendsLABELPanel.xml
+END
+AGOCondSubordinationRelationshipGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipGroupLABELPanel.xml
+END
+ODecomposesGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ODecomposesGroupINGENIASPanel.xml
+END
+IHasSpecINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IHasSpecINGENIASPanel.xml
+END
+InitialNodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InitialNodeINGENIASPanel.xml
+END
+ProtocolINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ProtocolINGENIASPanel.xml
+END
+DecisionNodeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DecisionNodeUMLPanel.xml
+END
+AUMLSendSimpleLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSendSimpleLABELPanel.xml
+END
+EndNodeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EndNodeUMLPanel.xml
+END
+WFStartsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFStartsINGENIASPanel.xml
+END
+WFUsesMethodINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFUsesMethodINGENIASPanel.xml
+END
+TestINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TestINGENIASPanel.xml
+END
+ApplicationBelongsToINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationBelongsToINGENIASPanel.xml
+END
+UIPrecedesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIPrecedesNOICONPanel.xml
+END
+OHasMemberINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasMemberINGENIASPanel.xml
+END
+UMLAssociationNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLAssociationNOICONPanel.xml
+END
+StateGoalINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/StateGoalINGENIASPanel.xml
+END
+WFSpecifiesExecutionNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFSpecifiesExecutionNOICONPanel.xml
+END
+WorkflowBoxINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WorkflowBoxINGENIASPanel.xml
+END
+AInheritsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AInheritsINGENIASPanel.xml
+END
+UMLSendsMessageNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLSendsMessageNOICONPanel.xml
+END
+GTPursuesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTPursuesNOICONPanel.xml
+END
+UMLDescribesUseCaseINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLDescribesUseCaseINGENIASPanel.xml
+END
+ConsumesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConsumesINGENIASPanel.xml
+END
+AUMLSelectionNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSelectionNOICONPanel.xml
+END
+ColumnUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ColumnUMLPanel.xml
+END
+UMLSpecificationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLSpecificationINGENIASPanel.xml
+END
+JLabelStereotype.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/src/ingenias/editor/rendererxml/JLabelStereotype.java
+END
+IAccessesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IAccessesINGENIASPanel.xml
+END
+GTInheritsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTInheritsLABELPanel.xml
+END
+TaskUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TaskUMLPanel.xml
+END
+AGORelationshipGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipGroupINGENIASPanel.xml
+END
+ApplicationEventUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationEventUMLPanel.xml
+END
+JoinNodeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/JoinNodeUMLPanel.xml
+END
+INGENIASUseCaseINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/INGENIASUseCaseINGENIASPanel.xml
+END
+ForkNodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ForkNodeINGENIASPanel.xml
+END
+GTInheritsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTInheritsNOICONPanel.xml
+END
+ExtendsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ExtendsINGENIASPanel.xml
+END
+ConversationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConversationINGENIASPanel.xml
+END
+AGOCondSubordinationRelationshipGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipGroupINGENIASPanel.xml
+END
+GTFailsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTFailsLABELPanel.xml
+END
+AInheritsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AInheritsNOICONPanel.xml
+END
+AGOInconditionalSubordinationRelationshipGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipGroupINGENIASPanel.xml
+END
+AUMLComponentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLComponentINGENIASPanel.xml
+END
+UMLSendsMessageLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLSendsMessageLABELPanel.xml
+END
+GTModifiesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTModifiesNOICONPanel.xml
+END
+StateGoalUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/StateGoalUMLPanel.xml
+END
+WorkflowBoxUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WorkflowBoxUMLPanel.xml
+END
+RuntimeEventINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RuntimeEventINGENIASPanel.xml
+END
+AGOCondSubordinationRelationshipOrgLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipOrgLABELPanel.xml
+END
+WFConsumesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFConsumesINGENIASPanel.xml
+END
+DeploymentPackageINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentPackageINGENIASPanel.xml
+END
+AutonomousEntityQueryINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AutonomousEntityQueryINGENIASPanel.xml
+END
+ColumnINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ColumnINGENIASPanel.xml
+END
+UMLSendsMessageINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLSendsMessageINGENIASPanel.xml
+END
+JLabelHTML.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/src/ingenias/editor/rendererxml/JLabelHTML.java
+END
+OrganizationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OrganizationINGENIASPanel.xml
+END
+GeneralizesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GeneralizesINGENIASPanel.xml
+END
+AUMLSendSimpleNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSendSimpleNOICONPanel.xml
+END
+AHasMSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSINGENIASPanel.xml
+END
+OrganizationNetworkUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OrganizationNetworkUMLPanel.xml
+END
+UIColaboratesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIColaboratesLABELPanel.xml
+END
+UMLCommentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLCommentINGENIASPanel.xml
+END
+UMLCommentUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLCommentUMLPanel.xml
+END
+MyTextPane.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/src/ingenias/editor/rendererxml/MyTextPane.java
+END
+ODecomposesGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ODecomposesGroupNOICONPanel.xml
+END
+AGOSubordinationRelationshipGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipGroupLABELPanel.xml
+END
+WFDecomposesWFINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecomposesWFINGENIASPanel.xml
+END
+AUMLUseProtocolINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLUseProtocolINGENIASPanel.xml
+END
+AGOSubordinationRelationshipOrgINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipOrgINGENIASPanel.xml
+END
+WFConnectsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFConnectsNOICONPanel.xml
+END
+CDUsesCodeLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/CDUsesCodeLABELPanel.xml
+END
+Panel1.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/Panel1.java
+END
+AHasMSProcessorNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSProcessorNOICONPanel.xml
+END
+IUConcurrenceINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IUConcurrenceINGENIASPanel.xml
+END
+WFResponsibleLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFResponsibleLABELPanel.xml
+END
+WFUsesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFUsesNOICONPanel.xml
+END
+WFStartsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFStartsNOICONPanel.xml
+END
+WFUsesMethodNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFUsesMethodNOICONPanel.xml
+END
+INGENIASUseCaseUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/INGENIASUseCaseUMLPanel.xml
+END
+MentalInstanceSpecificationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalInstanceSpecificationINGENIASPanel.xml
+END
+GTSatisfiesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTSatisfiesLABELPanel.xml
+END
+MessagePassingINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MessagePassingINGENIASPanel.xml
+END
+INGENIASCodeComponentUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/INGENIASCodeComponentUMLPanel.xml
+END
+RoleWSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/75/trunk/IDK/editor/src/ingenias/editor/rendererxml/RoleWSINGENIASPanel.xml
+END
+WFConsumesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFConsumesLABELPanel.xml
+END
+ApplicationWSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationWSUMLPanel.xml
+END
+ODecomposesWFINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ODecomposesWFINGENIASPanel.xml
+END
+DefinesDeploymentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DefinesDeploymentINGENIASPanel.xml
+END
+GeneralEventINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GeneralEventINGENIASPanel.xml
+END
+InteractionINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InteractionINGENIASPanel.xml
+END
+MentalStateProcessorINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalStateProcessorINGENIASPanel.xml
+END
+GoalUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GoalUMLPanel.xml
+END
+WFFollowsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFFollowsINGENIASPanel.xml
+END
+AContainsMELABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AContainsMELABELPanel.xml
+END
+MyEditorPane.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/src/ingenias/editor/rendererxml/MyEditorPane.java
+END
+EnvironmentApplicationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EnvironmentApplicationINGENIASPanel.xml
+END
+IncludesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IncludesLABELPanel.xml
+END
+UIPrecedesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIPrecedesINGENIASPanel.xml
+END
+AGOInconditionalSubordinationRelationshipMemberINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipMemberINGENIASPanel.xml
+END
+AGORelationshipGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipGroupNOICONPanel.xml
+END
+AgentUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentUMLPanel.xml
+END
+AUMLSpecificationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSpecificationINGENIASPanel.xml
+END
+RoleUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RoleUMLPanel.xml
+END
+AGORelationshipMemberLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipMemberLABELPanel.xml
+END
+AGOCondSubordinationRelationshipOrgINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipOrgINGENIASPanel.xml
+END
+DefinesDeploymentNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DefinesDeploymentNOICONPanel.xml
+END
+AGORelationshipMemberNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipMemberNOICONPanel.xml
+END
+EResourceBelongsToINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EResourceBelongsToINGENIASPanel.xml
+END
+CDUsesCodeNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/CDUsesCodeNOICONPanel.xml
+END
+ARoleInheritanceINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ARoleInheritanceINGENIASPanel.xml
+END
+DeploymentUnitByTypeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeUMLPanel.xml
+END
+ApplicationWSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationWSINGENIASPanel.xml
+END
+RuntimeConversationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RuntimeConversationINGENIASPanel.xml
+END
+WFFollowsGuardedINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFFollowsGuardedINGENIASPanel.xml
+END
+InteractionUnitINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InteractionUnitINGENIASPanel.xml
+END
+GTInheritsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTInheritsINGENIASPanel.xml
+END
+AGOClientServerRelationshipGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipGroupNOICONPanel.xml
+END
+AGOClientServerRelationshipMemberLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipMemberLABELPanel.xml
+END
+JTextEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/JTextEditor.java
+END
+AContainsMENOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AContainsMENOICONPanel.xml
+END
+UMLRealizesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLRealizesINGENIASPanel.xml
+END
+GTDecomposesORINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesORINGENIASPanel.xml
+END
+DashedVerticalLinePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DashedVerticalLinePanel.java
+END
+IColaboratesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IColaboratesNOICONPanel.xml
+END
+InitialNodeUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InitialNodeUMLPanel.xml
+END
+WFResponsableNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFResponsableNOICONPanel.xml
+END
+GTCreatesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTCreatesLABELPanel.xml
+END
+WFProducesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFProducesLABELPanel.xml
+END
+GTAffectsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTAffectsINGENIASPanel.xml
+END
+ContributeNegativelyINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributeNegativelyINGENIASPanel.xml
+END
+ActivityFinalINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ActivityFinalINGENIASPanel.xml
+END
+MentalInstanceSpecificationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalInstanceSpecificationUMLPanel.xml
+END
+WFFollowsGuardedNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFFollowsGuardedNOICONPanel.xml
+END
+GTDecomposesANDNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesANDNOICONPanel.xml
+END
+OHasWFLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasWFLABELPanel.xml
+END
+WFResponsibleNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFResponsibleNOICONPanel.xml
+END
+AgentModelBelieveINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentModelBelieveINGENIASPanel.xml
+END
+BelieveUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/BelieveUMLPanel.xml
+END
+DeploymentUnitByTypeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeINGENIASPanel.xml
+END
+WFSpecifiesExecutionLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFSpecifiesExecutionLABELPanel.xml
+END
+ODecomposesGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ODecomposesGroupLABELPanel.xml
+END
+TestUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TestUMLPanel.xml
+END
+ConcreteAgentUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConcreteAgentUMLPanel.xml
+END
+MentalStateUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalStateUMLPanel.xml
+END
+GTAndDependsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTAndDependsLABELPanel.xml
+END
+ConsumesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConsumesNOICONPanel.xml
+END
+GTSatisfiesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTSatisfiesINGENIASPanel.xml
+END
+AUMLUseProtocolNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLUseProtocolNOICONPanel.xml
+END
+GTAndDependsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTAndDependsNOICONPanel.xml
+END
+AttributesPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AttributesPanel.java
+END
+EResourceBelongsToLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EResourceBelongsToLABELPanel.xml
+END
+GTDecomposesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesINGENIASPanel.xml
+END
+DeploymentPackageUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/70/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentPackageUMLPanel.xml
+END
+AutonomousEntityQueryUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AutonomousEntityQueryUMLPanel.xml
+END
+GTAffectsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTAffectsNOICONPanel.xml
+END
+ContributeNegativelyNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributeNegativelyNOICONPanel.xml
+END
+CollectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/CollectionPanel.java
+END
+GTDestroysNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDestroysNOICONPanel.xml
+END
+WFStartsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFStartsLABELPanel.xml
+END
+WFUsesMethodLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFUsesMethodLABELPanel.xml
+END
+DefinesDeploymentLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DefinesDeploymentLABELPanel.xml
+END
+GTPursuesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTPursuesINGENIASPanel.xml
+END
+GTDecomposesANDLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesANDLABELPanel.xml
+END
+IInitiatesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IInitiatesINGENIASPanel.xml
+END
+ApplicationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationINGENIASPanel.xml
+END
+MergeNodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MergeNodeINGENIASPanel.xml
+END
+ODecomposesWFNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ODecomposesWFNOICONPanel.xml
+END
+IColaboratesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IColaboratesINGENIASPanel.xml
+END
+EPerceivesPollingNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesPollingNOICONPanel.xml
+END
+CommunicationEventUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/CommunicationEventUMLPanel.xml
+END
+AgentWSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentWSUMLPanel.xml
+END
+GTCreatesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTCreatesNOICONPanel.xml
+END
+MessagePassingUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MessagePassingUMLPanel.xml
+END
+WFProducesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFProducesNOICONPanel.xml
+END
+AGOInconditionalSubordinationRelationshipOrgINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipOrgINGENIASPanel.xml
+END
+UMLAssociationLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLAssociationLABELPanel.xml
+END
+GTDecomposesANDINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesANDINGENIASPanel.xml
+END
+ParticipatesInUseCaseNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ParticipatesInUseCaseNOICONPanel.xml
+END
+AInstanceOfNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AInstanceOfNOICONPanel.xml
+END
+DecisionNodeInputINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DecisionNodeInputINGENIASPanel.xml
+END
+AUMLAlternativeRowINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLAlternativeRowINGENIASPanel.xml
+END
+ResourceUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ResourceUMLPanel.xml
+END
+FrameFactUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/FrameFactUMLPanel.xml
+END
+ContributePositivelyLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributePositivelyLABELPanel.xml
+END
+AgentRequirementsQueryUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentRequirementsQueryUMLPanel.xml
+END
+AHasMSManagerLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSManagerLABELPanel.xml
+END
+TestingPackageINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TestingPackageINGENIASPanel.xml
+END
+GeneralizesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GeneralizesLABELPanel.xml
+END
+IUIterateINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IUIterateINGENIASPanel.xml
+END
+DeploymentUnitByTypeWithInitMSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeWithInitMSUMLPanel.xml
+END
+AGOCondSubordinationRelationshipOrgNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipOrgNOICONPanel.xml
+END
+AHasMSProcessorLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSProcessorLABELPanel.xml
+END
+WFUsesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFUsesLABELPanel.xml
+END
+OHasGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasGroupNOICONPanel.xml
+END
+WFFollowsGuardedLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFFollowsGuardedLABELPanel.xml
+END
+EPerceivesPollingLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesPollingLABELPanel.xml
+END
+ApplicationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationUMLPanel.xml
+END
+AHasMSNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSNOICONPanel.xml
+END
+OHasMemberLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasMemberLABELPanel.xml
+END
+ConditionalMentalStateINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConditionalMentalStateINGENIASPanel.xml
+END
+AUMLAlternativeBoxINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLAlternativeBoxINGENIASPanel.xml
+END
+ActivityFinalUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ActivityFinalUMLPanel.xml
+END
+GTDestroysINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDestroysINGENIASPanel.xml
+END
+WFParticipatesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFParticipatesLABELPanel.xml
+END
+WFEndsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFEndsLABELPanel.xml
+END
+UIInitiatesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIInitiatesLABELPanel.xml
+END
+SubProtocolUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/SubProtocolUMLPanel.xml
+END
+GTModifiesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTModifiesLABELPanel.xml
+END
+TaskWSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/75/trunk/IDK/editor/src/ingenias/editor/rendererxml/TaskWSINGENIASPanel.xml
+END
+GTDependsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDependsINGENIASPanel.xml
+END
+EPerceivesPollingINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesPollingINGENIASPanel.xml
+END
+AGORelationshipMemberINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipMemberINGENIASPanel.xml
+END
+EPerceivesNotificationLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesNotificationLABELPanel.xml
+END
+IAccessesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IAccessesLABELPanel.xml
+END
+GTDecomposesORNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesORNOICONPanel.xml
+END
+UMLAnnotatedElementLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLAnnotatedElementLABELPanel.xml
+END
+UMLAssociationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLAssociationINGENIASPanel.xml
+END
+ShareToupleUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ShareToupleUMLPanel.xml
+END
+DeploymentUnitByTypeWithInitMSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeWithInitMSINGENIASPanel.xml
+END
+GroupBelongsToOrganizationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GroupBelongsToOrganizationINGENIASPanel.xml
+END
+AUMLContainerUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLContainerUMLPanel.xml
+END
+AGOSubordinationRelationshipGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipGroupINGENIASPanel.xml
+END
+GRASIASpecificationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GRASIASpecificationUMLPanel.xml
+END
+OHasGroupINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasGroupINGENIASPanel.xml
+END
+WSConnectsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WSConnectsLABELPanel.xml
+END
+WFConnectsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFConnectsINGENIASPanel.xml
+END
+UIPrecedesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIPrecedesLABELPanel.xml
+END
+WorkflowUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WorkflowUMLPanel.xml
+END
+GTSatisfiesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTSatisfiesNOICONPanel.xml
+END
+CompromiseUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/CompromiseUMLPanel.xml
+END
+OrganizationNetworkINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OrganizationNetworkINGENIASPanel.xml
+END
+GeneralEventUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GeneralEventUMLPanel.xml
+END
+AUMLUseProtocolLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLUseProtocolLABELPanel.xml
+END
+InteractionUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InteractionUMLPanel.xml
+END
+OrganizationGroupUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OrganizationGroupUMLPanel.xml
+END
+EPerceivesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesNOICONPanel.xml
+END
+UISelectionINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UISelectionINGENIASPanel.xml
+END
+AGOInconditionalSubordinationRelationshipMemberNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipMemberNOICONPanel.xml
+END
+RuntimeEventUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RuntimeEventUMLPanel.xml
+END
+GroupBelongsToOrganizationNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GroupBelongsToOrganizationNOICONPanel.xml
+END
+LifelineUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/LifelineUMLPanel.xml
+END
+WFCancelsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFCancelsLABELPanel.xml
+END
+EPerceivesNotificationNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesNotificationNOICONPanel.xml
+END
+GTModifiesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTModifiesINGENIASPanel.xml
+END
+PlanUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/PlanUMLPanel.xml
+END
+ActionUMLUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ActionUMLUMLPanel.xml
+END
+GoalStateWSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GoalStateWSUMLPanel.xml
+END
+AGOSubordinationRelationshipGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipGroupNOICONPanel.xml
+END
+AUMLSpecificationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSpecificationUMLPanel.xml
+END
+ODecomposesWFLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ODecomposesWFLABELPanel.xml
+END
+GTAndDependsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTAndDependsINGENIASPanel.xml
+END
+RemoteProcedureCallINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RemoteProcedureCallINGENIASPanel.xml
+END
+RemoteProcedureCallUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RemoteProcedureCallUMLPanel.xml
+END
+EPerceivesNotificationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesNotificationUMLPanel.xml
+END
+RoleINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RoleINGENIASPanel.xml
+END
+AGOSubordinationRelationshipMemberLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipMemberLABELPanel.xml
+END
+ARoleInheritanceNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ARoleInheritanceNOICONPanel.xml
+END
+AUMLAlternativeBoxUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLAlternativeBoxUMLPanel.xml
+END
+IncludesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IncludesINGENIASPanel.xml
+END
+CommunicationEventINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/CommunicationEventINGENIASPanel.xml
+END
+AGOClientServerRelationshipOrgLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipOrgLABELPanel.xml
+END
+DeploymentUnitByTypeMSEntityUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeMSEntityUMLPanel.xml
+END
+OHasMemberNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasMemberNOICONPanel.xml
+END
+AGOClientServerRelationshipGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipGroupLABELPanel.xml
+END
+CompromiseINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/CompromiseINGENIASPanel.xml
+END
+DefaultPDJLabelIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DefaultPDJLabelIcon.java
+END
+ContributeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributeINGENIASPanel.xml
+END
+ConsumesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConsumesLABELPanel.xml
+END
+InteractionUnitUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InteractionUnitUMLPanel.xml
+END
+CDUsesCodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/CDUsesCodeINGENIASPanel.xml
+END
+RuntimeFactUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RuntimeFactUMLPanel.xml
+END
+AUMLSendSimpleINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSendSimpleINGENIASPanel.xml
+END
+UMLDescribesUseCaseNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLDescribesUseCaseNOICONPanel.xml
+END
+WFDecomposesWFNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecomposesWFNOICONPanel.xml
+END
+UMLRealizesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLRealizesNOICONPanel.xml
+END
+WFParticipatesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFParticipatesINGENIASPanel.xml
+END
+ResourceINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ResourceINGENIASPanel.xml
+END
+ParticipatesInUseCaseINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ParticipatesInUseCaseINGENIASPanel.xml
+END
+TestingPackageUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TestingPackageUMLPanel.xml
+END
+IAccessesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IAccessesNOICONPanel.xml
+END
+WFConnectsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFConnectsLABELPanel.xml
+END
+WFSpecifiesExecutionINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFSpecifiesExecutionINGENIASPanel.xml
+END
+UIColaboratesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UIColaboratesINGENIASPanel.xml
+END
+GoalStateWSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/75/trunk/IDK/editor/src/ingenias/editor/rendererxml/GoalStateWSINGENIASPanel.xml
+END
+TextUseCaseUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TextUseCaseUMLPanel.xml
+END
+WFDecidesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecidesINGENIASPanel.xml
+END
+AgentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AgentINGENIASPanel.xml
+END
+IncludesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IncludesNOICONPanel.xml
+END
+InternalApplicationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InternalApplicationINGENIASPanel.xml
+END
+InternalApplicationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/InternalApplicationUMLPanel.xml
+END
+AContainsMEINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AContainsMEINGENIASPanel.xml
+END
+ExtendsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ExtendsNOICONPanel.xml
+END
+AGOCondSubordinationRelationshipGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipGroupNOICONPanel.xml
+END
+WFFollowsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFFollowsLABELPanel.xml
+END
+GTDependsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDependsNOICONPanel.xml
+END
+DecisionNodeInputLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DecisionNodeInputLABELPanel.xml
+END
+ApplicationEventINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ApplicationEventINGENIASPanel.xml
+END
+JoinNodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/JoinNodeINGENIASPanel.xml
+END
+UMLAnnotatedElementINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLAnnotatedElementINGENIASPanel.xml
+END
+ContributeNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributeNOICONPanel.xml
+END
+AGOClientServerRelationshipMemberINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipMemberINGENIASPanel.xml
+END
+AGOCondSubordinationRelationshipMemberLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOCondSubordinationRelationshipMemberLABELPanel.xml
+END
+WFPlaysLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFPlaysLABELPanel.xml
+END
+AGOSubordinationRelationshipMemberNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOSubordinationRelationshipMemberNOICONPanel.xml
+END
+WorkflowINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WorkflowINGENIASPanel.xml
+END
+INGENIASCodeComponentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/INGENIASCodeComponentINGENIASPanel.xml
+END
+MentalStateManagerINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalStateManagerINGENIASPanel.xml
+END
+FactUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/FactUMLPanel.xml
+END
+GTOrDependsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTOrDependsINGENIASPanel.xml
+END
+GTDecomposesORLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesORLABELPanel.xml
+END
+GroupBelongsToOrganizationLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GroupBelongsToOrganizationLABELPanel.xml
+END
+GTFailsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTFailsNOICONPanel.xml
+END
+ConcreteAgentINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ConcreteAgentINGENIASPanel.xml
+END
+MentalStateINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/rendererxml/MentalStateINGENIASPanel.xml
+END
+AGORelationshipOrgLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipOrgLABELPanel.xml
+END
+GTDecomposesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTDecomposesNOICONPanel.xml
+END
+AGORelationshipOrgNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGORelationshipOrgNOICONPanel.xml
+END
+PlanINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/PlanINGENIASPanel.xml
+END
+WFResponsableLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFResponsableLABELPanel.xml
+END
+TextUseCaseINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TextUseCaseINGENIASPanel.xml
+END
+AHasMSLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AHasMSLABELPanel.xml
+END
+AGOClientServerRelationshipMemberNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOClientServerRelationshipMemberNOICONPanel.xml
+END
+UMLSpecificationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UMLSpecificationUMLPanel.xml
+END
+ProtocolUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ProtocolUMLPanel.xml
+END
+TaskINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TaskINGENIASPanel.xml
+END
+WFPursueLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFPursueLABELPanel.xml
+END
+AGOInconditionalSubordinationRelationshipGroupLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipGroupLABELPanel.xml
+END
+AUMLPortINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLPortINGENIASPanel.xml
+END
+AGOInconditionalSubordinationRelationshipOrgNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipOrgNOICONPanel.xml
+END
+WFCancelsINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFCancelsINGENIASPanel.xml
+END
+GTOrDependsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTOrDependsNOICONPanel.xml
+END
+GRASIASpecificationINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GRASIASpecificationINGENIASPanel.xml
+END
+IPursuesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IPursuesNOICONPanel.xml
+END
+AInheritsLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AInheritsLABELPanel.xml
+END
+WFPursueNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFPursueNOICONPanel.xml
+END
+DeploymentUnitByTypeMSEntityINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeMSEntityINGENIASPanel.xml
+END
+TextNoteUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TextNoteUMLPanel.xml
+END
+TaskWSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/TaskWSUMLPanel.xml
+END
+FactINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/FactINGENIASPanel.xml
+END
+GTCreatesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/GTCreatesINGENIASPanel.xml
+END
+WFProducesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFProducesINGENIASPanel.xml
+END
+JLabelIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/JLabelIcon.java
+END
+DeploymentUnitByTypeEnumInitMSINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/DeploymentUnitByTypeEnumInitMSINGENIASPanel.xml
+END
+LifelineINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/LifelineINGENIASPanel.xml
+END
+EnvironmentApplicationUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EnvironmentApplicationUMLPanel.xml
+END
+WFDecomposesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFDecomposesINGENIASPanel.xml
+END
+ContributeLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributeLABELPanel.xml
+END
+IPursuesLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IPursuesLABELPanel.xml
+END
+AUMLPortUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLPortUMLPanel.xml
+END
+AUMLSelectionINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLSelectionINGENIASPanel.xml
+END
+UISelectionLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/UISelectionLABELPanel.xml
+END
+ContributePositivelyINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/ContributePositivelyINGENIASPanel.xml
+END
+AGOInconditionalSubordinationRelationshipGroupNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipGroupNOICONPanel.xml
+END
+WFFollowsNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFFollowsNOICONPanel.xml
+END
+WFResponsableINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFResponsableINGENIASPanel.xml
+END
+BelieveINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/BelieveINGENIASPanel.xml
+END
+RoleWSUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/RoleWSUMLPanel.xml
+END
+EndNodeINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EndNodeINGENIASPanel.xml
+END
+AInstanceOfLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AInstanceOfLABELPanel.xml
+END
+WFParticipatesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFParticipatesNOICONPanel.xml
+END
+AGOInconditionalSubordinationRelationshipMemberLABELPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AGOInconditionalSubordinationRelationshipMemberLABELPanel.xml
+END
+EPerceivesPollingUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/EPerceivesPollingUMLPanel.xml
+END
+IPursuesINGENIASPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/IPursuesINGENIASPanel.xml
+END
+OHasWFNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/OHasWFNOICONPanel.xml
+END
+AUMLComponentUMLPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/AUMLComponentUMLPanel.xml
+END
+WFConsumesNOICONPanel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/rendererxml/WFConsumesNOICONPanel.xml
+END
