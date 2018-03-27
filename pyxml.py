@@ -28,37 +28,12 @@ from app.mongohandler import mongoHandler
 from app.reparser import reParser
 from app.showDetails import showDetails
 from app.compiler import Compiler
+from app.dbusIface import DbusIface
 
 # ////////////////////////////////////////////////////////////////////////////////////////////////
 # APP
 # ////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-# DBUS____________________________________________->
-#
-# Clase orientada a crear metodos accesibles
-# mediante DBUS con el fin de proporcionar
-# un metodo de comunicacion interproceso al
-# IDE si en un futuro se quisiese implementar
-#
-#
-
-# class DBUSService(threading.Thread,dbus.service.Object):
-#   def run(self):
-#      bus_name=dbus.service.BusName("com.example.service",dbus.SessionBus())
-#      dbus.service.Object.__init__(self, bus_name, dbusconf['name'])
-#      logging.info("DBUS:Starting service")
-#
-#    @dbus.service.method("com.example.service.parse_an_element")
-#    def parse_an_element(self,input,output,autor):
-#      init_the_parse(input,output,autor)
-#      return "Doing the parse"
-#    @dbus.service.method("com.example.service.Salir")
-#    def salir(self):
-#      logging.info("DBUS:shutting down")
-#      self._loop.quit()
-#      stop_flask()
-#
 
 # _______________FLASK________________->
 class flaskApp(threading.Thread):
@@ -502,9 +477,13 @@ if (__name__ == "__main__"):
 # MODE___________________________________________->
     if dbusMode and not flaskMode:
         logging.info("DBUS MODE")
-#      gobject.threads_init()
-#      dbus.glib.init_threads()
-#      publish_dbus()
+        dbusserv = DbusIface(dbusconf)
+        dbusserv.start()
+        flag = True
+        while flag:
+            op = raw_input("q->salir")
+            if op == "q":
+                flag = False
         sys.exit(255)
 # _____________________________________FLASK
 # MODE_____________________________________________->
