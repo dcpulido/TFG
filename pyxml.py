@@ -94,7 +94,68 @@ def shutdown():
     return 'Server shutting down...'
 
 
-@app.route("/parse", methods=['GET', 'POST'])
+@app.route("/generate", methods=['POST'])
+def generate():
+    logging.info("FLASK:generate url from FLASk")
+    if request.method == 'POST':
+        data = request.json
+        cc = mongohand.getByIdMongoDB(data["id"])
+        ex = ""
+        if "/" in cc["output"]:
+            ex = cc["output"].split("/")[1].split(".")[0]
+        else:
+            ex = cc["output"]
+        name = cc["autor"] + \
+            "_" + \
+            ex
+        init_code_generation(generatorconf,
+                             cc['bin-data'],
+                             name)
+    return render_template('index.html')
+
+
+@app.route("/compile", methods=['POST'])
+def compile_fl():
+    """
+    parse xml
+    :return: redirect to index
+    """
+    logging.info("FLASK:compile url")
+    if request.method == 'POST':
+        data = request.json
+        logging.info("FLASK:compile " + data["id"])
+        cmp.compile(data["id"])
+    return redirect("http://localhost:5000/")
+
+
+@app.route("/start", methods=['POST'])
+def start_prof():
+    """
+    parse xml
+    :return: redirect to index
+    """
+    logging.info("FLASK:start url")
+    if request.method == 'POST':
+        data = request.json
+        logging.info("FLASK:start " + data["id"])
+        cmp.start_prof(data["id"])
+    return redirect("http://localhost:5000/")
+
+
+@app.route("/delete_prof", methods=['POST'])
+def delete_prof():
+    """
+    parse xml
+    :return: redirect to index
+    """
+    logging.info("FLASK:delete_prof url")
+    if request.method == 'POST':
+        data = request.json
+        logging.info("FLASK:delete_prof " + data["id"])
+        cmp.remove_prof(data["id"])
+    return redirect("http://localhost:5000/")
+
+
 def parse_xml():
     """
     parse xml

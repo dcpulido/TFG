@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels
+END
+AgentModelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/AgentModelPanel.java
+END
+TasksAndGoalsModelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/TasksAndGoalsModelPanel.java
+END
+InteractionModelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/InteractionModelPanel.java
+END
+ActivityDiagramPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/ActivityDiagramPanel.java
+END
+DeployDiagramPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/DeployDiagramPanel.java
+END
+AUMLInteractionDiagramPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/AUMLInteractionDiagramPanel.java
+END
+EnvironmentModelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/EnvironmentModelPanel.java
+END
+OrganizationModelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/OrganizationModelPanel.java
+END
+ComponentDiagramPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/ComponentDiagramPanel.java
+END
+UseCaseDiagramPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/panels/UseCaseDiagramPanel.java
+END

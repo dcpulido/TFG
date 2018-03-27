@@ -1,0 +1,13 @@
+
+
+
+##panel layout="GridLayout(2,1)" Background="white" border="LineBorder(Color.black,1)"#
+##panel layout="FlowLayout" Background="white" border="LineBorder(Color.black,1)"#
+##label id="Label" Text="prueba" /#
+##/panel#
+##panel layout="FlowLayout" Background="white" border="LineBorder(Color.black,1)"#
+##label id="Protocol" /#
+##/panel#
+##/panel#
+					
+		

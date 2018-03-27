@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ingenias/!svn/ver/325/trunk/IDK/editor/src/ingenias/editor/extension
+END
+BasicTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/extension/BasicTool.java
+END
+UpdateToolsAndCG.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/302/trunk/IDK/editor/src/ingenias/editor/extension/UpdateToolsAndCG.java
+END
+RunCodeGeneratorSwingTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/extension/RunCodeGeneratorSwingTask.java
+END
+BasicCodeGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/extension/BasicCodeGenerator.java
+END
+BasicToolImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/146/trunk/IDK/editor/src/ingenias/editor/extension/BasicToolImp.java
+END
+ManageExtensions.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/325/trunk/IDK/editor/src/ingenias/editor/extension/ManageExtensions.java
+END
+BasicCodeGeneratorImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/extension/BasicCodeGeneratorImp.java
+END
+ModuleLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/302/trunk/IDK/editor/src/ingenias/editor/extension/ModuleLoader.java
+END
+RunToolSwingTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/extension/RunToolSwingTask.java
+END

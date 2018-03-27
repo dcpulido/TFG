@@ -1,0 +1,20 @@
+
+
+##panel layout="BorderLayout"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##label id="Label"  /#
+##stereotype text="EPerceivesNotification" HorizontalAlignment="CENTER" /#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+##iconlabel icon="images/attribute.gif" /#
+##label text="event:"/# 
+##label id="Event"/# 
+##/panel#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+##iconlabel icon="images/attribute.gif" /#
+##label text="method:"/# 
+##label id="ApplicationMethod"/# 
+##/panel#
+##/vbox#
+##/panel#
+					
+		

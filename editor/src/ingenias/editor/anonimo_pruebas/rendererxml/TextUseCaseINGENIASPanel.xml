@@ -1,0 +1,8 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##label id="Id" constraints="BorderLayout.NORTH" /#
+##label Foreground="blue" icon="images/usecase.gif" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+					
+		

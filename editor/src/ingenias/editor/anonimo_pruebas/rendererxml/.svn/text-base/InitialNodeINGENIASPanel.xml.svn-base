@@ -1,0 +1,7 @@
+
+
+						##panel layout="BorderLayout" Background="white"#
+						##label Foreground="blue" icon="images/initialnode.gif" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+						##/panel#
+					
+		

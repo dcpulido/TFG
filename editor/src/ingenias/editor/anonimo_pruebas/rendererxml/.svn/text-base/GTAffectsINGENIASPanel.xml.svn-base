@@ -1,0 +1,11 @@
+
+
+
+##panel layout="BorderLayout"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##label id="Label"  /#
+##stereotype text="GTAffects" HorizontalAlignment="CENTER" /#
+##/vbox#
+##/panel#
+					
+		
