@@ -74,3 +74,23 @@ class mongoHandler:
         client = MongoClient()
         db = client.tfg
         db.ob.delete_many({})
+        
+    def get_by_arg(self,
+                   arg,
+                   collection,
+                   one_result=False):
+        client = MongoClient()
+        db = eval("client."+collection)
+        cursor = db.ob.find(arg)
+        toret = []
+        for c in cursor:
+            if "bin-data" in c.keys():
+                c["bin-data"] = pickle.loads(c['bin-data'])
+            toret.append(c)
+        if one_result:
+            if len(toret) >= 1:
+                print "entra"
+                return toret[0]
+            else:
+                return {}
+        return toret

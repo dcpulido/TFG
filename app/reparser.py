@@ -1,7 +1,10 @@
 import logging
-
-from app.obbj import complexRelation
-from app.obbj import diagram
+try:
+    from app.obbj import complexRelation
+    from app.obbj import diagram
+except:
+    from obbj import complexRelation
+    from obbj import diagram
 
 # REPARSEADO____________________________________________->
 #

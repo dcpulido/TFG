@@ -13,6 +13,11 @@ import threading
 import sys
 import os
 
+import dbus.service
+import dbus.glib
+import gobject
+import dbus
+
 from flask import render_template
 from flask import Flask
 from flask import request
@@ -35,7 +40,22 @@ from app.dbusIface import DbusIface
 # ////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+def catchall_handler(*args, **kwargs):
+    """Catch all handler.
+    Catch and print information about all singals.
+    """
+    if kwargs['dbus_interface'] == "tfg.pyxml.dbs.parser":
+        print('%s:%s' % (kwargs['dbus_interface'], kwargs['member']))
+
+
+def quit_handler():
+    """Signal handler for quitting the receiver."""
+    print 'Quitting....'
+    loop.quit()
+
 # _______________FLASK________________->
+
+
 class flaskApp(threading.Thread):
     """
     Clase orientada a proporcionar una interfaz
@@ -71,22 +91,29 @@ def shutdown():
 
 @app.route("/generate", methods=['POST'])
 def generate():
-    logging.info("FLASK:generate url from FLASk")
-    if request.method == 'POST':
-        data = request.json
-        cc = mongohand.getByIdMongoDB(data["id"])
-        ex = ""
-        if "/" in cc["output"]:
-            ex = cc["output"].split("/")[1].split(".")[0]
-        else:
-            ex = cc["output"]
-        name = cc["autor"] + \
-            "_" + \
-            ex
-        init_code_generation(generatorconf,
-                             cc['bin-data'],
-                             name)
-    return render_template('index.html')
+    try:
+        logging.info("FLASK:generate url from FLASk")
+        if request.method == 'POST':
+            data = request.json
+            cc = mongohand.get_by_arg(data,
+                                      "tfg",
+                                      one_result=True)
+            ex = ""
+            if "/" in cc["output"]:
+                ex = cc["output"].split("/")[1].split(".")[0]
+            else:
+                ex = cc["output"]
+            name = cc["autor"] + \
+                "_" + \
+                ex
+            init_code_generation(generatorconf,
+                                 cc['bin-data'],
+                                 name)
+        return render_template('index.html')
+    except Exception,e:
+        raise e
+        print "rompe"
+        return "ko"
 
 
 @app.route("/compile", methods=['POST'])
@@ -100,7 +127,7 @@ def compile_fl():
         data = request.json
         logging.info("FLASK:compile " + data["id"])
         cmp.compile(data["id"])
-    return redirect("http://localhost:5000/")
+    return render_template('index.html')
 
 
 @app.route("/start", methods=['POST'])
@@ -131,6 +158,7 @@ def delete_prof():
     return redirect("http://localhost:5000/")
 
 
+@app.route("/parse", methods=['POST'])
 def parse_xml():
     """
     parse xml
@@ -407,6 +435,7 @@ if (__name__ == "__main__"):
     compilerconf = get_conf("Compiler")
 
     cmp = Compiler(generatorconf, compilerconf)
+    gen = Code_generator(generatorconf)
 
     logging.info("parsing args")
     dbusMode = False
@@ -477,8 +506,22 @@ if (__name__ == "__main__"):
 # MODE___________________________________________->
     if dbusMode and not flaskMode:
         logging.info("DBUS MODE")
-        dbusserv = DbusIface(dbusconf)
-        dbusserv.start()
+        loop = gobject.MainLoop()
+        bus = dbus.SessionBus()
+        bus_name = dbus.service.BusName('tfg.pyxml.dbs', bus=bus)
+        obj = DbusIface(bus_name,
+                        '/tfg/pyxml',
+                        loop,
+                        mongohand,
+                        cmp,
+                        gen)
+        bus.add_signal_receiver(catchall_handler,
+                                interface_keyword='dbus_interface',
+                                member_keyword='member')
+        bus.add_signal_receiver(quit_handler,
+                                dbus_interface='ctag.pyxml.sub.event',
+                                signal_name='quit_signal')
+        loop.run()
         flag = True
         while flag:
             op = raw_input("q->salir")

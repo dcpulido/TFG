@@ -61,6 +61,7 @@ class Compiler:
                self.env_dir +
                "&& echo $PWD &&" +
                self.compile_cmd)
+        # HERE RETURN SOMETHING
 
     def start_prof(self, source):
         logging.info("STARTING: " + source)
