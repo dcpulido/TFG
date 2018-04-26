@@ -28,6 +28,7 @@ class mongoHandler:
         logging.info("MONGO elemnt inserted id:" +
                      str(result.inserted_id))
 
+
     def getByIdMongoDB(self, id):
         logging.info("MONGO get element by id")
         client = MongoClient()
@@ -48,6 +49,11 @@ class mongoHandler:
         client = MongoClient()
         db = client.tfg
         db.ob.delete_many({'_id': ObjectId(id)})
+
+    def delete_by_arg(self, arg):
+        client = MongoClient()
+        db = client.tfg
+        db.ob.delete_many(arg)
 
     def initMongoDB(self):
         logging.info("MONGO initializing DB")
