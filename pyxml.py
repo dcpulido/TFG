@@ -123,11 +123,14 @@ def compile_fl():
     :return: redirect to index
     """
     logging.info("FLASK:compile url")
-    if request.method == 'POST':
-        data = request.json
-        logging.info("FLASK:compile " + data["id"])
-        cmp.compile(data["id"])
-    return render_template('index.html')
+    try:
+        if request.method == 'POST':
+            data = request.json
+            logging.info("FLASK:compile " + data["id"])
+            cmp.compile(data["id"])
+        return "ok"
+    except Exception,e:
+        return "ko"
 
 
 @app.route("/start", methods=['POST'])
@@ -137,11 +140,14 @@ def start_prof():
     :return: redirect to index
     """
     logging.info("FLASK:start url")
-    if request.method == 'POST':
-        data = request.json
-        logging.info("FLASK:start " + data["id"])
-        cmp.start_prof(data["id"])
-    return redirect("http://localhost:5000/")
+    try:
+        if request.method == 'POST':
+            data = request.json
+            logging.info("FLASK:start " + data["id"])
+            cmp.start_prof(data["id"])
+        return "ok"
+    except Exception,e:
+        return "ko"
 
 
 @app.route("/delete_prof", methods=['POST'])
@@ -171,12 +177,14 @@ def parse_xml():
         inp = str(request.form.get('input'))
         au = str(request.form.get('autor'))
 
-        if ou == "":
+
+        if ou == "" or ou == "None":
             ou = xmls
-        if inp == "":
+        if inp == "" or inp == "None":
             inp = xmli
-        if au == "":
+        if au == "" or au == "None":
             au = autor
+
 
         logging.info("FLASK: " +
                      ou +
@@ -188,7 +196,7 @@ def parse_xml():
                        ou,
                        au)
 
-    return redirect("http://localhost:5000/")
+    return "ok"
 
 
 @app.route("/operations", methods=['GET'])
@@ -254,10 +262,8 @@ def getEncodeOps():
                        'output': str(c['output']),
                        'date': str(c['date']),
                        'diagrams': getEncodeDig(c['bin-data'])})
-    str1 = "["
-    for t in toret1:
-        str1 += json.dumps(t) + ","
-    return str1[:len(str1) - 1] + "]"
+    
+    return json.dumps(toret1)
 
 
 def getEncodeProf():
