@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>PYXML</title>
+    <meta name="description" content="Sota manager">
+    <meta name="author" content="SitePoint">
+    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../static/css/ownstyle.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <!-- Archivos para hacer las cosas con estilo -->
+    
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.js"> </script>
+    
+  </head>
+  <body>
+    <div class="header-top">
+      <div class="header-bottom">
+        <div class="logo myLogo">
+          <h1><a href="/">XML GENERATOR</a></h1>
+        </div>
+        <div class="top-nav myTop" id="mainHeader">
+          
+        </div>
+        <!---->
+        <div class="clearfix">
+          
+        </div>
+        <!---->
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    
+    
+    <div id="operations"class="container" >
+      <div id="operation" >
+        <form action="/parse" method="post" class="form-horizontal">
+          <div class="form-group">
+            <label >Ruta entrada</label>
+            <input type="text" class="form-control" id="input" name="input" placeholder="./filename.xml">
+          </div>
+          <div class="form-group">
+            <label >Ruta salida</label>
+            <input type="text" class="form-control" id="output" name="output"placeholder="./output.xml">
+          </div>
+          <div class="form-group">
+            <label >Autor</label>
+            <input type="text" class="form-control" id="autor" name="autor" placeholder="autor">
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
+          </div>
+        </form>
+      </div>
+      <div ng-controller="ctrl">
+        <div class="row form-group " >
+          <div ><label >{a detailedOperation.date a}</label></div>
+          <div >
+            <label >{a detailedOperation.autor a}</label>
+          </div>
+          <div >
+            <label >{a detailedOperation.input a}</label>
+          </div>
+          <div >
+            <label >{a detailedOperation.output a}</label>
+          </div>
+          <div ng-repeat="dig in detailedOperation.diagrams">
+            <label >{a dig.name a}</label>
+            <tr ng-repeat="x in dig.entities">
+              <td>{a x.name a}</td>
+            </tr>
+          </div>
+        </div>
+        
+        
+        <br>
+        <h1>OPERACIONES </h1>
+        <br>
+        <div ng-repeat="oper in operations|limitTo:10">
+          <div class="row form-group " >
+            <div class="col-xs-2"><label >{a oper.date a}</label></div>
+            <div class="col-xs-1">
+              <label >{a oper.autor a}</label>
+            </div>
+            <div class="col-xs-2">
+              <label >{a oper.input a}</label>
+            </div>
+            <div class="col-xs-2">
+              <label >{a oper.output a}</label>
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-see btn-registrar" ng-click="detailedInfoId(oper.id )">See!</button>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-parse btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-parse btn-registrar" ng-click="prof_act(oper.id, 'generate')">Gen Code!</button>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-delete btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h1>PERFILES </h1>
+        <br>
+        <div ng-repeat="prof in profiles|limitTo:10">
+          <div class="row form-group " >
+            <div class="col-xs-3"><label >{a prof a}</label></div>
+            
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-see btn-registrar" ng-click="prof_act(prof, 'compile')">Compile!</button>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-parse btn-registrar" ng-click="prof_act(prof, 'start')">Start!</button>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" class="btn btn-delete btn-registrar" ng-click="prof_act(prof, 'delete_prof')">Delete!</button>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      <script src="static/js/app.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+      <script src="../static/js/app.js"></script>
+    </body>
+  </html>

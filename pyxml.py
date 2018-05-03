@@ -67,7 +67,7 @@ class flaskApp(threading.Thread):
         app.run()
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 
 @app.route("/")
@@ -94,6 +94,7 @@ def generate():
     try:
         logging.info("FLASK:generate url from FLASk")
         if request.method == 'POST':
+            print request.json
             data = request.json
             cc = mongohand.get_by_arg(data,
                                       "tfg",
@@ -196,7 +197,7 @@ def parse_xml():
                        ou,
                        au)
 
-    return "ok"
+    return render_template('index.html')
 
 
 @app.route("/operations", methods=['GET'])

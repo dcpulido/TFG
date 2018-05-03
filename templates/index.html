@@ -1,135 +1,120 @@
-<!doctype html>
-<html lang="en" ng-app="app">
+<!DOCTYPE html>
+<html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <title>PYXML</title>
-    <meta name="description" content="Sota manager">
-    <meta name="author" content="SitePoint">
-    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../static/css/ownstyle.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="icon" type="image/png" href="../images/favicon.png" />
-    <!-- Archivos para hacer las cosas con estilo -->
-    
-    <script src="../static/js/jquery.min.js"></script>
-    <script src="../static/js/bootstrap.js"> </script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>INGENIAS GENERATOR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/grayscale.css" rel="stylesheet">
+
   </head>
-  <body>
-    <div class="header-top">
-      <div class="header-bottom">
-        <div class="logo myLogo">
-          <h1><a href="/">XML GENERATOR</a></h1>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">HOME</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Tool</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Download</a>
+            </li>
+          </ul>
         </div>
-        <div class="top-nav myTop" id="mainHeader">
-          
-        </div>
-        <!---->
-        <div class="clearfix">
-          
-        </div>
-        <!---->
       </div>
-      <div class="clearfix"> </div>
-    </div>
-    
-    
-    <div id="operations"class="container" >
-      <div id="operation" >
-        <form action="/parse" method="post" class="form-horizontal">
-          <div class="form-group">
-            <label >Ruta entrada</label>
-            <input type="text" class="form-control" id="input" name="input" placeholder="./filename.xml">
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">IDKGen</h1>
+              <p class="intro-text">An enviroment to INGENIAS Develoment kit Generation</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
           </div>
-          <div class="form-group">
-            <label >Ruta salida</label>
-            <input type="text" class="form-control" id="output" name="output"placeholder="./output.xml">
-          </div>
-          <div class="form-group">
-            <label >Autor</label>
-            <input type="text" class="form-control" id="autor" name="autor" placeholder="autor">
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-success btn-registrar" data-dismiss="modal" value="startSomething">Parse!</button>
-          </div>
-        </form>
+        </div>
       </div>
-      <div ng-controller="ctrl">
-        <div class="row form-group " >
-          <div ><label >{a detailedOperation.date a}</label></div>
-          <div >
-            <label >{a detailedOperation.autor a}</label>
-          </div>
-          <div >
-            <label >{a detailedOperation.input a}</label>
-          </div>
-          <div >
-            <label >{a detailedOperation.output a}</label>
-          </div>
-          <div ng-repeat="dig in detailedOperation.diagrams">
-            <label >{a dig.name a}</label>
-            <tr ng-repeat="x in dig.entities">
-              <td>{a x.name a}</td>
-            </tr>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About IDKGen</h2>
+            <p>IDKGen is a framework that helps a developer in the development process of an
+              <a href="http://ingenias.sourceforge.net/">IDE INGENIAS</a>. </p>
+            <p>In the Tool section you will find a reference grafic interface. </p>
+            <p>Please, enjoy using it and dont forget to install and configure correctly the enviroment before use it ;).</p>
           </div>
         </div>
-        
-        
-        <br>
-        <h1>OPERACIONES </h1>
-        <br>
-        <div ng-repeat="oper in operations|limitTo:10">
-          <div class="row form-group " >
-            <div class="col-xs-2"><label >{a oper.date a}</label></div>
-            <div class="col-xs-1">
-              <label >{a oper.autor a}</label>
-            </div>
-            <div class="col-xs-2">
-              <label >{a oper.input a}</label>
-            </div>
-            <div class="col-xs-2">
-              <label >{a oper.output a}</label>
-            </div>
-            <div class="col-xs-1"></div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-see btn-registrar" ng-click="detailedInfoId(oper.id )">See!</button>
-            </div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-parse btn-registrar" ng-click="parseHist(oper.id )">Parse!</button>
-            </div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-parse btn-registrar" ng-click="prof_act(oper.id, 'generate')">Gen Code!</button>
-            </div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-delete btn-registrar" ng-click="deleteHist(oper.id )">Delete!</button>
-            </div>
-          </div>
-        </div>
-        <br>
-        <h1>PERFILES </h1>
-        <br>
-        <div ng-repeat="prof in profiles|limitTo:10">
-          <div class="row form-group " >
-            <div class="col-xs-3"><label >{a prof a}</label></div>
-            
-            <div class="col-xs-1"></div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-see btn-registrar" ng-click="prof_act(prof, 'compile')">Compile!</button>
-            </div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-parse btn-registrar" ng-click="prof_act(prof, 'start')">Start!</button>
-            </div>
-            <div class="col-xs-1">
-              <button type="submit" class="btn btn-delete btn-registrar" ng-click="prof_act(prof, 'delete_prof')">Delete!</button>
-            </div>
-          </div>
-        </div>
-        
-        
       </div>
-      <script src="static/js/app.js"></script>
-      <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
-      <script src="../static/js/app.js"></script>
-    </body>
-  </html>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Go to the grafic interface</h2>
+          <p>Click here to use the IDKGen tool (only available if you have installed the enviroment)</p>
+          <a href="../static/tool.html" class="btn btn-default btn-lg">TOOL</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Download tool</h2>
+            <p>Click here to go to the github repository</p>
+              <li class="list-inline-item">
+                <a href="https://github.com/dcpulido" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/js/grayscale.js"></script>
+
+  </body>
+
+</html>
