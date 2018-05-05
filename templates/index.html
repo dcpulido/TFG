@@ -46,7 +46,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h1 class="brand-heading">IDKGen</h1>
-              <p class="intro-text">An enviroment to INGENIAS Develoment kit Generation</p>
+              <p class="intro-text"><h2><font color="black">An enviroment to INGENIAS Develoment kit Generation</font></h2></p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
@@ -82,32 +82,40 @@
           </div>
         </div>
       </section>
-      <!-- Download Section -->
-      <section id="download" class="download-section content-section ">
+      <!-- Operations Section -->
+      <section id="operation" class="download-section content-section ">
         
         <div class="container">
-          <h1>OPERATIONS</h1>
+          <h1>PROFILES</h1>
           <p>Realize operations over the diferent stored profiles</p>
-          <div class="">
-            <select class="form-control" name="repeatSelect" id="repeatSelect1"  ng-model="campOp3">
-              <option ng-repeat="oper in operations|limitTo:10" value="{a oper.id a}">{a oper.output a}</option>
-            </select>
+          <div class="row">
+            <div class="col-md-6">
+              <select class="form-control" name="repeatSelect" id="repeatSelect1"  ng-model="campOp3">
+                <option ng-repeat="oper in operations|limitTo:10" value="{a oper.id a}">{a oper.output a}</option>
+              </select>
+            </div>
+            
+            <div class="col-md-offset-6 col-md-2">
+              <button type="submit" class="btn btn-default btn-lg" ng-click="parseHist(campOp3 )">Parse!</button>
+            </div>
+            <div class="col-md-offset-8 col-md-2">
+              <button type="submit" class="btn btn-default btn-lg" ng-click="prof_act(campOp3, 'generate')">Gen Code!</button>
+            </div>
+            <div class="col-md-offset-10 col-md-2">
+              <button type="submit" class="btn btn-default btn-lg" ng-click="deleteHist(campOp3 )">Delete!</button>
+            </div>
           </div>
-          
-          <div class="">
-            <button type="submit" class="btn btn-default btn-lg" ng-click="parseHist(campOp3 )">Parse!</button>
-          </div>
-          <div class="">
-            <button type="submit" class="btn btn-default btn-lg" ng-click="prof_act(campOp3, 'generate')">Gen Code!</button>
-          </div>
-          <div class="">
-            <button type="submit" class="btn btn-default btn-lg" ng-click="deleteHist(campOp3 )">Delete!</button>
-          </div>
-
-          <div class="">
-            <select class="form-control" name="repeatSelect" id="repeatSelect2"  ng-model="campOp2">
-              <option ng-repeat="oper in profiles|limitTo:10" value="{a oper a}">{a oper a}</option>
-            </select>
+          <h1>OPERATIONS</h1>
+          <p>Realize operations over the diferent generated directories</p>
+          <div class="row">
+            <div class="col-md-6">
+              <select class="form-control" name="repeatSelect" id="repeatSelect2"  ng-model="campOp2">
+                <option ng-repeat="oper in profiles|limitTo:10" value="{a oper a}">{a oper a}</option>
+              </select>
+            </div>
+            <div class="col-md-offset-6 col-md-2">
+              <button type="submit" class="btn btn-default btn-lg" ng-click="prof_act(campOp2, 'compile')">Compile!</button>
+            </div>
           </div>
         </div>
       </div>
