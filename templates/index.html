@@ -1,54 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" ng-app="app">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>INGENIAS GENERATOR</title>
-
     <!-- Bootstrap core CSS -->
     <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
     <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-
     <!-- Custom styles for this template -->
     <link href="../static/css/grayscale.css" rel="stylesheet">
-
   </head>
-
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">HOME</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
+        Menu
+        <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">NEW</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Tool</a>
+              <a class="nav-link js-scroll-trigger" href="#download">OPERATIONS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Download</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">DOWNLOAD</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- Intro Header -->
     <header class="masthead">
       <div class="intro-body">
@@ -65,33 +55,63 @@
         </div>
       </div>
     </header>
+    <div ng-controller="ctrl">
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <div class="container">
+          <h1>NEW PROFILE</h1>
+          <p>Select input and output paths of the IDE INGENIAS spec to add a profile to the system.</p>
+          <div id="operation" >
+            <form action="/parse" method="post" class="form-horizontal">
+              <div class="form-group">
+                <label class="text-left">Input path</label>
+                <input type="text" class="form-control" id="input" name="input" placeholder="./filename.xml">
+              </div>
+              <div class="form-group">
+                <label >Output path</label>
+                <input type="text" class="form-control" id="output" name="output"placeholder="./output.xml">
+              </div>
+              <div class="form-group">
+                <label >Author</label>
+                <input type="text" class="form-control" id="autor" name="autor" placeholder="autor">
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default btn-lg" data-dismiss="modal" value="startSomething">Parse!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Download Section -->
+      <section id="download" class="download-section content-section ">
+        
+        <div class="container">
+          <h1>OPERATIONS</h1>
+          <p>Realize operations over the diferent stored profiles</p>
+          <div class="">
+            <select class="form-control" name="repeatSelect" id="repeatSelect1"  ng-model="campOp3">
+              <option ng-repeat="oper in operations|limitTo:10" value="{a oper.id a}">{a oper.output a}</option>
+            </select>
+          </div>
+          
+          <div class="">
+            <button type="submit" class="btn btn-default btn-lg" ng-click="parseHist(campOp3 )">Parse!</button>
+          </div>
+          <div class="">
+            <button type="submit" class="btn btn-default btn-lg" ng-click="prof_act(campOp3, 'generate')">Gen Code!</button>
+          </div>
+          <div class="">
+            <button type="submit" class="btn btn-default btn-lg" ng-click="deleteHist(campOp3 )">Delete!</button>
+          </div>
 
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About IDKGen</h2>
-            <p>IDKGen is a framework that helps a developer in the development process of an
-              <a href="http://ingenias.sourceforge.net/">IDE INGENIAS</a>. </p>
-            <p>In the Tool section you will find a reference grafic interface. </p>
-            <p>Please, enjoy using it and dont forget to install and configure correctly the enviroment before use it ;).</p>
+          <div class="">
+            <select class="form-control" name="repeatSelect" id="repeatSelect2"  ng-model="campOp2">
+              <option ng-repeat="oper in profiles|limitTo:10" value="{a oper a}">{a oper a}</option>
+            </select>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Go to the grafic interface</h2>
-          <p>Click here to use the IDKGen tool (only available if you have installed the enviroment)</p>
-          <a href="../static/tool.html" class="btn btn-default btn-lg">TOOL</a>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
       <div class="container">
@@ -99,22 +119,23 @@
           <div class="col-lg-8 mx-auto">
             <h2>Download tool</h2>
             <p>Click here to go to the github repository</p>
-              <li class="list-inline-item">
-                <a href="https://github.com/dcpulido" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li class="list-inline-item">
+              <a href="https://github.com/dcpulido/TFG" class="btn btn-default btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+                <span class="network-name">Github</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <script src="../static/vendor/jquery/jquery.min.js"></script>
-    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="../static/js/grayscale.js"></script>
-
-  </body>
-
+    </div>
+  </section>
+</div>
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../static/js/grayscale.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+<script src="../static/js/app.js"></script>
+</body>
 </html>
