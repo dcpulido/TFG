@@ -67,10 +67,12 @@ class Compiler:
 
     def start_prof(self, source):
         logging.info("STARTING: " + source)
-        system("cd " +
-               self.env_dir +
-               "&& echo $PWD &&" +
-               self.run_cmd)
+        an, cp = self.run_cmd.split(" ")
+        Popen(['xterm', '-e', an, cp, "2>", "out.txt"],cwd=self.env_dir+"/")
+        """system("cd " +
+             self.env_dir +
+             "&& echo $PWD &&" +
+             self.run_cmd)"""
 
 
 if __name__ == "__main__":
