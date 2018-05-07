@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/lib
+END
+batik-dom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-dom.jar
+END
+epsgraphics.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/epsgraphics.jar
+END
+serializer.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/serializer.jar
+END
+jgraph.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ingenias/!svn/ver/134/trunk/IDK/editor/lib/jgraph.jar
+END
+batik-anim.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-anim.jar
+END
+xerces_2_5_0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/xerces_2_5_0.jar
+END
+xercesSamples.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/xercesSamples.jar
+END
+http.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/http.jar
+END
+batik-css.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-css.jar
+END
+batik-svggen.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-svggen.jar
+END
+ant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/ant.jar
+END
+jcommon-1.0.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ingenias/!svn/ver/177/trunk/IDK/editor/lib/jcommon-1.0.16.jar
+END
+swixml.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ingenias/!svn/ver/134/trunk/IDK/editor/lib/swixml.jar
+END
+Base64.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/Base64.jar
+END
+jadeTools.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/jadeTools.jar
+END
+batik-bridge.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-bridge.jar
+END
+batik-parser.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-parser.jar
+END
+batik-svgpp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-svgpp.jar
+END
+batik-gui-util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-gui-util.jar
+END
+batik-xml.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-xml.jar
+END
+xml-apis-ext.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/xml-apis-ext.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/ingenias/!svn/ver/134/trunk/IDK/editor/lib/jdom.jar
+END
+batik.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik.jar
+END
+jfreechart-1.0.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ingenias/!svn/ver/178/trunk/IDK/editor/lib/jfreechart-1.0.13.jar
+END
+batik-transcoder.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-transcoder.jar
+END
+batik-script.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-script.jar
+END
+antl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ingenias/!svn/ver/77/trunk/IDK/editor/lib/antl.jar
+END
+stringtemplate-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/stringtemplate-3.0.jar
+END
+jade.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/jade.jar
+END
+ingeniaseditor.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ingenias/!svn/ver/331/trunk/IDK/editor/lib/ingeniaseditor.jar
+END
+batik-svg-dom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-svg-dom.jar
+END
+batik-extension.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-extension.jar
+END
+batik-util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-util.jar
+END
+batik-codec.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-codec.jar
+END
+jfreechart-1.0.13-swt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ingenias/!svn/ver/179/trunk/IDK/editor/lib/jfreechart-1.0.13-swt.jar
+END
+batik-squiggle.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-squiggle.jar
+END
+pdf-transcoder.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/pdf-transcoder.jar
+END
+xercesImpl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/xercesImpl.jar
+END
+js.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/js.jar
+END
+batik-swing.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-swing.jar
+END
+antlr.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/antlr.jar
+END
+SpeedJG.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/SpeedJG.jar
+END
+xstream-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/245/trunk/IDK/editor/lib/xstream-1.2.jar
+END
+batik-rasterizer.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-rasterizer.jar
+END
+jfreechart-1.0.13-experimental.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ingenias/!svn/ver/180/trunk/IDK/editor/lib/jfreechart-1.0.13-experimental.jar
+END
+batik-ttf2svg.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-ttf2svg.jar
+END
+pounder_0.95.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/pounder_0.95.jar
+END
+batik-ext.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-ext.jar
+END
+batik-gvt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-gvt.jar
+END
+batik-slideshow.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-slideshow.jar
+END
+antlr-2.7.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/antlr-2.7.7.jar
+END
+junit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/junit.jar
+END
+xml-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/xml-apis.jar
+END
+oy-lm-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ingenias/!svn/ver/77/trunk/IDK/editor/lib/oy-lm-1.4.jar
+END
+batik-awt-util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/batik-awt-util.jar
+END
+iiop.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/iiop.jar
+END
+resolver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/lib/resolver.jar
+END

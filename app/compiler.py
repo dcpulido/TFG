@@ -1,5 +1,6 @@
 from os import listdir, system
 from os.path import isdir, join
+from subprocess import Popen
 import logging
 
 
@@ -51,16 +52,17 @@ class Compiler:
 
     def compile(self, source):
         logging.info("COMPILING: " + source)
+
         system("cp -r " +
                self.generatorconf["output"] +
                "/" +
                source +
                " " +
                self.code_dir)
-        system("cd " +
-               self.env_dir +
-               "&& echo $PWD &&" +
-               self.compile_cmd)
+        # system()
+        an, cp = self.compile_cmd.split(" ")
+        Popen(['xterm', '-e', an, cp, "2>", "out.txt"],cwd=self.env_dir+"/")
+
         # HERE RETURN SOMETHING
 
     def start_prof(self, source):
