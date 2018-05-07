@@ -1,5 +1,7 @@
 
-//
+var ip = location.host;
+console.log(ip);
+
 var app = angular.module('app',[]);
 app.config(['$interpolateProvider', function($interpolateProvider) {
   $interpolateProvider.startSymbol('{a');
@@ -10,13 +12,13 @@ app.controller('ctrl',
     function($scope, $http)
     {
         $scope.detailedOperation=null;
-        $http.get('http://localhost:5000/operations').
+        $http.get(ip + '/operations').
             success(function(data) {
                 console.log("OPERATIONS");
                 console.log(data);
                 $scope.operations = data;
             });
-        $http.get('http://localhost:5000/profiles').
+        $http.get(ip + '/profiles').
             success(function(data) {
                 console.log("PROFILES");
                 console.log(data);
@@ -37,7 +39,7 @@ app.controller('ctrl',
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                 }
             }
-            $http.post("http://localhost:5000/getID", {"id": id}).success(function (data, status, headers, config) {
+            $http.post(ip + "/getID", {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
             })
             .error(function (data, status, header, config) {
@@ -53,7 +55,7 @@ app.controller('ctrl',
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                 }
             }
-            $http.post("http://localhost:5000/delID", {"id": id}).success(function (data, status, headers, config) {
+            $http.post(ip + "/delID", {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
             })
             .error(function (data, status, header, config) {
@@ -69,7 +71,7 @@ app.controller('ctrl',
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                 }
             }
-            $http.post("http://localhost:5000/"+action, {"id": id}).success(function (data, status, headers, config) {
+            $http.post(ip + "/"+action, {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
             })
             .error(function (data, status, header, config) {
