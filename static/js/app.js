@@ -1,5 +1,5 @@
 
-var ip = location.host;
+var ip = "http://" + location.host;
 console.log(ip);
 
 var app = angular.module('app',[]);
@@ -41,6 +41,7 @@ app.controller('ctrl',
             }
             $http.post(ip + "/getID", {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
+                location.reload();
             })
             .error(function (data, status, header, config) {
                 $scope.ResponseDetails = "Data: " + data +
@@ -57,6 +58,7 @@ app.controller('ctrl',
             }
             $http.post(ip + "/delID", {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
+                location.reload();
             })
             .error(function (data, status, header, config) {
                 $scope.ResponseDetails = "Data: " + data +
@@ -73,6 +75,7 @@ app.controller('ctrl',
             }
             $http.post(ip + "/"+action, {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
+                location.reload();
             })
             .error(function (data, status, header, config) {
                 $scope.ResponseDetails = "Data: " + data +

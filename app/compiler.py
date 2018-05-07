@@ -61,18 +61,28 @@ class Compiler:
                self.code_dir)
         # system()
         an, cp = self.compile_cmd.split(" ")
-        Popen(['xterm', '-e', an, cp, "2>", "out.txt"],cwd=self.env_dir+"/")
-
+        print "ENTRA"
+        if self.compilerconf["xterm"] == "1":
+            print "A 1"
+            Popen(['xterm', '-e', an, cp, "2>", "out.txt"], cwd=self.env_dir+"/")
+        else:
+            print "A 0"
+            system("cd " +
+                   self.env_dir +
+                   "&& echo $PWD &&" +
+                   self.compile_cmd)
         # HERE RETURN SOMETHING
 
     def start_prof(self, source):
         logging.info("STARTING: " + source)
         an, cp = self.run_cmd.split(" ")
-        Popen(['xterm', '-e', an, cp, "2>", "out.txt"],cwd=self.env_dir+"/")
-        """system("cd " +
-             self.env_dir +
-             "&& echo $PWD &&" +
-             self.run_cmd)"""
+        if self.compilerconf["xterm"] == "1":
+            Popen(['xterm', '-e', an, cp, "2>", "out.txt"], cwd=self.env_dir+"/")
+        else:
+            system("cd " +
+                   self.env_dir +
+                   "&& echo $PWD &&" +
+                   self.run_cmd)
 
 
 if __name__ == "__main__":

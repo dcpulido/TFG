@@ -64,7 +64,7 @@ class flaskApp(threading.Thread):
     """
 
     def run(self):
-        app.run()
+        app.run(threaded=True)
 
 
 app = Flask(__name__, static_url_path='/static')
@@ -111,7 +111,7 @@ def generate():
                                  cc['bin-data'],
                                  name)
         return render_template('index.html')
-    except Exception,e:
+    except Exception, e:
         raise e
         print "rompe"
         return "ko"
@@ -130,7 +130,8 @@ def compile_fl():
             logging.info("FLASK:compile " + data["id"])
             cmp.compile(data["id"])
         return "ok"
-    except Exception,e:
+    except Exception, e:
+        print e
         return "ko"
 
 
@@ -147,7 +148,8 @@ def start_prof():
             logging.info("FLASK:start " + data["id"])
             cmp.start_prof(data["id"])
         return "ok"
-    except Exception,e:
+    except Exception, e:
+        print e
         return "ko"
 
 
@@ -178,14 +180,12 @@ def parse_xml():
         inp = str(request.form.get('input'))
         au = str(request.form.get('autor'))
 
-
         if ou == "" or ou == "None":
             ou = xmls
         if inp == "" or inp == "None":
             inp = xmli
         if au == "" or au == "None":
             au = autor
-
 
         logging.info("FLASK: " +
                      ou +
@@ -263,7 +263,7 @@ def getEncodeOps():
                        'output': str(c['output']),
                        'date': str(c['date']),
                        'diagrams': getEncodeDig(c['bin-data'])})
-    
+
     return json.dumps(toret1)
 
 
