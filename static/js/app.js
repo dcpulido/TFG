@@ -39,6 +39,7 @@ app.controller('ctrl',
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                 }
             }
+            console.log(id)
             $http.post(ip + "/getID", {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
                 location.reload();
@@ -56,6 +57,7 @@ app.controller('ctrl',
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                 }
             }
+            console.log(id)
             $http.post(ip + "/delID", {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
                 location.reload();
@@ -68,14 +70,17 @@ app.controller('ctrl',
             });
         };
         $scope.prof_act=function(id, action){
+            console.log("action")
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                 }
             }
+            console.log(id)
+            console.log(action)
             $http.post(ip + "/"+action, {"id": id}).success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
-                location.reload();
+                //location.reload();
             })
             .error(function (data, status, header, config) {
                 $scope.ResponseDetails = "Data: " + data +

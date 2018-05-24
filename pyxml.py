@@ -96,20 +96,25 @@ def generate():
         if request.method == 'POST':
             print request.json
             data = request.json
-            cc = mongohand.get_by_arg(data,
+            cc = mongohand.get_by_arg({},
                                       "tfg",
-                                      one_result=True)
-            ex = ""
-            if "/" in cc["output"]:
-                ex = cc["output"].split("/")[1].split(".")[0]
-            else:
-                ex = cc["output"]
-            name = cc["autor"] + \
-                "_" + \
-                ex
-            init_code_generation(generatorconf,
-                                 cc['bin-data'],
-                                 name)
+                                      one_result=False)
+            print cc
+            print data
+            for c in cc:
+                if str(c["_id"]) == data["id"]:
+
+                    ex = ""
+                    if "/" in c["output"]:
+                        ex = c["output"].split("/")[1].split(".")[0]
+                    else:
+                        ex = c["output"]
+                    name = c["autor"] + \
+                        "_" + \
+                        ex
+                    init_code_generation(generatorconf,
+                                         c['bin-data'],
+                                         name)
         return render_template('index.html')
     except Exception, e:
         raise e
