@@ -1,0 +1,7 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##textarea id="Text" Rows="3" constraints="BorderLayout.CENTER" LineWrap="true"/#
+##/panel#
+					
+		

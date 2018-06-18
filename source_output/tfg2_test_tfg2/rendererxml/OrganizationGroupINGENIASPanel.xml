@@ -1,0 +1,12 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="GridBagLayout"#
+##htmllabel id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="GridBagLayout.BOTH" anchor="GridBagLayout.CENTER"/#
+##/htmllabel #
+##/panel#
+##label Foreground="blue" icon="images/orggroup.gif" constraints="BorderLayout.CENTER" HorizontalAlignment="CENTER" /#
+##/panel#
+					
+		

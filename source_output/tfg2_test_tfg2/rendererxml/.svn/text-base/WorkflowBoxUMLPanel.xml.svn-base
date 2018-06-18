@@ -1,0 +1,7 @@
+
+
+							##panel layout="BorderLayout" Background="white" border="LineBorder(Color.black,2)"#							
+							##textarea id="_Text" Rows="20" constraints="BorderLayout.CENTER" Columns="50"/#
+							##/panel#
+						
+		

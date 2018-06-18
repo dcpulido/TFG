@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models
+END
+AUMLInteractionDiagramModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/AUMLInteractionDiagramModelJGraph.java
+END
+EnvironmentModelModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/EnvironmentModelModelJGraph.java
+END
+OrganizationModelModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/OrganizationModelModelJGraph.java
+END
+ComponentDiagramModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/ComponentDiagramModelJGraph.java
+END
+UseCaseDiagramModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/UseCaseDiagramModelJGraph.java
+END
+AgentModelModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/AgentModelModelJGraph.java
+END
+TasksAndGoalsModelModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/TasksAndGoalsModelModelJGraph.java
+END
+InteractionModelModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/InteractionModelModelJGraph.java
+END
+ActivityDiagramModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/ActivityDiagramModelJGraph.java
+END
+DeployDiagramModelJGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/models/DeployDiagramModelJGraph.java
+END

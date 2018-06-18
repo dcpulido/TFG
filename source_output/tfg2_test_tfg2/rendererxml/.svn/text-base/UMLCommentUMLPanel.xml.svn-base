@@ -1,0 +1,9 @@
+
+
+##panel layout="BorderLayout" Background="white" border="LineBorder(Color.
+black,1)"#
+##label Foreground="blue" icon="images/corner.gif" constraints="BorderLayout.NORTH" HorizontalAlignment="RIGHT" /#
+##textarea id="Text" Rows="3" constraints="BorderLayout.CENTER" LineWrap="true"/#
+##/panel#
+					
+		

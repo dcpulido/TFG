@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram
+END
+ComponentDiagramActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/ComponentDiagramActionsFactory.java
+END
+UseCaseDiagramActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/UseCaseDiagramActionsFactory.java
+END
+AgentModelActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/AgentModelActionsFactory.java
+END
+TasksAndGoalsModelActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/TasksAndGoalsModelActionsFactory.java
+END
+InteractionModelActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/InteractionModelActionsFactory.java
+END
+ActivityDiagramActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/ActivityDiagramActionsFactory.java
+END
+DeployDiagramActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/DeployDiagramActionsFactory.java
+END
+AUMLInteractionDiagramActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/AUMLInteractionDiagramActionsFactory.java
+END
+EnvironmentModelActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/EnvironmentModelActionsFactory.java
+END
+OrganizationModelActionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/actions/diagram/OrganizationModelActionsFactory.java
+END

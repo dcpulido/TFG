@@ -1,0 +1,177 @@
+
+/*null
+ Copyright (C) 2002 Jorge Gomez Sanz, Ruben Fuentes, Juan Pavon
+ 
+ Modifications over original code from jgraph.sourceforge.net
+ 
+ This file is part of INGENIAS IDE, a support tool for the INGENIAS
+ methodology, availabe at http://grasia.fdi.ucm.es/ingenias or
+ http://ingenias.sourceforge.net
+ 
+ INGENIAS IDE is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ 
+ INGENIAS IDE is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with INGENIAS IDE; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ 
+ */
+
+
+package ingenias.editor.cellfactories;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.*;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.event.UndoableEditEvent;
+
+import java.util.Hashtable;
+import java.util.Map;
+
+import java.net.URL;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Vector;
+
+import org.jgraph.event.*;
+import org.jgraph.graph.*;
+import org.jgraph.JGraph;
+import org.jgraph.plaf.basic.*;
+
+import ingenias.editor.cell.*;
+import ingenias.editor.entities.*;
+import ingenias.editor.events.*;
+
+public class UseCaseDiagramCellViewFactory implements CellViewFactory {
+	
+	public UseCaseDiagramCellViewFactory() {}
+	
+	
+ 	public CellView createView(GraphModel model, Object cell) {
+		
+		CellView view = null;
+		if (model.isPort(cell))
+			view = new PortView(cell);
+		else if (model.isEdge(cell))
+			view = createEdgeView(cell);
+		else
+			view = createVertexView(cell);
+		return view;
+	}
+	
+	// Modificar agregando nuevas clases VIEW segun se vayan a?endo
+	
+	protected VertexView createVertexView(Object v) {
+		Object userObject = ( (DefaultGraphCell) v).getUserObject();
+		
+		// Diagram Objects start here
+		
+		
+		if (userObject.getClass().equals(TextUseCase.class)){
+			return new TextUseCaseView(v);
+		}
+		
+		if (userObject.getClass().equals(INGENIASUseCase.class)){
+			return new INGENIASUseCaseView(v);
+		}
+		
+		if (userObject.getClass().equals(Task.class)){
+			return new TaskView(v);
+		}
+		
+		if (userObject.getClass().equals(Agent.class)){
+			return new AgentView(v);
+		}
+		
+		if (userObject.getClass().equals(Role.class)){
+			return new RoleView(v);
+		}
+		
+		if (userObject.getClass().equals(Interaction.class)){
+			return new InteractionView(v);
+		}
+		
+		if (userObject.getClass().equals(TextNote.class)){
+			return new TextNoteView(v);
+		}
+		
+		if (userObject.getClass().equals(UMLComment.class)){
+			return new UMLCommentView(v);
+		}
+		
+		if (userObject.getClass().equals(Goal.class)){
+			return new GoalView(v);
+		}
+		
+		if (userObject.getClass().equals(Organization.class)){
+			return new OrganizationView(v);
+		}
+		
+		
+		// Diagram Relationships start here
+		
+		if (v.getClass().equals(RefinesEdge.class)){
+			return new RefinesView(v);
+		}
+		
+		if (v.getClass().equals(ExtendsEdge.class)){
+			return new ExtendsView(v);
+		}
+		
+		if (v.getClass().equals(IncludesEdge.class)){
+			return new IncludesView(v);
+		}
+		
+		if (v.getClass().equals(GeneralizesEdge.class)){
+			return new GeneralizesView(v);
+		}
+		
+		if (v.getClass().equals(ParticipatesInUseCaseEdge.class)){
+			return new ParticipatesInUseCaseView(v);
+		}
+		
+		if (v.getClass().equals(UMLDescribesUseCaseEdge.class)){
+			return new UMLDescribesUseCaseView(v);
+		}
+		
+		if (v.getClass().equals(UMLAssociationEdge.class)){
+			return new UMLAssociationView(v);
+		}
+		
+		if (v.getClass().equals(UMLAnnotatedElementEdge.class)){
+			return new UMLAnnotatedElementView(v);
+		}
+		
+		if (v.getClass().equals(UseCasePursuesEdge.class)){
+			return new UseCasePursuesView(v);
+		}
+		
+		
+		return null;
+	}
+	
+	protected EdgeView createEdgeView(Object v) {
+		return new EdgeView(v);
+		
+		//         if (v instanceof ExecuteEdge){
+		//           return new ExecuteView(v,this,cm);
+		//         }
+		
+	}
+	
+	
+	
+	
+}

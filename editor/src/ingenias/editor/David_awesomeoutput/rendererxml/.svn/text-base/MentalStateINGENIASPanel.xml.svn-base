@@ -1,0 +1,12 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##panel constraints="BorderLayout.CENTER" Background="white" layout="GridBagLayout"#
+##myeditor id="Id"#
+##gridbagconstraints id="gbc_1" insets="0,0,0,0" gridx="0" gridy="0" fill="1" weightx="1" weighty="1" anchor="GridBagLayout.CENTER"/#
+##/myeditor #
+##/panel#
+##label Foreground="blue" icon="images/mstate.gif" constraints="BorderLayout.SOUTH" HorizontalAlignment="CENTER" /#
+##/panel#		
+					
+		

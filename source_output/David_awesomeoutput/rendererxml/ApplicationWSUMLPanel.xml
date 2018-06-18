@@ -1,0 +1,33 @@
+
+
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##stereotype text="ApplicationWS" HorizontalAlignment="CENTER" /#
+##/panel #
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##linepanel Background="white" /#
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.LEFT,0,0)"#
+##iconlabel icon="images/attribute.gif" /#
+##label text="UsesServRole:"/# 
+##label text=" "/# 
+##label id="UsesServiceRole" text="leches"/#
+##/panel#
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.LEFT,0,0)"#
+##collectionpanel Background="white" id="Methods"#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"   #
+##iconlabel icon="images/method.gif" /#
+##label name="Methods_Result"/# 
+##label text=" "/# 
+##label name="Methods_Name"/#
+##label text="( )"/# 
+##/panel#
+##/collectionpanel#
+##/panel#
+##/vbox#
+##/panel#	
+					
+		

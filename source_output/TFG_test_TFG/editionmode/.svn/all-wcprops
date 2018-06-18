@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/editionmode
+END
+EmbeddedCellEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/editionmode/EmbeddedCellEditor.java
+END
+EmbeddedAndPopupCellEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/editionmode/EmbeddedAndPopupCellEditor.java
+END
+PopupCellEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/editionmode/PopupCellEditor.java
+END

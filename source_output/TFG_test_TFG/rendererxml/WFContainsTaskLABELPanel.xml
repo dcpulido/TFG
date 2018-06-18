@@ -1,0 +1,7 @@
+
+
+##panel layout="BorderLayout" Background="white"#
+##label id="Label"  HorizontalAlignment="CENTER" constraints="BorderLayout.CENTER"/#
+##/panel#
+					
+		

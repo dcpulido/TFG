@@ -1,0 +1,25 @@
+
+
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##stereotype text="ConditionalMentalState" HorizontalAlignment="CENTER" /#
+##/panel #
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel layout="GridLayout(1,2)" Background="white"    #
+##panel Background="white"    #
+##iconlabel icon="images/attribute.gif" /#
+##label text="Condition:"/#
+##/panel#
+##htmllabel id="Condition"/# 
+##/panel#
+
+##linepanel Background="white" /#
+##/vbox#
+##/panel#	
+		
+					
+		

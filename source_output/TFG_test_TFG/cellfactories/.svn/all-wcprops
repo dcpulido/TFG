@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/cellfactories
+END
+UseCaseDiagramCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/UseCaseDiagramCellViewFactory.java
+END
+AgentModelCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/cellfactories/AgentModelCellViewFactory.java
+END
+TasksAndGoalsModelCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/cellfactories/TasksAndGoalsModelCellViewFactory.java
+END
+UMLActivityDiagramCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/UMLActivityDiagramCellViewFactory.java
+END
+InteractionModelCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/InteractionModelCellViewFactory.java
+END
+ActivityDiagramCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/ActivityDiagramCellViewFactory.java
+END
+DeployDiagramCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/cellfactories/DeployDiagramCellViewFactory.java
+END
+AUMLInteractionDiagramCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ingenias/!svn/ver/100/trunk/IDK/editor/src/ingenias/editor/cellfactories/AUMLInteractionDiagramCellViewFactory.java
+END
+EnvironmentModelCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/EnvironmentModelCellViewFactory.java
+END
+OrganizationModelCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/OrganizationModelCellViewFactory.java
+END
+ComponentDiagramCellViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/cellfactories/ComponentDiagramCellViewFactory.java
+END

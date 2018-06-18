@@ -1,0 +1,12 @@
+
+
+						##panel layout="BorderLayout" Background="white" border="LineBorder(Color.black,2)"#
+						##panel constraints="BorderLayout.NORTH" Background="white" layout="FlowLayout(FlowLayout.LEFT)"#
+						##panel border="LineBorder(Color.black,1)" Background="white" #
+						##label id="Id" Text="Protocol Name"/#
+						##/panel#
+						##/panel#
+						##textarea id="_Text" Rows="20" constraints="BorderLayout.CENTER" Columns="50"/#
+						##/panel#
+					
+		

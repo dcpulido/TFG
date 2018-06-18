@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ingenias/!svn/ver/162/trunk/IDK/editor/src/ingenias/editor/persistence
+END
+RelationshipLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/RelationshipLoad.java
+END
+GraphLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/persistence/GraphLoad.java
+END
+UnknownVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/UnknownVersion.java
+END
+ObjectLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/ObjectLoad.java
+END
+RelationshipSaveAbs.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/RelationshipSaveAbs.java
+END
+AutomaticBackupAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/persistence/AutomaticBackupAction.java
+END
+TextAreaOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/TextAreaOutputStream.java
+END
+PropertyLoadImp1.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/PropertyLoadImp1.java
+END
+ObjectSaveAbs.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/ObjectSaveAbs.java
+END
+PersistenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ingenias/!svn/ver/162/trunk/IDK/editor/src/ingenias/editor/persistence/PersistenceManager.java
+END
+GraphLoadImp2Abs.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/persistence/GraphLoadImp2Abs.java
+END
+GraphSave.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/persistence/GraphSave.java
+END
+RelationshipSave.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/RelationshipSave.java
+END
+SaveRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/SaveRelationship.java
+END
+PropertyLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/PropertyLoad.java
+END
+ObjectSave.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/persistence/ObjectSave.java
+END
+RelationshipLoadImp1.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/RelationshipLoadImp1.java
+END
+GraphLoadImp1.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/117/trunk/IDK/editor/src/ingenias/editor/persistence/GraphLoadImp1.java
+END
+RelationshipLoadImp2.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ingenias/!svn/ver/63/trunk/IDK/editor/src/ingenias/editor/persistence/RelationshipLoadImp2.java
+END
+GraphLoadImp2.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ingenias/!svn/ver/113/trunk/IDK/editor/src/ingenias/editor/persistence/GraphLoadImp2.java
+END
+ObjectLoadImp1.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ingenias/!svn/ver/133/trunk/IDK/editor/src/ingenias/editor/persistence/ObjectLoadImp1.java
+END

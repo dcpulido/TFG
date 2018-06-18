@@ -1,0 +1,11 @@
+
+
+##panel layout="BorderLayout"  Background="white"#
+##vbox Background="white" constraints="BorderLayout.CENTER"#
+##label id="Label" text="Satisfaction"/#
+##stereotype text="Satisfaction" HorizontalAlignment="CENTER" /#
+##label id="SatisfactionCondition" text="(GTSatisfies)"/#
+##/vbox#
+##/panel#
+					
+		

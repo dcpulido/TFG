@@ -1,0 +1,17 @@
+
+
+
+##panel layout="BorderLayout" Background="white" border="LineBorder(Color.black,1)"#
+##panel constraints="BorderLayout.NORTH" Background="white" layout="FlowLayout(FlowLayout.RIGHT)"#
+##label id="Cardinality" text="1"/#
+##/panel#
+##panel constraints="BorderLayout.CENTER" Background="white" HorizontalAlignment="CENTER"#
+##label id="Name" text="name"/#
+##label id="_sep1" text=":"/#
+##label id="Agent" text="agent"/#
+##label id="_sep2" text="/"/#
+##label id="Role" text="role"/#
+##/panel#
+##/panel#
+					
+		

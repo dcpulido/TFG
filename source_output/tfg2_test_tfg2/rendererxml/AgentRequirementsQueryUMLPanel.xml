@@ -1,0 +1,22 @@
+
+
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##stereotype text="AgentRequirementsQuery" HorizontalAlignment="CENTER" /#
+##/panel #
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Id"/#
+##/panel#
+##linepanel Background="white"/#
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"    #
+##iconlabel icon="images/attribute.gif" /#
+##label id="Requirements_" text="Requirements model:"/#
+##label id="Result_2" text=":"/# 
+##label id="Requirements"/# 
+##/panel#
+##linepanel Background="white" /#
+##/vbox#
+##/panel#	
+					
+		

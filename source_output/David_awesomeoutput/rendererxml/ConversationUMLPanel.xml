@@ -1,0 +1,24 @@
+
+
+##panel layout="BorderLayout(0,0)"  Background="white" border="LineBorder(Color.black,1)"#
+##vbox Background="white" constraints="BorderLayout.CENTER" #
+##panel Background="white"  HorizontalAlignment="CENTER" layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##stereotype text="Conversation" HorizontalAlignment="CENTER" /#
+##/panel #
+##panel Background="white"  HorizontalAlignment="CENTER"  layout="FlowLayout(FlowLayout.CENTER,0,0)" #
+##label id="Interaction"/#
+##/panel#
+##linepanel Background="white"/#
+##collectionpanel Background="white" id="CurrentContent" #
+##panel layout="FlowLayout(FlowLayout.LEFT,5,0)" Background="white"  #
+##iconlabel icon="images/attribute.gif" /#
+##label text="Contained element"/# 
+##label text=":"/# 
+##label name="CurrentContent_Id"/#
+##/panel#
+##/collectionpanel#
+##linepanel Background="white" /#
+##/vbox#
+##/panel#	
+					
+		
